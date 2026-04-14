@@ -1,0 +1,628 @@
+/* collections.css */
+
+
+:root {
+    --bg-color: #EAE3DC;
+    /* Updated background base */
+    --text-color: #4A3C31;
+    /* Deep brown instead of charcoal for warmth */
+
+
+    /* Requested colors */
+    --light-pink: #FADADD;
+    --rose-gold: #D4AFB9;
+    --red-wood: #8D4A43;
+    --cream: #FFFDF9;
+    /* Bright cream */
+
+
+    --accent-color: var(--rose-gold);
+    --light-border: #E8D8D3;
+}
+
+
+.collection-page-container {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    width: 100%;
+    background-color: #EAE3DC;
+    color: var(--text-color);
+    font-family: 'Lato', sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+
+/* Typography */
+h1,
+h2,
+.logo,
+.collection-num {
+    font-family: 'Cinzel', serif;
+    font-weight: 400;
+    margin: 0;
+}
+
+
+p {
+    line-height: 1.8;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    color: #4A4A48;
+}
+
+
+/* Navigation */
+.elegant-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 8%;
+    border-bottom: 1px solid var(--light-border);
+}
+
+
+.logo {
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+}
+
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--text-color);
+    margin-left: 30px;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    transition: color 0.3s;
+}
+
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: var(--accent-color);
+}
+
+
+/* Hero Header */
+.hero-header {
+    text-align: center;
+    padding: 100px 20px 60px;
+}
+
+
+.hero-header h1 {
+    font-size: 3rem;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+
+
+.divider {
+    width: 60px;
+    height: 1px;
+    background-color: var(--accent-color);
+    margin: 30px auto;
+}
+
+
+.hero-header p {
+    font-size: 1.1rem;
+    font-style: italic;
+    color: var(--accent-color);
+}
+
+
+/* Collections Container */
+.collections-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 5%;
+}
+
+
+.collection-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 120px;
+    gap: 40px;
+}
+
+
+@media (min-width: 900px) {
+    .collection-item {
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 8%;
+    }
+
+
+    .collection-item.reverse {
+        flex-direction: row-reverse;
+    }
+}
+
+
+/* Imagery */
+.image-wrapper {
+    flex: 1;
+    max-width: 480px;
+    /* Forces a strict medium width */
+    max-height: 600px;
+    /* Forces a strict medium height */
+    margin: 0 auto;
+    overflow: hidden;
+    /* Soft shadow for depth, no harsh borders */
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.06);
+    position: relative;
+    width: 100%;
+}
+
+
+.image-wrapper::after {
+    /* Muted overlay for elegance */
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(45, 44, 42, 0.03);
+    pointer-events: none;
+}
+
+
+.image-wrapper img {
+    width: 100%;
+    height: 100%;
+    /* Ensure it fills the new medium height bounds perfectly */
+    display: block;
+    object-fit: cover;
+    transition: transform 2s cubic-bezier(0.33, 1, 0.68, 1);
+}
+
+
+/* Text lift on hover */
+
+
+/* Text Content */
+.text-content {
+    flex: 1;
+    max-width: 450px;
+    padding: 50px 40px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.05);
+    z-index: 2;
+    transition: transform 0.8s cubic-bezier(0.33, 1, 0.68, 1), box-shadow 0.8s cubic-bezier(0.33, 1, 0.68, 1);
+}
+
+
+.collection-item:hover .text-content {
+    transform: translateY(-10px);
+    box-shadow: 0 35px 60px rgba(0, 0, 0, 0.12);
+}
+
+
+@media (min-width: 900px) {
+    .text-content {
+        margin-left: -100px;
+        margin-top: 40px;
+    }
+
+
+    .collection-item.reverse .text-content {
+        margin-left: 0;
+        margin-right: -100px;
+    }
+}
+
+
+.collection-num {
+    font-size: 1.2rem;
+    color: var(--accent-color);
+    letter-spacing: 3px;
+    display: block;
+    margin-bottom: 15px;
+}
+
+
+.text-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
+
+
+.small-divider {
+    width: 40px;
+    height: 1px;
+    background-color: var(--light-border);
+    margin-bottom: 30px;
+}
+
+
+.text-content p {
+    font-size: 1rem;
+    margin-bottom: 40px;
+}
+
+
+/* Button */
+.explore-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--text-color);
+    border: 1px solid var(--text-color);
+    padding: 12px 30px;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: all 0.4s ease;
+}
+
+
+.explore-btn:hover {
+    background-color: var(--text-color);
+    color: var(--bg-color);
+}
+
+
+/* Footer */
+.elegant-footer {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+
+.footer-divider {
+    width: 100px;
+    height: 1px;
+    background-color: var(--light-border);
+    margin: 0 auto 30px;
+}
+
+
+.elegant-footer p {
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+    color: var(--accent-color);
+}
+
+
+/* Animations */
+.fade-in {
+    animation: fadeIn 1.5s ease both;
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+/* Luxurious Slide-in Entrance Animations */
+.image-wrapper {
+    transform: translateX(0);
+    opacity: 1;
+    transition: transform 1.2s ease-out 0.2s, opacity 1.2s ease-out 0.2s;
+}
+
+
+.slide-up:not(.visible) .image-wrapper {
+    transform: translateX(-120px);
+    opacity: 0;
+}
+
+
+/* Text entrance sliding up */
+.slide-up:not(.visible) .text-content {
+    transform: translateY(40px);
+    opacity: 0;
+}
+
+
+/* Color Box Styles */
+.box-rose-gold {
+    background-color: var(--rose-gold);
+    color: #fff;
+}
+
+
+.box-rose-gold .collection-num {
+    color: #fff;
+    opacity: 0.8;
+}
+
+
+.box-rose-gold h2 {
+    color: #fff;
+}
+
+
+.box-rose-gold p {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+
+.box-rose-gold .explore-btn {
+    border-color: #fff;
+    color: #fff;
+}
+
+
+.box-rose-gold .explore-btn:hover {
+    background-color: #fff;
+    color: var(--rose-gold);
+}
+
+
+.box-rose-gold .small-divider {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+
+.box-light-pink {
+    background-color: var(--light-pink);
+    color: var(--text-color);
+}
+
+
+.box-light-pink .collection-num {
+    color: var(--text-color);
+    opacity: 0.6;
+}
+
+
+.box-light-pink h2 {
+    color: var(--text-color);
+}
+
+
+.box-light-pink p {
+    color: rgba(74, 60, 49, 0.9);
+}
+
+
+.box-light-pink .explore-btn {
+    border-color: var(--text-color);
+    color: var(--text-color);
+}
+
+
+.box-light-pink .explore-btn:hover {
+    background-color: var(--text-color);
+    color: var(--light-pink);
+}
+
+
+.box-light-pink .small-divider {
+    background-color: rgba(74, 60, 49, 0.2);
+}
+
+
+.box-red-wood {
+    background-color: var(--red-wood);
+    color: #fff;
+}
+
+
+.box-red-wood .collection-num {
+    color: #fff;
+    opacity: 0.8;
+}
+
+
+.box-red-wood h2 {
+    color: #fff;
+}
+
+
+.box-red-wood p {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+
+.box-red-wood .explore-btn {
+    border-color: #fff;
+    color: #fff;
+}
+
+
+.box-red-wood .explore-btn:hover {
+    background-color: #fff;
+    color: var(--red-wood);
+}
+
+
+.box-red-wood .small-divider {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+
+.box-cream {
+    background-color: var(--cream);
+    color: var(--text-color);
+}
+
+
+.box-cream .collection-num {
+    color: var(--rose-gold);
+}
+
+
+.box-cream h2 {
+    color: var(--text-color);
+}
+
+
+.box-cream p {
+    color: rgba(74, 60, 49, 0.9);
+}
+
+
+.box-cream .explore-btn {
+    border-color: var(--text-color);
+    color: var(--text-color);
+}
+
+
+.box-cream .explore-btn:hover {
+    background-color: var(--text-color);
+    color: var(--cream);
+}
+
+
+/* New Premium Box for Customised Dresses */
+.box-taupe {
+    background-color: #8C7A6B;
+    /* High-end elegant taupe/sage */
+    color: #fff;
+}
+
+
+.box-taupe .collection-num {
+    color: #fff;
+    opacity: 0.8;
+}
+
+
+.box-taupe h2 {
+    color: #fff;
+}
+
+
+.box-taupe p {
+    color: rgba(255, 255, 255, 0.95);
+}
+
+
+.box-taupe .explore-btn {
+    border-color: #fff;
+    color: #fff;
+}
+
+
+.box-taupe .explore-btn:hover {
+    background-color: #fff;
+    color: #8C7A6B;
+}
+
+
+/* Animated Moving Image Effects */
+@keyframes floatMotion {
+    0% {
+        transform: scale(1.15) translate(0, 0);
+    }
+
+
+    33% {
+        transform: scale(1.18) translate(-1.5%, 1.5%);
+    }
+
+
+    66% {
+        transform: scale(1.15) translate(1.5%, -1.5%);
+    }
+
+
+    100% {
+        transform: scale(1.15) translate(0, 0);
+    }
+}
+
+
+.continuous-pan {
+    width: 100%;
+    height: 70%;
+    /* This makes the image slowly move continuously like an animated video */
+    /* animation: floatMotion 15s ease-in-out infinite; */
+}
+
+
+.animated-wrapper {
+    perspective: 1000px;
+    /* enables 3D hover effects */
+}
+
+
+/* Base image styling overrides for animated wrappers */
+.animated-wrapper img {
+    transition: transform 1.2s cubic-bezier(0.25, 1, 0.5, 1), filter 1.2s ease;
+}
+
+
+/* Unique Advanced Hover for Animated Columns */
+.animated-col {
+    perspective: 1200px;
+}
+
+
+
+
+
+
+.animated-col .text-motion {
+    transition: transform 1s cubic-bezier(0.25, 1, 0.5, 1), box-shadow 1s ease, opacity 1s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+
+/* Dramatic 3D float for the text box on hover */
+.animated-col:hover .text-motion {
+    transform: translateY(-20px) translateZ(40px) rotateY(-2deg);
+    box-shadow: -25px 45px 80px rgba(0, 0, 0, 0.15);
+    /* Elegant dark shadow for depth */
+    z-index: 5;
+}
+
+
+/* Floral Corner Accents */
+.floral-corner {
+    position: fixed;
+    width: 380px;
+    height: 380px;
+    background-image: url('file:///C:/Users/DELL/.gemini/antigravity/brain/7acdf9d0-a509-4106-8a77-da6f91526eb8/pink_floral_corner_1775813491038.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 0;
+    /* Keeps it gracefully behind the main layout blocks */
+    opacity: 0.85;
+    mix-blend-mode: multiply;
+    /* Blends perfectly into the page background */
+    pointer-events: none;
+}
+
+
+.top-left {
+    top: 0;
+    left: 0;
+}
+
+
+.top-right {
+    top: 0;
+    right: 0;
+    transform: scaleX(-1);
+}
+
+
+.bottom-left {
+    bottom: 0;
+    left: 0;
+    transform: scaleY(-1);
+}
+
+
+.bottom-right {
+    bottom: 0;
+    right: 0;
+    transform: scale(-1, -1);
+}
+

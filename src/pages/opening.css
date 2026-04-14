@@ -1,0 +1,417 @@
+:root {
+    --bg-dark: #1A1413;
+    --bg-mid: #634E4C;
+    --bg-light: #7B6360;
+    --text-primary: #F2ECEC;
+    --text-secondary: #A68C89;
+    --gold: #C0A9A6;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.opening-page-wrapper {
+    background: linear-gradient(135deg, rgba(26, 20, 19, 0.8) 0%, rgba(99, 78, 76, 0.6) 50%, rgba(123, 99, 96, 0.4) 100%),
+        url('https://res.cloudinary.com/dodmxncwc/image/upload/v1775723470/bg_o67scr.jpg') center/cover no-repeat;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--text-primary);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    position: relative;
+}
+
+
+/* Lighting / Glows */
+.bg-glow {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(80px);
+    z-index: -1;
+    opacity: 0.4;
+}
+
+.glow-1 {
+    width: 300px;
+    height: 300px;
+    background: #8D7471;
+    top: -50px;
+    left: -50px;
+}
+
+.glow-2 {
+    width: 400px;
+    height: 400px;
+    background: #634E4C;
+    bottom: -100px;
+    right: -100px;
+}
+
+
+/* UI Elements */
+.opening-nav {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    right: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.top-logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: var(--gold);
+    text-transform: uppercase;
+}
+
+.nav-btn {
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.95rem;
+    color: var(--text-primary);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 0.5rem 1.5rem;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.nav-btn:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: var(--gold);
+    color: var(--gold);
+}
+
+/* Responsive Navigation Updates */
+.desktop-nav {
+    display: none;
+    /* hidden on mobile initially */
+    gap: 20px;
+    align-items: center;
+}
+
+.nav-link {
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.95rem;
+    color: var(--text-primary);
+    transition: color 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.nav-link:hover {
+    color: black;
+}
+
+.hamburger {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.hamburger span {
+    display: block;
+    width: 30px;
+    height: 2px;
+    background-color: var(--gold);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+/* Hamburger Animation */
+.hamburger.open span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 6px);
+}
+
+.hamburger.open span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.open span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -6px);
+}
+
+/* Mobile Menu */
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    /* left: 0; */
+    width: 100%;
+    height: 50vh;
+    background: transparent;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(-100%);
+    transition: transform 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
+    z-index: 999;
+}
+
+.mobile-menu.active {
+    transform: translateY(0);
+}
+
+.mobile-nav-links {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+}
+
+.mobile-link {
+    text-decoration: none;
+    font-family: 'Playfair Display', serif;
+    font-size: 1rem;
+    /* Scaled down for mobile */
+    color: var(--text-primary);
+    transition: color 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: antiquewhite;
+}
+
+.mobile-link:hover {
+    color: black;
+}
+
+
+/* Glassmorphism Container */
+.scene-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.glass-stage {
+    position: relative;
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.5), inset 0 0 20px rgba(255, 255, 255, 0.02);
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 1s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+
+/* General Object State */
+.state-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 1.5s ease-in-out, transform 1.5s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+
+.element-center {
+    width: 160px;
+    height: 160px;
+}
+
+
+/* Machine + Fabric Initial State */
+.machine-state {
+    opacity: 1;
+    transform: scale(1);
+    z-index: 2;
+}
+
+
+.sewing-machine {
+    position: absolute;
+    animation: vibrate 0.15s linear infinite;
+    filter: drop-shadow(0 10px 15px rgba(0, 0, 0, 0.4));
+}
+
+
+.raw-fabric {
+    position: absolute;
+    filter: drop-shadow(0 5px 10px rgba(0, 0, 0, 0.5));
+}
+
+
+.needle {
+    animation: stitch 0.2s linear infinite;
+}
+
+
+/* Frock Reveal State */
+.frock-state {
+    opacity: 0;
+    transform: scale(0.9);
+    z-index: 1;
+}
+
+
+.frock {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: auto !important;
+    height: 300px !important;
+    filter: drop-shadow(0 15px 25px rgba(0, 0, 0, 0.6));
+}
+
+
+.frock-glow-circle {
+    opacity: 0;
+    transition: opacity 2s ease-in-out 1s;
+}
+
+
+/* Branding */
+.brand-container {
+    text-align: center;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1.2s ease-in-out 0.5s, transform 1.2s cubic-bezier(0.25, 0.8, 0.25, 1) 0.5s;
+}
+
+
+.brand-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 1;
+    color: #1A1413;
+    text-shadow: 0 4px 20px rgba(166, 140, 137, 0.2);
+}
+
+
+.brand-subtitle {
+    margin-top: 0.5rem;
+    font-size: 0.8rem;
+    letter-spacing: 0.5rem;
+    color: var(--text-secondary);
+}
+
+
+/* Animation Classes triggered by JS */
+.state-transformed .machine-state {
+    opacity: 0;
+    transform: scale(0.95) translateY(-5px);
+    pointer-events: none;
+}
+
+
+/* Notice how the frock blooms from the layout of the fabric */
+.state-transformed .frock-state {
+    opacity: 1;
+    transform: scale(1.1);
+    z-index: 3;
+}
+
+
+.state-transformed .frock-glow-circle {
+    opacity: 1;
+}
+
+
+.state-transformed .brand-container {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+.state-transformed .glass-stage {
+    box-shadow: 0 30px 60px rgba(26, 20, 19, 0.6), inset 0 0 30px rgba(166, 140, 137, 0.1);
+    border-color: rgba(166, 140, 137, 0.3);
+}
+
+
+/* Keyframes */
+@keyframes vibrate {
+    0% {
+        transform: translateY(0);
+    }
+
+    25% {
+        transform: translateY(-0.5px);
+    }
+
+    50% {
+        transform: translateY(0);
+    }
+
+    75% {
+        transform: translateY(0.5px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
+@keyframes stitch {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(8px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
+/* Desktop Polish */
+@media (min-width: 768px) {
+    .hamburger {
+        display: none;
+    }
+
+    .desktop-nav {
+        display: flex;
+    }
+
+    .glass-stage {
+        width: 380px;
+        height: 380px;
+    }
+
+    .element-center {
+        width: 200px;
+        height: 200px;
+    }
+
+    .frock {
+        height: 440px !important;
+    }
+}

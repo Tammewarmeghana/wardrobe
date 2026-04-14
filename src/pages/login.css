@@ -1,0 +1,351 @@
+.login-page-wrapper * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.login-page-wrapper {
+    font-family: 'Inter', sans-serif;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #000;
+}
+
+/* 1st image as the main background */
+.login-page-wrapper .background-container {
+    width: 100%;
+    height: 100%;
+    background-image: url('https://res.cloudinary.com/dodmxncwc/image/upload/v1775723470/bg_o67scr.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    animation: fadeIn 1.5s ease-out forwards;
+    opacity: 0;
+}
+
+.login-page-wrapper .split-layout {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+/* 2nd image on the left side */
+.login-page-wrapper .left-panel {
+    flex: 1;
+    /* Takes exactly 50% of the space when right padding also has flex: 1 */
+    background-image: url('https://res.cloudinary.com/dugksxwkr/image/upload/v1775740106/Screenshot_2026-04-09_183210-removebg-preview_uezgns.png');
+    background-size: 70%;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    /* Adds a semi-transparent background to hide the box-shadow bleed under the left panel if it becomes transparent */
+    background-color: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(2px);
+
+    /* Premium touch: A sleek soft shadow dividing the two halves */
+    box-shadow: 15px 0px 40px rgba(0, 0, 0, 0.6);
+    position: relative;
+    z-index: 2;
+    animation: slideInLeft 1.2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+    transform: translateX(-100%);
+
+    /* Adds a subtle zoom-in effect to the image on load */
+}
+
+/* A soft gradient overlay to add a high-end feel */
+.login-page-wrapper .left-panel::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.2) 0%, transparent 100%);
+    pointer-events: none;
+}
+
+.login-page-wrapper .right-panel {
+    flex: 1;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    overflow-y: auto;
+    /* Required for small screens to scroll the form */
+}
+
+/* Login Form Styles */
+.login-page-wrapper .login-container {
+    background-color: #FFFFFF;
+    width: 100%;
+    max-width: 400px;
+    padding: 2.5rem 2rem;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    animation: fadeInTop 1.2s ease-out forwards;
+    opacity: 0;
+    transform: translateY(20px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.login-page-wrapper .login-header {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.login-page-wrapper .login-header h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2.5rem;
+    color: #2D231E;
+    line-height: 1.1;
+    margin-bottom: 0.5rem;
+}
+
+.login-page-wrapper .brand-accent {
+    font-style: italic;
+    color: #A66F5E;
+}
+
+.login-page-wrapper .subtitle {
+    font-size: 0.9rem;
+    color: #666;
+    letter-spacing: 1px;
+}
+
+.login-page-wrapper .form-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-page-wrapper .form-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.75rem;
+    color: #2D231E;
+    margin-bottom: 0.2rem;
+}
+
+.login-page-wrapper .form-subtitle {
+    font-size: 0.85rem;
+    color: #888;
+    margin-bottom: 1rem;
+}
+
+.login-page-wrapper .login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.login-page-wrapper .input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.login-page-wrapper .input-group label {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #A66F5E;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+.login-page-wrapper .input-group input {
+    background-color: #323232;
+    border: 2px solid transparent;
+    padding: 0.8rem 1rem;
+    border-radius: 12px;
+    color: #FFF;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.9rem;
+    outline: none;
+    transition: all 0.3s;
+}
+
+.login-page-wrapper .input-group input:focus {
+    background-color: #404040;
+    border-color: #A66F5E;
+}
+
+.login-page-wrapper .input-group input::placeholder {
+    color: #999;
+}
+
+.login-page-wrapper .forgot-password {
+    align-self: flex-end;
+    font-size: 0.8rem;
+    color: #888;
+    text-decoration: none;
+    margin-top: 0.2rem;
+    transition: color 0.3s;
+}
+
+.login-page-wrapper .forgot-password:hover {
+    color: #A66F5E;
+}
+
+.login-page-wrapper .primary-btn {
+    background-color: #BC8F8F;
+    /* Rosy Brown */
+    color: #FFF;
+    font-family: 'Inter', sans-serif;
+    border: none;
+    padding: 0.8rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 0.5rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-page-wrapper .primary-btn:hover {
+    background-color: #A07878;
+    /* Darker Rosy Brown */
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.login-page-wrapper .divider {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 1rem 0;
+    color: #AAA;
+    font-size: 0.85rem;
+}
+
+.login-page-wrapper .divider::before,
+.login-page-wrapper .divider::after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid #DDD;
+}
+
+.login-page-wrapper .divider span {
+    padding: 0 10px;
+}
+
+.login-page-wrapper .social-login {
+    display: flex;
+    gap: 1rem;
+}
+
+.login-page-wrapper .social-btn {
+    flex: 1;
+    background-color: #FFF;
+    border: 1px solid #DDD;
+    font-family: 'Inter', sans-serif;
+    padding: 0.8rem;
+    border-radius: 12px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: #555;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-page-wrapper .social-btn:hover {
+    background-color: #F9F9F9;
+    border-color: #A66F5E;
+    color: #333;
+}
+
+.login-page-wrapper .footer-text {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.login-page-wrapper .link-accent {
+    color: #A66F5E;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.login-page-wrapper .link-accent:hover {
+    color: #89594A;
+}
+
+@keyframes fadeInTop {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Animations for that WOW effect */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(1.02);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+/* Make it responsive so it stays elegant even on mobile */
+@media (max-width: 768px) {
+    .login-page-wrapper .split-layout {
+        flex-direction: column;
+    }
+
+    .login-page-wrapper .left-panel {
+        height: 50vh;
+        width: 100%;
+        box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.6);
+        animation: slideInTop 1.2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+        transform: translateY(-100%);
+    }
+
+    .login-page-wrapper .right-panel {
+        min-height: 50vh;
+        height: auto;
+        width: 100%;
+        padding: 1.5rem;
+    }
+
+    .login-page-wrapper .login-container {
+        padding: 2rem;
+    }
+
+    .login-page-wrapper .login-header h1 {
+        font-size: 2.2rem;
+    }
+
+    @keyframes slideInTop {
+        from {
+            transform: translateY(-100%);
+        }
+
+        to {
+            transform: translateY(0);
+        }
+    }
+}

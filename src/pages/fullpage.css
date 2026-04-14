@@ -1,0 +1,953 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap');
+
+:root {
+    --clr-cream: #FDDDE6;
+    /* Piggy Pink */
+    --clr-light-pink: #FFB6C1;
+    /* Light Pink */
+    --clr-pastel-pink: #FFC0CB;
+    /* Simple Pink */
+    --clr-charcoal: #2D2424;
+    /* Deep, warm espresso */
+    --clr-white: #ffffff;
+    --clr-muted: #8E7A7A;
+    /* Muted rose-brown */
+    --clr-accent: #E2858E;
+    /* A deepened Tea Rose for contrast */
+
+    --font-heading: 'Playfair Display', serif;
+    --font-body: 'Outfit', sans-serif;
+
+    --transition-fast: 0.3s ease;
+    --transition-smooth: 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-body);
+    background-color: #FDDDE6;
+    /* Fallback to piggy pink */
+    background-image:
+        linear-gradient(135deg, rgba(253, 221, 230, 0.85) 0%, rgba(255, 182, 193, 0.82) 35%, rgba(255, 192, 203, 0.85) 70%, rgba(244, 194, 194, 0.9) 100%);
+    background-size: cover;
+    background-position: center top;
+    background-attachment: fixed;
+    color: var(--clr-charcoal);
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+
+.section-title {
+    font-family: var(--font-heading);
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* =======================================
+   1. MEGA NAVBAR
+======================================= */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 4%;
+    background: #F5F1EC;
+    backdrop-filter: blur(10px);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid var(--clr-light-pink);
+}
+
+.nav-left {
+    display: flex;
+    gap: 25px;
+    font-weight: 500;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.nav-link {
+    transition: color var(--transition-fast);
+}
+
+.nav-link:hover {
+    color: var(--clr-accent);
+}
+
+.nav-center h1 {
+    font-family: Brittany Signature;
+    font-size: 2rem;
+    letter-spacing: 2px;
+}
+
+.nav-right {
+    display: flex;
+    gap: 15px;
+}
+
+.icon-wrap {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    transition: transform var(--transition-fast), color var(--transition-fast);
+}
+
+.icon-wrap:hover {
+    transform: translateY(-3px);
+    color: var(--clr-accent);
+}
+
+.icon-wrap svg {
+    fill: currentColor;
+    width: 100%;
+    height: 100%;
+}
+
+/* =======================================
+   2. MAIN HERO CAROUSEL
+======================================= */
+.hero-carousel-container {
+    position: relative;
+    width: 100%;
+    height: 85vh;
+    overflow: hidden;
+}
+
+.carousel-track {
+    display: flex;
+    width: 500%;
+    /* 5 slides */
+    height: 100%;
+    transition: transform 0.8s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.hero-slide {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.blur-box {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+    /* background: rgba(253, 251, 247, 0.85); */
+    padding: 50px;
+    border-radius: 4px;
+    max-width: 450px;
+    /* backdrop-filter: blur(8px); */
+}
+
+.box-right {
+    left: auto;
+    right: 3%;
+    text-align: right;
+}
+
+.box-center {
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.blur-box h2 {
+    font-family: var(--font-heading);
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.blur-box p {
+    font-size: 1.1rem;
+    color: var(--clr-muted);
+    margin-bottom: 30px;
+}
+
+/* Wipe Button */
+.btn-wipe {
+    display: inline-block;
+    padding: 12px 30px;
+    border: 1px solid var(--clr-charcoal);
+    position: relative;
+    overflow: hidden;
+    color: var(--clr-charcoal);
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    z-index: 1;
+    transition: color var(--transition-fast);
+}
+
+.btn-wipe::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: var(--clr-charcoal);
+    z-index: -1;
+    transition: left var(--transition-smooth);
+}
+
+.btn-wipe:hover {
+    color: var(--clr-cream);
+}
+
+.btn-wipe:hover::before {
+    left: 0;
+}
+
+/* Dress Hover Pulse */
+.dress-hover-point {
+    position: absolute;
+    top: 40%;
+    right: 30%;
+    cursor: pointer;
+}
+
+.pulse {
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: var(--clr-white);
+    border-radius: 50%;
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7);
+    animation: pulser 2s infinite;
+}
+
+@keyframes pulser {
+    70% {
+        box-shadow: 0 0 0 20px rgba(255, 255, 255, 0);
+    }
+
+    100% {
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+    }
+}
+
+.dress-info {
+    position: absolute;
+    top: -60px;
+    left: 40px;
+    background: var(--clr-white);
+    padding: 10px;
+    border-radius: 4px;
+    opacity: 0;
+    transform: translateX(20px);
+    pointer-events: none;
+    transition: all var(--transition-smooth);
+    width: 200px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.dress-hover-point:hover .dress-info {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.dress-info img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+/* Carousel Buttons */
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(253, 251, 247, 0.5);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background var(--transition-fast);
+}
+
+.carousel-btn:hover {
+    background: var(--clr-white);
+}
+
+.left-btn {
+    left: 20px;
+}
+
+.right-btn {
+    right: 20px;
+}
+
+.carousel-dots {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    background: rgba(253, 251, 247, 0.5);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background var(--transition-fast);
+}
+
+.dot.active {
+    background: var(--clr-white);
+}
+
+/* =======================================
+   3. DISPATCH BANNER
+======================================= */
+.dispatch-banner {
+    background: var(--clr-cream);
+    background-color: #F7F3EF;
+    /* Piggy Pink */
+    color: var(--clr-charcoal);
+    text-align: center;
+    padding: 30px 5%;
+}
+
+.dispatch-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.icon-fast {
+    width: 40px;
+    height: 40px;
+    background: var(--clr-cream);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-fast svg {
+    width: 20px;
+    fill: var(--clr-charcoal);
+}
+
+.dispatch-content h2 {
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+}
+
+.dispatch-content p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* =======================================
+   4. OUR BESTS CAROUSEL
+======================================= */
+.our-bests {
+    padding: 80px 0;
+    background: #EFB7BE;
+}
+
+.bests-carousel-wrapper {
+    position: relative;
+    padding: 0 5%;
+}
+
+.bests-track {
+    display: flex;
+    gap: 20px;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    padding-bottom: 20px;
+}
+
+.best-card {
+    min-width: 300px;
+    flex-shrink: 0;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.best-card img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    transition: transform var(--transition-smooth);
+}
+
+.best-card:hover img {
+    transform: scale(1.05);
+}
+
+.card-title {
+    position: absolute;
+    bottom: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: max-content;
+    background: white;
+    color: #5C4A4A;
+    padding: 12px 30px;
+    border-radius: 30px;
+    text-align: center;
+    font-family: var(--font-heading);
+    font-size: 1.2rem;
+    font-weight: 500;
+    transition: bottom var(--transition-smooth);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.best-card:hover .card-title {
+    bottom: 0;
+}
+
+.bests-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: var(--clr-white);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    z-index: 10;
+}
+
+.bests-btn.left {
+    left: 2%;
+}
+
+.bests-btn.right {
+    right: 2%;
+}
+
+/* =======================================
+   5. LOGOS STRIP
+======================================= */
+.features-strip {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 5%;
+    background: #F3ECE3;
+    border-top: 1px solid var(--clr-light-pink);
+    border-bottom: 1px solid var(--clr-light-pink);
+}
+
+.feature-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.feature-item svg {
+    width: 40px;
+    height: 40px;
+    fill: var(--clr-accent);
+}
+
+.feature-item span {
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.85rem;
+}
+
+/* =======================================
+   6. VIDEO SHOPPING ELEMENT
+======================================= */
+.video-shopping-element {
+    display: flex;
+    align-items: center;
+    background: #F3ECE3;
+    padding: 80px 5%;
+    gap: 50px;
+}
+
+.video-content {
+    flex: 1;
+}
+
+.video-content h2 {
+    font-family: var(--font-heading);
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.video-content p {
+    font-size: 1.1rem;
+    color: var(--clr-muted);
+    margin-bottom: 40px;
+    line-height: 1.6;
+}
+
+.btn-highlight {
+    display: inline-block;
+    padding: 15px 40px;
+    background: var(--clr-accent);
+    color: var(--clr-white);
+    border-radius: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 500;
+    transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.btn-highlight:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(224, 152, 168, 0.4);
+}
+
+.video-graphic {
+    flex: 1;
+    position: relative;
+    text-align: center;
+}
+
+.video-graphic img {
+    width: 80%;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05);
+}
+
+.pulse-ring {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 100px;
+    border: 2px solid var(--clr-pastel-pink);
+    border-radius: 50%;
+    animation: ping 2s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
+
+@keyframes ping {
+
+    75%,
+    100% {
+        transform: translate(-50%, -50%) scale(3);
+        opacity: 0;
+    }
+}
+
+/* =======================================
+   7. CHIP CAROUSEL
+======================================= */
+.names-carousel {
+    padding: 40px 0;
+    background: #F7F1E8;
+    overflow: hidden;
+}
+
+.names-track {
+    display: flex;
+    gap: 30px;
+    padding: 0 5%;
+    white-space: nowrap;
+    overflow-x: auto;
+    scrollbar-width: none;
+}
+
+.names-track::-webkit-scrollbar {
+    display: none;
+}
+
+.name-pill {
+    padding: 12px 30px;
+    border: 1px solid var(--clr-pastel-pink);
+    border-radius: 30px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background var(--transition-fast), color var(--transition-fast);
+}
+
+.name-pill:hover {
+    background: var(--clr-pastel-pink);
+    color: var(--clr-white);
+}
+
+/* =======================================
+   8. BRIDAL SESSIONS
+======================================= */
+.bridal-sessions {
+    display: flex;
+    align-items: center;
+    background: #E9C1BE;
+    padding: 0;
+    /* image bleed */
+}
+
+.bridal-graphic {
+    flex: 1;
+}
+
+.bridal-graphic img {
+    width: 100%;
+    height: 100%;
+    min-height: 500px;
+    object-fit: cover;
+    display: block;
+}
+
+.bridal-text {
+    flex: 1;
+    padding: 80px;
+}
+
+.bridal-text h2 {
+    font-family: var(--font-heading);
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.bridal-text p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 40px;
+}
+
+/* =======================================
+   9. HOVER REVEAL CARD
+======================================= */
+.hover-unveil-section {
+    padding: 100px 5%;
+    background: #F3EEE8;
+    /* Pinkish White */
+}
+
+.magic-hover-card {
+    position: relative;
+    max-width: 900px;
+    height: 500px;
+    margin: 0 auto;
+    background: transparent;
+    border: 1px solid var(--clr-pastel-pink);
+    border-radius: 12px;
+    overflow: hidden;
+    cursor: crosshair;
+}
+
+.front-cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    /* Whitish pink */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.front-cover h3 {
+    font-family: var(--font-heading);
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.hidden-layer {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.hidden-dress {
+    flex: 1 1 33.33%;
+    border-right: 1px solid var(--clr-pastel-pink);
+    overflow: hidden;
+    cursor: pointer;
+    position: relative; /* Support absolute overlay */
+    /* Smooth transitions for scaling and hiding */
+    transition: flex 0.5s ease-in-out, opacity 0.4s ease-in-out;
+}
+
+.hidden-dress:last-child {
+    border-right: none;
+}
+
+.hidden-dress img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease-in-out;
+}
+
+/* When user hovers over the parent, hide all non-hovered children */
+.hidden-layer:hover .hidden-dress {
+    flex: 0 0 0%;
+    opacity: 0;
+    border-right: none;
+}
+
+/* Smoothly expand the hovered child to take 100% of the container width */
+.hidden-layer:hover .hidden-dress:hover {
+    flex: 1 1 100%;
+    opacity: 1;
+}
+
+/* Optional enhancement: slight zoom-in effect on hovered image */
+.hidden-layer:hover .hidden-dress:hover img {
+    transform: scale(1.05);
+}
+
+/* --- Product Overlay CSS --- */
+.product-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(253, 236, 239, 0.85); /* Semi-transparent blush / soft pink */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 30px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.4s ease-in-out, visibility 0.4s ease-in-out;
+}
+
+.hidden-layer:hover .hidden-dress:hover .product-overlay {
+    opacity: 1;
+    visibility: visible;
+}
+
+.product-content {
+    transform: translateY(30px);
+    transition: transform 0.4s ease-in-out;
+}
+
+.hidden-layer:hover .hidden-dress:hover .product-content {
+    transform: translateY(0);
+}
+
+.product-title {
+    font-family: var(--font-heading);
+    color: #5C4A4A; /* Dark brown / muted rose */
+    font-size: 2.2rem;
+    margin-bottom: 12px;
+}
+
+.product-desc {
+    color: #7B6868; /* Soft muted */
+    font-size: 1.1rem;
+    line-height: 1.5;
+    margin-bottom: 25px;
+    font-family: var(--font-body);
+}
+
+.product-btn {
+    background: #F8D1D1; /* Soft pink background */
+    color: var(--clr-charcoal);
+    padding: 12px 30px;
+    border-radius: 30px;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+.product-btn:hover {
+    background: #E8B9B9; /* Hover slightly darker shade */
+}
+
+/* Make it responsive: stack vertically on smaller screens */
+@media (max-width: 768px) {
+    .hidden-layer {
+        flex-direction: column;
+    }
+    .hidden-dress {
+        border-right: none;
+        border-bottom: 1px solid var(--clr-pastel-pink);
+    }
+    .hidden-dress:last-child {
+        border-bottom: none;
+    }
+   
+    /* Show overlay content always visible or softly visible on mobile */
+    .product-overlay {
+        opacity: 1;
+        visibility: visible;
+        background: rgba(253, 236, 239, 0.7);
+    }
+    .product-content {
+        transform: translateY(0);
+    }
+}
+
+/* =======================================
+   10. CUSTOMER STORIES
+======================================= */
+.customer-stories {
+    padding: 80px 5%;
+    background: url('https://res.cloudinary.com/dugksxwkr/image/upload/v1775989779/e8cff058-dd3a-4fd4-a53b-6ba851a1b64a_sxf5pl.png') center/cover no-repeat;
+    text-align: center;
+}
+
+.stories-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.story-card {
+    padding: 40px;
+    background: #F6EDED;
+    border-radius: 8px;
+    border: 1px solid var(--clr-light-pink);
+}
+
+.stars {
+    color: var(--clr-accent);
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.story-card p {
+    font-style: italic;
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.story-card h4 {
+    font-family: var(--font-heading);
+    color: var(--clr-charcoal);
+}
+
+/* =======================================
+   11. MEGA FOOTER
+======================================= */
+.mega-footer {
+    background: #F5F1EC;
+    /* Golden Pink */
+    padding: 80px 5% 0;
+    border-top: 1px solid var(--clr-pastel-pink);
+}
+
+.footer-columns {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 2fr;
+    gap: 40px;
+    margin-bottom: 60px;
+}
+
+.ft-col h3 {
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    margin-bottom: 25px;
+}
+
+.ft-col ul {
+    list-style: none;
+}
+
+.ft-col ul li {
+    margin-bottom: 12px;
+}
+
+.ft-col ul li a {
+    transition: color var(--transition-fast);
+    color: var(--clr-muted);
+}
+
+.ft-col ul li a:hover {
+    color: var(--clr-accent);
+}
+
+.social-image-grid {
+    display: flex;
+    gap: 15px;
+}
+
+.social-image-grid img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: transform var(--transition-fast);
+}
+
+.social-image-grid img:hover {
+    transform: scale(1.1);
+}
+
+.footer-copyright {
+    text-align: center;
+    padding: 25px 0;
+    border-top: 1px solid rgba(248, 187, 208, 0.4);
+    color: var(--clr-muted);
+    font-size: 0.9rem;
+}
+
+/* Responsive constraints */
+@media (max-width: 1024px) {
+    .dispatch-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .video-shopping-element,
+    .bridal-sessions {
+        flex-direction: column;
+    }
+
+    .bridal-text {
+        padding: 40px;
+        text-align: center;
+    }
+
+    .features-strip {
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    .stories-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-columns {
+        grid-template-columns: 1fr 1fr;
+    }
+}
