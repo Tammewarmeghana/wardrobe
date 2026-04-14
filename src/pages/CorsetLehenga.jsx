@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import './gownsaree.css';
 import './sidebar.css';
+import WishlistHeart from '../components/WishlistHeart';
 
 function CorsetLehenga() {
     const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -72,7 +73,8 @@ function CorsetLehenga() {
                 <div className="product-grid">
 
                     {/* CARD 1 */}
-                    <div className="product-card">
+                    <div className="product-card" style={{ position: "relative" }}>
+                        <WishlistHeart item={{ id: "Premium Pre-Draped Saree Gown in Soft Georgette with Embellished Belt", title: "Premium Pre-Draped Saree Gown in Soft Georgette with Embellished Belt", image: "https://res.cloudinary.com/dugksxwkr/image/upload/v1776061739/c22-removebg-preview_rqfcvq.png", brand: "Maison d'Élégance", price: <><span>₹</span>14,999</> }} />
                         <img src="https://res.cloudinary.com/dugksxwkr/image/upload/v1776061739/c22-removebg-preview_rqfcvq.png"
                             alt="Saree Gown" className="card-image" style={{ backgroundColor: '#e5ccce' }} />
                         <div className="card-content">
@@ -102,7 +104,8 @@ function CorsetLehenga() {
                     </div>
 
                     {/* CARD 2 */}
-                    <div className="product-card">
+                    <div className="product-card" style={{ position: "relative" }}>
+                        <WishlistHeart item={{ id: "Modern Indo-Western Fusion Saree with Attached Pallu", title: "Modern Indo-Western Fusion Saree with Attached Pallu", image: "https://res.cloudinary.com/dugksxwkr/image/upload/v1776061731/c21-removebg-preview_ao44yj.png", brand: "Queen's Wardrobe", price: <><span>₹</span>18,499</> }} />
                         <img src="https://res.cloudinary.com/dugksxwkr/image/upload/v1776061731/c21-removebg-preview_ao44yj.png"
                             alt="Indo Western Saree" className="card-image" />
                         <div className="card-content">
@@ -131,7 +134,8 @@ function CorsetLehenga() {
                     </div>
 
                     {/* CARD 3 */}
-                    <div className="product-card">
+                    <div className="product-card" style={{ position: "relative" }}>
+                        <WishlistHeart item={{ id: "Cocktail Saree Gown with Cape Sleeves", title: "Cocktail Saree Gown with Cape Sleeves", image: "https://res.cloudinary.com/dugksxwkr/image/upload/v1776061720/c20-removebg-preview_ujyd9l.png", brand: "Western Elegance", price: <><span>₹</span>24,999</> }} />
                         <img src="https://res.cloudinary.com/dugksxwkr/image/upload/v1776061720/c20-removebg-preview_ujyd9l.png"
                             alt="Modern Saree" className="card-image" />
                         <div className="card-content">
@@ -159,7 +163,8 @@ function CorsetLehenga() {
                     </div>
 
                     {/* CARD 4 */}
-                    <div className="product-card">
+                    <div className="product-card" style={{ position: "relative" }}>
+                        <WishlistHeart item={{ id: "Heritage Silk Trim Saree Gown for Wedding Receptions", title: "Heritage Silk Trim Saree Gown for Wedding Receptions", image: "https://res.cloudinary.com/dugksxwkr/image/upload/v1776061711/c19-removebg-preview_w0pybf.png", brand: "Maison d'Élégance", price: <><span>₹</span>21,000</> }} />
                         <img src="https://res.cloudinary.com/dugksxwkr/image/upload/v1776061711/c19-removebg-preview_w0pybf.png"
                             alt="Traditional Saree Gown" className="card-image" style={{ backgroundColor: '#fceceb' }} />
                         <div className="card-content">
@@ -189,7 +194,8 @@ function CorsetLehenga() {
                     </div>
 
                     {/* CARD 5 */}
-                    <div className="product-card">
+                    <div className="product-card" style={{ position: "relative" }}>
+                        <WishlistHeart item={{ id: "Custom-Fit Sequined Saree Dress", title: "Custom-Fit Sequined Saree Dress", image: "https://res.cloudinary.com/dugksxwkr/image/upload/v1776061701/c18-removebg-preview_axufpn.png", brand: "Queen's Bespoke", price: <><span>₹</span>38,500</> }} />
                         <img src="https://res.cloudinary.com/dugksxwkr/image/upload/v1776061701/c18-removebg-preview_axufpn.png"
                             alt="Bespoke Saree Gown" className="card-image" style={{ backgroundColor: '#e5e0dc' }} />
                         <div className="card-content">
@@ -219,7 +225,8 @@ function CorsetLehenga() {
                     </div>
 
                     {/* CARD 6 */}
-                    <div className="product-card">
+                    <div className="product-card" style={{ position: "relative" }}>
+                        <WishlistHeart item={{ id: "Embroidered Pastel Saree Gown with Dupatta", title: "Embroidered Pastel Saree Gown with Dupatta", image: "https://res.cloudinary.com/dugksxwkr/image/upload/v1776061691/c17-removebg-preview_jyw3m5.png", brand: "Maison d'Élégance", price: <><span>₹</span>19,500</> }} />
                         <img src="https://res.cloudinary.com/dugksxwkr/image/upload/v1776061691/c17-removebg-preview_jyw3m5.png"
                             alt="Embroidered Saree Gown" className="card-image" style={{ backgroundColor: '#fceceb' }} />
                         <div className="card-content">
@@ -243,7 +250,8 @@ function CorsetLehenga() {
                     </div>
 
                     {/* CARD 7 */}
-                    <div className="product-card">
+                    <div className="product-card" style={{ position: "relative" }}>
+                        <WishlistHeart item={{ id: "Olive Green Sequin Trim Saree", title: "Olive Green Sequin Trim Saree", image: "https://res.cloudinary.com/dugksxwkr/image/upload/v1776061682/c16-removebg-preview_l0bmfp.png", brand: "Queen's Wardrobe", price: <><span>₹</span>16,200</> }} />
                         <img src="https://res.cloudinary.com/dugksxwkr/image/upload/v1776061682/c16-removebg-preview_l0bmfp.png"
                             alt="Sequin Saree" className="card-image" />
                         <div className="card-content">
@@ -268,7 +276,8 @@ function CorsetLehenga() {
                     </div>
 
                     {/* CARD 8 */}
-                    <div className="product-card">
+                    <div className="product-card" style={{ position: "relative" }}>
+                        <WishlistHeart item={{ id: "Midnight Black Chiffon Saree Gown", title: "Midnight Black Chiffon Saree Gown", image: "https://res.cloudinary.com/dugksxwkr/image/upload/v1776061673/c15-removebg-preview_gderc4.png", brand: "Western Elegance", price: <><span>₹</span>12,499</> }} />
                         <img src="https://res.cloudinary.com/dugksxwkr/image/upload/v1776061673/c15-removebg-preview_gderc4.png"
                             alt="Chiffon Saree Gown" className="card-image" />
                         <div className="card-content">
@@ -293,7 +302,8 @@ function CorsetLehenga() {
                     </div>
 
                     {/* CARD 9 */}
-                    <div className="product-card">
+                    <div className="product-card" style={{ position: "relative" }}>
+                        <WishlistHeart item={{ id: "Royal Navy Blue Designer Saree with Floral Appliques", title: "Royal Navy Blue Designer Saree with Floral Appliques", image: "https://res.cloudinary.com/dugksxwkr/image/upload/v1776061663/c14-removebg-preview_zq5gtg.png", brand: "Maison d'Élégance", price: <><span>₹</span>28,000</> }} />
                         <img src="https://res.cloudinary.com/dugksxwkr/image/upload/v1776061663/c14-removebg-preview_zq5gtg.png"
                             alt="Royal Saree" className="card-image" style={{ backgroundColor: '#fceceb' }} />
                         <div className="card-content">
@@ -317,7 +327,8 @@ function CorsetLehenga() {
                     </div>
 
                     {/* CARD 10 */}
-                    <div className="product-card">
+                    <div className="product-card" style={{ position: "relative" }}>
+                        <WishlistHeart item={{ id: "Nude Beige Premium Drape", title: "Nude Beige Premium Drape", image: "https://res.cloudinary.com/dugksxwkr/image/upload/v1776061626/c13-removebg-preview_y7i7zp.png", brand: "Queen's Bespoke", price: <><span>₹</span>36,100</> }} />
                         <img src="https://res.cloudinary.com/dugksxwkr/image/upload/v1776061626/c13-removebg-preview_y7i7zp.png"
                             alt="Premium Drape" className="card-image" style={{ backgroundColor: '#e5e0dc' }} />
                         <div className="card-content">
@@ -341,7 +352,8 @@ function CorsetLehenga() {
                     </div>
 
                     {/* CARD 11 */}
-                    <div className="product-card">
+                    <div className="product-card" style={{ position: "relative" }}>
+                        <WishlistHeart item={{ id: "Draped Georgette Saree Gown in Rose Pink", title: "Draped Georgette Saree Gown in Rose Pink", image: "https://res.cloudinary.com/dugksxwkr/image/upload/v1776061618/c12-removebg-preview_egohmx.png", brand: "Maison d'Élégance", price: <><span>₹</span>18,000</> }} />
                         <img src="https://res.cloudinary.com/dugksxwkr/image/upload/v1776061618/c12-removebg-preview_egohmx.png"
                             alt="Saree Gown" className="card-image" style={{ backgroundColor: '#e5ccce' }} />
                         <div className="card-content">
@@ -364,7 +376,8 @@ function CorsetLehenga() {
                     </div>
 
                     {/* CARD 12 */}
-                    <div className="product-card">
+                    <div className="product-card" style={{ position: "relative" }}>
+                        <WishlistHeart item={{ id: "Pleated Indo-Western Saree with Matching Clutch", title: "Pleated Indo-Western Saree with Matching Clutch", image: "https://res.cloudinary.com/dugksxwkr/image/upload/v1776061607/c11-removebg-preview_tetgp9.png", brand: "Queen's Wardrobe", price: <><span>₹</span>12,500</> }} />
                         <img src="https://res.cloudinary.com/dugksxwkr/image/upload/v1776061607/c11-removebg-preview_tetgp9.png"
                             alt="Saree Gown" className="card-image" />
                         <div className="card-content">
@@ -387,7 +400,8 @@ function CorsetLehenga() {
                     </div>
 
                     {/* CARD 13 */}
-                    <div className="product-card">
+                    <div className="product-card" style={{ position: "relative" }}>
+                        <WishlistHeart item={{ id: "Minimalist Evening Gown Saree", title: "Minimalist Evening Gown Saree", image: "https://res.cloudinary.com/dugksxwkr/image/upload/v1776061598/c10-removebg-preview_kdtsvb.png", brand: "Western Elegance", price: <><span>₹</span>21,000</> }} />
                         <img src="https://res.cloudinary.com/dugksxwkr/image/upload/v1776061598/c10-removebg-preview_kdtsvb.png"
                             alt="Saree Gown" className="card-image" />
                         <div className="card-content">
@@ -410,7 +424,8 @@ function CorsetLehenga() {
                     </div>
 
                     {/* CARD 14 */}
-                    <div className="product-card">
+                    <div className="product-card" style={{ position: "relative" }}>
+                        <WishlistHeart item={{ id: "Handloom Silk Saree Gown for Receptions", title: "Handloom Silk Saree Gown for Receptions", image: "https://res.cloudinary.com/dugksxwkr/image/upload/v1776061586/c9-removebg-preview_hfdtzv.png", brand: "Heritage Silks", price: <><span>₹</span>14,000</> }} />
                         <img src="https://res.cloudinary.com/dugksxwkr/image/upload/v1776061586/c9-removebg-preview_hfdtzv.png"
                             alt="Traditional Saree Gown" className="card-image" style={{ backgroundColor: '#fceceb' }} />
                         <div className="card-content">
@@ -434,7 +449,8 @@ function CorsetLehenga() {
                     </div>
 
                     {/* CARD 15 */}
-                    <div className="product-card">
+                    <div className="product-card" style={{ position: "relative" }}>
+                        <WishlistHeart item={{ id: "Signature Embellished Custom Saree", title: "Signature Embellished Custom Saree", image: "https://res.cloudinary.com/dugksxwkr/image/upload/v1776061567/c8-removebg-preview_yipuhv.png", brand: "Queen's Bespoke", price: <><span>₹</span>45,000</> }} />
                         <img src="https://res.cloudinary.com/dugksxwkr/image/upload/v1776061567/c8-removebg-preview_yipuhv.png"
                             alt="Bespoke Saree Gown" className="card-image" style={{ backgroundColor: '#e5e0dc' }} />
                         <div className="card-content">
@@ -457,7 +473,8 @@ function CorsetLehenga() {
                     </div>
 
                     {/* CARD 16 */}
-                    <div className="product-card">
+                    <div className="product-card" style={{ position: "relative" }}>
+                        <WishlistHeart item={{ id: "Peach Pastel Georgette Gown Saree", title: "Peach Pastel Georgette Gown Saree", image: "https://res.cloudinary.com/dugksxwkr/image/upload/v1776061553/c7-removebg-preview_rbcw8q.png", brand: "Maison d'Élégance", price: <><span>₹</span>13,300</> }} />
                         <img src="https://res.cloudinary.com/dugksxwkr/image/upload/v1776061553/c7-removebg-preview_rbcw8q.png"
                             alt="Pastel Saree" className="card-image" style={{ backgroundColor: '#fceceb' }} />
                         <div className="card-content">
@@ -480,7 +497,8 @@ function CorsetLehenga() {
                     </div>
 
                     {/* CARD 17 */}
-                    <div className="product-card">
+                    <div className="product-card" style={{ position: "relative" }}>
+                        <WishlistHeart item={{ id: "Festive Green Pre-Stitched Gown", title: "Festive Green Pre-Stitched Gown", image: "https://res.cloudinary.com/dugksxwkr/image/upload/v1776061543/c6-removebg-preview_qhd0qm.png", brand: "Queen's Wardrobe", price: <><span>₹</span>15,400</> }} />
                         <img src="https://res.cloudinary.com/dugksxwkr/image/upload/v1776061543/c6-removebg-preview_qhd0qm.png"
                             alt="Festive Gown" className="card-image" />
                         <div className="card-content">
@@ -503,7 +521,8 @@ function CorsetLehenga() {
                     </div>
 
                     {/* CARD 18 */}
-                    <div className="product-card">
+                    <div className="product-card" style={{ position: "relative" }}>
+                        <WishlistHeart item={{ id: "Classic Black Contemporary Wrap Saree", title: "Classic Black Contemporary Wrap Saree", image: "https://res.cloudinary.com/dugksxwkr/image/upload/v1776061534/c5-removebg-preview_gxzxms.png", brand: "Western Elegance", price: <><span>₹</span>18,000</> }} />
                         <img src="https://res.cloudinary.com/dugksxwkr/image/upload/v1776061534/c5-removebg-preview_gxzxms.png"
                             alt="Gown" className="card-image" />
                         <div className="card-content">
@@ -526,7 +545,8 @@ function CorsetLehenga() {
                     </div>
 
                     {/* CARD 19 */}
-                    <div className="product-card">
+                    <div className="product-card" style={{ position: "relative" }}>
+                        <WishlistHeart item={{ id: "Rich Indigo Occasion Wear Layout Saree", title: "Rich Indigo Occasion Wear Layout Saree", image: "https://res.cloudinary.com/dugksxwkr/image/upload/v1776061517/c3_-removebg-preview_mthnzv.png", brand: "Heritage Silks", price: <><span>₹</span>21,000</> }} />
                         <img src="https://res.cloudinary.com/dugksxwkr/image/upload/v1776061517/c3_-removebg-preview_mthnzv.png"
                             alt="Royal Saree" className="card-image" style={{ backgroundColor: '#fceceb' }} />
                         <div className="card-content">
@@ -549,7 +569,8 @@ function CorsetLehenga() {
                     </div>
 
                     {/* CARD 20 */}
-                    <div className="product-card">
+                    <div className="product-card" style={{ position: "relative" }}>
+                        <WishlistHeart item={{ id: "Taupe High-Society Event Saree", title: "Taupe High-Society Event Saree", image: "https://res.cloudinary.com/dugksxwkr/image/upload/v1776061508/c2-removebg-preview_uhl8vu.png", brand: "Queen's Bespoke", price: <><span>₹</span>30,800</> }} />
                         <img src="https://res.cloudinary.com/dugksxwkr/image/upload/v1776061508/c2-removebg-preview_uhl8vu.png"
                             alt="Premium Drape" className="card-image" style={{ backgroundColor: '#e5e0dc' }} />
                         <div className="card-content">

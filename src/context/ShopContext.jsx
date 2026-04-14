@@ -11,9 +11,10 @@ export const ShopProvider = ({ children }) => {
   const [cartItems, setCartItems] = useState([]);
 
   const toggleWishlist = (item) => {
-    setWishlistItems(prev => 
-      prev.includes(item) ? prev.filter(i => i !== item) : [...prev, item]
-    );
+    setWishlistItems(prev => {
+      const exists = prev.some(i => i.id === item.id);
+      return exists ? prev.filter(i => i.id !== item.id) : [...prev, item];
+    });
   };
 
   const addToCart = (item) => {

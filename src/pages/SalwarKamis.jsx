@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import './gownsaree.css';
 import './sidebar.css';
+import WishlistHeart from '../components/WishlistHeart';
 
 function SalwarKamis() {
     const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -72,7 +73,8 @@ function SalwarKamis() {
                 <div className="product-grid">
 
                     {/* CARD 1 */}
-                    <div className="product-card">
+                    <div className="product-card" style={{ position: "relative" }}>
+                        <WishlistHeart item={{ id: "Premium Pre-Draped Saree Gown in Soft Georgette with Embellished Belt", title: "Premium Pre-Draped Saree Gown in Soft Georgette with Embellished Belt", image: "https://res.cloudinary.com/dugksxwkr/image/upload/v1776140909/d77e0ce2c7864d571178c1922f6d179d-removebg-preview_1_wjcn2u.png", brand: "Maison d'Élégance", price: <><span>₹</span>14,999</> }} />
                         <img src="https://res.cloudinary.com/dugksxwkr/image/upload/v1776140909/d77e0ce2c7864d571178c1922f6d179d-removebg-preview_1_wjcn2u.png"
                             alt="Saree Gown" className="card-image" style={{ backgroundColor: '#e5ccce' }} />
                         <div className="card-content">
@@ -102,7 +104,8 @@ function SalwarKamis() {
                     </div>
 
                     {/* CARD 2 */}
-                    <div className="product-card">
+                    <div className="product-card" style={{ position: "relative" }}>
+                        <WishlistHeart item={{ id: "Modern Indo-Western Fusion Saree with Attached Pallu", title: "Modern Indo-Western Fusion Saree with Attached Pallu", image: "https://res.cloudinary.com/dugksxwkr/image/upload/v1776140943/e9ef954f74a7de0e5399872fee909cc7-removebg-preview_skae57.png", brand: "Queen's Wardrobe", price: <><span>₹</span>18,499</> }} />
                         <img src="https://res.cloudinary.com/dugksxwkr/image/upload/v1776140943/e9ef954f74a7de0e5399872fee909cc7-removebg-preview_skae57.png"
                             alt="Indo Western Saree" className="card-image" />
                         <div className="card-content">
@@ -131,7 +134,8 @@ function SalwarKamis() {
                     </div>
 
                     {/* CARD 3 */}
-                    <div className="product-card">
+                    <div className="product-card" style={{ position: "relative" }}>
+                        <WishlistHeart item={{ id: "Cocktail Saree Gown with Cape Sleeves", title: "Cocktail Saree Gown with Cape Sleeves", image: "https://res.cloudinary.com/dugksxwkr/image/upload/v1776140955/s3-removebg-preview_dy73sx.png", brand: "Western Elegance", price: <><span>₹</span>24,999</> }} />
                         <img src="https://res.cloudinary.com/dugksxwkr/image/upload/v1776140955/s3-removebg-preview_dy73sx.png"
                             alt="Modern Saree" className="card-image" />
                         <div className="card-content">
@@ -159,7 +163,8 @@ function SalwarKamis() {
                     </div>
 
                     {/* CARD 4 */}
-                    <div className="product-card">
+                    <div className="product-card" style={{ position: "relative" }}>
+                        <WishlistHeart item={{ id: "Heritage Silk Trim Saree Gown for Wedding Receptions", title: "Heritage Silk Trim Saree Gown for Wedding Receptions", image: "https://res.cloudinary.com/dugksxwkr/image/upload/v1776140970/s4-removebg-preview_cnz9yl.png", brand: "Maison d'Élégance", price: <><span>₹</span>21,000</> }} />
                         <img src="https://res.cloudinary.com/dugksxwkr/image/upload/v1776140970/s4-removebg-preview_cnz9yl.png"
                             alt="Traditional Saree Gown" className="card-image" style={{ backgroundColor: '#fceceb' }} />
                         <div className="card-content">
@@ -189,7 +194,8 @@ function SalwarKamis() {
                     </div>
 
                     {/* CARD 5 */}
-                    <div className="product-card">
+                    <div className="product-card" style={{ position: "relative" }}>
+                        <WishlistHeart item={{ id: "Custom-Fit Sequined Saree Dress", title: "Custom-Fit Sequined Saree Dress", image: "https://res.cloudinary.com/dugksxwkr/image/upload/v1776140982/s7-removebg-preview_sqgsta.png", brand: "Queen's Bespoke", price: <><span>₹</span>38,500</> }} />
                         <img src="https://res.cloudinary.com/dugksxwkr/image/upload/v1776140982/s7-removebg-preview_sqgsta.png"
                             alt="Bespoke Saree Gown" className="card-image" style={{ backgroundColor: '#e5e0dc' }} />
                         <div className="card-content">
@@ -219,7 +225,8 @@ function SalwarKamis() {
                     </div>
 
                     {/* CARD 6 */}
-                    <div className="product-card">
+                    <div className="product-card" style={{ position: "relative" }}>
+                        <WishlistHeart item={{ id: "Embroidered Pastel Saree Gown with Dupatta", title: "Embroidered Pastel Saree Gown with Dupatta", image: "https://res.cloudinary.com/dugksxwkr/image/upload/v1776141008/s8-removebg-preview_1_wxkfjh.png", brand: "Maison d'Élégance", price: <><span>₹</span>19,500</> }} />
                         <img src="https://res.cloudinary.com/dugksxwkr/image/upload/v1776141008/s8-removebg-preview_1_wxkfjh.png"
                             alt="Embroidered Saree Gown" className="card-image" style={{ backgroundColor: '#fceceb' }} />
                         <div className="card-content">
@@ -243,7 +250,8 @@ function SalwarKamis() {
                     </div>
 
                     {/* CARD 7 */}
-                    <div className="product-card">
+                    <div className="product-card" style={{ position: "relative" }}>
+                        <WishlistHeart item={{ id: "Olive Green Sequin Trim Saree", title: "Olive Green Sequin Trim Saree", image: "https://res.cloudinary.com/dugksxwkr/image/upload/v1776141220/s9-removebg-preview_zuolrx.png", brand: "Queen's Wardrobe", price: <><span>₹</span>16,200</> }} />
                         <img src="https://res.cloudinary.com/dugksxwkr/image/upload/v1776141220/s9-removebg-preview_zuolrx.png"
                             alt="Sequin Saree" className="card-image" />
                         <div className="card-content">
@@ -268,7 +276,8 @@ function SalwarKamis() {
                     </div>
 
                     {/* CARD 8 */}
-                    <div className="product-card">
+                    <div className="product-card" style={{ position: "relative" }}>
+                        <WishlistHeart item={{ id: "Midnight Black Chiffon Saree Gown", title: "Midnight Black Chiffon Saree Gown", image: "https://res.cloudinary.com/dugksxwkr/image/upload/v1776141226/s10-removebg-preview_gwlxcz.png", brand: "Western Elegance", price: <><span>₹</span>12,499</> }} />
                         <img src="https://res.cloudinary.com/dugksxwkr/image/upload/v1776141226/s10-removebg-preview_gwlxcz.png"
                             alt="Chiffon Saree Gown" className="card-image" />
                         <div className="card-content">
@@ -293,7 +302,8 @@ function SalwarKamis() {
                     </div>
 
                     {/* CARD 9 */}
-                    <div className="product-card">
+                    <div className="product-card" style={{ position: "relative" }}>
+                        <WishlistHeart item={{ id: "Royal Navy Blue Designer Saree with Floral Appliques", title: "Royal Navy Blue Designer Saree with Floral Appliques", image: "https://res.cloudinary.com/dugksxwkr/image/upload/v1776141236/s11-removebg-preview_iqkpmt.png", brand: "Maison d'Élégance", price: <><span>₹</span>28,000</> }} />
                         <img src="https://res.cloudinary.com/dugksxwkr/image/upload/v1776141236/s11-removebg-preview_iqkpmt.png"
                             alt="Royal Saree" className="card-image" style={{ backgroundColor: '#fceceb' }} />
                         <div className="card-content">
@@ -317,7 +327,8 @@ function SalwarKamis() {
                     </div>
 
                     {/* CARD 10 */}
-                    <div className="product-card">
+                    <div className="product-card" style={{ position: "relative" }}>
+                        <WishlistHeart item={{ id: "Nude Beige Premium Drape", title: "Nude Beige Premium Drape", image: "https://res.cloudinary.com/dugksxwkr/image/upload/v1776141252/s12-removebg-preview_jabowu.png", brand: "Queen's Bespoke", price: <><span>₹</span>36,100</> }} />
                         <img src="https://res.cloudinary.com/dugksxwkr/image/upload/v1776141252/s12-removebg-preview_jabowu.png"
                             alt="Premium Drape" className="card-image" style={{ backgroundColor: '#e5e0dc' }} />
                         <div className="card-content">
@@ -341,7 +352,8 @@ function SalwarKamis() {
                     </div>
 
                     {/* CARD 11 */}
-                    <div className="product-card">
+                    <div className="product-card" style={{ position: "relative" }}>
+                        <WishlistHeart item={{ id: "Draped Georgette Saree Gown in Rose Pink", title: "Draped Georgette Saree Gown in Rose Pink", image: "https://res.cloudinary.com/dugksxwkr/image/upload/v1776141266/s14-removebg-preview_p13ect.png", brand: "Maison d'Élégance", price: <><span>₹</span>18,000</> }} />
                         <img src="https://res.cloudinary.com/dugksxwkr/image/upload/v1776141266/s14-removebg-preview_p13ect.png"
                             alt="Saree Gown" className="card-image" style={{ backgroundColor: '#e5ccce' }} />
                         <div className="card-content">
@@ -364,7 +376,8 @@ function SalwarKamis() {
                     </div>
 
                     {/* CARD 12 */}
-                    <div className="product-card">
+                    <div className="product-card" style={{ position: "relative" }}>
+                        <WishlistHeart item={{ id: "Pleated Indo-Western Saree with Matching Clutch", title: "Pleated Indo-Western Saree with Matching Clutch", image: "https://res.cloudinary.com/dugksxwkr/image/upload/v1776141297/s15-removebg-preview_aq6d3i.png", brand: "Queen's Wardrobe", price: <><span>₹</span>12,500</> }} />
                         <img src="https://res.cloudinary.com/dugksxwkr/image/upload/v1776141297/s15-removebg-preview_aq6d3i.png"
                             alt="Saree Gown" className="card-image" />
                         <div className="card-content">
@@ -387,7 +400,8 @@ function SalwarKamis() {
                     </div>
 
                     {/* CARD 13 */}
-                    <div className="product-card">
+                    <div className="product-card" style={{ position: "relative" }}>
+                        <WishlistHeart item={{ id: "Minimalist Evening Gown Saree", title: "Minimalist Evening Gown Saree", image: "https://res.cloudinary.com/dugksxwkr/image/upload/v1776141322/s16-removebg-preview_ury3qr.png", brand: "Western Elegance", price: <><span>₹</span>21,000</> }} />
                         <img src="https://res.cloudinary.com/dugksxwkr/image/upload/v1776141322/s16-removebg-preview_ury3qr.png"
                             alt="Saree Gown" className="card-image" />
                         <div className="card-content">
@@ -410,7 +424,8 @@ function SalwarKamis() {
                     </div>
 
                     {/* CARD 14 */}
-                    <div className="product-card">
+                    <div className="product-card" style={{ position: "relative" }}>
+                        <WishlistHeart item={{ id: "Handloom Silk Saree Gown for Receptions", title: "Handloom Silk Saree Gown for Receptions", image: "https://res.cloudinary.com/dugksxwkr/image/upload/v1776141428/5ef004ab5b00c9b612570a3ea5a696e2-removebg-preview_v50lcv.png", brand: "Heritage Silks", price: <><span>₹</span>14,000</> }} />
                         <img src="https://res.cloudinary.com/dugksxwkr/image/upload/v1776141428/5ef004ab5b00c9b612570a3ea5a696e2-removebg-preview_v50lcv.png"
                             alt="Traditional Saree Gown" className="card-image" style={{ backgroundColor: '#fceceb' }} />
                         <div className="card-content">
@@ -434,7 +449,8 @@ function SalwarKamis() {
                     </div>
 
                     {/* CARD 15 */}
-                    <div className="product-card">
+                    <div className="product-card" style={{ position: "relative" }}>
+                        <WishlistHeart item={{ id: "Signature Embellished Custom Saree", title: "Signature Embellished Custom Saree", image: "https://res.cloudinary.com/dugksxwkr/image/upload/v1776141476/s17-removebg-preview_w8fhut.png", brand: "Queen's Bespoke", price: <><span>₹</span>45,000</> }} />
                         <img src="https://res.cloudinary.com/dugksxwkr/image/upload/v1776141476/s17-removebg-preview_w8fhut.png"
                             alt="Bespoke Saree Gown" className="card-image" style={{ backgroundColor: '#e5e0dc' }} />
                         <div className="card-content">
@@ -457,7 +473,8 @@ function SalwarKamis() {
                     </div>
 
                     {/* CARD 16 */}
-                    <div className="product-card">
+                    <div className="product-card" style={{ position: "relative" }}>
+                        <WishlistHeart item={{ id: "Peach Pastel Georgette Gown Saree", title: "Peach Pastel Georgette Gown Saree", image: "https://res.cloudinary.com/dugksxwkr/image/upload/v1776141723/8f228ea358ec53769b19c92c8999a9b4-removebg-preview_jsznru.png", brand: "Maison d'Élégance", price: <><span>₹</span>13,300</> }} />
                         <img src="https://res.cloudinary.com/dugksxwkr/image/upload/v1776141723/8f228ea358ec53769b19c92c8999a9b4-removebg-preview_jsznru.png"
                             alt="Pastel Saree" className="card-image" style={{ backgroundColor: '#fceceb' }} />
                         <div className="card-content">
@@ -480,7 +497,8 @@ function SalwarKamis() {
                     </div>
 
                     {/* CARD 17 */}
-                    <div className="product-card">
+                    <div className="product-card" style={{ position: "relative" }}>
+                        <WishlistHeart item={{ id: "Festive Green Pre-Stitched Gown", title: "Festive Green Pre-Stitched Gown", image: "https://res.cloudinary.com/dugksxwkr/image/upload/v1776141714/70d6f01188948a7593046f0005f61de7-removebg-preview_elk7gb.png", brand: "Queen's Wardrobe", price: <><span>₹</span>15,400</> }} />
                         <img src="https://res.cloudinary.com/dugksxwkr/image/upload/v1776141714/70d6f01188948a7593046f0005f61de7-removebg-preview_elk7gb.png"
                             alt="Festive Gown" className="card-image" />
                         <div className="card-content">
@@ -503,7 +521,8 @@ function SalwarKamis() {
                     </div>
 
                     {/* CARD 18 */}
-                    <div className="product-card">
+                    <div className="product-card" style={{ position: "relative" }}>
+                        <WishlistHeart item={{ id: "Classic Black Contemporary Wrap Saree", title: "Classic Black Contemporary Wrap Saree", image: "https://res.cloudinary.com/dugksxwkr/image/upload/v1776141626/a7cfd7aee90c8e68c116ae455961a092-removebg-preview_qncfch.png", brand: "Western Elegance", price: <><span>₹</span>18,000</> }} />
                         <img src="https://res.cloudinary.com/dugksxwkr/image/upload/v1776141626/a7cfd7aee90c8e68c116ae455961a092-removebg-preview_qncfch.png"
                             alt="Gown" className="card-image" />
                         <div className="card-content">
@@ -526,7 +545,8 @@ function SalwarKamis() {
                     </div>
 
                     {/* CARD 19 */}
-                    <div className="product-card">
+                    <div className="product-card" style={{ position: "relative" }}>
+                        <WishlistHeart item={{ id: "Rich Indigo Occasion Wear Layout Saree", title: "Rich Indigo Occasion Wear Layout Saree", image: "https://res.cloudinary.com/dugksxwkr/image/upload/v1776141531/s19-removebg-preview_tndjeg.png", brand: "Heritage Silks", price: <><span>₹</span>21,000</> }} />
                         <img src="https://res.cloudinary.com/dugksxwkr/image/upload/v1776141531/s19-removebg-preview_tndjeg.png"
                             alt="Royal Saree" className="card-image" style={{ backgroundColor: '#fceceb' }} />
                         <div className="card-content">
@@ -549,7 +569,8 @@ function SalwarKamis() {
                     </div>
 
                     {/* CARD 20 */}
-                    <div className="product-card">
+                    <div className="product-card" style={{ position: "relative" }}>
+                        <WishlistHeart item={{ id: "Taupe High-Society Event Saree", title: "Taupe High-Society Event Saree", image: "https://res.cloudinary.com/dugksxwkr/image/upload/v1776142344/dc056ab70d6287e6b0ab4cb6b24d4d5e-removebg-preview_zgcqw0.png", brand: "Queen's Bespoke", price: <><span>₹</span>30,800</> }} />
                         <img src="https://res.cloudinary.com/dugksxwkr/image/upload/v1776142344/dc056ab70d6287e6b0ab4cb6b24d4d5e-removebg-preview_zgcqw0.png"
                             alt="Premium Drape" className="card-image" style={{ backgroundColor: '#e5e0dc' }} />
                         <div className="card-content">

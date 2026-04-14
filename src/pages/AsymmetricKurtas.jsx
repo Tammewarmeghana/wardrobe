@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import './gownsaree.css';
 import './sidebar.css';
+import WishlistHeart from '../components/WishlistHeart';
 
 function AsymmetricKurtas() {
     const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -72,7 +73,8 @@ function AsymmetricKurtas() {
                 <div className="product-grid">
 
                     {/* CARD 1 */}
-                    <div className="product-card">
+                    <div className="product-card" style={{ position: "relative" }}>
+                        <WishlistHeart item={{ id: "Premium Pre-Draped Saree Gown in Soft Georgette with Embellished Belt", title: "Premium Pre-Draped Saree Gown in Soft Georgette with Embellished Belt", image: "https://res.cloudinary.com/dugksxwkr/image/upload/v1776054263/69cd30ba2af7320bc083b1d8d0643203-removebg-preview_rv1y1x.png ", brand: "Maison d'Élégance", price: <><span>₹</span>14,999</> }} />
                         <img src="https://res.cloudinary.com/dugksxwkr/image/upload/v1776054263/69cd30ba2af7320bc083b1d8d0643203-removebg-preview_rv1y1x.png "
                             alt="Saree Gown" className="card-image" style={{ backgroundColor: '#e5ccce' }} />
                         <div className="card-content">
@@ -102,7 +104,8 @@ function AsymmetricKurtas() {
                     </div>
 
                     {/* CARD 2 */}
-                    <div className="product-card">
+                    <div className="product-card" style={{ position: "relative" }}>
+                        <WishlistHeart item={{ id: "Modern Indo-Western Fusion Saree with Attached Pallu", title: "Modern Indo-Western Fusion Saree with Attached Pallu", image: "https://res.cloudinary.com/dugksxwkr/image/upload/v1776054268/885c0475ed6b6cdb39be8df50536f3e3-removebg-preview_ubgymf.png", brand: "Queen's Wardrobe", price: <><span>₹</span>18,499</> }} />
                         <img src="https://res.cloudinary.com/dugksxwkr/image/upload/v1776054268/885c0475ed6b6cdb39be8df50536f3e3-removebg-preview_ubgymf.png"
                             alt="Indo Western Saree" className="card-image" />
                         <div className="card-content">
@@ -131,7 +134,8 @@ function AsymmetricKurtas() {
                     </div>
 
                     {/* CARD 3 */}
-                    <div className="product-card">
+                    <div className="product-card" style={{ position: "relative" }}>
+                        <WishlistHeart item={{ id: "Cocktail Saree Gown with Cape Sleeves", title: "Cocktail Saree Gown with Cape Sleeves", image: "https://res.cloudinary.com/dugksxwkr/image/upload/v1776054276/f1ab238bec6750d629d9d54cd19588c5-removebg-preview_okao9q.png", brand: "Western Elegance", price: <><span>₹</span>24,999</> }} />
                         <img src="https://res.cloudinary.com/dugksxwkr/image/upload/v1776054276/f1ab238bec6750d629d9d54cd19588c5-removebg-preview_okao9q.png"
                             alt="Modern Saree" className="card-image" />
                         <div className="card-content">
@@ -159,7 +163,8 @@ function AsymmetricKurtas() {
                     </div>
 
                     {/* CARD 4 */}
-                    <div className="product-card">
+                    <div className="product-card" style={{ position: "relative" }}>
+                        <WishlistHeart item={{ id: "Heritage Silk Trim Saree Gown for Wedding Receptions", title: "Heritage Silk Trim Saree Gown for Wedding Receptions", image: "https://res.cloudinary.com/dugksxwkr/image/upload/v1776054284/Screenshot_2026-04-13_094518-removebg-preview_xnf1c5.png", brand: "Maison d'Élégance", price: <><span>₹</span>21,000</> }} />
                         <img src="https://res.cloudinary.com/dugksxwkr/image/upload/v1776054284/Screenshot_2026-04-13_094518-removebg-preview_xnf1c5.png"
                             alt="Traditional Saree Gown" className="card-image" style={{ backgroundColor: '#fceceb' }} />
                         <div className="card-content">
@@ -189,7 +194,8 @@ function AsymmetricKurtas() {
                     </div>
 
                     {/* CARD 5 */}
-                    <div className="product-card">
+                    <div className="product-card" style={{ position: "relative" }}>
+                        <WishlistHeart item={{ id: "Custom-Fit Sequined Saree Dress", title: "Custom-Fit Sequined Saree Dress", image: "https://res.cloudinary.com/dugksxwkr/image/upload/v1776054338/42c9b14a8510860577b488c9e48fd248-removebg-preview_mrsbur.png", brand: "Queen's Bespoke", price: <><span>₹</span>38,500</> }} />
                         <img src="https://res.cloudinary.com/dugksxwkr/image/upload/v1776054338/42c9b14a8510860577b488c9e48fd248-removebg-preview_mrsbur.png"
                             alt="Bespoke Saree Gown" className="card-image" style={{ backgroundColor: '#e5e0dc' }} />
                         <div className="card-content">
@@ -219,7 +225,8 @@ function AsymmetricKurtas() {
                     </div>
 
                     {/* CARD 6 */}
-                    <div className="product-card">
+                    <div className="product-card" style={{ position: "relative" }}>
+                        <WishlistHeart item={{ id: "Embroidered Pastel Saree Gown with Dupatta", title: "Embroidered Pastel Saree Gown with Dupatta", image: "https://res.cloudinary.com/dugksxwkr/image/upload/v1776054349/11b21d61ee896a383db4dd0a5b386ef0-removebg-preview_p6wu7f.png", brand: "Maison d'Élégance", price: <><span>₹</span>19,500</> }} />
                         <img src="https://res.cloudinary.com/dugksxwkr/image/upload/v1776054349/11b21d61ee896a383db4dd0a5b386ef0-removebg-preview_p6wu7f.png"
                             alt="Embroidered Saree Gown" className="card-image" style={{ backgroundColor: '#fceceb' }} />
                         <div className="card-content">
@@ -243,7 +250,8 @@ function AsymmetricKurtas() {
                     </div>
 
                     {/* CARD 7 */}
-                    <div className="product-card">
+                    <div className="product-card" style={{ position: "relative" }}>
+                        <WishlistHeart item={{ id: "Olive Green Sequin Trim Saree", title: "Olive Green Sequin Trim Saree", image: "https://res.cloudinary.com/dugksxwkr/image/upload/v1776054355/0aa37f658117288cbd9397bdeb9c629d-removebg-preview_z3qq3h.png", brand: "Queen's Wardrobe", price: <><span>₹</span>16,200</> }} />
                         <img src="https://res.cloudinary.com/dugksxwkr/image/upload/v1776054355/0aa37f658117288cbd9397bdeb9c629d-removebg-preview_z3qq3h.png"
                             alt="Sequin Saree" className="card-image" />
                         <div className="card-content">
@@ -268,7 +276,8 @@ function AsymmetricKurtas() {
                     </div>
 
                     {/* CARD 8 */}
-                    <div className="product-card">
+                    <div className="product-card" style={{ position: "relative" }}>
+                        <WishlistHeart item={{ id: "Midnight Black Chiffon Saree Gown", title: "Midnight Black Chiffon Saree Gown", image: "https://res.cloudinary.com/dugksxwkr/image/upload/v1776054424/1a92603af92873f09f72d85f6dc21527-removebg-preview_kvchaa.png", brand: "Western Elegance", price: <><span>₹</span>12,499</> }} />
                         <img src="https://res.cloudinary.com/dugksxwkr/image/upload/v1776054424/1a92603af92873f09f72d85f6dc21527-removebg-preview_kvchaa.png"
                             alt="Chiffon Saree Gown" className="card-image" />
                         <div className="card-content">
@@ -293,7 +302,8 @@ function AsymmetricKurtas() {
                     </div>
 
                     {/* CARD 9 */}
-                    <div className="product-card">
+                    <div className="product-card" style={{ position: "relative" }}>
+                        <WishlistHeart item={{ id: "Royal Navy Blue Designer Saree with Floral Appliques", title: "Royal Navy Blue Designer Saree with Floral Appliques", image: "https://res.cloudinary.com/dugksxwkr/image/upload/v1776054459/d223be7a52160e7dbf781015e2cef6a7-removebg-preview_wqi6op.png", brand: "Maison d'Élégance", price: <><span>₹</span>28,000</> }} />
                         <img src="https://res.cloudinary.com/dugksxwkr/image/upload/v1776054459/d223be7a52160e7dbf781015e2cef6a7-removebg-preview_wqi6op.png"
                             alt="Royal Saree" className="card-image" style={{ backgroundColor: '#fceceb' }} />
                         <div className="card-content">
@@ -317,7 +327,8 @@ function AsymmetricKurtas() {
                     </div>
 
                     {/* CARD 10 */}
-                    <div className="product-card">
+                    <div className="product-card" style={{ position: "relative" }}>
+                        <WishlistHeart item={{ id: "Nude Beige Premium Drape", title: "Nude Beige Premium Drape", image: "https://res.cloudinary.com/dugksxwkr/image/upload/v1776054474/f6e2bc0842a471f7acff2587666c2ed9-removebg-preview_u0ceyv.png", brand: "Queen's Bespoke", price: <><span>₹</span>36,100</> }} />
                         <img src="https://res.cloudinary.com/dugksxwkr/image/upload/v1776054474/f6e2bc0842a471f7acff2587666c2ed9-removebg-preview_u0ceyv.png"
                             alt="Premium Drape" className="card-image" style={{ backgroundColor: '#e5e0dc' }} />
                         <div className="card-content">
@@ -341,7 +352,8 @@ function AsymmetricKurtas() {
                     </div>
 
                     {/* CARD 11 */}
-                    <div className="product-card">
+                    <div className="product-card" style={{ position: "relative" }}>
+                        <WishlistHeart item={{ id: "Draped Georgette Saree Gown in Rose Pink", title: "Draped Georgette Saree Gown in Rose Pink", image: "https://res.cloudinary.com/dugksxwkr/image/upload/v1776054500/e11ccc162453bee2c81d8e41280dea7a-removebg-preview_jc5sa3.png", brand: "Maison d'Élégance", price: <><span>₹</span>18,000</> }} />
                         <img src="https://res.cloudinary.com/dugksxwkr/image/upload/v1776054500/e11ccc162453bee2c81d8e41280dea7a-removebg-preview_jc5sa3.png"
                             alt="Saree Gown" className="card-image" style={{ backgroundColor: '#e5ccce' }} />
                         <div className="card-content">
@@ -364,7 +376,8 @@ function AsymmetricKurtas() {
                     </div>
 
                     {/* CARD 12 */}
-                    <div className="product-card">
+                    <div className="product-card" style={{ position: "relative" }}>
+                        <WishlistHeart item={{ id: "Pleated Indo-Western Saree with Matching Clutch", title: "Pleated Indo-Western Saree with Matching Clutch", image: "https://res.cloudinary.com/dugksxwkr/image/upload/v1776054520/e11fd12cf8054180c239e06140f63417-removebg-preview_y3vy7a.png", brand: "Queen's Wardrobe", price: <><span>₹</span>12,500</> }} />
                         <img src="https://res.cloudinary.com/dugksxwkr/image/upload/v1776054520/e11fd12cf8054180c239e06140f63417-removebg-preview_y3vy7a.png"
                             alt="Saree Gown" className="card-image" />
                         <div className="card-content">
@@ -387,7 +400,8 @@ function AsymmetricKurtas() {
                     </div>
 
                     {/* CARD 13 */}
-                    <div className="product-card">
+                    <div className="product-card" style={{ position: "relative" }}>
+                        <WishlistHeart item={{ id: "Minimalist Evening Gown Saree", title: "Minimalist Evening Gown Saree", image: "https://res.cloudinary.com/dugksxwkr/image/upload/v1776054544/2c063987dba48c63d85d634b96be5c22-removebg-preview_rtrvno.png", brand: "Western Elegance", price: <><span>₹</span>21,000</> }} />
                         <img src="https://res.cloudinary.com/dugksxwkr/image/upload/v1776054544/2c063987dba48c63d85d634b96be5c22-removebg-preview_rtrvno.png"
                             alt="Saree Gown" className="card-image" />
                         <div className="card-content">
@@ -410,7 +424,8 @@ function AsymmetricKurtas() {
                     </div>
 
                     {/* CARD 14 */}
-                    <div className="product-card">
+                    <div className="product-card" style={{ position: "relative" }}>
+                        <WishlistHeart item={{ id: "Handloom Silk Saree Gown for Receptions", title: "Handloom Silk Saree Gown for Receptions", image: "https://res.cloudinary.com/dugksxwkr/image/upload/v1776054564/4856577302b13a8915988739a6389967-removebg-preview_kahles.png", brand: "Heritage Silks", price: <><span>₹</span>14,000</> }} />
                         <img src="https://res.cloudinary.com/dugksxwkr/image/upload/v1776054564/4856577302b13a8915988739a6389967-removebg-preview_kahles.png"
                             alt="Traditional Saree Gown" className="card-image" style={{ backgroundColor: '#fceceb' }} />
                         <div className="card-content">
@@ -434,7 +449,8 @@ function AsymmetricKurtas() {
                     </div>
 
                     {/* CARD 15 */}
-                    <div className="product-card">
+                    <div className="product-card" style={{ position: "relative" }}>
+                        <WishlistHeart item={{ id: "Signature Embellished Custom Saree", title: "Signature Embellished Custom Saree", image: "https://res.cloudinary.com/dugksxwkr/image/upload/v1776054586/727aa387dbf4e70cc873752e5b717345-removebg-preview_zpiubn.png", brand: "Queen's Bespoke", price: <><span>₹</span>45,000</> }} />
                         <img src="https://res.cloudinary.com/dugksxwkr/image/upload/v1776054586/727aa387dbf4e70cc873752e5b717345-removebg-preview_zpiubn.png"
                             alt="Bespoke Saree Gown" className="card-image" style={{ backgroundColor: '#e5e0dc' }} />
                         <div className="card-content">
@@ -457,7 +473,8 @@ function AsymmetricKurtas() {
                     </div>
 
                     {/* CARD 16 */}
-                    <div className="product-card">
+                    <div className="product-card" style={{ position: "relative" }}>
+                        <WishlistHeart item={{ id: "Peach Pastel Georgette Gown Saree", title: "Peach Pastel Georgette Gown Saree", image: "https://res.cloudinary.com/dugksxwkr/image/upload/v1776054609/44ad1cf75e7f2545bee095fcc63df313-removebg-preview_azl70i.png", brand: "Maison d'Élégance", price: <><span>₹</span>13,300</> }} />
                         <img src="https://res.cloudinary.com/dugksxwkr/image/upload/v1776054609/44ad1cf75e7f2545bee095fcc63df313-removebg-preview_azl70i.png"
                             alt="Pastel Saree" className="card-image" style={{ backgroundColor: '#fceceb' }} />
                         <div className="card-content">
@@ -480,7 +497,8 @@ function AsymmetricKurtas() {
                     </div>
 
                     {/* CARD 17 */}
-                    <div className="product-card">
+                    <div className="product-card" style={{ position: "relative" }}>
+                        <WishlistHeart item={{ id: "Festive Green Pre-Stitched Gown", title: "Festive Green Pre-Stitched Gown", image: "https://res.cloudinary.com/dugksxwkr/image/upload/v1776054692/be2c69775777b3f5fc8d669306f59399-removebg-preview_wmgfof.png", brand: "Queen's Wardrobe", price: <><span>₹</span>15,400</> }} />
                         <img src="https://res.cloudinary.com/dugksxwkr/image/upload/v1776054692/be2c69775777b3f5fc8d669306f59399-removebg-preview_wmgfof.png"
                             alt="Festive Gown" className="card-image" />
                         <div className="card-content">
@@ -503,7 +521,8 @@ function AsymmetricKurtas() {
                     </div>
 
                     {/* CARD 18 */}
-                    <div className="product-card">
+                    <div className="product-card" style={{ position: "relative" }}>
+                        <WishlistHeart item={{ id: "Classic Black Contemporary Wrap Saree", title: "Classic Black Contemporary Wrap Saree", image: "https://res.cloudinary.com/dugksxwkr/image/upload/v1776054804/1cc09efe7c910dd271f44f8fe97b4d37-removebg-preview_eiypss.png", brand: "Western Elegance", price: <><span>₹</span>18,000</> }} />
                         <img src="https://res.cloudinary.com/dugksxwkr/image/upload/v1776054804/1cc09efe7c910dd271f44f8fe97b4d37-removebg-preview_eiypss.png"
                             alt="Gown" className="card-image" />
                         <div className="card-content">
@@ -526,7 +545,8 @@ function AsymmetricKurtas() {
                     </div>
 
                     {/* CARD 19 */}
-                    <div className="product-card">
+                    <div className="product-card" style={{ position: "relative" }}>
+                        <WishlistHeart item={{ id: "Rich Indigo Occasion Wear Layout Saree", title: "Rich Indigo Occasion Wear Layout Saree", image: "https://res.cloudinary.com/dugksxwkr/image/upload/v1776054851/4eb9829913e1c44f62c9369d49feeccf-removebg-preview_t4cpuv.png", brand: "Heritage Silks", price: <><span>₹</span>21,000</> }} />
                         <img src="https://res.cloudinary.com/dugksxwkr/image/upload/v1776054851/4eb9829913e1c44f62c9369d49feeccf-removebg-preview_t4cpuv.png"
                             alt="Royal Saree" className="card-image" style={{ backgroundColor: '#fceceb' }} />
                         <div className="card-content">
@@ -549,7 +569,8 @@ function AsymmetricKurtas() {
                     </div>
 
                     {/* CARD 20 */}
-                    <div className="product-card">
+                    <div className="product-card" style={{ position: "relative" }}>
+                        <WishlistHeart item={{ id: "Taupe High-Society Event Saree", title: "Taupe High-Society Event Saree", image: "https://res.cloudinary.com/dugksxwkr/image/upload/v1776054890/46a36f195ea6f0044dd9f5c7c5a90809-removebg-preview_kdzxio.png", brand: "Queen's Bespoke", price: <><span>₹</span>30,800</> }} />
                         <img src="https://res.cloudinary.com/dugksxwkr/image/upload/v1776054890/46a36f195ea6f0044dd9f5c7c5a90809-removebg-preview_kdzxio.png"
                             alt="Premium Drape" className="card-image" style={{ backgroundColor: '#e5e0dc' }} />
                         <div className="card-content">

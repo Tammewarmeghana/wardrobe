@@ -23,11 +23,19 @@ import IndoWesternFrocks from './pages/IndoWesternFrocks';
 import ShararaPeplum from './pages/ShararaPeplum';
 import CorsetLehenga from './pages/CorsetLehenga';
 import AsymmetricKurtas from './pages/AsymmetricKurtas';
+import Bodycons from './pages/Bodycons';
+import Sportswear from './pages/Sportswear';
+import MaxiDresses from './pages/MaxiDresses';
+import Blazers from './pages/Blazers';
+import MaxiSkirts from './pages/MaxiSkirts';
+import Formals from './pages/Formals';
+import KoreanDresses from './pages/KoreanDresses';
 import PeplumPantsuit from './pages/PeplumPantsuit';
 import FullPage from './pages/FullPage';
 import Contact from './pages/Contact';
 import Customised from './pages/Customised';
 import SearchResults from './pages/SearchResults';
+import Wishlist from './pages/Wishlist';
 import './index.css';
 import { ShopProvider } from './context/ShopContext';
 import Navbar from './components/Navbar/Navbar';
@@ -50,6 +58,7 @@ function App() {
             <Route path="/readymade" element={<ReadyMade />} />
             <Route path="/customised" element={<Customised />} />
             <Route path="/search" element={<SearchResults />} />
+            <Route path="/wishlist" element={<Wishlist />} />
             <Route path="/gownsaree" element={<GownSaree />} />
             <Route path="/sarees" element={<Sarees />} />
             <Route path="/lehengas" element={<Lehengas />} />
@@ -66,6 +75,13 @@ function App() {
             <Route path="/corset-lehenga" element={<CorsetLehenga />} />
             <Route path="/asymmetric-kurtas" element={<AsymmetricKurtas />} />
             <Route path="/peplum-pantsuit" element={<PeplumPantsuit />} />
+            <Route path="/bodycon" element={<Bodycons />} />
+            <Route path="/sportswear" element={<Sportswear />} />
+            <Route path="/maxidress" element={<MaxiDresses />} />
+            <Route path="/blazers" element={<Blazers />} />
+            <Route path="/maxiskirts" element={<MaxiSkirts />} />
+            <Route path="/formals" element={<Formals />} />
+            <Route path="/koreanwear" element={<KoreanDresses />} />
             <Route path="/fullpage" element={<FullPage />} />
             <Route path="/contact" element={<Contact />} />
           </Routes>
