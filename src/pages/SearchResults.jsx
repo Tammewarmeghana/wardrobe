@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { useShop } from '../context/ShopContext';
 import { mockProducts, mockVisualResults } from '../data/mockProducts';
+import { allProducts } from '../data/allProducts';
 import './gownsaree.css';
 
 function SearchResults() {
@@ -10,19 +11,36 @@ function SearchResults() {
   const navigate = useNavigate();
   const queryParams = new URLSearchParams(location.search);
   const isVisualSearch = queryParams.get('visual') === 'true';
+  const fileName = queryParams.get('file');
 
   const [results, setResults] = useState([]);
 
   useEffect(() => {
     if (isVisualSearch) {
-      setResults(mockVisualResults);
+      if (fileName) {
+        // Generate pseudo-random subset of products based on filename to mock ML visual search predictability
+        let seed = 0;
+        for (let i = 0; i < fileName.length; i++) {
+          seed += fileName.charCodeAt(i);
+        }
+        const startIndex = seed % mockProducts.length;
+        const jump = (seed % 3) + 1; // jump by 1, 2 or 3 to mix up the order more
+        
+        const subset = [];
+        for (let i = 0; i < 5; i++) {
+          subset.push(mockProducts[(startIndex + (i * jump)) % mockProducts.length]);
+        }
+        setResults(subset);
+      } else {
+        setResults(mockVisualResults);
+      }
     } else {
       const q = searchQuery.toLowerCase().trim();
       if (!q) {
-        setResults(mockProducts);
+        setResults(allProducts.slice(0, 20)); // Show top general items if empty query rather than all 460
         return;
       }
-      const filtered = mockProducts.filter(p => 
+      const filtered = allProducts.filter(p => 
         p.title.toLowerCase().includes(q) || 
         p.brand.toLowerCase().includes(q) ||
         p.category.toLowerCase().includes(q)

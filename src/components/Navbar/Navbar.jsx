@@ -22,7 +22,7 @@ const Navbar = () => {
     const file = e.target.files[0];
     if (file) {
       console.log('Image selected for visual search:', file.name);
-      navigate('/search?visual=true');
+      navigate(`/search?visual=true&file=${encodeURIComponent(file.name)}`);
     }
   };
 
@@ -31,7 +31,7 @@ const Navbar = () => {
 
   // The original App.jsx had hiddenRoutes, we can either handle it here or in App component.
   // We'll mimic the original hiddenRoutes array from App.jsx so it only shows where intended.
-  const hiddenRoutes = ['/', '/login', '/fullpage', '/contact'];
+  const hiddenRoutes = ['/', '/login'];
   if (hiddenRoutes.includes(location.pathname)) return null;
 
   return (

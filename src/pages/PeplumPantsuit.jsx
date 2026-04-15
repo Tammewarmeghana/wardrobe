@@ -74,7 +74,7 @@ function PeplumPantsuit() {
 
                     {/* CARD 1 */}
                     <div className="product-card" style={{ position: "relative" }}>
-                        <WishlistHeart item={{ id: "Premium Pre-Draped Saree Gown in Soft Georgette with Embellished Belt", title: "Premium Pre-Draped Saree Gown in Soft Georgette with Embellished Belt", image: "https://res.cloudinary.com/dugksxwkr/image/upload/v1776069644/p1-removebg-preview_nnuhob.png", brand: "Maison d'Élégance", price: <><span>₹</span>14,999</> }} />
+                        <WishlistHeart item={{ id: "PeplumPantsuit_Premium Pre-Draped Saree Gown in Soft Georgette with Embellished Belt", title: "Premium Pre-Draped Saree Gown in Soft Georgette with Embellished Belt", image: "https://res.cloudinary.com/dugksxwkr/image/upload/v1776069644/p1-removebg-preview_nnuhob.png", brand: "Maison d'Élégance", price: <><span>₹</span>14,999</> }} />
                         <img src="https://res.cloudinary.com/dugksxwkr/image/upload/v1776069644/p1-removebg-preview_nnuhob.png"
                             alt="Saree Gown" className="card-image" style={{ backgroundColor: '#e5ccce' }} />
                         <div className="card-content">
@@ -105,7 +105,7 @@ function PeplumPantsuit() {
 
                     {/* CARD 2 */}
                     <div className="product-card" style={{ position: "relative" }}>
-                        <WishlistHeart item={{ id: "Modern Indo-Western Fusion Saree with Attached Pallu", title: "Modern Indo-Western Fusion Saree with Attached Pallu", image: "https://res.cloudinary.com/dugksxwkr/image/upload/v1776069651/p2-removebg-preview_b1nyph.png", brand: "Queen's Wardrobe", price: <><span>₹</span>18,499</> }} />
+                        <WishlistHeart item={{ id: "PeplumPantsuit_Modern Indo-Western Fusion Saree with Attached Pallu", title: "Modern Indo-Western Fusion Saree with Attached Pallu", image: "https://res.cloudinary.com/dugksxwkr/image/upload/v1776069651/p2-removebg-preview_b1nyph.png", brand: "Queen's Wardrobe", price: <><span>₹</span>18,499</> }} />
                         <img src="https://res.cloudinary.com/dugksxwkr/image/upload/v1776069651/p2-removebg-preview_b1nyph.png"
                             alt="Indo Western Saree" className="card-image" />
                         <div className="card-content">
@@ -135,7 +135,7 @@ function PeplumPantsuit() {
 
                     {/* CARD 3 */}
                     <div className="product-card" style={{ position: "relative" }}>
-                        <WishlistHeart item={{ id: "Cocktail Saree Gown with Cape Sleeves", title: "Cocktail Saree Gown with Cape Sleeves", image: "https://res.cloudinary.com/dugksxwkr/image/upload/v1776069661/p3-removebg-preview_uqeuu0.png", brand: "Western Elegance", price: <><span>₹</span>24,999</> }} />
+                        <WishlistHeart item={{ id: "PeplumPantsuit_Cocktail Saree Gown with Cape Sleeves", title: "Cocktail Saree Gown with Cape Sleeves", image: "https://res.cloudinary.com/dugksxwkr/image/upload/v1776069661/p3-removebg-preview_uqeuu0.png", brand: "Western Elegance", price: <><span>₹</span>24,999</> }} />
                         <img src="https://res.cloudinary.com/dugksxwkr/image/upload/v1776069661/p3-removebg-preview_uqeuu0.png"
                             alt="Modern Saree" className="card-image" />
                         <div className="card-content">
@@ -164,7 +164,7 @@ function PeplumPantsuit() {
 
                     {/* CARD 4 */}
                     <div className="product-card" style={{ position: "relative" }}>
-                        <WishlistHeart item={{ id: "Heritage Silk Trim Saree Gown for Wedding Receptions", title: "Heritage Silk Trim Saree Gown for Wedding Receptions", image: "https://res.cloudinary.com/dugksxwkr/image/upload/v1776069669/p4-removebg-preview_hnhaih.png", brand: "Maison d'Élégance", price: <><span>₹</span>21,000</> }} />
+                        <WishlistHeart item={{ id: "PeplumPantsuit_Heritage Silk Trim Saree Gown for Wedding Receptions", title: "Heritage Silk Trim Saree Gown for Wedding Receptions", image: "https://res.cloudinary.com/dugksxwkr/image/upload/v1776069669/p4-removebg-preview_hnhaih.png", brand: "Maison d'Élégance", price: <><span>₹</span>21,000</> }} />
                         <img src="https://res.cloudinary.com/dugksxwkr/image/upload/v1776069669/p4-removebg-preview_hnhaih.png"
                             alt="Traditional Saree Gown" className="card-image" style={{ backgroundColor: '#fceceb' }} />
                         <div className="card-content">
@@ -195,7 +195,7 @@ function PeplumPantsuit() {
 
                     {/* CARD 5 */}
                     <div className="product-card" style={{ position: "relative" }}>
-                        <WishlistHeart item={{ id: "Custom-Fit Sequined Saree Dress", title: "Custom-Fit Sequined Saree Dress", image: "https://res.cloudinary.com/dugksxwkr/image/upload/v1776069728/p5-removebg-preview_wgc53q.png", brand: "Queen's Bespoke", price: <><span>₹</span>38,500</> }} />
+                        <WishlistHeart item={{ id: "PeplumPantsuit_Custom-Fit Sequined Saree Dress", title: "Custom-Fit Sequined Saree Dress", image: "https://res.cloudinary.com/dugksxwkr/image/upload/v1776069728/p5-removebg-preview_wgc53q.png", brand: "Queen's Bespoke", price: <><span>₹</span>38,500</> }} />
                         <img src="https://res.cloudinary.com/dugksxwkr/image/upload/v1776069728/p5-removebg-preview_wgc53q.png"
                             alt="Bespoke Saree Gown" className="card-image" style={{ backgroundColor: '#e5e0dc' }} />
                         <div className="card-content">
@@ -226,7 +226,7 @@ function PeplumPantsuit() {
 
                     {/* CARD 6 */}
                     <div className="product-card" style={{ position: "relative" }}>
-                        <WishlistHeart item={{ id: "Embroidered Pastel Saree Gown with Dupatta", title: "Embroidered Pastel Saree Gown with Dupatta", image: "https://res.cloudinary.com/dugksxwkr/image/upload/v1776069737/p6-removebg-preview_bsvx7z.png", brand: "Maison d'Élégance", price: <><span>₹</span>19,500</> }} />
+                        <WishlistHeart item={{ id: "PeplumPantsuit_Embroidered Pastel Saree Gown with Dupatta", title: "Embroidered Pastel Saree Gown with Dupatta", image: "https://res.cloudinary.com/dugksxwkr/image/upload/v1776069737/p6-removebg-preview_bsvx7z.png", brand: "Maison d'Élégance", price: <><span>₹</span>19,500</> }} />
                         <img src="https://res.cloudinary.com/dugksxwkr/image/upload/v1776069737/p6-removebg-preview_bsvx7z.png"
                             alt="Embroidered Saree Gown" className="card-image" style={{ backgroundColor: '#fceceb' }} />
                         <div className="card-content">
@@ -251,7 +251,7 @@ function PeplumPantsuit() {
 
                     {/* CARD 7 */}
                     <div className="product-card" style={{ position: "relative" }}>
-                        <WishlistHeart item={{ id: "Olive Green Sequin Trim Saree", title: "Olive Green Sequin Trim Saree", image: "https://res.cloudinary.com/dugksxwkr/image/upload/v1776069766/p7-removebg-preview_dlfhlh.png", brand: "Queen's Wardrobe", price: <><span>₹</span>16,200</> }} />
+                        <WishlistHeart item={{ id: "PeplumPantsuit_Olive Green Sequin Trim Saree", title: "Olive Green Sequin Trim Saree", image: "https://res.cloudinary.com/dugksxwkr/image/upload/v1776069766/p7-removebg-preview_dlfhlh.png", brand: "Queen's Wardrobe", price: <><span>₹</span>16,200</> }} />
                         <img src="https://res.cloudinary.com/dugksxwkr/image/upload/v1776069766/p7-removebg-preview_dlfhlh.png"
                             alt="Sequin Saree" className="card-image" />
                         <div className="card-content">
@@ -277,7 +277,7 @@ function PeplumPantsuit() {
 
                     {/* CARD 8 */}
                     <div className="product-card" style={{ position: "relative" }}>
-                        <WishlistHeart item={{ id: "Midnight Black Chiffon Saree Gown", title: "Midnight Black Chiffon Saree Gown", image: "https://res.cloudinary.com/dugksxwkr/image/upload/v1776069775/p8-removebg-preview_x5gdql.png", brand: "Western Elegance", price: <><span>₹</span>12,499</> }} />
+                        <WishlistHeart item={{ id: "PeplumPantsuit_Midnight Black Chiffon Saree Gown", title: "Midnight Black Chiffon Saree Gown", image: "https://res.cloudinary.com/dugksxwkr/image/upload/v1776069775/p8-removebg-preview_x5gdql.png", brand: "Western Elegance", price: <><span>₹</span>12,499</> }} />
                         <img src="https://res.cloudinary.com/dugksxwkr/image/upload/v1776069775/p8-removebg-preview_x5gdql.png"
                             alt="Chiffon Saree Gown" className="card-image" />
                         <div className="card-content">
@@ -303,7 +303,7 @@ function PeplumPantsuit() {
 
                     {/* CARD 9 */}
                     <div className="product-card" style={{ position: "relative" }}>
-                        <WishlistHeart item={{ id: "Royal Navy Blue Designer Saree with Floral Appliques", title: "Royal Navy Blue Designer Saree with Floral Appliques", image: "https://res.cloudinary.com/dugksxwkr/image/upload/v1776069794/p10-removebg-preview_fcvwxu.png", brand: "Maison d'Élégance", price: <><span>₹</span>28,000</> }} />
+                        <WishlistHeart item={{ id: "PeplumPantsuit_Royal Navy Blue Designer Saree with Floral Appliques", title: "Royal Navy Blue Designer Saree with Floral Appliques", image: "https://res.cloudinary.com/dugksxwkr/image/upload/v1776069794/p10-removebg-preview_fcvwxu.png", brand: "Maison d'Élégance", price: <><span>₹</span>28,000</> }} />
                         <img src="https://res.cloudinary.com/dugksxwkr/image/upload/v1776069794/p10-removebg-preview_fcvwxu.png"
                             alt="Royal Saree" className="card-image" style={{ backgroundColor: '#fceceb' }} />
                         <div className="card-content">
@@ -328,7 +328,7 @@ function PeplumPantsuit() {
 
                     {/* CARD 10 */}
                     <div className="product-card" style={{ position: "relative" }}>
-                        <WishlistHeart item={{ id: "Nude Beige Premium Drape", title: "Nude Beige Premium Drape", image: "https://res.cloudinary.com/dugksxwkr/image/upload/v1776069802/p11-removebg-preview_fs4c9x.png", brand: "Queen's Bespoke", price: <><span>₹</span>36,100</> }} />
+                        <WishlistHeart item={{ id: "PeplumPantsuit_Nude Beige Premium Drape", title: "Nude Beige Premium Drape", image: "https://res.cloudinary.com/dugksxwkr/image/upload/v1776069802/p11-removebg-preview_fs4c9x.png", brand: "Queen's Bespoke", price: <><span>₹</span>36,100</> }} />
                         <img src="https://res.cloudinary.com/dugksxwkr/image/upload/v1776069802/p11-removebg-preview_fs4c9x.png"
                             alt="Premium Drape" className="card-image" style={{ backgroundColor: '#e5e0dc' }} />
                         <div className="card-content">
@@ -353,7 +353,7 @@ function PeplumPantsuit() {
 
                     {/* CARD 11 */}
                     <div className="product-card" style={{ position: "relative" }}>
-                        <WishlistHeart item={{ id: "Draped Georgette Saree Gown in Rose Pink", title: "Draped Georgette Saree Gown in Rose Pink", image: "https://res.cloudinary.com/dugksxwkr/image/upload/v1776069785/p9-removebg-preview_dhlogm.png", brand: "Maison d'Élégance", price: <><span>₹</span>18,000</> }} />
+                        <WishlistHeart item={{ id: "PeplumPantsuit_Draped Georgette Saree Gown in Rose Pink", title: "Draped Georgette Saree Gown in Rose Pink", image: "https://res.cloudinary.com/dugksxwkr/image/upload/v1776069785/p9-removebg-preview_dhlogm.png", brand: "Maison d'Élégance", price: <><span>₹</span>18,000</> }} />
                         <img src="https://res.cloudinary.com/dugksxwkr/image/upload/v1776069785/p9-removebg-preview_dhlogm.png"
                             alt="Saree Gown" className="card-image" style={{ backgroundColor: '#e5ccce' }} />
                         <div className="card-content">
@@ -377,7 +377,7 @@ function PeplumPantsuit() {
 
                     {/* CARD 12 */}
                     <div className="product-card" style={{ position: "relative" }}>
-                        <WishlistHeart item={{ id: "Pleated Indo-Western Saree with Matching Clutch", title: "Pleated Indo-Western Saree with Matching Clutch", image: "https://res.cloudinary.com/dugksxwkr/image/upload/v1776069837/p14-removebg-preview_alhi8c.png", brand: "Queen's Wardrobe", price: <><span>₹</span>12,500</> }} />
+                        <WishlistHeart item={{ id: "PeplumPantsuit_Pleated Indo-Western Saree with Matching Clutch", title: "Pleated Indo-Western Saree with Matching Clutch", image: "https://res.cloudinary.com/dugksxwkr/image/upload/v1776069837/p14-removebg-preview_alhi8c.png", brand: "Queen's Wardrobe", price: <><span>₹</span>12,500</> }} />
                         <img src="https://res.cloudinary.com/dugksxwkr/image/upload/v1776069837/p14-removebg-preview_alhi8c.png"
                             alt="Saree Gown" className="card-image" />
                         <div className="card-content">
@@ -401,7 +401,7 @@ function PeplumPantsuit() {
 
                     {/* CARD 13 */}
                     <div className="product-card" style={{ position: "relative" }}>
-                        <WishlistHeart item={{ id: "Minimalist Evening Gown Saree", title: "Minimalist Evening Gown Saree", image: "https://res.cloudinary.com/dugksxwkr/image/upload/v1776069837/p14-removebg-preview_alhi8c.png", brand: "Western Elegance", price: <><span>₹</span>21,000</> }} />
+                        <WishlistHeart item={{ id: "PeplumPantsuit_Minimalist Evening Gown Saree", title: "Minimalist Evening Gown Saree", image: "https://res.cloudinary.com/dugksxwkr/image/upload/v1776069837/p14-removebg-preview_alhi8c.png", brand: "Western Elegance", price: <><span>₹</span>21,000</> }} />
                         <img src="https://res.cloudinary.com/dugksxwkr/image/upload/v1776069837/p14-removebg-preview_alhi8c.png"
                             alt="Saree Gown" className="card-image" />
                         <div className="card-content">
@@ -425,7 +425,7 @@ function PeplumPantsuit() {
 
                     {/* CARD 14 */}
                     <div className="product-card" style={{ position: "relative" }}>
-                        <WishlistHeart item={{ id: "Handloom Silk Saree Gown for Receptions", title: "Handloom Silk Saree Gown for Receptions", image: "https://res.cloudinary.com/dugksxwkr/image/upload/v1776069827/p13-removebg-preview_vztgux.png", brand: "Heritage Silks", price: <><span>₹</span>14,000</> }} />
+                        <WishlistHeart item={{ id: "PeplumPantsuit_Handloom Silk Saree Gown for Receptions", title: "Handloom Silk Saree Gown for Receptions", image: "https://res.cloudinary.com/dugksxwkr/image/upload/v1776069827/p13-removebg-preview_vztgux.png", brand: "Heritage Silks", price: <><span>₹</span>14,000</> }} />
                         <img src="https://res.cloudinary.com/dugksxwkr/image/upload/v1776069827/p13-removebg-preview_vztgux.png"
                             alt="Traditional Saree Gown" className="card-image" style={{ backgroundColor: '#fceceb' }} />
                         <div className="card-content">
@@ -450,7 +450,7 @@ function PeplumPantsuit() {
 
                     {/* CARD 15 */}
                     <div className="product-card" style={{ position: "relative" }}>
-                        <WishlistHeart item={{ id: "Signature Embellished Custom Saree", title: "Signature Embellished Custom Saree", image: "https://res.cloudinary.com/dugksxwkr/image/upload/v1776069816/p12-removebg-preview_sfnd9d.png", brand: "Queen's Bespoke", price: <><span>₹</span>45,000</> }} />
+                        <WishlistHeart item={{ id: "PeplumPantsuit_Signature Embellished Custom Saree", title: "Signature Embellished Custom Saree", image: "https://res.cloudinary.com/dugksxwkr/image/upload/v1776069816/p12-removebg-preview_sfnd9d.png", brand: "Queen's Bespoke", price: <><span>₹</span>45,000</> }} />
                         <img src="https://res.cloudinary.com/dugksxwkr/image/upload/v1776069816/p12-removebg-preview_sfnd9d.png"
                             alt="Bespoke Saree Gown" className="card-image" style={{ backgroundColor: '#e5e0dc' }} />
                         <div className="card-content">
@@ -474,7 +474,7 @@ function PeplumPantsuit() {
 
                     {/* CARD 16 */}
                     <div className="product-card" style={{ position: "relative" }}>
-                        <WishlistHeart item={{ id: "Peach Pastel Georgette Gown Saree", title: "Peach Pastel Georgette Gown Saree", image: "https://res.cloudinary.com/dugksxwkr/image/upload/v1776069856/p16-removebg-preview_v6wxfa.png", brand: "Maison d'Élégance", price: <><span>₹</span>13,300</> }} />
+                        <WishlistHeart item={{ id: "PeplumPantsuit_Peach Pastel Georgette Gown Saree", title: "Peach Pastel Georgette Gown Saree", image: "https://res.cloudinary.com/dugksxwkr/image/upload/v1776069856/p16-removebg-preview_v6wxfa.png", brand: "Maison d'Élégance", price: <><span>₹</span>13,300</> }} />
                         <img src="https://res.cloudinary.com/dugksxwkr/image/upload/v1776069856/p16-removebg-preview_v6wxfa.png"
                             alt="Pastel Saree" className="card-image" style={{ backgroundColor: '#fceceb' }} />
                         <div className="card-content">
@@ -498,7 +498,7 @@ function PeplumPantsuit() {
 
                     {/* CARD 17 */}
                     <div className="product-card" style={{ position: "relative" }}>
-                        <WishlistHeart item={{ id: "Festive Green Pre-Stitched Gown", title: "Festive Green Pre-Stitched Gown", image: "https://res.cloudinary.com/dugksxwkr/image/upload/v1776069865/p17-removebg-preview_ey8bf4.png", brand: "Queen's Wardrobe", price: <><span>₹</span>15,400</> }} />
+                        <WishlistHeart item={{ id: "PeplumPantsuit_Festive Green Pre-Stitched Gown", title: "Festive Green Pre-Stitched Gown", image: "https://res.cloudinary.com/dugksxwkr/image/upload/v1776069865/p17-removebg-preview_ey8bf4.png", brand: "Queen's Wardrobe", price: <><span>₹</span>15,400</> }} />
                         <img src="https://res.cloudinary.com/dugksxwkr/image/upload/v1776069865/p17-removebg-preview_ey8bf4.png"
                             alt="Festive Gown" className="card-image" />
                         <div className="card-content">
@@ -522,7 +522,7 @@ function PeplumPantsuit() {
 
                     {/* CARD 18 */}
                     <div className="product-card" style={{ position: "relative" }}>
-                        <WishlistHeart item={{ id: "Classic Black Contemporary Wrap Saree", title: "Classic Black Contemporary Wrap Saree", image: "https://res.cloudinary.com/dugksxwkr/image/upload/v1776069893/p20-removebg-preview_t8kthr.png", brand: "Western Elegance", price: <><span>₹</span>18,000</> }} />
+                        <WishlistHeart item={{ id: "PeplumPantsuit_Classic Black Contemporary Wrap Saree", title: "Classic Black Contemporary Wrap Saree", image: "https://res.cloudinary.com/dugksxwkr/image/upload/v1776069893/p20-removebg-preview_t8kthr.png", brand: "Western Elegance", price: <><span>₹</span>18,000</> }} />
                         <img src="https://res.cloudinary.com/dugksxwkr/image/upload/v1776069893/p20-removebg-preview_t8kthr.png"
                             alt="Gown" className="card-image" />
                         <div className="card-content">
@@ -546,7 +546,7 @@ function PeplumPantsuit() {
 
                     {/* CARD 19 */}
                     <div className="product-card" style={{ position: "relative" }}>
-                        <WishlistHeart item={{ id: "Rich Indigo Occasion Wear Layout Saree", title: "Rich Indigo Occasion Wear Layout Saree", image: "https://res.cloudinary.com/dugksxwkr/image/upload/v1776069873/p18-removebg-preview_c1zhbi.png", brand: "Heritage Silks", price: <><span>₹</span>21,000</> }} />
+                        <WishlistHeart item={{ id: "PeplumPantsuit_Rich Indigo Occasion Wear Layout Saree", title: "Rich Indigo Occasion Wear Layout Saree", image: "https://res.cloudinary.com/dugksxwkr/image/upload/v1776069873/p18-removebg-preview_c1zhbi.png", brand: "Heritage Silks", price: <><span>₹</span>21,000</> }} />
                         <img src="https://res.cloudinary.com/dugksxwkr/image/upload/v1776069873/p18-removebg-preview_c1zhbi.png"
                             alt="Royal Saree" className="card-image" style={{ backgroundColor: '#fceceb' }} />
                         <div className="card-content">
@@ -570,7 +570,7 @@ function PeplumPantsuit() {
 
                     {/* CARD 20 */}
                     <div className="product-card" style={{ position: "relative" }}>
-                        <WishlistHeart item={{ id: "Taupe High-Society Event Saree", title: "Taupe High-Society Event Saree", image: "https://res.cloudinary.com/dugksxwkr/image/upload/v1776069883/p19-removebg-preview_ktwr2n.png", brand: "Queen's Bespoke", price: <><span>₹</span>30,800</> }} />
+                        <WishlistHeart item={{ id: "PeplumPantsuit_Taupe High-Society Event Saree", title: "Taupe High-Society Event Saree", image: "https://res.cloudinary.com/dugksxwkr/image/upload/v1776069883/p19-removebg-preview_ktwr2n.png", brand: "Queen's Bespoke", price: <><span>₹</span>30,800</> }} />
                         <img src="https://res.cloudinary.com/dugksxwkr/image/upload/v1776069883/p19-removebg-preview_ktwr2n.png"
                             alt="Premium Drape" className="card-image" style={{ backgroundColor: '#e5e0dc' }} />
                         <div className="card-content">

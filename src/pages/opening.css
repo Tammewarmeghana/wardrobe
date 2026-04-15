@@ -301,9 +301,9 @@
 }
 
 
-.brand-name {
-    font-family: 'Playfair Display', serif;
-    font-size: 2rem;
+.opening-page-wrapper .brand-name {
+    font-family: 'Great Vibes', 'Playfair Display', cursive, serif;
+    font-size: 4.5rem;
     font-weight: 400;
     line-height: 1;
     color: #1A1413;

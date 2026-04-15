@@ -28,8 +28,11 @@ for file in jsx_files:
         title = match.group(8).strip().replace('"', '&quot;')
         price_html = match.group(10).strip()
         
+        page_name = os.path.splitext(os.path.basename(file))[0]
+        unique_id = f"{page_name}_{title}".replace('"', '&quot;')
+        
         # JSX object string formatted. Use JSX Fragment for price.
-        obj_str = f'{{{{ id: "{title}", title: "{title}", image: "{img_src}", brand: "{brand}", price: <>{price_html}</> }}}}'
+        obj_str = f'{{{{ id: "{unique_id}", title: "{title}", image: "{img_src}", brand: "{brand}", price: <>{price_html}</> }}}}'
         new_heart = f'<WishlistHeart item={obj_str} />'
         
         return match.group(0).replace(old_heart, new_heart, 1)
