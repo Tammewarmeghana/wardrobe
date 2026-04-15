@@ -1,12 +1,14 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import { FiArrowLeft, FiLock, FiTrash2 } from 'react-icons/fi';
+import { Link, useNavigate } from 'react-router-dom';
+import { FiArrowLeft, FiLock, FiTrash2, FiLoader } from 'react-icons/fi';
 import { FaCcMastercard } from 'react-icons/fa';
 import { useShop } from '../context/ShopContext';
 import './cart.css';
 
 const Cart = () => {
-  const { cartItems, updateCartQuantity } = useShop();
+  const { cartItems, updateCartQuantity, setCartItems } = useShop(); // Added setCartItems if available or we can just navigate
+  const navigate = useNavigate();
+  const [isCheckingOut, setIsCheckingOut] = React.useState(false);
 
   const handleQtyChange = (id, newQty) => {
     updateCartQuantity(id, parseInt(newQty));
@@ -23,7 +25,24 @@ const Cart = () => {
 
   const totalItemsCount = cartItems.reduce((acc, item) => acc + (item.quantity || 1), 0);
 
+  const handleCheckout = () => {
+    if (cartItems.length === 0) return; // Prevent checkout of empty cart
+    setIsCheckingOut(true);
+    setTimeout(() => {
+        setIsCheckingOut(false);
+        navigate('/order-success');
+    }, 5000); // 5 seconds loading
+  };
+
   return (
+    <>
+    {isCheckingOut && (
+        <div className="checkout-loading-overlay">
+            <div className="checkout-loader"></div>
+            <h2>Processing your order...</h2>
+            <p>Please wait, do not close or refresh this page.</p>
+        </div>
+    )}
     <div className="cart-page-container">
       <div className="cart-card">
         {/* Pink Gradient Wave Header - Abstract Shape */}
@@ -134,14 +153,20 @@ const Cart = () => {
                 <span>${Math.max(total, 0).toFixed(2)}</span>
               </div>
               
-              <button className="checkout-btn">
-                <FiLock className="lock-icon" /> CHECKOUT
+              <button 
+                className="checkout-btn" 
+                onClick={handleCheckout} 
+                disabled={isCheckingOut || cartItems.length === 0}
+              >
+                {isCheckingOut ? <FiLoader className="lock-icon rotating" /> : <FiLock className="lock-icon" />} 
+                {isCheckingOut ? 'PROCESSING...' : 'CHECKOUT'}
               </button>
             </div>
           </div>
         </div>
       </div>
     </div>
+    </>
   );
 };
 

@@ -381,3 +381,51 @@
     margin-top: 10px;
   }
 }
+
+/* Checkout Loading Overlay */
+.checkout-loading-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.9);
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(5px);
+}
+
+.checkout-loader {
+  border: 5px solid #f3f3f3;
+  border-top: 5px solid #e57399; /* Pink accent */
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: spin 1s linear infinite;
+  margin-bottom: 20px;
+}
+
+.checkout-loading-overlay h2 {
+  font-family: 'Inter', sans-serif;
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.checkout-loading-overlay p {
+  font-family: 'Inter', sans-serif;
+  color: #666;
+  font-size: 14px;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.rotating {
+  animation: spin 1.5s linear infinite;
+}

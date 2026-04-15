@@ -41,6 +41,7 @@ import './index.css';
 import { ShopProvider } from './context/ShopContext';
 import Navbar from './components/Navbar/Navbar';
 import Appointment from './pages/Appointment';
+import OrderSuccess from './pages/OrderSuccess';
 
 function App() {
   return (
@@ -63,6 +64,7 @@ function App() {
             <Route path="/search" element={<SearchResults />} />
             <Route path="/wishlist" element={<Wishlist />} />
             <Route path="/cart" element={<Cart />} />
+            <Route path="/order-success" element={<OrderSuccess />} />
             <Route path="/gownsaree" element={<GownSaree />} />
             <Route path="/sarees" element={<Sarees />} />
             <Route path="/lehengas" element={<Lehengas />} />
