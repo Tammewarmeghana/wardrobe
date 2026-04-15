@@ -3,8 +3,12 @@ import { Link, useNavigate } from 'react-router-dom';
 import './gownsaree.css';
 import './sidebar.css';
 import WishlistHeart from '../components/WishlistHeart';
+import { useShop } from '../context/ShopContext';
 
 function Bodycons() {
+    const { addToCart } = useShop();
+    const handleAddToCart = (item) => { addToCart(item); };
+
     const [isSidebarOpen, setIsSidebarOpen] = useState(false);
     const navigate = useNavigate();
 
@@ -99,7 +103,7 @@ function Bodycons() {
 
                             <p className="delivery-info">Get it by <span>Thursday, April 14</span><br />FREE Delivery by Maison</p>
 
-                            <button className="buying-options-btn">Buying options</button>
+                            <button className="buying-options-btn" onClick={() => handleAddToCart({ id: "prod_daeb142c", name: "Premium Pre-Draped Saree Gown in Soft Georgette with Embellished Belt", price: 14999, image: "https://res.cloudinary.com/dugksxwkr/image/upload/v1776154477/c04afeeff1e2a05a46ce4ee7cdb690eb-removebg-preview_lvhqwd.png", color: "#e5ccce", size: "Free Size" })}>Add to Cart</button>
                         </div>
                     </div>
 
@@ -129,7 +133,7 @@ function Bodycons() {
 
                             <p className="delivery-info">Get it by <span>Friday, April 15</span><br />FREE Delivery</p>
 
-                            <button className="buying-options-btn">Buying options</button>
+                            <button className="buying-options-btn" onClick={() => handleAddToCart({ id: "prod_548e5e99", name: "Modern Indo-Western Fusion Saree with Attached Pallu", price: 18499, image: "https://res.cloudinary.com/dugksxwkr/image/upload/v1776154477/c871b1bac4fab7de7351e1d130022aa9-removebg-preview_ydfsln.png", color: "#a37272", size: "Free Size" })}>Add to Cart</button>
                         </div>
                     </div>
 
@@ -158,7 +162,7 @@ function Bodycons() {
 
                             <p className="delivery-info">Get it by <span>Wednesday, April 13</span><br />Prime Delivery</p>
 
-                            <button className="buying-options-btn">Buying options</button>
+                            <button className="buying-options-btn" onClick={() => handleAddToCart({ id: "prod_e781b665", name: "Cocktail Saree Gown with Cape Sleeves", price: 24999, image: "https://res.cloudinary.com/dugksxwkr/image/upload/v1776154478/99e4152b4bde462b3c8321118f1d6622-removebg-preview_gpwaru.png", color: "#2F2A26", size: "Free Size" })}>Add to Cart</button>
                         </div>
                     </div>
 
@@ -189,7 +193,7 @@ function Bodycons() {
 
                             <p className="delivery-info">Get it by <span>Tomorrow, 11 AM</span><br />FREE Express Delivery</p>
 
-                            <button className="buying-options-btn">Buying options</button>
+                            <button className="buying-options-btn" onClick={() => handleAddToCart({ id: "prod_b370b5d9", name: "Heritage Silk Trim Saree Gown for Wedding Receptions", price: 21000, image: "https://res.cloudinary.com/dugksxwkr/image/upload/v1776154478/d6cd593d22b93086fdf1be1fdd7e33cf-removebg-preview_bhjwto.png", color: "#c93b4a", size: "Free Size" })}>Add to Cart</button>
                         </div>
                     </div>
 
@@ -220,7 +224,7 @@ function Bodycons() {
                             <p className="delivery-info">Custom Tailored Delivery by <span>April 20</span><br />White-glove Service
                             </p>
 
-                            <button className="buying-options-btn">Buying options</button>
+                            <button className="buying-options-btn" onClick={() => handleAddToCart({ id: "prod_872e056b", name: "Custom-Fit Sequined Saree Dress", price: 38500, image: "https://res.cloudinary.com/dugksxwkr/image/upload/v1776154477/5c7684251c53c5159ca3f3128eabe097-removebg-preview_c9ytef.png", color: "#d1bfae", size: "Free Size" })}>Add to Cart</button>
                         </div>
                     </div>
 
@@ -245,7 +249,7 @@ function Bodycons() {
                                 <span className="original-price">₹22,940</span>
                             </div>
                             <p className="delivery-info">Get it by <span>Saturday, April 16</span><br />FREE Express Delivery</p>
-                            <button className="buying-options-btn">Buying options</button>
+                            <button className="buying-options-btn" onClick={() => handleAddToCart({ id: "prod_ae540d85", name: "Embroidered Pastel Saree Gown with Dupatta", price: 19500, image: "https://res.cloudinary.com/dugksxwkr/image/upload/v1776154478/4a6b93e58dda2e15b3bb3500619a2ed3-removebg-preview_en93uo.png", color: "#bb9b9f", size: "Free Size" })}>Add to Cart</button>
                         </div>
                     </div>
 
@@ -271,7 +275,7 @@ function Bodycons() {
                                 <span className="original-price">₹21,600</span>
                             </div>
                             <p className="delivery-info">Get it by <span>Monday, April 18</span><br />FREE Delivery</p>
-                            <button className="buying-options-btn">Buying options</button>
+                            <button className="buying-options-btn" onClick={() => handleAddToCart({ id: "prod_0ccca458", name: "Olive Green Sequin Trim Saree", price: 16200, image: "https://res.cloudinary.com/dugksxwkr/image/upload/v1776154478/0d4747ebade9d56e99a8f91c407bcfec-removebg-preview_v1caof.png", color: "#5d675b", size: "Free Size" })}>Add to Cart</button>
                         </div>
                     </div>
 
@@ -297,7 +301,7 @@ function Bodycons() {
                                 <span className="original-price">₹24,998</span>
                             </div>
                             <p className="delivery-info">Get it by <span>Thursday, April 14</span><br />Prime Delivery</p>
-                            <button className="buying-options-btn">Buying options</button>
+                            <button className="buying-options-btn" onClick={() => handleAddToCart({ id: "prod_5a1c8879", name: "Midnight Black Chiffon Saree Gown", price: 12499, image: "https://res.cloudinary.com/dugksxwkr/image/upload/v1776154478/19247ea1784002701f45462c5612bdf0-removebg-preview_eket5j.png", color: "#2F2A26", size: "Free Size" })}>Add to Cart</button>
                         </div>
                     </div>
 
@@ -322,7 +326,7 @@ function Bodycons() {
                                 <span className="original-price">₹40,000</span>
                             </div>
                             <p className="delivery-info">Get it by <span>Friday, April 15</span><br />FREE Express Delivery</p>
-                            <button className="buying-options-btn">Buying options</button>
+                            <button className="buying-options-btn" onClick={() => handleAddToCart({ id: "prod_600cd325", name: "Royal Navy Blue Designer Saree with Floral Appliques", price: 28000, image: "https://res.cloudinary.com/dugksxwkr/image/upload/v1776154478/18bdb0840930bfec574c9ff539017e86-removebg-preview_me4bb6.png", color: "#0b2b4e", size: "Free Size" })}>Add to Cart</button>
                         </div>
                     </div>
 
@@ -347,7 +351,7 @@ function Bodycons() {
                                 <span className="original-price">₹38,000</span>
                             </div>
                             <p className="delivery-info">Get it by <span>April 20</span><br />White-glove Service</p>
-                            <button className="buying-options-btn">Buying options</button>
+                            <button className="buying-options-btn" onClick={() => handleAddToCart({ id: "prod_3d8c033d", name: "Nude Beige Premium Drape", price: 36100, image: "https://res.cloudinary.com/dugksxwkr/image/upload/v1776154478/896d551da825e9151ea60d2fe8ad6375-removebg-preview_hflrr8.png", color: "#d1bfae", size: "Free Size" })}>Add to Cart</button>
                         </div>
                     </div>
 
@@ -371,7 +375,7 @@ function Bodycons() {
                                 <span className="price"><span>₹</span>18,000</span>
                                 <span className="original-price">₹20,000</span>
                             </div>
-                            <button className="buying-options-btn">Buying options</button>
+                            <button className="buying-options-btn" onClick={() => handleAddToCart({ id: "prod_3570ba2d", name: "Draped Georgette Saree Gown in Rose Pink", price: 18000, image: "https://res.cloudinary.com/dugksxwkr/image/upload/v1776154478/408d8cd474589cb01351d1fed374cc50-removebg-preview_whm19y.png", color: "#e5ccce", size: "Free Size" })}>Add to Cart</button>
                         </div>
                     </div>
 
@@ -395,7 +399,7 @@ function Bodycons() {
                                 <span className="price"><span>₹</span>12,500</span>
                                 <span className="original-price">₹15,625</span>
                             </div>
-                            <button className="buying-options-btn">Buying options</button>
+                            <button className="buying-options-btn" onClick={() => handleAddToCart({ id: "prod_4f331954", name: "Pleated Indo-Western Saree with Matching Clutch", price: 12500, image: "https://res.cloudinary.com/dugksxwkr/image/upload/v1776154479/5ec80481b76424ce90edf63037e3b2cf-removebg-preview_vh79ot.png", color: "#a37272", size: "Free Size" })}>Add to Cart</button>
                         </div>
                     </div>
 
@@ -419,7 +423,7 @@ function Bodycons() {
                                 <span className="price"><span>₹</span>21,000</span>
                                 <span className="original-price">₹24,700</span>
                             </div>
-                            <button className="buying-options-btn">Buying options</button>
+                            <button className="buying-options-btn" onClick={() => handleAddToCart({ id: "prod_75051c4f", name: "Minimalist Evening Gown Saree", price: 21000, image: "https://res.cloudinary.com/dugksxwkr/image/upload/v1776154479/5afddbe7b30588627e06cd82a534d80c-removebg-preview_hrvywl.png", color: "#2F2A26", size: "Free Size" })}>Add to Cart</button>
                         </div>
                     </div>
 
@@ -444,7 +448,7 @@ function Bodycons() {
                                 <span className="price"><span>₹</span>14,000</span>
                                 <span className="original-price">₹28,000</span>
                             </div>
-                            <button className="buying-options-btn">Buying options</button>
+                            <button className="buying-options-btn" onClick={() => handleAddToCart({ id: "prod_f9b4050c", name: "Handloom Silk Saree Gown for Receptions", price: 14000, image: "https://res.cloudinary.com/dugksxwkr/image/upload/v1776154479/54275413bbc3a37957c29f9f07acfa7d-removebg-preview_s09wqn.png", color: "#c93b4a", size: "Free Size" })}>Add to Cart</button>
                         </div>
                     </div>
 
@@ -468,7 +472,7 @@ function Bodycons() {
                                 <span className="price"><span>₹</span>45,000</span>
                                 <span className="original-price">₹47,360</span>
                             </div>
-                            <button className="buying-options-btn">Buying options</button>
+                            <button className="buying-options-btn" onClick={() => handleAddToCart({ id: "prod_78e26167", name: "Signature Embellished Custom Saree", price: 45000, image: "https://res.cloudinary.com/dugksxwkr/image/upload/v1776154479/32c9ef690542a784fcfe98509b4b30d3-removebg-preview_egupmh.png", color: "#d1bfae", size: "Free Size" })}>Add to Cart</button>
                         </div>
                     </div>
 
@@ -492,7 +496,7 @@ function Bodycons() {
                                 <span className="price"><span>₹</span>13,300</span>
                                 <span className="original-price">₹19,000</span>
                             </div>
-                            <button className="buying-options-btn">Buying options</button>
+                            <button className="buying-options-btn" onClick={() => handleAddToCart({ id: "prod_647abc46", name: "Peach Pastel Georgette Gown Saree", price: 13300, image: "https://res.cloudinary.com/dugksxwkr/image/upload/v1776154479/783326ea883a82f578cd0dc9ed13c0fb-removebg-preview_skrllh.png", color: "#bb9b9f", size: "Free Size" })}>Add to Cart</button>
                         </div>
                     </div>
 
@@ -516,7 +520,7 @@ function Bodycons() {
                                 <span className="price"><span>₹</span>15,400</span>
                                 <span className="original-price">₹28,000</span>
                             </div>
-                            <button className="buying-options-btn">Buying options</button>
+                            <button className="buying-options-btn" onClick={() => handleAddToCart({ id: "prod_f6c5a763", name: "Festive Green Pre-Stitched Gown", price: 15400, image: "https://res.cloudinary.com/dugksxwkr/image/upload/v1776154479/fb6a60b72a592f8997b53d36dd315216-removebg-preview_zgcfdb.png", color: "#5d675b", size: "Free Size" })}>Add to Cart</button>
                         </div>
                     </div>
 
@@ -540,7 +544,7 @@ function Bodycons() {
                                 <span className="price"><span>₹</span>18,000</span>
                                 <span className="original-price">₹20,000</span>
                             </div>
-                            <button className="buying-options-btn">Buying options</button>
+                            <button className="buying-options-btn" onClick={() => handleAddToCart({ id: "prod_8bd0b92a", name: "Classic Black Contemporary Wrap Saree", price: 18000, image: "https://res.cloudinary.com/dugksxwkr/image/upload/v1776154479/9077943ab2affce3e2946bc8ca020000-removebg-preview_rtgyux.png", color: "#2F2A26", size: "Free Size" })}>Add to Cart</button>
                         </div>
                     </div>
 
@@ -564,7 +568,7 @@ function Bodycons() {
                                 <span className="price"><span>₹</span>21,000</span>
                                 <span className="original-price">₹35,000</span>
                             </div>
-                            <button className="buying-options-btn">Buying options</button>
+                            <button className="buying-options-btn" onClick={() => handleAddToCart({ id: "prod_b02a2f1b", name: "Rich Indigo Occasion Wear Layout Saree", price: 21000, image: "https://res.cloudinary.com/dugksxwkr/image/upload/v1776155257/440635c3143f2d45ed6c706adbf9dd1b-removebg-preview_opqbsv.png", color: "#0b2b4e", size: "Free Size" })}>Add to Cart</button>
                         </div>
                     </div>
 
@@ -589,7 +593,7 @@ function Bodycons() {
                                 <span className="price"><span>₹</span>30,800</span>
                                 <span className="original-price">₹35,000</span>
                             </div>
-                            <button className="buying-options-btn">Buying options</button>
+                            <button className="buying-options-btn" onClick={() => handleAddToCart({ id: "prod_5cd432fa", name: "Taupe High-Society Event Saree", price: 30800, image: "https://res.cloudinary.com/dugksxwkr/image/upload/v1776154479/431d0a3f6335b1e66e6e3bcd212b6b77-removebg-preview_e3nzl3.png", color: "#d1bfae", size: "Free Size" })}>Add to Cart</button>
                         </div>
                     </div>
 

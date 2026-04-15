@@ -36,6 +36,7 @@ import Contact from './pages/Contact';
 import Customised from './pages/Customised';
 import SearchResults from './pages/SearchResults';
 import Wishlist from './pages/Wishlist';
+import Cart from './pages/Cart';
 import './index.css';
 import { ShopProvider } from './context/ShopContext';
 import Navbar from './components/Navbar/Navbar';
@@ -59,6 +60,7 @@ function App() {
             <Route path="/customised" element={<Customised />} />
             <Route path="/search" element={<SearchResults />} />
             <Route path="/wishlist" element={<Wishlist />} />
+            <Route path="/cart" element={<Cart />} />
             <Route path="/gownsaree" element={<GownSaree />} />
             <Route path="/sarees" element={<Sarees />} />
             <Route path="/lehengas" element={<Lehengas />} />

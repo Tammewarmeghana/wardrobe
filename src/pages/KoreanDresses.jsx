@@ -3,8 +3,12 @@ import { Link, useNavigate } from 'react-router-dom';
 import './gownsaree.css';
 import './sidebar.css';
 import WishlistHeart from '../components/WishlistHeart';
+import { useShop } from '../context/ShopContext';
 
 function KoreanDresses() {
+    const { addToCart } = useShop();
+    const handleAddToCart = (item) => { addToCart(item); };
+
     const [isSidebarOpen, setIsSidebarOpen] = useState(false);
     const navigate = useNavigate();
 
@@ -99,7 +103,7 @@ function KoreanDresses() {
 
                             <p className="delivery-info">Get it by <span>Thursday, April 14</span><br />FREE Delivery by Maison</p>
 
-                            <button className="buying-options-btn">Buying options</button>
+                            <button className="buying-options-btn" onClick={() => handleAddToCart({ id: "prod_bc58cb4e", name: "Premium Pre-Draped Saree Gown in Soft Georgette with Embellished Belt", price: 14999, image: "https://res.cloudinary.com/dugksxwkr/image/upload/v1776157359/de4dc3097820c173452755ad43fe4f69-removebg-preview_-_Copy_2_vo5k98.png", color: "#e5ccce", size: "Free Size" })}>Add to Cart</button>
                         </div>
                     </div>
 
@@ -129,7 +133,7 @@ function KoreanDresses() {
 
                             <p className="delivery-info">Get it by <span>Friday, April 15</span><br />FREE Delivery</p>
 
-                            <button className="buying-options-btn">Buying options</button>
+                            <button className="buying-options-btn" onClick={() => handleAddToCart({ id: "prod_9a00c944", name: "Modern Indo-Western Fusion Saree with Attached Pallu", price: 18499, image: "https://res.cloudinary.com/dugksxwkr/image/upload/v1776157969/e5e0706df5362399ffd52b7e33dd0bf0-removebg-preview_pmzzem.png", color: "#a37272", size: "Free Size" })}>Add to Cart</button>
                         </div>
                     </div>
 
@@ -158,7 +162,7 @@ function KoreanDresses() {
 
                             <p className="delivery-info">Get it by <span>Wednesday, April 13</span><br />Prime Delivery</p>
 
-                            <button className="buying-options-btn">Buying options</button>
+                            <button className="buying-options-btn" onClick={() => handleAddToCart({ id: "prod_cc09eb7b", name: "Cocktail Saree Gown with Cape Sleeves", price: 24999, image: "https://res.cloudinary.com/dugksxwkr/image/upload/v1776157357/b05283393f05bf19c385da07fa77649a-removebg-preview_f6xizv.png", color: "#2F2A26", size: "Free Size" })}>Add to Cart</button>
                         </div>
                     </div>
 
@@ -189,7 +193,7 @@ function KoreanDresses() {
 
                             <p className="delivery-info">Get it by <span>Tomorrow, 11 AM</span><br />FREE Express Delivery</p>
 
-                            <button className="buying-options-btn">Buying options</button>
+                            <button className="buying-options-btn" onClick={() => handleAddToCart({ id: "prod_38a21ef1", name: "Heritage Silk Trim Saree Gown for Wedding Receptions", price: 21000, image: "https://res.cloudinary.com/dugksxwkr/image/upload/v1776157357/30053df23dfef0d8bd901c2c598313e3-removebg-preview_olmtxg.png", color: "#c93b4a", size: "Free Size" })}>Add to Cart</button>
                         </div>
                     </div>
 
@@ -220,7 +224,7 @@ function KoreanDresses() {
                             <p className="delivery-info">Custom Tailored Delivery by <span>April 20</span><br />White-glove Service
                             </p>
 
-                            <button className="buying-options-btn">Buying options</button>
+                            <button className="buying-options-btn" onClick={() => handleAddToCart({ id: "prod_4b01cd90", name: "Custom-Fit Sequined Saree Dress", price: 38500, image: "https://res.cloudinary.com/dugksxwkr/image/upload/v1776157356/ba966d0c4875e85db6c860786c22a3f3-removebg-preview_ifidgy.png", color: "#d1bfae", size: "Free Size" })}>Add to Cart</button>
                         </div>
                     </div>
 
@@ -245,7 +249,7 @@ function KoreanDresses() {
                                 <span className="original-price">₹22,940</span>
                             </div>
                             <p className="delivery-info">Get it by <span>Saturday, April 16</span><br />FREE Express Delivery</p>
-                            <button className="buying-options-btn">Buying options</button>
+                            <button className="buying-options-btn" onClick={() => handleAddToCart({ id: "prod_9fa2ab50", name: "Embroidered Pastel Saree Gown with Dupatta", price: 19500, image: "https://res.cloudinary.com/dugksxwkr/image/upload/v1776157355/73ce58750593aa1d2378c3997e0a8170-removebg-preview_cmow9v.png", color: "#bb9b9f", size: "Free Size" })}>Add to Cart</button>
                         </div>
                     </div>
 
@@ -271,7 +275,7 @@ function KoreanDresses() {
                                 <span className="original-price">₹21,600</span>
                             </div>
                             <p className="delivery-info">Get it by <span>Monday, April 18</span><br />FREE Delivery</p>
-                            <button className="buying-options-btn">Buying options</button>
+                            <button className="buying-options-btn" onClick={() => handleAddToCart({ id: "prod_6faf8562", name: "Olive Green Sequin Trim Saree", price: 16200, image: "https://res.cloudinary.com/dugksxwkr/image/upload/v1776157354/9a2b417315b44061fa7238bb15e0eab4-removebg-preview_xo8yjg.png", color: "#5d675b", size: "Free Size" })}>Add to Cart</button>
                         </div>
                     </div>
 
@@ -297,7 +301,7 @@ function KoreanDresses() {
                                 <span className="original-price">₹24,998</span>
                             </div>
                             <p className="delivery-info">Get it by <span>Thursday, April 14</span><br />Prime Delivery</p>
-                            <button className="buying-options-btn">Buying options</button>
+                            <button className="buying-options-btn" onClick={() => handleAddToCart({ id: "prod_bf8c0ff8", name: "Midnight Black Chiffon Saree Gown", price: 12499, image: "https://res.cloudinary.com/dugksxwkr/image/upload/v1776157353/ef6b3245fb9e83854a48a69188e61343-removebg-preview_otfl7d.png", color: "#2F2A26", size: "Free Size" })}>Add to Cart</button>
                         </div>
                     </div>
 
@@ -322,7 +326,7 @@ function KoreanDresses() {
                                 <span className="original-price">₹40,000</span>
                             </div>
                             <p className="delivery-info">Get it by <span>Friday, April 15</span><br />FREE Express Delivery</p>
-                            <button className="buying-options-btn">Buying options</button>
+                            <button className="buying-options-btn" onClick={() => handleAddToCart({ id: "prod_3541a24f", name: "Royal Navy Blue Designer Saree with Floral Appliques", price: 28000, image: "https://res.cloudinary.com/dugksxwkr/image/upload/v1776157352/c83180d555272b882ab38bc29438ec29-removebg-preview_ovqkoc.png", color: "#0b2b4e", size: "Free Size" })}>Add to Cart</button>
                         </div>
                     </div>
 
@@ -347,7 +351,7 @@ function KoreanDresses() {
                                 <span className="original-price">₹38,000</span>
                             </div>
                             <p className="delivery-info">Get it by <span>April 20</span><br />White-glove Service</p>
-                            <button className="buying-options-btn">Buying options</button>
+                            <button className="buying-options-btn" onClick={() => handleAddToCart({ id: "prod_cc8d5b8f", name: "Nude Beige Premium Drape", price: 36100, image: "https://res.cloudinary.com/dugksxwkr/image/upload/v1776157352/08be9f2d28b00941cb916bd735e6efb5-removebg-preview_ctqwmu.png", color: "#d1bfae", size: "Free Size" })}>Add to Cart</button>
                         </div>
                     </div>
 
@@ -371,7 +375,7 @@ function KoreanDresses() {
                                 <span className="price"><span>₹</span>18,000</span>
                                 <span className="original-price">₹20,000</span>
                             </div>
-                            <button className="buying-options-btn">Buying options</button>
+                            <button className="buying-options-btn" onClick={() => handleAddToCart({ id: "prod_97cebcdb", name: "Draped Georgette Saree Gown in Rose Pink", price: 18000, image: "https://res.cloudinary.com/dugksxwkr/image/upload/v1776157351/c9d4c8ba4556643b27b720308c3a8f8d-removebg-preview_m9o2td.png", color: "#e5ccce", size: "Free Size" })}>Add to Cart</button>
                         </div>
                     </div>
 
@@ -395,7 +399,7 @@ function KoreanDresses() {
                                 <span className="price"><span>₹</span>12,500</span>
                                 <span className="original-price">₹15,625</span>
                             </div>
-                            <button className="buying-options-btn">Buying options</button>
+                            <button className="buying-options-btn" onClick={() => handleAddToCart({ id: "prod_a849ce3f", name: "Pleated Indo-Western Saree with Matching Clutch", price: 12500, image: "https://res.cloudinary.com/dugksxwkr/image/upload/v1776157350/3b7499ca0da11f13e6adae35c8669e26-removebg-preview_rfiize.png", color: "#a37272", size: "Free Size" })}>Add to Cart</button>
                         </div>
                     </div>
 
@@ -419,7 +423,7 @@ function KoreanDresses() {
                                 <span className="price"><span>₹</span>21,000</span>
                                 <span className="original-price">₹24,700</span>
                             </div>
-                            <button className="buying-options-btn">Buying options</button>
+                            <button className="buying-options-btn" onClick={() => handleAddToCart({ id: "prod_85716b7c", name: "Minimalist Evening Gown Saree", price: 21000, image: "https://res.cloudinary.com/dugksxwkr/image/upload/v1776157348/a6aa6d0922615a153c9fcf506c49059a-removebg-preview_siwun2.png", color: "#2F2A26", size: "Free Size" })}>Add to Cart</button>
                         </div>
                     </div>
 
@@ -444,7 +448,7 @@ function KoreanDresses() {
                                 <span className="price"><span>₹</span>14,000</span>
                                 <span className="original-price">₹28,000</span>
                             </div>
-                            <button className="buying-options-btn">Buying options</button>
+                            <button className="buying-options-btn" onClick={() => handleAddToCart({ id: "prod_f1d3a5df", name: "Handloom Silk Saree Gown for Receptions", price: 14000, image: "https://res.cloudinary.com/dugksxwkr/image/upload/v1776157347/750b88e150ef05b3827a798781c8c118-removebg-preview_lbktfa.png", color: "#c93b4a", size: "Free Size" })}>Add to Cart</button>
                         </div>
                     </div>
 
@@ -468,7 +472,7 @@ function KoreanDresses() {
                                 <span className="price"><span>₹</span>45,000</span>
                                 <span className="original-price">₹47,360</span>
                             </div>
-                            <button className="buying-options-btn">Buying options</button>
+                            <button className="buying-options-btn" onClick={() => handleAddToCart({ id: "prod_cfe5dbbb", name: "Signature Embellished Custom Saree", price: 45000, image: "https://res.cloudinary.com/dugksxwkr/image/upload/v1776157347/2e0fd8fa00632ccc739abb4a3c884be5-removebg-preview_wybpsk.png", color: "#d1bfae", size: "Free Size" })}>Add to Cart</button>
                         </div>
                     </div>
 
@@ -492,7 +496,7 @@ function KoreanDresses() {
                                 <span className="price"><span>₹</span>13,300</span>
                                 <span className="original-price">₹19,000</span>
                             </div>
-                            <button className="buying-options-btn">Buying options</button>
+                            <button className="buying-options-btn" onClick={() => handleAddToCart({ id: "prod_c2c8f0f9", name: "Peach Pastel Georgette Gown Saree", price: 13300, image: "https://res.cloudinary.com/dugksxwkr/image/upload/v1776157346/d43afcf181d59b78cd01cd059dbdd7bb-removebg-preview_gft0ei.png", color: "#bb9b9f", size: "Free Size" })}>Add to Cart</button>
                         </div>
                     </div>
 
@@ -516,7 +520,7 @@ function KoreanDresses() {
                                 <span className="price"><span>₹</span>15,400</span>
                                 <span className="original-price">₹28,000</span>
                             </div>
-                            <button className="buying-options-btn">Buying options</button>
+                            <button className="buying-options-btn" onClick={() => handleAddToCart({ id: "prod_575c0a49", name: "Festive Green Pre-Stitched Gown", price: 15400, image: "https://res.cloudinary.com/dugksxwkr/image/upload/v1776157345/e37800c7500009bd86b78196c9ff3ec9-removebg-preview_uk7xvc.png", color: "#5d675b", size: "Free Size" })}>Add to Cart</button>
                         </div>
                     </div>
 
@@ -540,7 +544,7 @@ function KoreanDresses() {
                                 <span className="price"><span>₹</span>18,000</span>
                                 <span className="original-price">₹20,000</span>
                             </div>
-                            <button className="buying-options-btn">Buying options</button>
+                            <button className="buying-options-btn" onClick={() => handleAddToCart({ id: "prod_f1da7e18", name: "Classic Black Contemporary Wrap Saree", price: 18000, image: "https://res.cloudinary.com/dugksxwkr/image/upload/v1776157344/f926ba48afaa66fb1077ea1be4bc53ed-removebg-preview_sullbf.png", color: "#2F2A26", size: "Free Size" })}>Add to Cart</button>
                         </div>
                     </div>
 
@@ -564,7 +568,7 @@ function KoreanDresses() {
                                 <span className="price"><span>₹</span>21,000</span>
                                 <span className="original-price">₹35,000</span>
                             </div>
-                            <button className="buying-options-btn">Buying options</button>
+                            <button className="buying-options-btn" onClick={() => handleAddToCart({ id: "prod_230573ad", name: "Rich Indigo Occasion Wear Layout Saree", price: 21000, image: "https://res.cloudinary.com/dugksxwkr/image/upload/v1776157343/38293a898aad8934e1c46790bb61da65-removebg-preview_pr2vot.png", color: "#0b2b4e", size: "Free Size" })}>Add to Cart</button>
                         </div>
                     </div>
 
@@ -589,7 +593,7 @@ function KoreanDresses() {
                                 <span className="price"><span>₹</span>30,800</span>
                                 <span className="original-price">₹35,000</span>
                             </div>
-                            <button className="buying-options-btn">Buying options</button>
+                            <button className="buying-options-btn" onClick={() => handleAddToCart({ id: "prod_5c6acae0", name: "Taupe High-Society Event Saree", price: 30800, image: "https://res.cloudinary.com/dugksxwkr/image/upload/v1776157343/514ab9211ac14550652d23e50bdb7c98-removebg-preview_azoaiq.png", color: "#d1bfae", size: "Free Size" })}>Add to Cart</button>
                         </div>
                     </div>
 
