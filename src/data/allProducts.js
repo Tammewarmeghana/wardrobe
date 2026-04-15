@@ -960,7 +960,7 @@ export const allProducts = [
     image: "https://res.cloudinary.com/dugksxwkr/image/upload/v1776154479/431d0a3f6335b1e66e6e3bcd212b6b77-removebg-preview_e3nzl3.png"
   },
   {
-    id: "ChaniyaCholi_Premium Pre-Draped Saree Gown in Soft Georgette with Embellished Belt",
+    id: "IndianGowns_Premium Pre-Draped Saree Gown in Soft Georgette with Embellished Belt",
     title: "Premium Pre-Draped Saree Gown in Soft Georgette with Embellished Belt",
     brand: "Maison d'Élégance",
     price: 14999,
@@ -968,11 +968,11 @@ export const allProducts = [
     rating: 4.5,
     reviews: 120,
     discount: "20%",
-    category: "ChaniyaCholi",
+    category: "IndianGowns",
     image: ""
   },
   {
-    id: "ChaniyaCholi_Modern Indo-Western Fusion Saree with Attached Pallu",
+    id: "IndianGowns_Modern Indo-Western Fusion Saree with Attached Pallu",
     title: "Modern Indo-Western Fusion Saree with Attached Pallu",
     brand: "Queen's Wardrobe",
     price: 18499,
@@ -980,11 +980,11 @@ export const allProducts = [
     rating: 4.5,
     reviews: 120,
     discount: "20%",
-    category: "ChaniyaCholi",
+    category: "IndianGowns",
     image: ""
   },
   {
-    id: "ChaniyaCholi_Cocktail Saree Gown with Cape Sleeves",
+    id: "IndianGowns_Cocktail Saree Gown with Cape Sleeves",
     title: "Cocktail Saree Gown with Cape Sleeves",
     brand: "Western Elegance",
     price: 24999,
@@ -992,11 +992,11 @@ export const allProducts = [
     rating: 4.5,
     reviews: 120,
     discount: "20%",
-    category: "ChaniyaCholi",
+    category: "IndianGowns",
     image: ""
   },
   {
-    id: "ChaniyaCholi_Heritage Silk Trim Saree Gown for Wedding Receptions",
+    id: "IndianGowns_Heritage Silk Trim Saree Gown for Wedding Receptions",
     title: "Heritage Silk Trim Saree Gown for Wedding Receptions",
     brand: "Maison d'Élégance",
     price: 21000,
@@ -1004,11 +1004,11 @@ export const allProducts = [
     rating: 4.5,
     reviews: 120,
     discount: "20%",
-    category: "ChaniyaCholi",
+    category: "IndianGowns",
     image: ""
   },
   {
-    id: "ChaniyaCholi_Custom-Fit Sequined Saree Dress",
+    id: "IndianGowns_Custom-Fit Sequined Saree Dress",
     title: "Custom-Fit Sequined Saree Dress",
     brand: "Queen's Bespoke",
     price: 38500,
@@ -1016,11 +1016,11 @@ export const allProducts = [
     rating: 4.5,
     reviews: 120,
     discount: "20%",
-    category: "ChaniyaCholi",
+    category: "IndianGowns",
     image: ""
   },
   {
-    id: "ChaniyaCholi_Embroidered Pastel Saree Gown with Dupatta",
+    id: "IndianGowns_Embroidered Pastel Saree Gown with Dupatta",
     title: "Embroidered Pastel Saree Gown with Dupatta",
     brand: "Maison d'Élégance",
     price: 19500,
@@ -1028,11 +1028,11 @@ export const allProducts = [
     rating: 4.5,
     reviews: 120,
     discount: "20%",
-    category: "ChaniyaCholi",
+    category: "IndianGowns",
     image: ""
   },
   {
-    id: "ChaniyaCholi_Olive Green Sequin Trim Saree",
+    id: "IndianGowns_Olive Green Sequin Trim Saree",
     title: "Olive Green Sequin Trim Saree",
     brand: "Queen's Wardrobe",
     price: 16200,
@@ -1040,11 +1040,11 @@ export const allProducts = [
     rating: 4.5,
     reviews: 120,
     discount: "20%",
-    category: "ChaniyaCholi",
+    category: "IndianGowns",
     image: ""
   },
   {
-    id: "ChaniyaCholi_Midnight Black Chiffon Saree Gown",
+    id: "IndianGowns_Midnight Black Chiffon Saree Gown",
     title: "Midnight Black Chiffon Saree Gown",
     brand: "Western Elegance",
     price: 12499,
@@ -1052,11 +1052,11 @@ export const allProducts = [
     rating: 4.5,
     reviews: 120,
     discount: "20%",
-    category: "ChaniyaCholi",
+    category: "IndianGowns",
     image: ""
   },
   {
-    id: "ChaniyaCholi_Royal Navy Blue Designer Saree with Floral Appliques",
+    id: "IndianGowns_Royal Navy Blue Designer Saree with Floral Appliques",
     title: "Royal Navy Blue Designer Saree with Floral Appliques",
     brand: "Maison d'Élégance",
     price: 28000,
@@ -1064,11 +1064,11 @@ export const allProducts = [
     rating: 4.5,
     reviews: 120,
     discount: "20%",
-    category: "ChaniyaCholi",
+    category: "IndianGowns",
     image: ""
   },
   {
-    id: "ChaniyaCholi_Nude Beige Premium Drape",
+    id: "IndianGowns_Nude Beige Premium Drape",
     title: "Nude Beige Premium Drape",
     brand: "Queen's Bespoke",
     price: 36100,
@@ -1076,11 +1076,11 @@ export const allProducts = [
     rating: 4.5,
     reviews: 120,
     discount: "20%",
-    category: "ChaniyaCholi",
+    category: "IndianGowns",
     image: ""
   },
   {
-    id: "ChaniyaCholi_Draped Georgette Saree Gown in Rose Pink",
+    id: "IndianGowns_Draped Georgette Saree Gown in Rose Pink",
     title: "Draped Georgette Saree Gown in Rose Pink",
     brand: "Maison d'Élégance",
     price: 18000,
@@ -1088,11 +1088,11 @@ export const allProducts = [
     rating: 4.5,
     reviews: 120,
     discount: "20%",
-    category: "ChaniyaCholi",
+    category: "IndianGowns",
     image: ""
   },
   {
-    id: "ChaniyaCholi_Pleated Indo-Western Saree with Matching Clutch",
+    id: "IndianGowns_Pleated Indo-Western Saree with Matching Clutch",
     title: "Pleated Indo-Western Saree with Matching Clutch",
     brand: "Queen's Wardrobe",
     price: 12500,
@@ -1100,11 +1100,11 @@ export const allProducts = [
     rating: 4.5,
     reviews: 120,
     discount: "20%",
-    category: "ChaniyaCholi",
+    category: "IndianGowns",
     image: ""
   },
   {
-    id: "ChaniyaCholi_Minimalist Evening Gown Saree",
+    id: "IndianGowns_Minimalist Evening Gown Saree",
     title: "Minimalist Evening Gown Saree",
     brand: "Western Elegance",
     price: 21000,
@@ -1112,11 +1112,11 @@ export const allProducts = [
     rating: 4.5,
     reviews: 120,
     discount: "20%",
-    category: "ChaniyaCholi",
+    category: "IndianGowns",
     image: ""
   },
   {
-    id: "ChaniyaCholi_Handloom Silk Saree Gown for Receptions",
+    id: "IndianGowns_Handloom Silk Saree Gown for Receptions",
     title: "Handloom Silk Saree Gown for Receptions",
     brand: "Heritage Silks",
     price: 14000,
@@ -1124,11 +1124,11 @@ export const allProducts = [
     rating: 4.5,
     reviews: 120,
     discount: "20%",
-    category: "ChaniyaCholi",
+    category: "IndianGowns",
     image: ""
   },
   {
-    id: "ChaniyaCholi_Signature Embellished Custom Saree",
+    id: "IndianGowns_Signature Embellished Custom Saree",
     title: "Signature Embellished Custom Saree",
     brand: "Queen's Bespoke",
     price: 45000,
@@ -1136,11 +1136,11 @@ export const allProducts = [
     rating: 4.5,
     reviews: 120,
     discount: "20%",
-    category: "ChaniyaCholi",
+    category: "IndianGowns",
     image: ""
   },
   {
-    id: "ChaniyaCholi_Peach Pastel Georgette Gown Saree",
+    id: "IndianGowns_Peach Pastel Georgette Gown Saree",
     title: "Peach Pastel Georgette Gown Saree",
     brand: "Maison d'Élégance",
     price: 13300,
@@ -1148,11 +1148,11 @@ export const allProducts = [
     rating: 4.5,
     reviews: 120,
     discount: "20%",
-    category: "ChaniyaCholi",
+    category: "IndianGowns",
     image: ""
   },
   {
-    id: "ChaniyaCholi_Festive Green Pre-Stitched Gown",
+    id: "IndianGowns_Festive Green Pre-Stitched Gown",
     title: "Festive Green Pre-Stitched Gown",
     brand: "Queen's Wardrobe",
     price: 15400,
@@ -1160,11 +1160,11 @@ export const allProducts = [
     rating: 4.5,
     reviews: 120,
     discount: "20%",
-    category: "ChaniyaCholi",
+    category: "IndianGowns",
     image: ""
   },
   {
-    id: "ChaniyaCholi_Classic Black Contemporary Wrap Saree",
+    id: "IndianGowns_Classic Black Contemporary Wrap Saree",
     title: "Classic Black Contemporary Wrap Saree",
     brand: "Western Elegance",
     price: 18000,
@@ -1172,11 +1172,11 @@ export const allProducts = [
     rating: 4.5,
     reviews: 120,
     discount: "20%",
-    category: "ChaniyaCholi",
+    category: "IndianGowns",
     image: ""
   },
   {
-    id: "ChaniyaCholi_Rich Indigo Occasion Wear Layout Saree",
+    id: "IndianGowns_Rich Indigo Occasion Wear Layout Saree",
     title: "Rich Indigo Occasion Wear Layout Saree",
     brand: "Heritage Silks",
     price: 21000,
@@ -1184,11 +1184,11 @@ export const allProducts = [
     rating: 4.5,
     reviews: 120,
     discount: "20%",
-    category: "ChaniyaCholi",
+    category: "IndianGowns",
     image: ""
   },
   {
-    id: "ChaniyaCholi_Taupe High-Society Event Saree",
+    id: "IndianGowns_Taupe High-Society Event Saree",
     title: "Taupe High-Society Event Saree",
     brand: "Queen's Bespoke",
     price: 30800,
@@ -1196,7 +1196,7 @@ export const allProducts = [
     rating: 4.5,
     reviews: 120,
     discount: "20%",
-    category: "ChaniyaCholi",
+    category: "IndianGowns",
     image: ""
   },
   {

@@ -9,6 +9,7 @@ function ChaniyaCholi() {
     const { addToCart } = useShop();
     const handleAddToCart = (item) => { addToCart(item); };
 
+function IndianGowns() {
     const [isSidebarOpen, setIsSidebarOpen] = useState(false);
     const navigate = useNavigate();
 
@@ -22,12 +23,12 @@ function ChaniyaCholi() {
 
     return (
         <div className="gownsaree-wrapper gown-saree-page-container">
-            <div className="page-container" style={{overflowX: 'hidden'}}>
+            <div className="page-container" style={{ overflowX: 'hidden' }}>
                 {/* Header & Tabs */}
                 <div className="page-header">
                     {/* Search & Actions */}
                     <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: '24px', paddingBottom: '20px' }}>
-                        
+
                         <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
                             <button onClick={() => navigate(-1)} title="Go Back" style={{ background: 'none', border: 'none', cursor: 'pointer', padding: '0', display: 'flex', alignItems: 'center', color: 'var(--text-main)' }}>
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -52,25 +53,25 @@ function ChaniyaCholi() {
                 {/* Filters */}
                 <div className="filter-row">
                     <div className="filter-pill">Price <svg width="12" height="12" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" strokeWidth="2">
-                            <path d="M6 9l6 6 6-6" />
-                        </svg></div>
+                        stroke="currentColor" strokeWidth="2">
+                        <path d="M6 9l6 6 6-6" />
+                    </svg></div>
                     <div className="filter-pill">4 stars & up <svg width="12" height="12" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" strokeWidth="2">
-                            <path d="M6 9l6 6 6-6" />
-                        </svg></div>
+                        stroke="currentColor" strokeWidth="2">
+                        <path d="M6 9l6 6 6-6" />
+                    </svg></div>
                     <div className="filter-pill">Brand <svg width="12" height="12" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" strokeWidth="2">
-                            <path d="M6 9l6 6 6-6" />
-                        </svg></div>
+                        stroke="currentColor" strokeWidth="2">
+                        <path d="M6 9l6 6 6-6" />
+                    </svg></div>
                     <div className="filter-pill">Color <svg width="12" height="12" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" strokeWidth="2">
-                            <path d="M6 9l6 6 6-6" />
-                        </svg></div>
+                        stroke="currentColor" strokeWidth="2">
+                        <path d="M6 9l6 6 6-6" />
+                    </svg></div>
                     <div className="filter-pill">Fabric <svg width="12" height="12" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" strokeWidth="2">
-                            <path d="M6 9l6 6 6-6" />
-                        </svg></div>
+                        stroke="currentColor" strokeWidth="2">
+                        <path d="M6 9l6 6 6-6" />
+                    </svg></div>
                 </div>
 
                 {/* Product Grid */}
@@ -78,8 +79,8 @@ function ChaniyaCholi() {
 
                     {/* CARD 1 */}
                     <div className="product-card" style={{ position: "relative" }}>
-                        <WishlistHeart item={{ id: "ChaniyaCholi_Premium Pre-Draped Saree Gown in Soft Georgette with Embellished Belt", title: "Premium Pre-Draped Saree Gown in Soft Georgette with Embellished Belt", image: "", brand: "Maison d'Élégance", price: <><span>₹</span>14,999</> }} />
-                        <img src=""
+                        <WishlistHeart item={{ id: "IndianGowns_Premium Pre-Draped Saree Gown in Soft Georgette with Embellished Belt", title: "Premium Pre-Draped Saree Gown in Soft Georgette with Embellished Belt", image: "", brand: "Maison d'Élégance", price: <><span>₹</span>14,999</> }} />
+                        <img src="https://res.cloudinary.com/dodmxncwc/image/upload/v1776233882/dabb81d529592c48f48b4956f1ac0fc6-removebg-preview_ujk5yh.png"
                             alt="Saree Gown" className="card-image" style={{ backgroundColor: '#e5ccce' }} />
                         <div className="card-content">
                             <div className="swatches">
@@ -109,8 +110,8 @@ function ChaniyaCholi() {
 
                     {/* CARD 2 */}
                     <div className="product-card" style={{ position: "relative" }}>
-                        <WishlistHeart item={{ id: "ChaniyaCholi_Modern Indo-Western Fusion Saree with Attached Pallu", title: "Modern Indo-Western Fusion Saree with Attached Pallu", image: "", brand: "Queen's Wardrobe", price: <><span>₹</span>18,499</> }} />
-                        <img src=""
+                        <WishlistHeart item={{ id: "IndianGowns_Modern Indo-Western Fusion Saree with Attached Pallu", title: "Modern Indo-Western Fusion Saree with Attached Pallu", image: "", brand: "Queen's Wardrobe", price: <><span>₹</span>18,499</> }} />
+                        <img src="https://res.cloudinary.com/dodmxncwc/image/upload/v1776233732/i1-removebg-preview_yujfxf.png"
                             alt="Indo Western Saree" className="card-image" />
                         <div className="card-content">
                             <div className="swatches">
@@ -139,8 +140,8 @@ function ChaniyaCholi() {
 
                     {/* CARD 3 */}
                     <div className="product-card" style={{ position: "relative" }}>
-                        <WishlistHeart item={{ id: "ChaniyaCholi_Cocktail Saree Gown with Cape Sleeves", title: "Cocktail Saree Gown with Cape Sleeves", image: "", brand: "Western Elegance", price: <><span>₹</span>24,999</> }} />
-                        <img src=""
+                        <WishlistHeart item={{ id: "IndianGowns_Cocktail Saree Gown with Cape Sleeves", title: "Cocktail Saree Gown with Cape Sleeves", image: "", brand: "Western Elegance", price: <><span>₹</span>24,999</> }} />
+                        <img src="https://res.cloudinary.com/dodmxncwc/image/upload/v1776233732/i12-removebg-preview_p2k3rq.png"
                             alt="Modern Saree" className="card-image" />
                         <div className="card-content">
                             <div className="swatches">
@@ -168,8 +169,8 @@ function ChaniyaCholi() {
 
                     {/* CARD 4 */}
                     <div className="product-card" style={{ position: "relative" }}>
-                        <WishlistHeart item={{ id: "ChaniyaCholi_Heritage Silk Trim Saree Gown for Wedding Receptions", title: "Heritage Silk Trim Saree Gown for Wedding Receptions", image: "", brand: "Maison d'Élégance", price: <><span>₹</span>21,000</> }} />
-                        <img src=""
+                        <WishlistHeart item={{ id: "IndianGowns_Heritage Silk Trim Saree Gown for Wedding Receptions", title: "Heritage Silk Trim Saree Gown for Wedding Receptions", image: "", brand: "Maison d'Élégance", price: <><span>₹</span>21,000</> }} />
+                        <img src="https://res.cloudinary.com/dodmxncwc/image/upload/v1776233732/i5-removebg-preview_amn4ki.png"
                             alt="Traditional Saree Gown" className="card-image" style={{ backgroundColor: '#fceceb' }} />
                         <div className="card-content">
                             <div className="swatches">
@@ -199,8 +200,8 @@ function ChaniyaCholi() {
 
                     {/* CARD 5 */}
                     <div className="product-card" style={{ position: "relative" }}>
-                        <WishlistHeart item={{ id: "ChaniyaCholi_Custom-Fit Sequined Saree Dress", title: "Custom-Fit Sequined Saree Dress", image: "", brand: "Queen's Bespoke", price: <><span>₹</span>38,500</> }} />
-                        <img src=""
+                        <WishlistHeart item={{ id: "IndianGowns_Custom-Fit Sequined Saree Dress", title: "Custom-Fit Sequined Saree Dress", image: "", brand: "Queen's Bespoke", price: <><span>₹</span>38,500</> }} />
+                        <img src="https://res.cloudinary.com/dodmxncwc/image/upload/v1776233729/i22_ck0l8d.jpg"
                             alt="Bespoke Saree Gown" className="card-image" style={{ backgroundColor: '#e5e0dc' }} />
                         <div className="card-content">
                             <div className="swatches">
@@ -230,8 +231,8 @@ function ChaniyaCholi() {
 
                     {/* CARD 6 */}
                     <div className="product-card" style={{ position: "relative" }}>
-                        <WishlistHeart item={{ id: "ChaniyaCholi_Embroidered Pastel Saree Gown with Dupatta", title: "Embroidered Pastel Saree Gown with Dupatta", image: "", brand: "Maison d'Élégance", price: <><span>₹</span>19,500</> }} />
-                        <img src=""
+                        <WishlistHeart item={{ id: "IndianGowns_Embroidered Pastel Saree Gown with Dupatta", title: "Embroidered Pastel Saree Gown with Dupatta", image: "", brand: "Maison d'Élégance", price: <><span>₹</span>19,500</> }} />
+                        <img src="https://res.cloudinary.com/dodmxncwc/image/upload/v1776233730/i6-removebg-preview_p0jq9q.png"
                             alt="Embroidered Saree Gown" className="card-image" style={{ backgroundColor: '#fceceb' }} />
                         <div className="card-content">
                             <div className="swatches">
@@ -255,8 +256,8 @@ function ChaniyaCholi() {
 
                     {/* CARD 7 */}
                     <div className="product-card" style={{ position: "relative" }}>
-                        <WishlistHeart item={{ id: "ChaniyaCholi_Olive Green Sequin Trim Saree", title: "Olive Green Sequin Trim Saree", image: "", brand: "Queen's Wardrobe", price: <><span>₹</span>16,200</> }} />
-                        <img src=""
+                        <WishlistHeart item={{ id: "IndianGowns_Olive Green Sequin Trim Saree", title: "Olive Green Sequin Trim Saree", image: "", brand: "Queen's Wardrobe", price: <><span>₹</span>16,200</> }} />
+                        <img src="https://res.cloudinary.com/dodmxncwc/image/upload/v1776233730/i18-removebg-preview_hzclzh.png"
                             alt="Sequin Saree" className="card-image" />
                         <div className="card-content">
                             <div className="swatches">
@@ -281,8 +282,8 @@ function ChaniyaCholi() {
 
                     {/* CARD 8 */}
                     <div className="product-card" style={{ position: "relative" }}>
-                        <WishlistHeart item={{ id: "ChaniyaCholi_Midnight Black Chiffon Saree Gown", title: "Midnight Black Chiffon Saree Gown", image: "", brand: "Western Elegance", price: <><span>₹</span>12,499</> }} />
-                        <img src=""
+                        <WishlistHeart item={{ id: "IndianGowns_Midnight Black Chiffon Saree Gown", title: "Midnight Black Chiffon Saree Gown", image: "", brand: "Western Elegance", price: <><span>₹</span>12,499</> }} />
+                        <img src="https://res.cloudinary.com/dodmxncwc/image/upload/v1776233730/3d36ab5522cbcf13b31ecafd8fc3ab23-removebg-preview_kt2al4.png"
                             alt="Chiffon Saree Gown" className="card-image" />
                         <div className="card-content">
                             <div className="swatches">
@@ -307,8 +308,8 @@ function ChaniyaCholi() {
 
                     {/* CARD 9 */}
                     <div className="product-card" style={{ position: "relative" }}>
-                        <WishlistHeart item={{ id: "ChaniyaCholi_Royal Navy Blue Designer Saree with Floral Appliques", title: "Royal Navy Blue Designer Saree with Floral Appliques", image: "", brand: "Maison d'Élégance", price: <><span>₹</span>28,000</> }} />
-                        <img src=""
+                        <WishlistHeart item={{ id: "IndianGowns_Royal Navy Blue Designer Saree with Floral Appliques", title: "Royal Navy Blue Designer Saree with Floral Appliques", image: "", brand: "Maison d'Élégance", price: <><span>₹</span>28,000</> }} />
+                        <img src="https://res.cloudinary.com/dodmxncwc/image/upload/v1776233729/7fb5b6a5e6990168a7d830d8faf857bd-removebg-preview_mlm02b.png"
                             alt="Royal Saree" className="card-image" style={{ backgroundColor: '#fceceb' }} />
                         <div className="card-content">
                             <div className="swatches">
@@ -332,8 +333,8 @@ function ChaniyaCholi() {
 
                     {/* CARD 10 */}
                     <div className="product-card" style={{ position: "relative" }}>
-                        <WishlistHeart item={{ id: "ChaniyaCholi_Nude Beige Premium Drape", title: "Nude Beige Premium Drape", image: "", brand: "Queen's Bespoke", price: <><span>₹</span>36,100</> }} />
-                        <img src=""
+                        <WishlistHeart item={{ id: "IndianGowns_Nude Beige Premium Drape", title: "Nude Beige Premium Drape", image: "", brand: "Queen's Bespoke", price: <><span>₹</span>36,100</> }} />
+                        <img src="https://res.cloudinary.com/dodmxncwc/image/upload/v1776233730/i20-removebg-preview_alcf3s.png"
                             alt="Premium Drape" className="card-image" style={{ backgroundColor: '#e5e0dc' }} />
                         <div className="card-content">
                             <div className="swatches">
@@ -357,8 +358,8 @@ function ChaniyaCholi() {
 
                     {/* CARD 11 */}
                     <div className="product-card" style={{ position: "relative" }}>
-                        <WishlistHeart item={{ id: "ChaniyaCholi_Draped Georgette Saree Gown in Rose Pink", title: "Draped Georgette Saree Gown in Rose Pink", image: "", brand: "Maison d'Élégance", price: <><span>₹</span>18,000</> }} />
-                        <img src=""
+                        <WishlistHeart item={{ id: "IndianGowns_Draped Georgette Saree Gown in Rose Pink", title: "Draped Georgette Saree Gown in Rose Pink", image: "", brand: "Maison d'Élégance", price: <><span>₹</span>18,000</> }} />
+                        <img src="https://res.cloudinary.com/dodmxncwc/image/upload/v1776233730/i21-removebg-preview_vqdy9r.png"
                             alt="Saree Gown" className="card-image" style={{ backgroundColor: '#e5ccce' }} />
                         <div className="card-content">
                             <div className="swatches">
@@ -381,8 +382,8 @@ function ChaniyaCholi() {
 
                     {/* CARD 12 */}
                     <div className="product-card" style={{ position: "relative" }}>
-                        <WishlistHeart item={{ id: "ChaniyaCholi_Pleated Indo-Western Saree with Matching Clutch", title: "Pleated Indo-Western Saree with Matching Clutch", image: "", brand: "Queen's Wardrobe", price: <><span>₹</span>12,500</> }} />
-                        <img src=""
+                        <WishlistHeart item={{ id: "IndianGowns_Pleated Indo-Western Saree with Matching Clutch", title: "Pleated Indo-Western Saree with Matching Clutch", image: "", brand: "Queen's Wardrobe", price: <><span>₹</span>12,500</> }} />
+                        <img src="https://res.cloudinary.com/dodmxncwc/image/upload/v1776233731/i11-removebg-preview_e4viqj.png"
                             alt="Saree Gown" className="card-image" />
                         <div className="card-content">
                             <div className="swatches">
@@ -405,8 +406,8 @@ function ChaniyaCholi() {
 
                     {/* CARD 13 */}
                     <div className="product-card" style={{ position: "relative" }}>
-                        <WishlistHeart item={{ id: "ChaniyaCholi_Minimalist Evening Gown Saree", title: "Minimalist Evening Gown Saree", image: "", brand: "Western Elegance", price: <><span>₹</span>21,000</> }} />
-                        <img src=""
+                        <WishlistHeart item={{ id: "IndianGowns_Minimalist Evening Gown Saree", title: "Minimalist Evening Gown Saree", image: "", brand: "Western Elegance", price: <><span>₹</span>21,000</> }} />
+                        <img src="https://res.cloudinary.com/dodmxncwc/image/upload/v1776233731/i17-removebg-preview_gjan4k.png"
                             alt="Saree Gown" className="card-image" />
                         <div className="card-content">
                             <div className="swatches">
@@ -429,8 +430,8 @@ function ChaniyaCholi() {
 
                     {/* CARD 14 */}
                     <div className="product-card" style={{ position: "relative" }}>
-                        <WishlistHeart item={{ id: "ChaniyaCholi_Handloom Silk Saree Gown for Receptions", title: "Handloom Silk Saree Gown for Receptions", image: "", brand: "Heritage Silks", price: <><span>₹</span>14,000</> }} />
-                        <img src=""
+                        <WishlistHeart item={{ id: "IndianGowns_Handloom Silk Saree Gown for Receptions", title: "Handloom Silk Saree Gown for Receptions", image: "", brand: "Heritage Silks", price: <><span>₹</span>14,000</> }} />
+                        <img src="https://res.cloudinary.com/dodmxncwc/image/upload/v1776235247/af8ba98c5e090ed39a9d36b0ace750af-removebg-preview_qtlqck.png"
                             alt="Traditional Saree Gown" className="card-image" style={{ backgroundColor: '#fceceb' }} />
                         <div className="card-content">
                             <div className="swatches">
@@ -454,8 +455,8 @@ function ChaniyaCholi() {
 
                     {/* CARD 15 */}
                     <div className="product-card" style={{ position: "relative" }}>
-                        <WishlistHeart item={{ id: "ChaniyaCholi_Signature Embellished Custom Saree", title: "Signature Embellished Custom Saree", image: "", brand: "Queen's Bespoke", price: <><span>₹</span>45,000</> }} />
-                        <img src=""
+                        <WishlistHeart item={{ id: "IndianGowns_Signature Embellished Custom Saree", title: "Signature Embellished Custom Saree", image: "", brand: "Queen's Bespoke", price: <><span>₹</span>45,000</> }} />
+                        <img src="https://res.cloudinary.com/dodmxncwc/image/upload/v1776233731/i13-removebg-preview_ydyqqn.png"
                             alt="Bespoke Saree Gown" className="card-image" style={{ backgroundColor: '#e5e0dc' }} />
                         <div className="card-content">
                             <div className="swatches">
@@ -478,8 +479,8 @@ function ChaniyaCholi() {
 
                     {/* CARD 16 */}
                     <div className="product-card" style={{ position: "relative" }}>
-                        <WishlistHeart item={{ id: "ChaniyaCholi_Peach Pastel Georgette Gown Saree", title: "Peach Pastel Georgette Gown Saree", image: "", brand: "Maison d'Élégance", price: <><span>₹</span>13,300</> }} />
-                        <img src=""
+                        <WishlistHeart item={{ id: "IndianGowns_Peach Pastel Georgette Gown Saree", title: "Peach Pastel Georgette Gown Saree", image: "", brand: "Maison d'Élégance", price: <><span>₹</span>13,300</> }} />
+                        <img src="https://res.cloudinary.com/dodmxncwc/image/upload/v1776233731/i16-removebg-preview_hi0fsb.png"
                             alt="Pastel Saree" className="card-image" style={{ backgroundColor: '#fceceb' }} />
                         <div className="card-content">
                             <div className="swatches">
@@ -502,8 +503,8 @@ function ChaniyaCholi() {
 
                     {/* CARD 17 */}
                     <div className="product-card" style={{ position: "relative" }}>
-                        <WishlistHeart item={{ id: "ChaniyaCholi_Festive Green Pre-Stitched Gown", title: "Festive Green Pre-Stitched Gown", image: "", brand: "Queen's Wardrobe", price: <><span>₹</span>15,400</> }} />
-                        <img src=""
+                        <WishlistHeart item={{ id: "IndianGowns_Festive Green Pre-Stitched Gown", title: "Festive Green Pre-Stitched Gown", image: "", brand: "Queen's Wardrobe", price: <><span>₹</span>15,400</> }} />
+                        <img src="https://res.cloudinary.com/dodmxncwc/image/upload/v1776233731/i7-removebg-preview_uufke9.png"
                             alt="Festive Gown" className="card-image" />
                         <div className="card-content">
                             <div className="swatches">
@@ -526,8 +527,8 @@ function ChaniyaCholi() {
 
                     {/* CARD 18 */}
                     <div className="product-card" style={{ position: "relative" }}>
-                        <WishlistHeart item={{ id: "ChaniyaCholi_Classic Black Contemporary Wrap Saree", title: "Classic Black Contemporary Wrap Saree", image: "", brand: "Western Elegance", price: <><span>₹</span>18,000</> }} />
-                        <img src=""
+                        <WishlistHeart item={{ id: "IndianGowns_Classic Black Contemporary Wrap Saree", title: "Classic Black Contemporary Wrap Saree", image: "", brand: "Western Elegance", price: <><span>₹</span>18,000</> }} />
+                        <img src="https://res.cloudinary.com/dodmxncwc/image/upload/v1776233732/i3-removebg-preview_d2cgyp.png"
                             alt="Gown" className="card-image" />
                         <div className="card-content">
                             <div className="swatches">
@@ -550,8 +551,8 @@ function ChaniyaCholi() {
 
                     {/* CARD 19 */}
                     <div className="product-card" style={{ position: "relative" }}>
-                        <WishlistHeart item={{ id: "ChaniyaCholi_Rich Indigo Occasion Wear Layout Saree", title: "Rich Indigo Occasion Wear Layout Saree", image: "", brand: "Heritage Silks", price: <><span>₹</span>21,000</> }} />
-                        <img src=""
+                        <WishlistHeart item={{ id: "IndianGowns_Rich Indigo Occasion Wear Layout Saree", title: "Rich Indigo Occasion Wear Layout Saree", image: "", brand: "Heritage Silks", price: <><span>₹</span>21,000</> }} />
+                        <img src="https://res.cloudinary.com/dodmxncwc/image/upload/v1776235239/0ee8dc7802d37af91adfa25e771bdb47-removebg-preview_zopa4y.png"
                             alt="Royal Saree" className="card-image" style={{ backgroundColor: '#fceceb' }} />
                         <div className="card-content">
                             <div className="swatches">
@@ -574,8 +575,8 @@ function ChaniyaCholi() {
 
                     {/* CARD 20 */}
                     <div className="product-card" style={{ position: "relative" }}>
-                        <WishlistHeart item={{ id: "ChaniyaCholi_Taupe High-Society Event Saree", title: "Taupe High-Society Event Saree", image: "", brand: "Queen's Bespoke", price: <><span>₹</span>30,800</> }} />
-                        <img src=""
+                        <WishlistHeart item={{ id: "IndianGowns_Taupe High-Society Event Saree", title: "Taupe High-Society Event Saree", image: "", brand: "Queen's Bespoke", price: <><span>₹</span>30,800</> }} />
+                        <img src="https://res.cloudinary.com/dodmxncwc/image/upload/v1776235237/5c3a98edfff7516e841d7244aa927d05-removebg-preview_mnofze.png"
                             alt="Premium Drape" className="card-image" style={{ backgroundColor: '#e5e0dc' }} />
                         <div className="card-content">
                             <div className="swatches">
@@ -599,7 +600,7 @@ function ChaniyaCholi() {
 
                 </div>
             </div>
-            
+
             {/* Hamburger Sidebar Menu */}
             <div className={`sidebar-overlay ${isSidebarOpen ? 'active' : ''}`} id="sidebar-overlay" onClick={closeSidebar}></div>
             <div className={`sidebar-panel ${isSidebarOpen ? 'active' : ''}`} id="sidebar">
@@ -608,18 +609,18 @@ function ChaniyaCholi() {
                     <button className="close-btn" id="sidebar-close" onClick={closeSidebar}>&times;</button>
                 </div>
                 <nav className="sidebar-nav">
-                    <Link to="/gownsaree">The Saree Gown</Link>
-                    <Link to="/jacket-lehenga">Jacketed Style Lehanga</Link>
-                    <Link to="/dhoti-croptop">Dhoti Pant with Croptop</Link>
-                    <Link to="/indowestern-frocks">Indo-Western Frocks</Link>
-                    <Link to="/sharara-peplum">Sharara Set with Peplum Top</Link>
-                    <Link to="/corset-lehenga">Corset Lehenga</Link>
-                    <Link to="/asymmetric-kurtas">Asymmetrical Hemline Kurthis</Link>
-                    <Link to="/peplum-pantsuit">Peplum Pant Suits</Link>
+                    <Link to="/sarees">Sarees</Link>
+                    <Link to="/lehengas">Lehangas</Link>
+                    <Link to="/croptops">Croptops</Link>
+                    <Link to="/kurthisets">Kurthi Sets</Link>
+                    <Link to="/anarkalis">Anarkalis</Link>
+                    <Link to="/gagracholi">Ghagra Choli</Link>
+                    <Link to="/salwarkamis">Salwar Kamiz</Link>
+                    <Link to="/indiangowns">Indian Gowns</Link>
                 </nav>
             </div>
         </div>
     );
 }
 
-export default ChaniyaCholi;
+export default IndianGowns;

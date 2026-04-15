@@ -9,7 +9,7 @@ const data = [
   { index: "05", title: "Anarkalis", image: "https://res.cloudinary.com/dodmxncwc/image/upload/v1776144747/1921752bfeb287de376de1e64f49e729-removebg-preview_ghnsnt.png", backgroundColor: "#fad1df", layoutType: "5", link: "/anarkalis" },
   { index: "06", title: "Salwar Kamis", image: "https://res.cloudinary.com/dodmxncwc/image/upload/v1776144746/0930828925953b5ed480fa40c39efab7-removebg-preview_d0vihc.png", backgroundColor: "#faeaed", layoutType: "6", link: "/salwarkamis" },
   { index: "07", title: "Gagra Choli", image: "https://res.cloudinary.com/dodmxncwc/image/upload/v1776145681/gagra-removebg-preview_klq5qz.png", backgroundColor: "#efaec3", layoutType: "7", link: "/gagracholi" },
-  { index: "08", title: "Chaniya Choli", image: "https://res.cloudinary.com/dodmxncwc/image/upload/v1776144746/efab885c5dc76fe9cd2a0b98efa3b2be-removebg-preview_l5dfkd.png", backgroundColor: "#ffffff", layoutType: "8", link: "/chaniyacholi" },
+  { index: "08", title: "Indian Gowns", image: "https://res.cloudinary.com/dodmxncwc/image/upload/v1776144746/efab885c5dc76fe9cd2a0b98efa3b2be-removebg-preview_l5dfkd.png", backgroundColor: "#ffffff", layoutType: "8", link: "/indiangowns" },
 ];
 
 const Traditional = () => {

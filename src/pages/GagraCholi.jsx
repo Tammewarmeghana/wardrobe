@@ -22,12 +22,12 @@ function GagraCholi() {
 
     return (
         <div className="gownsaree-wrapper gown-saree-page-container">
-            <div className="page-container" style={{overflowX: 'hidden'}}>
+            <div className="page-container" style={{ overflowX: 'hidden' }}>
                 {/* Header & Tabs */}
                 <div className="page-header">
                     {/* Search & Actions */}
                     <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: '24px', paddingBottom: '20px' }}>
-                        
+
                         <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
                             <button onClick={() => navigate(-1)} title="Go Back" style={{ background: 'none', border: 'none', cursor: 'pointer', padding: '0', display: 'flex', alignItems: 'center', color: 'var(--text-main)' }}>
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -52,25 +52,25 @@ function GagraCholi() {
                 {/* Filters */}
                 <div className="filter-row">
                     <div className="filter-pill">Price <svg width="12" height="12" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" strokeWidth="2">
-                            <path d="M6 9l6 6 6-6" />
-                        </svg></div>
+                        stroke="currentColor" strokeWidth="2">
+                        <path d="M6 9l6 6 6-6" />
+                    </svg></div>
                     <div className="filter-pill">4 stars & up <svg width="12" height="12" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" strokeWidth="2">
-                            <path d="M6 9l6 6 6-6" />
-                        </svg></div>
+                        stroke="currentColor" strokeWidth="2">
+                        <path d="M6 9l6 6 6-6" />
+                    </svg></div>
                     <div className="filter-pill">Brand <svg width="12" height="12" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" strokeWidth="2">
-                            <path d="M6 9l6 6 6-6" />
-                        </svg></div>
+                        stroke="currentColor" strokeWidth="2">
+                        <path d="M6 9l6 6 6-6" />
+                    </svg></div>
                     <div className="filter-pill">Color <svg width="12" height="12" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" strokeWidth="2">
-                            <path d="M6 9l6 6 6-6" />
-                        </svg></div>
+                        stroke="currentColor" strokeWidth="2">
+                        <path d="M6 9l6 6 6-6" />
+                    </svg></div>
                     <div className="filter-pill">Fabric <svg width="12" height="12" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" strokeWidth="2">
-                            <path d="M6 9l6 6 6-6" />
-                        </svg></div>
+                        stroke="currentColor" strokeWidth="2">
+                        <path d="M6 9l6 6 6-6" />
+                    </svg></div>
                 </div>
 
                 {/* Product Grid */}
@@ -599,7 +599,7 @@ function GagraCholi() {
 
                 </div>
             </div>
-            
+
             {/* Hamburger Sidebar Menu */}
             <div className={`sidebar-overlay ${isSidebarOpen ? 'active' : ''}`} id="sidebar-overlay" onClick={closeSidebar}></div>
             <div className={`sidebar-panel ${isSidebarOpen ? 'active' : ''}`} id="sidebar">
@@ -608,14 +608,14 @@ function GagraCholi() {
                     <button className="close-btn" id="sidebar-close" onClick={closeSidebar}>&times;</button>
                 </div>
                 <nav className="sidebar-nav">
-                    <Link to="/gownsaree">The Saree Gown</Link>
-                    <Link to="/jacket-lehenga">Jacketed Style Lehanga</Link>
-                    <Link to="/dhoti-croptop">Dhoti Pant with Croptop</Link>
-                    <Link to="/indowestern-frocks">Indo-Western Frocks</Link>
-                    <Link to="/sharara-peplum">Sharara Set with Peplum Top</Link>
-                    <Link to="/corset-lehenga">Corset Lehenga</Link>
-                    <Link to="/asymmetric-kurtas">Asymmetrical Hemline Kurthis</Link>
-                    <Link to="/peplum-pantsuit">Peplum Pant Suits</Link>
+                    <Link to="/sarees">Sarees</Link>
+                    <Link to="/lehengas">Lehangas</Link>
+                    <Link to="/croptops">Croptops</Link>
+                    <Link to="/kurthisets">Kurthi Sets</Link>
+                    <Link to="/anarkalis">Anarkalis</Link>
+                    <Link to="/gagracholi">Ghagra Choli</Link>
+                    <Link to="/salwarkamis">Salwar Kamiz</Link>
+                    <Link to="/indiangowns">Indian Gowns</Link>
                 </nav>
             </div>
         </div>
