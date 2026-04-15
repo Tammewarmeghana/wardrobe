@@ -5,9 +5,6 @@ import './sidebar.css';
 import WishlistHeart from '../components/WishlistHeart';
 import { useShop } from '../context/ShopContext';
 
-function ChaniyaCholi() {
-    const { addToCart } = useShop();
-    const handleAddToCart = (item) => { addToCart(item); };
 
 function IndianGowns() {
     const [isSidebarOpen, setIsSidebarOpen] = useState(false);

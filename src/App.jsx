@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import Home from './pages/Home';
 import IndoWestern from './pages/IndoWestern';
 import Western from './pages/Western';
@@ -86,6 +86,7 @@ function App() {
             <Route path="/koreanwear" element={<KoreanDresses />} />
             <Route path="/fullpage" element={<FullPage />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="*" element={<Navigate to="/" replace />} />
           </Routes>
         </div>
       </Router>
