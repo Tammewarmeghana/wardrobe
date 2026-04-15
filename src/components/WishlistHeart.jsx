@@ -1,18 +1,43 @@
 import React from 'react';
 import { useShop } from '../context/ShopContext';
 
+function extractTextFromReactNode(node) {
+  if (typeof node === 'string' || typeof node === 'number') {
+    return String(node);
+  }
+  if (Array.isArray(node)) {
+    return node.map(extractTextFromReactNode).join('');
+  }
+  if (node && node.props && node.props.children) {
+    return extractTextFromReactNode(node.props.children);
+  }
+  return '';
+}
+
 const WishlistHeart = ({ item }) => {
   const { wishlistItems, toggleWishlist } = useShop();
   // Support both old string items and new object items via id
   const isWishlisted = wishlistItems.some(i => (i.id || i) === (item.id || item));
 
+  const handleToggle = (e) => {
+    e.preventDefault(); 
+    e.stopPropagation(); 
+    
+    let sanitizedItem = { ...item };
+    if (sanitizedItem.price && typeof sanitizedItem.price === 'object') {
+      try {
+        sanitizedItem.price = extractTextFromReactNode(sanitizedItem.price);
+      } catch (err) {
+        console.error("Failed to parse price", err);
+      }
+    }
+    
+    toggleWishlist(sanitizedItem);
+  };
+
   return (
     <button 
-      onClick={(e) => { 
-        e.preventDefault(); 
-        e.stopPropagation(); 
-        toggleWishlist(item); 
-      }}
+      onClick={handleToggle}
       className={`wishlist-heart ${isWishlisted ? 'active' : ''}`}
       style={{
         position: 'absolute',

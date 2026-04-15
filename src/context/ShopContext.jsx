@@ -32,10 +32,38 @@ export const ShopProvider = ({ children }) => {
     localStorage.setItem('cartItems', JSON.stringify(cartItems));
   }, [cartItems]);
 
+  const [shippingDetails, setShippingDetails] = useState(() => {
+    try {
+      const saved = localStorage.getItem('shippingDetails');
+      return saved ? JSON.parse(saved) : null;
+    } catch {
+      return null;
+    }
+  });
+
+  const [paymentMethod, setPaymentMethod] = useState(() => {
+    try {
+      const saved = localStorage.getItem('paymentMethod');
+      return saved ? JSON.parse(saved) : null;
+    } catch {
+      return null;
+    }
+  });
+
+  useEffect(() => {
+    localStorage.setItem('shippingDetails', JSON.stringify(shippingDetails));
+  }, [shippingDetails]);
+
+  useEffect(() => {
+    localStorage.setItem('paymentMethod', JSON.stringify(paymentMethod));
+  }, [paymentMethod]);
+
   const toggleWishlist = (item) => {
     setWishlistItems(prev => {
-      const exists = prev.some(i => i.id === item.id);
-      return exists ? prev.filter(i => i.id !== item.id) : [...prev, item];
+      const exists = prev.some(i => (i.id || i) === (item.id || item));
+      return exists 
+        ? prev.filter(i => (i.id || i) !== (item.id || item)) 
+        : [...prev, item];
     });
   };
 
@@ -64,7 +92,9 @@ export const ShopProvider = ({ children }) => {
     <ShopContext.Provider value={{
       searchQuery, setSearchQuery,
       wishlistItems, toggleWishlist, wishlistCount: wishlistItems.length,
-      cartItems, addToCart, updateCartQuantity, cartCount
+      cartItems, addToCart, updateCartQuantity, cartCount, setCartItems,
+      shippingDetails, setShippingDetails,
+      paymentMethod, setPaymentMethod
     }}>
       {children}
     </ShopContext.Provider>
