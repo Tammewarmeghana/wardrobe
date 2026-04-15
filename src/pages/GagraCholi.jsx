@@ -75,7 +75,7 @@ function GagraCholi() {
                     {/* CARD 1 */}
                     <div className="product-card" style={{ position: "relative" }}>
                         <WishlistHeart item={{ id: "Premium Pre-Draped Saree Gown in Soft Georgette with Embellished Belt", title: "Premium Pre-Draped Saree Gown in Soft Georgette with Embellished Belt", image: "", brand: "Maison d'Élégance", price: <><span>₹</span>14,999</> }} />
-                        <img src=""
+                        <img src="https://res.cloudinary.com/dugksxwkr/image/upload/v1776187788/038afc7972a62c8d54c638687addcbf7-removebg-preview_q1rf9g.png"
                             alt="Saree Gown" className="card-image" style={{ backgroundColor: '#e5ccce' }} />
                         <div className="card-content">
                             <div className="swatches">
@@ -106,7 +106,7 @@ function GagraCholi() {
                     {/* CARD 2 */}
                     <div className="product-card" style={{ position: "relative" }}>
                         <WishlistHeart item={{ id: "Modern Indo-Western Fusion Saree with Attached Pallu", title: "Modern Indo-Western Fusion Saree with Attached Pallu", image: "", brand: "Queen's Wardrobe", price: <><span>₹</span>18,499</> }} />
-                        <img src=""
+                        <img src="https://res.cloudinary.com/dugksxwkr/image/upload/v1776187788/954225ae36cdb3a19175253583506a22-removebg-preview_v5hadi.png"
                             alt="Indo Western Saree" className="card-image" />
                         <div className="card-content">
                             <div className="swatches">
@@ -136,7 +136,7 @@ function GagraCholi() {
                     {/* CARD 3 */}
                     <div className="product-card" style={{ position: "relative" }}>
                         <WishlistHeart item={{ id: "Cocktail Saree Gown with Cape Sleeves", title: "Cocktail Saree Gown with Cape Sleeves", image: "", brand: "Western Elegance", price: <><span>₹</span>24,999</> }} />
-                        <img src=""
+                        <img src="https://res.cloudinary.com/dugksxwkr/image/upload/v1776187788/g1-removebg-preview_m2iklo.png"
                             alt="Modern Saree" className="card-image" />
                         <div className="card-content">
                             <div className="swatches">
@@ -165,7 +165,7 @@ function GagraCholi() {
                     {/* CARD 4 */}
                     <div className="product-card" style={{ position: "relative" }}>
                         <WishlistHeart item={{ id: "Heritage Silk Trim Saree Gown for Wedding Receptions", title: "Heritage Silk Trim Saree Gown for Wedding Receptions", image: "", brand: "Maison d'Élégance", price: <><span>₹</span>21,000</> }} />
-                        <img src=""
+                        <img src="https://res.cloudinary.com/dugksxwkr/image/upload/v1776187789/g3-removebg-preview_nxjlns.png"
                             alt="Traditional Saree Gown" className="card-image" style={{ backgroundColor: '#fceceb' }} />
                         <div className="card-content">
                             <div className="swatches">
@@ -196,7 +196,7 @@ function GagraCholi() {
                     {/* CARD 5 */}
                     <div className="product-card" style={{ position: "relative" }}>
                         <WishlistHeart item={{ id: "Custom-Fit Sequined Saree Dress", title: "Custom-Fit Sequined Saree Dress", image: "", brand: "Queen's Bespoke", price: <><span>₹</span>38,500</> }} />
-                        <img src=""
+                        <img src="https://res.cloudinary.com/dugksxwkr/image/upload/v1776187789/g7-removebg-preview_nripnf.png"
                             alt="Bespoke Saree Gown" className="card-image" style={{ backgroundColor: '#e5e0dc' }} />
                         <div className="card-content">
                             <div className="swatches">
@@ -227,7 +227,7 @@ function GagraCholi() {
                     {/* CARD 6 */}
                     <div className="product-card" style={{ position: "relative" }}>
                         <WishlistHeart item={{ id: "Embroidered Pastel Saree Gown with Dupatta", title: "Embroidered Pastel Saree Gown with Dupatta", image: "", brand: "Maison d'Élégance", price: <><span>₹</span>19,500</> }} />
-                        <img src=""
+                        <img src="https://res.cloudinary.com/dugksxwkr/image/upload/v1776187789/g4-removebg-preview_pjbkvz.png"
                             alt="Embroidered Saree Gown" className="card-image" style={{ backgroundColor: '#fceceb' }} />
                         <div className="card-content">
                             <div className="swatches">
@@ -252,7 +252,7 @@ function GagraCholi() {
                     {/* CARD 7 */}
                     <div className="product-card" style={{ position: "relative" }}>
                         <WishlistHeart item={{ id: "Olive Green Sequin Trim Saree", title: "Olive Green Sequin Trim Saree", image: "", brand: "Queen's Wardrobe", price: <><span>₹</span>16,200</> }} />
-                        <img src=""
+                        <img src="https://res.cloudinary.com/dugksxwkr/image/upload/v1776187789/g8-removebg-preview_g9a1ra.png"
                             alt="Sequin Saree" className="card-image" />
                         <div className="card-content">
                             <div className="swatches">
@@ -278,7 +278,7 @@ function GagraCholi() {
                     {/* CARD 8 */}
                     <div className="product-card" style={{ position: "relative" }}>
                         <WishlistHeart item={{ id: "Midnight Black Chiffon Saree Gown", title: "Midnight Black Chiffon Saree Gown", image: "", brand: "Western Elegance", price: <><span>₹</span>12,499</> }} />
-                        <img src=""
+                        <img src="https://res.cloudinary.com/dugksxwkr/image/upload/v1776187789/g5-removebg-preview_pcjosv.png"
                             alt="Chiffon Saree Gown" className="card-image" />
                         <div className="card-content">
                             <div className="swatches">
@@ -304,7 +304,7 @@ function GagraCholi() {
                     {/* CARD 9 */}
                     <div className="product-card" style={{ position: "relative" }}>
                         <WishlistHeart item={{ id: "Royal Navy Blue Designer Saree with Floral Appliques", title: "Royal Navy Blue Designer Saree with Floral Appliques", image: "", brand: "Maison d'Élégance", price: <><span>₹</span>28,000</> }} />
-                        <img src=""
+                        <img src="https://res.cloudinary.com/dugksxwkr/image/upload/v1776187789/g9-removebg-preview_btz5ap.png"
                             alt="Royal Saree" className="card-image" style={{ backgroundColor: '#fceceb' }} />
                         <div className="card-content">
                             <div className="swatches">
@@ -329,7 +329,7 @@ function GagraCholi() {
                     {/* CARD 10 */}
                     <div className="product-card" style={{ position: "relative" }}>
                         <WishlistHeart item={{ id: "Nude Beige Premium Drape", title: "Nude Beige Premium Drape", image: "", brand: "Queen's Bespoke", price: <><span>₹</span>36,100</> }} />
-                        <img src=""
+                        <img src="https://res.cloudinary.com/dugksxwkr/image/upload/v1776187790/g11-removebg-preview_ztcnjb.png"
                             alt="Premium Drape" className="card-image" style={{ backgroundColor: '#e5e0dc' }} />
                         <div className="card-content">
                             <div className="swatches">
@@ -354,7 +354,7 @@ function GagraCholi() {
                     {/* CARD 11 */}
                     <div className="product-card" style={{ position: "relative" }}>
                         <WishlistHeart item={{ id: "Draped Georgette Saree Gown in Rose Pink", title: "Draped Georgette Saree Gown in Rose Pink", image: "", brand: "Maison d'Élégance", price: <><span>₹</span>18,000</> }} />
-                        <img src=""
+                        <img src="https://res.cloudinary.com/dugksxwkr/image/upload/v1776187790/g10-removebg-preview_xsuyrz.png"
                             alt="Saree Gown" className="card-image" style={{ backgroundColor: '#e5ccce' }} />
                         <div className="card-content">
                             <div className="swatches">
@@ -378,7 +378,7 @@ function GagraCholi() {
                     {/* CARD 12 */}
                     <div className="product-card" style={{ position: "relative" }}>
                         <WishlistHeart item={{ id: "Pleated Indo-Western Saree with Matching Clutch", title: "Pleated Indo-Western Saree with Matching Clutch", image: "", brand: "Queen's Wardrobe", price: <><span>₹</span>12,500</> }} />
-                        <img src=""
+                        <img src="https://res.cloudinary.com/dugksxwkr/image/upload/v1776187790/g12-removebg-preview_xhxlqw.png"
                             alt="Saree Gown" className="card-image" />
                         <div className="card-content">
                             <div className="swatches">
@@ -402,7 +402,7 @@ function GagraCholi() {
                     {/* CARD 13 */}
                     <div className="product-card" style={{ position: "relative" }}>
                         <WishlistHeart item={{ id: "Minimalist Evening Gown Saree", title: "Minimalist Evening Gown Saree", image: "", brand: "Western Elegance", price: <><span>₹</span>21,000</> }} />
-                        <img src=""
+                        <img src="https://res.cloudinary.com/dugksxwkr/image/upload/v1776187791/g13-removebg-preview_c5ujh6.png"
                             alt="Saree Gown" className="card-image" />
                         <div className="card-content">
                             <div className="swatches">
@@ -426,7 +426,7 @@ function GagraCholi() {
                     {/* CARD 14 */}
                     <div className="product-card" style={{ position: "relative" }}>
                         <WishlistHeart item={{ id: "Handloom Silk Saree Gown for Receptions", title: "Handloom Silk Saree Gown for Receptions", image: "", brand: "Heritage Silks", price: <><span>₹</span>14,000</> }} />
-                        <img src=""
+                        <img src="https://res.cloudinary.com/dugksxwkr/image/upload/v1776187834/g14-removebg-preview_woctj7.png"
                             alt="Traditional Saree Gown" className="card-image" style={{ backgroundColor: '#fceceb' }} />
                         <div className="card-content">
                             <div className="swatches">
@@ -451,7 +451,7 @@ function GagraCholi() {
                     {/* CARD 15 */}
                     <div className="product-card" style={{ position: "relative" }}>
                         <WishlistHeart item={{ id: "Signature Embellished Custom Saree", title: "Signature Embellished Custom Saree", image: "", brand: "Queen's Bespoke", price: <><span>₹</span>45,000</> }} />
-                        <img src=""
+                        <img src="https://res.cloudinary.com/dugksxwkr/image/upload/v1776187835/g15-removebg-preview_xp0zry.png"
                             alt="Bespoke Saree Gown" className="card-image" style={{ backgroundColor: '#e5e0dc' }} />
                         <div className="card-content">
                             <div className="swatches">
@@ -475,7 +475,7 @@ function GagraCholi() {
                     {/* CARD 16 */}
                     <div className="product-card" style={{ position: "relative" }}>
                         <WishlistHeart item={{ id: "Peach Pastel Georgette Gown Saree", title: "Peach Pastel Georgette Gown Saree", image: "", brand: "Maison d'Élégance", price: <><span>₹</span>13,300</> }} />
-                        <img src=""
+                        <img src="https://res.cloudinary.com/dugksxwkr/image/upload/v1776187835/g16-removebg-preview_ptwngo.png"
                             alt="Pastel Saree" className="card-image" style={{ backgroundColor: '#fceceb' }} />
                         <div className="card-content">
                             <div className="swatches">
@@ -499,7 +499,7 @@ function GagraCholi() {
                     {/* CARD 17 */}
                     <div className="product-card" style={{ position: "relative" }}>
                         <WishlistHeart item={{ id: "Festive Green Pre-Stitched Gown", title: "Festive Green Pre-Stitched Gown", image: "", brand: "Queen's Wardrobe", price: <><span>₹</span>15,400</> }} />
-                        <img src=""
+                        <img src="https://res.cloudinary.com/dugksxwkr/image/upload/v1776187841/c6815961db2225d830a63aa661962844-removebg-preview_obqjru.png"
                             alt="Festive Gown" className="card-image" />
                         <div className="card-content">
                             <div className="swatches">
@@ -523,7 +523,7 @@ function GagraCholi() {
                     {/* CARD 18 */}
                     <div className="product-card" style={{ position: "relative" }}>
                         <WishlistHeart item={{ id: "Classic Black Contemporary Wrap Saree", title: "Classic Black Contemporary Wrap Saree", image: "", brand: "Western Elegance", price: <><span>₹</span>18,000</> }} />
-                        <img src=""
+                        <img src="https://res.cloudinary.com/dugksxwkr/image/upload/v1776187912/d8c8549540786b2c6f9f371b53833343-removebg-preview_koztb7.png"
                             alt="Gown" className="card-image" />
                         <div className="card-content">
                             <div className="swatches">
@@ -547,7 +547,7 @@ function GagraCholi() {
                     {/* CARD 19 */}
                     <div className="product-card" style={{ position: "relative" }}>
                         <WishlistHeart item={{ id: "Rich Indigo Occasion Wear Layout Saree", title: "Rich Indigo Occasion Wear Layout Saree", image: "", brand: "Heritage Silks", price: <><span>₹</span>21,000</> }} />
-                        <img src=""
+                        <img src="https://res.cloudinary.com/dugksxwkr/image/upload/v1776188669/a5b4aa59d0184dbc780f99ed8644ed17-removebg-preview_xl1qw7.png"
                             alt="Royal Saree" className="card-image" style={{ backgroundColor: '#fceceb' }} />
                         <div className="card-content">
                             <div className="swatches">
@@ -571,7 +571,7 @@ function GagraCholi() {
                     {/* CARD 20 */}
                     <div className="product-card" style={{ position: "relative" }}>
                         <WishlistHeart item={{ id: "Taupe High-Society Event Saree", title: "Taupe High-Society Event Saree", image: "", brand: "Queen's Bespoke", price: <><span>₹</span>30,800</> }} />
-                        <img src=""
+                        <img src="https://res.cloudinary.com/dugksxwkr/image/upload/v1776188682/b1a323b228f9198bb9d076213dbb4ea6-removebg-preview_gieac5.png"
                             alt="Premium Drape" className="card-image" style={{ backgroundColor: '#e5e0dc' }} />
                         <div className="card-content">
                             <div className="swatches">

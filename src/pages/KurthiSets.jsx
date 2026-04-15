@@ -75,7 +75,7 @@ function KurthiSets() {
                     {/* CARD 1 */}
                     <div className="product-card" style={{ position: "relative" }}>
                         <WishlistHeart item={{ id: "KurthiSets_Premium Pre-Draped Saree Gown in Soft Georgette with Embellished Belt", title: "Premium Pre-Draped Saree Gown in Soft Georgette with Embellished Belt", image: "", brand: "Maison d'Élégance", price: <><span>₹</span>14,999</> }} />
-                        <img src=""
+                        <img src="https://res.cloudinary.com/dugksxwkr/image/upload/v1776192626/2b383814614e4164bc193e353377a202-removebg-preview_cz17hu.png"
                             alt="Saree Gown" className="card-image" style={{ backgroundColor: '#e5ccce' }} />
                         <div className="card-content">
                             <div className="swatches">
@@ -106,7 +106,7 @@ function KurthiSets() {
                     {/* CARD 2 */}
                     <div className="product-card" style={{ position: "relative" }}>
                         <WishlistHeart item={{ id: "KurthiSets_Modern Indo-Western Fusion Saree with Attached Pallu", title: "Modern Indo-Western Fusion Saree with Attached Pallu", image: "", brand: "Queen's Wardrobe", price: <><span>₹</span>18,499</> }} />
-                        <img src=""
+                        <img src="https://res.cloudinary.com/dugksxwkr/image/upload/v1776192496/e77842ee36ce1b35b55b60f66f533942-removebg-preview_gj0ljm.png"
                             alt="Indo Western Saree" className="card-image" />
                         <div className="card-content">
                             <div className="swatches">
@@ -136,7 +136,7 @@ function KurthiSets() {
                     {/* CARD 3 */}
                     <div className="product-card" style={{ position: "relative" }}>
                         <WishlistHeart item={{ id: "KurthiSets_Cocktail Saree Gown with Cape Sleeves", title: "Cocktail Saree Gown with Cape Sleeves", image: "", brand: "Western Elegance", price: <><span>₹</span>24,999</> }} />
-                        <img src=""
+                        <img src="https://res.cloudinary.com/dugksxwkr/image/upload/v1776192491/91660c56263707de709efcd2b9ed1357-removebg-preview_pot2kv.png"
                             alt="Modern Saree" className="card-image" />
                         <div className="card-content">
                             <div className="swatches">
@@ -165,7 +165,7 @@ function KurthiSets() {
                     {/* CARD 4 */}
                     <div className="product-card" style={{ position: "relative" }}>
                         <WishlistHeart item={{ id: "KurthiSets_Heritage Silk Trim Saree Gown for Wedding Receptions", title: "Heritage Silk Trim Saree Gown for Wedding Receptions", image: "", brand: "Maison d'Élégance", price: <><span>₹</span>21,000</> }} />
-                        <img src=""
+                        <img src="https://res.cloudinary.com/dugksxwkr/image/upload/v1776192490/2a0fcb8803fef93cd0402aa32169f858-removebg-preview_pnx2ie.png"
                             alt="Traditional Saree Gown" className="card-image" style={{ backgroundColor: '#fceceb' }} />
                         <div className="card-content">
                             <div className="swatches">
@@ -196,7 +196,7 @@ function KurthiSets() {
                     {/* CARD 5 */}
                     <div className="product-card" style={{ position: "relative" }}>
                         <WishlistHeart item={{ id: "KurthiSets_Custom-Fit Sequined Saree Dress", title: "Custom-Fit Sequined Saree Dress", image: "", brand: "Queen's Bespoke", price: <><span>₹</span>38,500</> }} />
-                        <img src=""
+                        <img src="https://res.cloudinary.com/dugksxwkr/image/upload/v1776191379/fb40aec896751fbb9f2c015823bcaf04-removebg-preview_umx7av.png"
                             alt="Bespoke Saree Gown" className="card-image" style={{ backgroundColor: '#e5e0dc' }} />
                         <div className="card-content">
                             <div className="swatches">
@@ -227,7 +227,7 @@ function KurthiSets() {
                     {/* CARD 6 */}
                     <div className="product-card" style={{ position: "relative" }}>
                         <WishlistHeart item={{ id: "KurthiSets_Embroidered Pastel Saree Gown with Dupatta", title: "Embroidered Pastel Saree Gown with Dupatta", image: "", brand: "Maison d'Élégance", price: <><span>₹</span>19,500</> }} />
-                        <img src=""
+                        <img src="https://res.cloudinary.com/dugksxwkr/image/upload/v1776191377/efbe9a83d89882646e3654646434fdd1-removebg-preview_gnatvk.png"
                             alt="Embroidered Saree Gown" className="card-image" style={{ backgroundColor: '#fceceb' }} />
                         <div className="card-content">
                             <div className="swatches">
@@ -252,7 +252,7 @@ function KurthiSets() {
                     {/* CARD 7 */}
                     <div className="product-card" style={{ position: "relative" }}>
                         <WishlistHeart item={{ id: "KurthiSets_Olive Green Sequin Trim Saree", title: "Olive Green Sequin Trim Saree", image: "", brand: "Queen's Wardrobe", price: <><span>₹</span>16,200</> }} />
-                        <img src=""
+                        <img src="https://res.cloudinary.com/dugksxwkr/image/upload/v1776191376/e3ca1fffa50a7dd38303e068b395df29-removebg-preview_rysxvk.png"
                             alt="Sequin Saree" className="card-image" />
                         <div className="card-content">
                             <div className="swatches">
@@ -278,7 +278,7 @@ function KurthiSets() {
                     {/* CARD 8 */}
                     <div className="product-card" style={{ position: "relative" }}>
                         <WishlistHeart item={{ id: "KurthiSets_Midnight Black Chiffon Saree Gown", title: "Midnight Black Chiffon Saree Gown", image: "", brand: "Western Elegance", price: <><span>₹</span>12,499</> }} />
-                        <img src=""
+                        <img src="https://res.cloudinary.com/dugksxwkr/image/upload/v1776191375/dea0344fde86c0e0fa203b9bfaacb450-removebg-preview_yolt7i.png"
                             alt="Chiffon Saree Gown" className="card-image" />
                         <div className="card-content">
                             <div className="swatches">
@@ -304,7 +304,7 @@ function KurthiSets() {
                     {/* CARD 9 */}
                     <div className="product-card" style={{ position: "relative" }}>
                         <WishlistHeart item={{ id: "KurthiSets_Royal Navy Blue Designer Saree with Floral Appliques", title: "Royal Navy Blue Designer Saree with Floral Appliques", image: "", brand: "Maison d'Élégance", price: <><span>₹</span>28,000</> }} />
-                        <img src=""
+                        <img src="https://res.cloudinary.com/dugksxwkr/image/upload/v1776191374/d0e59e09f7ac99c4b12a42104d346f27-removebg-preview_z2nx8r.png"
                             alt="Royal Saree" className="card-image" style={{ backgroundColor: '#fceceb' }} />
                         <div className="card-content">
                             <div className="swatches">
@@ -329,7 +329,7 @@ function KurthiSets() {
                     {/* CARD 10 */}
                     <div className="product-card" style={{ position: "relative" }}>
                         <WishlistHeart item={{ id: "KurthiSets_Nude Beige Premium Drape", title: "Nude Beige Premium Drape", image: "", brand: "Queen's Bespoke", price: <><span>₹</span>36,100</> }} />
-                        <img src=""
+                        <img src="https://res.cloudinary.com/dugksxwkr/image/upload/v1776191373/ce98c3ea0d5b2a4ea555edf560508500-removebg-preview_jeradl.png"
                             alt="Premium Drape" className="card-image" style={{ backgroundColor: '#e5e0dc' }} />
                         <div className="card-content">
                             <div className="swatches">
@@ -354,7 +354,7 @@ function KurthiSets() {
                     {/* CARD 11 */}
                     <div className="product-card" style={{ position: "relative" }}>
                         <WishlistHeart item={{ id: "KurthiSets_Draped Georgette Saree Gown in Rose Pink", title: "Draped Georgette Saree Gown in Rose Pink", image: "", brand: "Maison d'Élégance", price: <><span>₹</span>18,000</> }} />
-                        <img src=""
+                        <img src="https://res.cloudinary.com/dugksxwkr/image/upload/v1776191372/bfddf93572736de1c05b024ec1a82daf-removebg-preview_szym96.png"
                             alt="Saree Gown" className="card-image" style={{ backgroundColor: '#e5ccce' }} />
                         <div className="card-content">
                             <div className="swatches">
@@ -378,7 +378,7 @@ function KurthiSets() {
                     {/* CARD 12 */}
                     <div className="product-card" style={{ position: "relative" }}>
                         <WishlistHeart item={{ id: "KurthiSets_Pleated Indo-Western Saree with Matching Clutch", title: "Pleated Indo-Western Saree with Matching Clutch", image: "", brand: "Queen's Wardrobe", price: <><span>₹</span>12,500</> }} />
-                        <img src=""
+                        <img src="https://res.cloudinary.com/dugksxwkr/image/upload/v1776191371/af796d31893da234991dc04f84ac9297-removebg-preview_yc0wg8.png"
                             alt="Saree Gown" className="card-image" />
                         <div className="card-content">
                             <div className="swatches">
@@ -402,7 +402,7 @@ function KurthiSets() {
                     {/* CARD 13 */}
                     <div className="product-card" style={{ position: "relative" }}>
                         <WishlistHeart item={{ id: "KurthiSets_Minimalist Evening Gown Saree", title: "Minimalist Evening Gown Saree", image: "", brand: "Western Elegance", price: <><span>₹</span>21,000</> }} />
-                        <img src=""
+                        <img src="https://res.cloudinary.com/dugksxwkr/image/upload/v1776191370/ab79339052a9e31b6041eb15f450d915-removebg-preview_t64taw.png"
                             alt="Saree Gown" className="card-image" />
                         <div className="card-content">
                             <div className="swatches">
@@ -426,7 +426,7 @@ function KurthiSets() {
                     {/* CARD 14 */}
                     <div className="product-card" style={{ position: "relative" }}>
                         <WishlistHeart item={{ id: "KurthiSets_Handloom Silk Saree Gown for Receptions", title: "Handloom Silk Saree Gown for Receptions", image: "", brand: "Heritage Silks", price: <><span>₹</span>14,000</> }} />
-                        <img src=""
+                        <img src="https://res.cloudinary.com/dugksxwkr/image/upload/v1776191369/34420c43f281f5a6f67ab04bb13d13cf-removebg-preview_j1kgoc.png"
                             alt="Traditional Saree Gown" className="card-image" style={{ backgroundColor: '#fceceb' }} />
                         <div className="card-content">
                             <div className="swatches">
@@ -451,7 +451,7 @@ function KurthiSets() {
                     {/* CARD 15 */}
                     <div className="product-card" style={{ position: "relative" }}>
                         <WishlistHeart item={{ id: "KurthiSets_Signature Embellished Custom Saree", title: "Signature Embellished Custom Saree", image: "", brand: "Queen's Bespoke", price: <><span>₹</span>45,000</> }} />
-                        <img src=""
+                        <img src="https://res.cloudinary.com/dugksxwkr/image/upload/v1776191368/9391e01ff7d6c9cb2705f73cea373eb2-removebg-preview_xmgmn8.png"
                             alt="Bespoke Saree Gown" className="card-image" style={{ backgroundColor: '#e5e0dc' }} />
                         <div className="card-content">
                             <div className="swatches">
@@ -475,7 +475,7 @@ function KurthiSets() {
                     {/* CARD 16 */}
                     <div className="product-card" style={{ position: "relative" }}>
                         <WishlistHeart item={{ id: "KurthiSets_Peach Pastel Georgette Gown Saree", title: "Peach Pastel Georgette Gown Saree", image: "", brand: "Maison d'Élégance", price: <><span>₹</span>13,300</> }} />
-                        <img src=""
+                        <img src="https://res.cloudinary.com/dugksxwkr/image/upload/v1776191369/34420c43f281f5a6f67ab04bb13d13cf-removebg-preview_j1kgoc.png"
                             alt="Pastel Saree" className="card-image" style={{ backgroundColor: '#fceceb' }} />
                         <div className="card-content">
                             <div className="swatches">
@@ -499,7 +499,7 @@ function KurthiSets() {
                     {/* CARD 17 */}
                     <div className="product-card" style={{ position: "relative" }}>
                         <WishlistHeart item={{ id: "KurthiSets_Festive Green Pre-Stitched Gown", title: "Festive Green Pre-Stitched Gown", image: "", brand: "Queen's Wardrobe", price: <><span>₹</span>15,400</> }} />
-                        <img src=""
+                        <img src="https://res.cloudinary.com/dugksxwkr/image/upload/v1776191367/80e268a92851ce1190af0a38102880dd-removebg-preview_w31j8a.png"
                             alt="Festive Gown" className="card-image" />
                         <div className="card-content">
                             <div className="swatches">
@@ -523,7 +523,7 @@ function KurthiSets() {
                     {/* CARD 18 */}
                     <div className="product-card" style={{ position: "relative" }}>
                         <WishlistHeart item={{ id: "KurthiSets_Classic Black Contemporary Wrap Saree", title: "Classic Black Contemporary Wrap Saree", image: "", brand: "Western Elegance", price: <><span>₹</span>18,000</> }} />
-                        <img src=""
+                        <img src="https://res.cloudinary.com/dugksxwkr/image/upload/v1776191366/32c01489d4f36b467bb9c22fe5c5e704-removebg-preview_yie6ff.png"
                             alt="Gown" className="card-image" />
                         <div className="card-content">
                             <div className="swatches">
@@ -547,7 +547,7 @@ function KurthiSets() {
                     {/* CARD 19 */}
                     <div className="product-card" style={{ position: "relative" }}>
                         <WishlistHeart item={{ id: "KurthiSets_Rich Indigo Occasion Wear Layout Saree", title: "Rich Indigo Occasion Wear Layout Saree", image: "", brand: "Heritage Silks", price: <><span>₹</span>21,000</> }} />
-                        <img src=""
+                        <img src="https://res.cloudinary.com/dugksxwkr/image/upload/v1776191365/9ace19bf04f29b39d4466ad9ad812600-removebg-preview_wbz7cm.png"
                             alt="Royal Saree" className="card-image" style={{ backgroundColor: '#fceceb' }} />
                         <div className="card-content">
                             <div className="swatches">
@@ -571,7 +571,7 @@ function KurthiSets() {
                     {/* CARD 20 */}
                     <div className="product-card" style={{ position: "relative" }}>
                         <WishlistHeart item={{ id: "KurthiSets_Taupe High-Society Event Saree", title: "Taupe High-Society Event Saree", image: "", brand: "Queen's Bespoke", price: <><span>₹</span>30,800</> }} />
-                        <img src=""
+                        <img src="https://res.cloudinary.com/dugksxwkr/image/upload/v1776191364/7aad4d45f36d839fb7fe6eb28be819de-removebg-preview_zonmsw.png"
                             alt="Premium Drape" className="card-image" style={{ backgroundColor: '#e5e0dc' }} />
                         <div className="card-content">
                             <div className="swatches">
