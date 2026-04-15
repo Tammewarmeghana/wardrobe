@@ -47,6 +47,7 @@ const Contact = () => {
                         <div className="info-block">
                             <h3>Inquiries</h3>
                             <p>info@queenswardrobe.com<br />+33 1 45 67 89 00</p>
+                            <h1>Text</h1>
                         </div>
                     </div>
                 </div>
