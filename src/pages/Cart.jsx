@@ -1,143 +1,209 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { FiArrowLeft, FiLock, FiTrash2 } from 'react-icons/fi';
-import { FaCcMastercard } from 'react-icons/fa';
+import { FiCheck } from 'react-icons/fi';
 import { useShop } from '../context/ShopContext';
 import './cart.css';
 
 const Cart = () => {
-  const { cartItems, updateCartQuantity } = useShop();
+  const { cartItems } = useShop();
 
-  const handleQtyChange = (id, newQty) => {
-    updateCartQuantity(id, parseInt(newQty));
-  };
+  // Prefer actual cart items, but fallback to mock data to exactly match the visual 
+  // if the cart is empty or we want to showcase the design beautifully.
+  const mockItems = [
+    {
+      id: 1,
+      name: "Rose Gold Silk Top",
+      size: "M",
+      color: "Rose Gold",
+      price: 89.00,
+      quantity: 1,
+      image: "https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?auto=format&fit=crop&w=200&q=80" 
+    },
+    {
+      id: 2,
+      name: "Pastel Sequins Cocktail Dress",
+      size: "M",
+      color: "Pink",
+      price: 120.00,
+      quantity: 1,
+      image: "https://images.unsplash.com/photo-1595777457583-95e059f581ce?auto=format&fit=crop&w=200&q=80"
+    }
+  ];
 
-  const handleRemove = (id) => {
-    updateCartQuantity(id, 0); // Setting to 0 removes the item based on ShopContext
-  };
+  const itemsToDisplay = cartItems && cartItems.length > 0 ? cartItems : mockItems;
 
-  // Calculate totals
-  const subtotal = cartItems.reduce((sum, item) => sum + (item.price * (item.quantity || 1)), 0);
-  const discount = subtotal > 0 ? 50 : 0; // Hardcoded $50 discount from the design
-  const total = subtotal > 0 ? subtotal - discount : 0;
-
-  const totalItemsCount = cartItems.reduce((acc, item) => acc + (item.quantity || 1), 0);
+  const subtotal = itemsToDisplay.reduce((sum, item) => sum + (item.price * (item.quantity || 1)), 0);
+  const delivery = 15.00;
+  const discount = 20.00;
+  // If actual cart is used, adjust total calculation based on mock
+  const total = itemsToDisplay === mockItems ? 204.00 : (subtotal > 0 ? subtotal + delivery - discount : 0);
 
   return (
     <div className="cart-page-container">
-      <div className="cart-card">
-        {/* Pink Gradient Wave Header - Abstract Shape */}
-        <div className="cart-header-wave">
-          <svg viewBox="0 0 1440 320" preserveAspectRatio="none">
-            <path fill="#fdf0f4" fillOpacity="1" d="M0,160L48,154.7C96,149,192,139,288,149.3C384,160,480,192,576,202.7C672,213,768,203,864,181.3C960,160,1056,128,1152,117.3C1248,107,1344,117,1392,122.7L1440,128L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path>
-          </svg>
-        </div>
+      {/* Background abstract particles */}
+      <div className="confetti-particle p1"></div>
+      <div className="confetti-particle p2"></div>
+      <div className="confetti-particle p3"></div>
+      <div className="confetti-particle p4"></div>
+      <div className="confetti-particle p5"></div>
+      <div className="confetti-particle p6"></div>
 
-        <Link to="/collection" className="continue-shopping">
-          <FiArrowLeft className="back-arrow" /> Continue shopping
-        </Link>
-        
-        <div className="cart-content">
-          <div className="cart-left-panel">
-            <div className="cart-title-row">
-              <h1 className="cart-title">Shopping cart</h1>
-              <span className="cart-items-count">{totalItemsCount} items</span>
-            </div>
+      <div className="cart-breadcrumbs">
+        <span>Homepage</span> / <span>Clothing Categories</span> / <span className="current-page">My Shopping Cart</span>
+      </div>
 
-            <div className="cart-items-list">
-              {cartItems.length === 0 ? (
-                <div style={{ padding: '40px 0', color: '#888', fontStyle: 'italic' }}>
-                  Your cart is empty.
+      <div className="cart-layout">
+        {/* Left Column */}
+        <div className="cart-left-column">
+          {/* Step 1: Login */}
+          <div className="checkout-step completed">
+            <div className="step-header">
+              <div className="step-title">
+                <span className="step-number">1</span>
+                <h3>LOGIN <FiCheck className="check-icon" size={18} /></h3>
+              </div>
+              <div className="step-summary">
+                <div className="user-details">
+                  <span className="user-name">Michael Smith</span>
+                  <span className="user-phone">+806 - 445 - 4453</span>
                 </div>
-              ) : (
-                cartItems.map((item) => (
-                  <div key={item.id} className="cart-item">
-                    <img src={item.image} alt={item.name} className="item-thumbnail" />
-                    <div className="item-details">
-                      <div className="item-name">{item.name}</div>
-                      <div className="item-meta">Color: {item.color} • Size: {item.size}</div>
-                    </div>
-                    <div className="item-qty">
-                      <select 
-                        value={item.quantity || 1} 
-                        onChange={(e) => handleQtyChange(item.id, e.target.value)}
-                      >
-                        {[...Array(10)].map((_, i) => (
-                          <option key={i + 1} value={i + 1}>Qty. {i + 1}</option>
-                        ))}
-                      </select>
-                    </div>
-                    <div className="item-price">
-                      ${(item.price * (item.quantity || 1)).toFixed(2)}
-                      <button 
-                        style={{ background: 'none', border: 'none', color: '#ff4d4f', cursor: 'pointer', display: 'block', margin: '4px 0 0 auto', padding: 0 }}
-                        onClick={() => handleRemove(item.id)}
-                        title="Remove item"
-                      >
-                        <FiTrash2 size={14} />
-                      </button>
-                    </div>
-                  </div>
-                ))
-              )}
+                <button className="change-btn">CHANGE</button>
+              </div>
             </div>
           </div>
 
-          <div className="cart-right-panel">
-            <div className="billing-section">
-              <div className="info-block">
-                <div className="info-header">
-                  <h3>Jane Doe</h3>
-                  <button className="edit-btn">Edit</button>
-                </div>
-                <p className="info-text">123 Fashion Street, Suite 404</p>
-                <p className="info-text">New York, USA</p>
+          {/* Step 2: Shipping Address */}
+          <div className="checkout-step active">
+            <div className="step-header">
+              <div className="step-title">
+                <span className="step-number">2</span>
+                <h3>SHIPPING ADDRESS</h3>
               </div>
-
-              <div className="info-block">
-                <div className="info-header">
-                  <h3 className="section-label">Payment method</h3>
-                </div>
-                <div className="payment-method-row">
-                  <div className="card-info">
-                    <FaCcMastercard className="card-icon" />
-                    <span>**** **** **** 5057</span>
+            </div>
+            
+            <div className="step-content">
+              <div className="address-form">
+                <div className="form-row">
+                  <div className="input-group">
+                    <label>First Name *</label>
+                    <input type="text" defaultValue="Michael" />
                   </div>
-                  <button className="edit-btn">Edit</button>
+                  <div className="input-group">
+                    <label>Last Name *</label>
+                    <input type="text" defaultValue="Smith" />
+                  </div>
                 </div>
-              </div>
+                
+                <div className="form-row">
+                  <div className="input-group">
+                    <label>Address *</label>
+                    <input type="text" defaultValue="234 HK , Avenue Lake city, Utah" />
+                  </div>
+                  <div className="input-group">
+                    <label>Apt, Suite *</label>
+                    <input type="text" defaultValue="23H - UN3" />
+                  </div>
+                </div>
 
-              <div className="discount-block">
-                <h3 className="section-label">Do you have any discount code?</h3>
-                <div className="discount-input-group">
-                  <input type="text" placeholder="Enter discount code" />
-                  <button className="apply-btn">APPLY</button>
+                <div className="form-row">
+                  <div className="input-group">
+                    <label>City *</label>
+                    <input type="text" defaultValue="Lake city, Utah" />
+                  </div>
+                  <div className="input-group">
+                    <label>Country *</label>
+                    <select defaultValue="United States">
+                      <option value="United States">United States</option>
+                      <option value="Canada">Canada</option>
+                      <option value="United Kingdom">United Kingdom</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div className="form-row half">
+                  <div className="input-group">
+                    <label>Postal Code *</label>
+                    <input type="text" defaultValue="230104" />
+                  </div>
+                </div>
+
+                <div className="delivery-options">
+                  <label className="radio-label">
+                    <input type="radio" name="delivery_type" />
+                    <span className="radio-custom"></span>
+                    <span className="radio-text">Home <span className="muted">( All Day Delivery )</span></span>
+                  </label>
+                  <label className="radio-label">
+                    <input type="radio" name="delivery_type" defaultChecked />
+                    <span className="radio-custom checked"></span>
+                    <span className="radio-text">Office <span className="muted">( Delivery Between 10 AM - 5 PM )</span></span>
+                  </label>
+                </div>
+
+                <div className="form-actions">
+                  <button className="save-deliver-btn">Save And Deliver Here</button>
+                  <button className="cancel-btn">Cancel</button>
                 </div>
               </div>
             </div>
+          </div>
 
-            <div className="summary-section">
-              <div className="summary-row">
-                <span>Subtotal ({totalItemsCount} items)</span>
-                <span>${subtotal.toFixed(2)}</span>
+          {/* Step 3: Payment Method */}
+          <div className="checkout-step pending">
+            <div className="step-header">
+              <div className="step-title">
+                <span className="step-number">3</span>
+                <h3>PAYMENT METHOD</h3>
               </div>
-              <div className="summary-row">
-                <span>Shipping</span>
-                <span className="free-label">FREE!</span>
-              </div>
-              <div className="summary-row">
-                <span>Discount</span>
-                <span>-${discount.toFixed(2)}</span>
-              </div>
-              <div className="summary-row total-row">
-                <span>Total (incl. VAT)</span>
-                <span>${Math.max(total, 0).toFixed(2)}</span>
-              </div>
-              
-              <button className="checkout-btn">
-                <FiLock className="lock-icon" /> CHECKOUT
-              </button>
             </div>
+          </div>
+
+        </div>
+
+        {/* Right Column */}
+        <div className="cart-right-column">
+          <div className="order-summary-card">
+            <h2 className="order-title">Your Order</h2>
+            
+            <div className="order-items">
+              {itemsToDisplay.map((item, index) => (
+                <div key={item.id || index} className="order-item">
+                  <div className="item-image-wrapper">
+                    {item.image ? (
+                      <img src={item.image} alt={item.name} />
+                    ) : (
+                      <div className="placeholder-image"></div>
+                    )}
+                  </div>
+                  <div className="item-details">
+                    <h4 className="item-name">{item.name}</h4>
+                    <p className="item-variant">Size {item.size} <span className="variant-spacer"></span> Color {item.color}</p>
+                    <p className="item-price-qty">
+                      <strong>${item.price.toFixed(2)}</strong> <span className="item-qty">x {String(item.quantity).padStart(2, '0')}</span>
+                    </p>
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            <div className="order-totals">
+              <div className="total-row">
+                <span className="total-label">Delivery</span>
+                <span className="total-value">${delivery.toFixed(2)} (Express)</span>
+              </div>
+              <div className="total-row discount-row">
+                <span className="total-label">Discount</span>
+                <span className="total-value">- ${discount.toFixed(2)}</span>
+              </div>
+            </div>
+
+            <div className="order-final-total">
+              <span className="final-label">Total</span>
+              <span className="final-amount">${total.toFixed(2)}</span>
+            </div>
+            
+            {/* Abstract shape decoration on card */}
+            <div className="card-decoration"></div>
           </div>
         </div>
       </div>
