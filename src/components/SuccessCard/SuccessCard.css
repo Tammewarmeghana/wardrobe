@@ -1,0 +1,129 @@
+.success-card-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  backdrop-filter: blur(4px);
+  animation: fadeInOverlay 0.4s ease-out forwards;
+}
+
+.success-card-container {
+  background-color: var(--cream, #fffdfa);
+  border-radius: 16px;
+  padding: 40px;
+  width: 90%;
+  max-width: 420px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  transform: scale(0.95);
+  opacity: 0;
+  animation: cardAppear 0.5s cubic-bezier(0.16, 1, 0.3, 1) 0.1s forwards;
+  margin: 0 auto;
+}
+
+.success-icon-wrapper {
+  width: 80px;
+  height: 80px;
+  background-color: #fceceb;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 24px auto;
+  box-shadow: 0 0 0 0 rgba(252, 236, 235, 0.7);
+  animation: pulseIcon 2s infinite ease-in-out, bounceIn 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.4s both;
+}
+
+.success-icon {
+  width: 36px;
+  height: 36px;
+  color: #a37272;
+}
+
+.success-title {
+  font-family: 'Playfair Display', 'Times New Roman', serif;
+  font-size: 24px;
+  color: var(--text-dark, #2F2A26);
+  margin: 0 0 12px 0;
+  font-weight: 500;
+}
+
+.success-desc {
+  font-family: 'Inter', -apple-system, sans-serif;
+  font-size: 15px;
+  line-height: 1.6;
+  color: #5d675b;
+  margin: 0;
+}
+
+.success-details {
+  margin-top: 24px;
+  padding-top: 24px;
+  border-top: 1px solid rgba(0,0,0,0.05);
+  font-family: 'Inter', -apple-system, sans-serif;
+  font-size: 14px;
+  color: #8c8c8c;
+}
+
+.success-button {
+  margin-top: 30px;
+  background-color: transparent;
+  color: #a37272;
+  border: 1px solid #a37272;
+  padding: 12px 30px;
+  border-radius: 30px;
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: 'Inter', -apple-system, sans-serif;
+}
+
+.success-button:hover {
+  background-color: #a37272;
+  color: white;
+}
+
+@keyframes fadeInOverlay {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes cardAppear {
+  from { 
+    opacity: 0;
+    transform: scale(0.95) translateY(10px);
+  }
+  to { 
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+@keyframes bounceIn {
+  0% { transform: scale(0); opacity: 0.5; }
+  50% { transform: scale(1.1); opacity: 1; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+@keyframes pulseIcon {
+  0% { box-shadow: 0 0 0 0 rgba(252, 236, 235, 0.7); }
+  70% { box-shadow: 0 0 0 15px rgba(252, 236, 235, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(252, 236, 235, 0); }
+}
+
+@media (max-width: 480px) {
+  .success-card-container {
+    padding: 30px 20px;
+  }
+  .success-title {
+    font-size: 22px;
+  }
+}

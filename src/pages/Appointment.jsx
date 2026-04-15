@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './appointment.css';
 import { useNavigate } from 'react-router-dom';
+import SuccessCard from '../components/SuccessCard/SuccessCard';
 
 const Appointment = () => {
     const navigate = useNavigate();
@@ -10,6 +11,9 @@ const Appointment = () => {
     }, []);
 
     const [step, setStep] = useState(1);
+    const [isBooked, setIsBooked] = useState(false);
+    const [error, setError] = useState('');
+    
     const [formData, setFormData] = useState({
         category: '',
         service: '',
@@ -19,10 +23,31 @@ const Appointment = () => {
         time: ''
     });
 
-    const handleNext = () => setStep(2);
-    const handleBack = () => setStep(1);
+    const handleNext = () => {
+        if (!formData.category || !formData.service || !formData.location) {
+            setError('Please select category, service, and location to proceed.');
+            return;
+        }
+        setError('');
+        setStep(2);
+    };
+
+    const handleBack = () => {
+        setError('');
+        setStep(1);
+    };
+
     const handleSubmit = () => {
-        // Mock successful booking, redirect back home
+        if (!formData.date || !formData.time) {
+            setError('Please select both a date and a time slot.');
+            return;
+        }
+        setError('');
+        setIsBooked(true);
+    };
+
+    const handleSuccessClose = () => {
+        setIsBooked(false);
         navigate('/home');
     };
 
@@ -102,6 +127,7 @@ const Appointment = () => {
                                 </select>
                             </div>
                             
+                            {error && <p style={{ color: '#c93b4a', textAlign: 'center', marginBottom: '15px' }}>{error}</p>}
                             <button className="next-btn" onClick={handleNext}>Next</button>
                         </div>
                     )}
@@ -140,6 +166,7 @@ const Appointment = () => {
                                 </div>
                             </div>
                             
+                            {error && <p style={{ color: '#c93b4a', textAlign: 'center', marginBottom: '15px' }}>{error}</p>}
                             <div className="bottom-buttons">
                                 <button className="back-btn" onClick={handleBack}>Back</button>
                                 <button className="next-btn" onClick={handleSubmit}>Confirm Booking</button>
@@ -148,6 +175,16 @@ const Appointment = () => {
                     )}
                 </div>
             </div>
+            
+            {isBooked && (
+                <SuccessCard 
+                    title="Appointment Booked Successfully"
+                    description="Your appointment has been confirmed. We look forward to seeing you."
+                    dateText={`May ${formData.date}, 2026`}
+                    timeText={formData.time}
+                    onClose={handleSuccessClose}
+                />
+            )}
         </div>
     );
 };
