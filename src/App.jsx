@@ -16,7 +16,7 @@ import KurthiSets from './pages/KurthiSets';
 import Anarkalis from './pages/Anarkalis';
 import SalwarKamis from './pages/SalwarKamis';
 import GagraCholi from './pages/GagraCholi';
-import ChaniyaCholi from './pages/ChaniyaCholi';
+import IndianGowns from './pages/indiangowns';
 import JacketLehenga from './pages/JacketLehenga';
 import DhotiCropTop from './pages/DhotiCropTop';
 import IndoWesternFrocks from './pages/IndoWesternFrocks';
@@ -67,7 +67,7 @@ function App() {
             <Route path="/anarkalis" element={<Anarkalis />} />
             <Route path="/salwarkamis" element={<SalwarKamis />} />
             <Route path="/gagracholi" element={<GagraCholi />} />
-            <Route path="/chaniyacholi" element={<ChaniyaCholi />} />
+            <Route path="/indiangowns" element={<IndianGowns />} />
             <Route path="/jacket-lehenga" element={<JacketLehenga />} />
             <Route path="/dhoti-croptop" element={<DhotiCropTop />} />
             <Route path="/indowestern-frocks" element={<IndoWesternFrocks />} />
