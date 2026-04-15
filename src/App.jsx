@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import IndoWestern from './pages/IndoWestern';
 import Western from './pages/Western';
@@ -40,6 +40,7 @@ import Cart from './pages/Cart';
 import './index.css';
 import { ShopProvider } from './context/ShopContext';
 import Navbar from './components/Navbar/Navbar';
+import Appointment from './pages/Appointment';
 
 function App() {
   return (
@@ -57,6 +58,7 @@ function App() {
             <Route path="/western" element={<Western />} />
             <Route path="/traditional" element={<Traditional />} />
             <Route path="/readymade" element={<ReadyMade />} />
+            <Route path="/appointment" element={<Appointment />} />
             <Route path="/customised" element={<Customised />} />
             <Route path="/search" element={<SearchResults />} />
             <Route path="/wishlist" element={<Wishlist />} />
@@ -86,7 +88,6 @@ function App() {
             <Route path="/koreanwear" element={<KoreanDresses />} />
             <Route path="/fullpage" element={<FullPage />} />
             <Route path="/contact" element={<Contact />} />
-            <Route path="*" element={<Navigate to="/" replace />} />
           </Routes>
         </div>
       </Router>

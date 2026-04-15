@@ -25,26 +25,11 @@ export const ShopProvider = ({ children }) => {
   });
 
   useEffect(() => {
-    try {
-      const sanitizedWishlist = JSON.stringify(wishlistItems, (key, value) => {
-        // Strip out React elements (like formatted JSX prices) to prevent circular JSON errors
-        if (value && typeof value === 'object' && typeof value.$$typeof === 'symbol') {
-          return undefined; 
-        }
-        return value;
-      });
-      localStorage.setItem('wishlistItems', sanitizedWishlist);
-    } catch (error) {
-      console.error("Error saving wishlist to local storage", error);
-    }
+    localStorage.setItem('wishlistItems', JSON.stringify(wishlistItems));
   }, [wishlistItems]);
 
   useEffect(() => {
-    try {
-      localStorage.setItem('cartItems', JSON.stringify(cartItems));
-    } catch (error) {
-      console.error("Error saving cart to local storage", error);
-    }
+    localStorage.setItem('cartItems', JSON.stringify(cartItems));
   }, [cartItems]);
 
   const toggleWishlist = (item) => {

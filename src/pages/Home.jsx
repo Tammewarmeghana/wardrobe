@@ -1,8 +1,9 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import './fullpage.css';
 
 function Home() {
+    const navigate = useNavigate();
     const slidesCount = 5;
     const [currentSlide, setCurrentSlide] = useState(0);
     const bestsTrackRef = useRef(null);
@@ -201,7 +202,7 @@ function Home() {
                 <div className="bridal-text">
                     <h2>Bridal Sessions</h2>
                     <p>Book an appointment to get free elite stylist advice and find your perfect wedding dress.</p>
-                    <Link to="#" className="btn-wipe">Book an Appointment</Link>
+                    <button onClick={() => navigate('/appointment')} className="btn-wipe">Book an Appointment</button>
                 </div>
             </section>
 
