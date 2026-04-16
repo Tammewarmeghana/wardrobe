@@ -11,6 +11,7 @@ import Opening from './pages/Opening';
 import GownSaree from './pages/GownSaree';
 import Sarees from './pages/Sarees';
 import Lehengas from './pages/Lehengas';
+import BridalLehenga from './pages/BridalLehenga';
 import Croptops from './pages/Croptops';
 import KurthiSets from './pages/KurthiSets';
 import Anarkalis from './pages/Anarkalis';
@@ -34,6 +35,7 @@ import PeplumPantsuit from './pages/PeplumPantsuit';
 import FullPage from './pages/FullPage';
 import Contact from './pages/Contact';
 import Customised from './pages/Customised';
+import Measurements from './pages/Measurements';
 import SearchResults from './pages/SearchResults';
 import Wishlist from './pages/Wishlist';
 import Cart from './pages/Cart';
@@ -61,6 +63,7 @@ function App() {
             <Route path="/readymade" element={<ReadyMade />} />
             <Route path="/appointment" element={<Appointment />} />
             <Route path="/customised" element={<Customised />} />
+            <Route path="/measurements" element={<Measurements />} />
             <Route path="/search" element={<SearchResults />} />
             <Route path="/wishlist" element={<Wishlist />} />
             <Route path="/cart" element={<Cart />} />
@@ -68,6 +71,7 @@ function App() {
             <Route path="/gownsaree" element={<GownSaree />} />
             <Route path="/sarees" element={<Sarees />} />
             <Route path="/lehengas" element={<Lehengas />} />
+            <Route path="/bridal-lehenga" element={<BridalLehenga />} />
             <Route path="/croptops" element={<Croptops />} />
             <Route path="/kurthisets" element={<KurthiSets />} />
             <Route path="/anarkalis" element={<Anarkalis />} />

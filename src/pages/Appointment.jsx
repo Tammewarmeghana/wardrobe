@@ -57,11 +57,19 @@ const Appointment = () => {
 
     return (
         <div className="appointment-page">
+            <div className="particles-layer">
+                <div className="particle"></div>
+                <div className="particle"></div>
+                <div className="particle"></div>
+                <div className="particle"></div>
+                <div className="particle"></div>
+                <div className="particle"></div>
+            </div>
             <div className="appointment-card">
                 <div className="appointment-left">
                     <img 
-                        src="https://res.cloudinary.com/dodmxncwc/image/upload/v1775980865/fc5d48e17964a07b964b9d40e41047c5_a1ffmf.jpg" 
-                        alt="Relaxing environment" 
+                        src="/red_bridal_lehenga.png" 
+                        alt="Soft elegant bridal lehenga" 
                         className="appointment-img" 
                     />
                     <div className="appointment-overlay">

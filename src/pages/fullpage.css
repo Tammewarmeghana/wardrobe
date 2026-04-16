@@ -559,41 +559,7 @@ button {
     }
 }
 
-/* =======================================
-   7. CHIP CAROUSEL
-======================================= */
-.names-carousel {
-    padding: 40px 0;
-    background: #F7F1E8;
-    overflow: hidden;
-}
 
-.names-track {
-    display: flex;
-    gap: 30px;
-    padding: 0 5%;
-    white-space: nowrap;
-    overflow-x: auto;
-    scrollbar-width: none;
-}
-
-.names-track::-webkit-scrollbar {
-    display: none;
-}
-
-.name-pill {
-    padding: 12px 30px;
-    border: 1px solid var(--clr-pastel-pink);
-    border-radius: 30px;
-    font-size: 1.1rem;
-    cursor: pointer;
-    transition: background var(--transition-fast), color var(--transition-fast);
-}
-
-.name-pill:hover {
-    background: var(--clr-pastel-pink);
-    color: var(--clr-white);
-}
 
 /* =======================================
    8. BRIDAL SESSIONS

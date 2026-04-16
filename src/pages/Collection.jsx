@@ -134,7 +134,7 @@ function Collection() {
                         <div className="small-divider"></div>
                         <p>Tailor-made perfection. Our atelier works closely with you to bring your dream silhouettes to life,
                             offering unparalleled exclusivity, personalized details, and precise, made-to-measure tailoring.</p>
-                        <Link to="/customised" className="explore-btn">Discover More</Link>
+                        <Link to="/measurements" className="explore-btn">Discover More</Link>
                     </div>
                 </section>
 

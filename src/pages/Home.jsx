@@ -183,16 +183,6 @@ function Home() {
                 </div>
             </section>
 
-            {/* 7. Category Names Horizontal Carousel */}
-            <section className="names-carousel">
-                <div className="names-track">
-                    <span className="name-pill">Festive Collections</span>
-                    <span className="name-pill">Ready to Ship</span>
-                    <span className="name-pill">Same Day Delivery</span>
-                    <span className="name-pill">New Arrivals</span>
-                    <span className="name-pill">Our Bests</span>
-                </div>
-            </section>
 
             {/* 8. Bridal Sessions */}
             <section className="bridal-sessions">
@@ -217,7 +207,7 @@ function Home() {
                                 <div className="product-content">
                                     <h3 className="product-title">Bridal Lehenga</h3>
                                     <p className="product-desc">Elegant Floral Bridal Set<br />Perfect for weddings & festive wear</p>
-                                    <button className="product-btn">Shop Now</button>
+                                    <button className="product-btn" onClick={() => navigate('/bridal-lehenga')}>Shop Now</button>
                                 </div>
                             </div>
                         </div>
@@ -237,7 +227,7 @@ function Home() {
                                 <div className="product-content">
                                     <h3 className="product-title">Traditional Lehenga</h3>
                                     <p className="product-desc">Classic Pink Lehenga<br />Rich embroidery for special occasions</p>
-                                    <button className="product-btn">Shop Now</button>
+                                    <button className="product-btn" onClick={() => navigate('/lehengas')}>Shop Now</button>
                                 </div>
                             </div>
                         </div>
