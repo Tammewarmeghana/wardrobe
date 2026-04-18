@@ -111,8 +111,8 @@ function Anarkalis() {
                                 <div className="swatch" style={{ backgroundColor: '#bb9b9f' }}></div>
                                 <div className="swatch" style={{ backgroundColor: '#2F2A26' }}></div>
                             </div>
-                            <h3 className="brand-name">Maison d'Élégance</h3>
-                            <p className="product-title">Premium Pre-Draped Saree Gown in Soft Georgette with Embellished Belt</p>
+                            <h3 className="brand-name">Yellow Embellished Pre-Draped Saree Gown with Belt</h3>
+                            <p className="product-title">Soft georgette saree gown featuring intricate embellishments, a flattering pre-draped silhouette, and a statement belt for an elegant festive look.</p>
 
 
                             <div className="rating-block">
@@ -146,8 +146,8 @@ function Anarkalis() {
                                 <div className="swatch" style={{ backgroundColor: '#a37272' }}></div>
                                 <div className="swatch" style={{ backgroundColor: '#5d675b' }}></div>
                             </div>
-                            <h3 className="brand-name">Queen's Wardrobe</h3>
-                            <p className="product-title">Modern Indo-Western Fusion Saree with Attached Pallu</p>
+                            <h3 className="brand-name">Ivory Floral Border Indo-Western Saree Gown</h3>
+                            <p className="product-title">Flowing ivory gown with delicate floral border detailing and an attached draped pallu, blending modern grace with traditional charm.</p>
 
 
                             <div className="rating-block">
@@ -180,8 +180,8 @@ function Anarkalis() {
                             <div className="swatches">
                                 <div className="swatch" style={{ backgroundColor: '#2F2A26' }}></div>
                             </div>
-                            <h3 className="brand-name">Western Elegance</h3>
-                            <p className="product-title">Cocktail Saree Gown with Cape Sleeves</p>
+                            <h3 className="brand-name">Purple Embroidered Cocktail Saree Gown with Cape Sleeves</h3>
+                            <p className="product-title">Regal purple saree gown enhanced with rich embroidery and dramatic cape sleeves, perfect for evening events and receptions.</p>
 
 
                             <div className="rating-block">
@@ -216,8 +216,8 @@ function Anarkalis() {
                                 <div className="swatch" style={{ backgroundColor: '#0b2b4e' }}></div>
                                 <div className="swatch" style={{ backgroundColor: '#b08a5d' }}></div>
                             </div>
-                            <h3 className="brand-name">Maison d'Élégance</h3>
-                            <p className="product-title">Heritage Silk Trim Saree Gown for Wedding Receptions</p>
+                            <h3 className="brand-name">Fuchsia Silk Trim Heritage Saree Gown</h3>
+                            <p className="product-title">Vibrant fuchsia gown with heritage-inspired silk trims and a flared silhouette, designed for wedding celebrations and festive occasions.</p>
 
 
                             <div className="rating-block">
@@ -251,8 +251,8 @@ function Anarkalis() {
                                 <div className="swatch" style={{ backgroundColor: '#d1bfae' }}></div>
                                 <div className="swatch" style={{ backgroundColor: '#e8e8e8' }}></div>
                             </div>
-                            <h3 className="brand-name">Queen's Bespoke</h3>
-                            <p className="product-title">Custom-Fit Sequined Saree Dress</p>
+                            <h3 className="brand-name">Champagne Sequin Custom-Fit Saree Dress</h3>
+                            <p className="product-title">Elegant champagne-toned saree dress with subtle sequin work and a structured custom-fit design for a refined, modern look.</p>
 
 
                             <div className="rating-block">
@@ -286,8 +286,8 @@ function Anarkalis() {
                             <div className="swatches">
                                 <div className="swatch" style={{ backgroundColor: '#bb9b9f' }}></div>
                             </div>
-                            <h3 className="brand-name">Maison d'Élégance</h3>
-                            <p className="product-title">Embroidered Pastel Saree Gown with Dupatta</p>
+                            <h3 className="brand-name">Black Embroidered Saree Gown with Dupatta</h3>
+                            <p className="product-title">Classic black gown with intricate embroidery and a matching dupatta, offering timeless sophistication for formal gatherings.</p>
                             <div className="rating-block">
                                 <span className="stars">★★★★☆</span>
                                 <span className="rating-count">85</span>
@@ -313,8 +313,8 @@ function Anarkalis() {
                                 <div className="swatch" style={{ backgroundColor: '#5d675b' }}></div>
                                 <div className="swatch" style={{ backgroundColor: '#a37272' }}></div>
                             </div>
-                            <h3 className="brand-name">Queen's Wardrobe</h3>
-                            <p className="product-title">Olive Green Sequin Trim Saree</p>
+                            <h3 className="brand-name">Wine Sequin Trim Flared Saree Gown</h3>
+                            <p className="product-title">Rich wine-colored saree gown with sequin borders and a voluminous flare, ideal for festive evenings and celebrations.</p>
                             <div className="rating-block">
                                 <span className="stars">★★★★★</span>
                                 <span className="rating-count">430</span>
@@ -340,8 +340,8 @@ function Anarkalis() {
                                 <div className="swatch" style={{ backgroundColor: '#2F2A26' }}></div>
                                 <div className="swatch" style={{ backgroundColor: '#e5ccce' }}></div>
                             </div>
-                            <h3 className="brand-name">Western Elegance</h3>
-                            <p className="product-title">Midnight Black Chiffon Saree Gown</p>
+                            <h3 className="brand-name">Olive Green Chiffon Saree Gown with Embellished Hem</h3>
+                            <p className="product-title">Lightweight chiffon gown in olive green featuring a detailed embellished hem and a graceful drape for effortless elegance.</p>
                             <div className="rating-block">
                                 <span className="stars">★★★★☆</span>
                                 <span className="rating-count">612</span>
@@ -366,8 +366,8 @@ function Anarkalis() {
                             <div className="swatches">
                                 <div className="swatch" style={{ backgroundColor: '#0b2b4e' }}></div>
                             </div>
-                            <h3 className="brand-name">Maison d'Élégance</h3>
-                            <p className="product-title">Royal Navy Blue Designer Saree with Floral Appliques</p>
+                            <h3 className="brand-name">Bronze Designer Saree Gown with Metallic Finish</h3>
+                            <p className="product-title">Statement bronze saree gown with a metallic sheen and structured pleats, perfect for high-impact festive and wedding looks.</p>
                             <div className="rating-block">
                                 <span className="stars">★★★★★</span>
                                 <span className="rating-count">190</span>
@@ -392,8 +392,8 @@ function Anarkalis() {
                             <div className="swatches">
                                 <div className="swatch" style={{ backgroundColor: '#d1bfae' }}></div>
                             </div>
-                            <h3 className="brand-name">Queen's Bespoke</h3>
-                            <p className="product-title">Nude Beige Premium Drape</p>
+                            <h3 className="brand-name">Beige & Red Embroidered Bridal Saree Gown</h3>
+                            <p className="product-title">Heavily embroidered beige and red saree gown with intricate detailing, crafted for bridal wear and grand occasions.</p>
                             <div className="rating-block">
                                 <span className="stars">★★★★☆</span>
                                 <span className="rating-count">56</span>
@@ -418,8 +418,8 @@ function Anarkalis() {
                             <div className="swatches">
                                 <div className="swatch" style={{ backgroundColor: '#e5ccce' }}></div>
                             </div>
-                            <h3 className="brand-name">Maison d'Élégance</h3>
-                            <p className="product-title">Draped Georgette Saree Gown in Rose Pink</p>
+                            <h3 className="brand-name">Red Embroidered Georgette Saree Gown with Dupatta</h3>
+                            <p className="product-title">Rich red georgette saree gown adorned with intricate embroidery and paired with a flowing dupatta, ideal for weddings and festive occasions.</p>
                             <div className="rating-block">
                                 <span className="stars">★★★★★</span>
                                 <span className="rating-count">140</span>
@@ -443,8 +443,8 @@ function Anarkalis() {
                             <div className="swatches">
                                 <div className="swatch" style={{ backgroundColor: '#a37272' }}></div>
                             </div>
-                            <h3 className="brand-name">Queen's Wardrobe</h3>
-                            <p className="product-title">Pleated Indo-Western Saree with Matching Clutch</p>
+                            <h3 className="brand-name">Sage Green Pleated Indo-Western Saree Gown with Clutch</h3>
+                            <p className="product-title">Elegant sage green pleated saree gown with a modern Indo-western silhouette, complemented by a matching clutch for a complete look.</p>
                             <div className="rating-block">
                                 <span className="stars">★★★★☆</span>
                                 <span className="rating-count">245</span>
@@ -468,8 +468,8 @@ function Anarkalis() {
                             <div className="swatches">
                                 <div className="swatch" style={{ backgroundColor: '#2F2A26' }}></div>
                             </div>
-                            <h3 className="brand-name">Western Elegance</h3>
-                            <p className="product-title">Minimalist Evening Gown Saree</p>
+                            <h3 className="brand-name">Blush Pink Minimalist Evening Saree Gown</h3>
+                            <p className="product-title">Soft blush pink saree gown with subtle embellishments and a clean, minimalist design, perfect for evening parties and receptions.</p>
                             <div className="rating-block">
                                 <span className="stars">★★★★★</span>
                                 <span className="rating-count">88</span>
@@ -494,8 +494,9 @@ function Anarkalis() {
                                 <div className="swatch" style={{ backgroundColor: '#c93b4a' }}></div>
                                 <div className="swatch" style={{ backgroundColor: '#0b2b4e' }}></div>
                             </div>
-                            <h3 className="brand-name">Heritage Silks</h3>
-                            <p className="product-title">Handloom Silk Saree Gown for Receptions</p>
+                            <h3 className="brand-name">Navy Blue Handloom Silk Saree Gown with Dupatta
+</h3>
+                            <p className="product-title">Deep navy blue saree gown crafted from handloom silk with delicate motifs and a coordinated dupatta, blending tradition with elegance.</p>
                             <div className="rating-block">
                                 <span className="stars">★★★★☆</span>
                                 <span className="rating-count">421</span>
@@ -519,8 +520,8 @@ function Anarkalis() {
                             <div className="swatches">
                                 <div className="swatch" style={{ backgroundColor: '#d1bfae' }}></div>
                             </div>
-                            <h3 className="brand-name">Queen's Bespoke</h3>
-                            <p className="product-title">Signature Embellished Custom Saree</p>
+                            <h3 className="brand-name">Powder Blue Embellished Custom Saree Gown</h3>
+                            <p className="product-title">Graceful powder blue saree gown featuring intricate embellishments and a custom-tailored fit for a refined festive appearance.</p>
                             <div className="rating-block">
                                 <span className="stars">★★★★★</span>
                                 <span className="rating-count">19</span>
@@ -544,8 +545,8 @@ function Anarkalis() {
                             <div className="swatches">
                                 <div className="swatch" style={{ backgroundColor: '#bb9b9f' }}></div>
                             </div>
-                            <h3 className="brand-name">Maison d'Élégance</h3>
-                            <p className="product-title">Peach Pastel Georgette Gown Saree</p>
+                            <h3 className="brand-name">Emerald Green Georgette Saree Gown with Belt</h3>
+                            <p className="product-title">Flowing emerald green gown with a cinched waist belt and soft georgette drape, offering a flattering and contemporary ethnic look.</p>
                             <div className="rating-block">
                                 <span className="stars">★★★★☆</span>
                                 <span className="rating-count">112</span>
@@ -569,8 +570,8 @@ function Anarkalis() {
                             <div className="swatches">
                                 <div className="swatch" style={{ backgroundColor: '#5d675b' }}></div>
                             </div>
-                            <h3 className="brand-name">Queen's Wardrobe</h3>
-                            <p className="product-title">Festive Green Pre-Stitched Gown</p>
+                            <h3 className="brand-name">Deep Pink Festive Pre-Stitched Saree Gown with Dupatta</h3>
+                            <p className="product-title">Vibrant deep pink pre-stitched saree gown paired with a contrasting dupatta, designed for effortless festive styling.</p>
                             <div className="rating-block">
                                 <span className="stars">★★★★★</span>
                                 <span className="rating-count">478</span>
@@ -594,8 +595,8 @@ function Anarkalis() {
                             <div className="swatches">
                                 <div className="swatch" style={{ backgroundColor: '#2F2A26' }}></div>
                             </div>
-                            <h3 className="brand-name">Western Elegance</h3>
-                            <p className="product-title">Classic Black Contemporary Wrap Saree</p>
+                            <h3 className="brand-name">Red & Gold Contemporary Wrap Saree Gown</h3>
+                            <p className="product-title">Striking red saree gown with gold patterns in a modern wrap silhouette, perfect for statement-making traditional wear.</p>
                             <div className="rating-block">
                                 <span className="stars">★★★★☆</span>
                                 <span className="rating-count">334</span>
@@ -619,8 +620,8 @@ function Anarkalis() {
                             <div className="swatches">
                                 <div className="swatch" style={{ backgroundColor: '#0b2b4e' }}></div>
                             </div>
-                            <h3 className="brand-name">Heritage Silks</h3>
-                            <p className="product-title">Rich Indigo Occasion Wear Layout Saree</p>
+                            <h3 className="brand-name">Olive Green Occasion Wear Saree Gown</h3>
+                            <p className="product-title">Elegant olive green saree gown with a flowing flare and minimal detailing, suitable for formal gatherings and celebrations.</p>
                             <div className="rating-block">
                                 <span className="stars">★★★★★</span>
                                 <span className="rating-count">650</span>
@@ -645,8 +646,8 @@ function Anarkalis() {
                                 <div className="swatch" style={{ backgroundColor: '#d1bfae' }}></div>
                                 <div className="swatch" style={{ backgroundColor: '#bb9b9f' }}></div>
                             </div>
-                            <h3 className="brand-name">Queen's Bespoke</h3>
-                            <p className="product-title">Taupe High-Society Event Saree</p>
+                            <h3 className="brand-name">Mustard & Teal High-Society Event Saree Gown</h3>
+                            <p className="product-title">Sophisticated mustard saree gown with teal dupatta accents and refined detailing, crafted for upscale events and occasions.</p>
                             <div className="rating-block">
                                 <span className="stars">★★★★★</span>
                                 <span className="rating-count">93</span>
