@@ -87,9 +87,12 @@ function Sarees() {
                                 <div className="swatch" style={{ backgroundColor: '#bb9b9f' }}></div>
                                 <div className="swatch" style={{ backgroundColor: '#2F2A26' }}></div>
                             </div>
-                            <h3 className="brand-name">Maison d'Élégance</h3>
-                            <p className="product-title">Premium Pre-Draped Saree Gown in Soft Georgette with Embellished Belt</p>
-
+                            <h3 className="brand-name">
+                                Pink Printed Georgette Saree – Soft Festive Wear
+                            </h3>
+                            <p className="product-title">
+                                Light pink saree with delicate printed motifs and fluid drape. Perfect for casual festive occasions.
+                            </p>
                             <div className="rating-block">
                                 <span className="stars">★★★★☆</span>
                                 <span className="rating-count">1,245</span>
@@ -117,8 +120,12 @@ function Sarees() {
                                 <div className="swatch" style={{ backgroundColor: '#a37272' }}></div>
                                 <div className="swatch" style={{ backgroundColor: '#5d675b' }}></div>
                             </div>
-                            <h3 className="brand-name">Queen's Wardrobe</h3>
-                            <p className="product-title">Modern Indo-Western Fusion Saree with Attached Pallu</p>
+                            <h3 className="brand-name">
+                                Black & Gold Silk Saree – Traditional Ethnic Wear
+                            </h3>
+                            <p className="product-title">
+                                Classic black saree with rich gold border and pallu. A timeless choice for traditional events.
+                            </p>
 
                             <div className="rating-block">
                                 <span className="stars">★★★★★</span>
@@ -146,8 +153,12 @@ function Sarees() {
                             <div className="swatches">
                                 <div className="swatch" style={{ backgroundColor: '#2F2A26' }}></div>
                             </div>
-                            <h3 className="brand-name">Western Elegance</h3>
-                            <p className="product-title">Cocktail Saree Gown with Cape Sleeves</p>
+                            <h3 className="brand-name">
+                                Steel Blue Minimal Saree – Elegant Evening Wear
+                            </h3>
+                            <p className="product-title">
+                                Simple steel blue saree with a clean drape and subtle shine. Perfect for understated elegance.
+                            </p>
 
                             <div className="rating-block">
                                 <span className="stars">★★★★☆</span>
@@ -177,8 +188,12 @@ function Sarees() {
                                 <div className="swatch" style={{ backgroundColor: '#0b2b4e' }}></div>
                                 <div className="swatch" style={{ backgroundColor: '#b08a5d' }}></div>
                             </div>
-                            <h3 className="brand-name">Maison d'Élégance</h3>
-                            <p className="product-title">Heritage Silk Trim Saree Gown for Wedding Receptions</p>
+                            <h3 className="brand-name">
+                                White & Pink Embroidered Saree – Graceful Occasion Wear
+                            </h3>
+                            <p className="product-title">
+                                Soft white saree with pink embroidery and detailed border. Feminine and refined for celebrations.
+                            </p>
 
                             <div className="rating-block">
                                 <span className="stars">★★★★★</span>
@@ -207,8 +222,12 @@ function Sarees() {
                                 <div className="swatch" style={{ backgroundColor: '#d1bfae' }}></div>
                                 <div className="swatch" style={{ backgroundColor: '#e8e8e8' }}></div>
                             </div>
-                            <h3 className="brand-name">Queen's Bespoke</h3>
-                            <p className="product-title">Custom-Fit Sequined Saree Dress</p>
+                            <h3 className="brand-name">
+                                Beige Silk Saree with Purple Border – Classic Traditional Wear
+                            </h3>
+                            <p className="product-title">
+                                Elegant beige saree with contrasting purple border and rich texture. Perfect for weddings and rituals.
+                            </p>
 
                             <div className="rating-block">
                                 <span className="stars">★★★★☆</span>
@@ -237,8 +256,13 @@ function Sarees() {
                             <div className="swatches">
                                 <div className="swatch" style={{ backgroundColor: '#bb9b9f' }}></div>
                             </div>
-                            <h3 className="brand-name">Maison d'Élégance</h3>
-                            <p className="product-title">Embroidered Pastel Saree Gown with Dupatta</p>
+                            <h3 className="brand-name">
+                                Pastel Floral Organza Saree – Light Daywear Elegance
+                            </h3>
+                            <p className="product-title">
+                                Soft pastel saree with floral prints and airy organza fabric. Ideal for daytime events.
+                            </p>
+
                             <div className="rating-block">
                                 <span className="stars">★★★★☆</span>
                                 <span className="rating-count">85</span>
@@ -256,15 +280,19 @@ function Sarees() {
                     {/* CARD 7 */}
                     <div className="product-card" style={{ position: "relative" }}>
                         <WishlistHeart item={{ id: "Sarees_Olive Green Sequin Trim Saree", title: "Olive Green Sequin Trim Saree", image: "", brand: "Queen's Wardrobe", price: <><span>₹</span>16,200</> }} />
-                        <img src="https://res.cloudinary.com/dugksxwkr/image/upload/v1776148640/s1-removebg-preview_obtdka.png"
+                        <img src="https://res.cloudinary.com/dodmxncwc/image/upload/v1777462799/2efdacd20796bd93f386a12f25013b0c-removebg-preview_u9pset.png"
                             alt="Sequin Saree" className="card-image" />
                         <div className="card-content">
                             <div className="swatches">
                                 <div className="swatch" style={{ backgroundColor: '#5d675b' }}></div>
                                 <div className="swatch" style={{ backgroundColor: '#a37272' }}></div>
                             </div>
-                            <h3 className="brand-name">Queen's Wardrobe</h3>
-                            <p className="product-title">Olive Green Sequin Trim Saree</p>
+                            <h3 className="brand-name">
+                                Lavender Printed Saree – Subtle Feminine Wear
+                            </h3>
+                            <p className="product-title">
+                                Light lavender saree with soft prints and fluid drape. Elegant and easy to style.
+                            </p>
                             <div className="rating-block">
                                 <span className="stars">★★★★★</span>
                                 <span className="rating-count">430</span>
@@ -289,8 +317,12 @@ function Sarees() {
                                 <div className="swatch" style={{ backgroundColor: '#2F2A26' }}></div>
                                 <div className="swatch" style={{ backgroundColor: '#e5ccce' }}></div>
                             </div>
-                            <h3 className="brand-name">Western Elegance</h3>
-                            <p className="product-title">Midnight Black Chiffon Saree Gown</p>
+                            <h3 className="brand-name">
+                                Beige Floral Linen Saree – Minimal Casual Wear
+                            </h3>
+                            <p className="product-title">
+                                Neutral-toned linen saree with floral accents. Comfortable and perfect for everyday elegance.
+                            </p>
                             <div className="rating-block">
                                 <span className="stars">★★★★☆</span>
                                 <span className="rating-count">612</span>
@@ -314,8 +346,12 @@ function Sarees() {
                             <div className="swatches">
                                 <div className="swatch" style={{ backgroundColor: '#0b2b4e' }}></div>
                             </div>
-                            <h3 className="brand-name">Maison d'Élégance</h3>
-                            <p className="product-title">Royal Navy Blue Designer Saree with Floral Appliques</p>
+                            <h3 className="brand-name">
+                                Sky Blue Embroidered Saree – Soft Festive Wear
+                            </h3>
+                            <p className="product-title">
+                                Light blue saree with delicate embroidery and flowing drape. Graceful and refreshing.
+                            </p>
                             <div className="rating-block">
                                 <span className="stars">★★★★★</span>
                                 <span className="rating-count">190</span>
@@ -339,8 +375,12 @@ function Sarees() {
                             <div className="swatches">
                                 <div className="swatch" style={{ backgroundColor: '#d1bfae' }}></div>
                             </div>
-                            <h3 className="brand-name">Queen's Bespoke</h3>
-                            <p className="product-title">Nude Beige Premium Drape</p>
+                            <h3 className="brand-name">
+                                Bridal Gold Silk Saree with Dupatta – Wedding Wear
+                            </h3>
+                            <p className="product-title">
+                                Rich gold saree paired with heavy dupatta and traditional detailing. Ideal for bridal occasions.
+                            </p>
                             <div className="rating-block">
                                 <span className="stars">★★★★☆</span>
                                 <span className="rating-count">56</span>
@@ -364,8 +404,12 @@ function Sarees() {
                             <div className="swatches">
                                 <div className="swatch" style={{ backgroundColor: '#e5ccce' }}></div>
                             </div>
-                            <h3 className="brand-name">Maison d'Élégance</h3>
-                            <p className="product-title">Draped Georgette Saree Gown in Rose Pink</p>
+                            <h3 className="brand-name">
+                                Cream Traditional Saree with Red Border – Classic Ethnic Wear
+                            </h3>
+                            <p className="product-title">
+                                Timeless cream saree with bold red border and heritage design. Perfect for rituals and ceremonies.
+                            </p>
                             <div className="rating-block">
                                 <span className="stars">★★★★★</span>
                                 <span className="rating-count">140</span>
@@ -388,8 +432,12 @@ function Sarees() {
                             <div className="swatches">
                                 <div className="swatch" style={{ backgroundColor: '#a37272' }}></div>
                             </div>
-                            <h3 className="brand-name">Queen's Wardrobe</h3>
-                            <p className="product-title">Pleated Indo-Western Saree with Matching Clutch</p>
+                            <h3 className="brand-name">
+                                Red Banarasi Silk Saree – Rich Festive Wear
+                            </h3>
+                            <p className="product-title">
+                                Deep red Banarasi saree with intricate weaving. A luxurious festive essential.
+                            </p>
                             <div className="rating-block">
                                 <span className="stars">★★★★☆</span>
                                 <span className="rating-count">245</span>
@@ -412,8 +460,12 @@ function Sarees() {
                             <div className="swatches">
                                 <div className="swatch" style={{ backgroundColor: '#2F2A26' }}></div>
                             </div>
-                            <h3 className="brand-name">Western Elegance</h3>
-                            <p className="product-title">Minimalist Evening Gown Saree</p>
+                            <h3 className="brand-name">
+                                Green Bridal Saree with Heavy Dupatta – Wedding Statement Wear
+                            </h3>
+                            <p className="product-title">
+                                Traditional green saree paired with embellished dupatta. Perfect for bridal styling.
+                            </p>
                             <div className="rating-block">
                                 <span className="stars">★★★★★</span>
                                 <span className="rating-count">88</span>
@@ -437,8 +489,13 @@ function Sarees() {
                                 <div className="swatch" style={{ backgroundColor: '#c93b4a' }}></div>
                                 <div className="swatch" style={{ backgroundColor: '#0b2b4e' }}></div>
                             </div>
-                            <h3 className="brand-name">Heritage Silks</h3>
-                            <p className="product-title">Handloom Silk Saree Gown for Receptions</p>
+                            <h3 className="brand-name">
+                                Emerald Green Silk Saree – Elegant Occasion Wear
+                            </h3>
+                            <p className="product-title">
+                                Rich green silk saree with a smooth finish and classic drape. Sophisticated and timeless.
+                            </p>
+
                             <div className="rating-block">
                                 <span className="stars">★★★★☆</span>
                                 <span className="rating-count">421</span>
@@ -461,8 +518,12 @@ function Sarees() {
                             <div className="swatches">
                                 <div className="swatch" style={{ backgroundColor: '#d1bfae' }}></div>
                             </div>
-                            <h3 className="brand-name">Queen's Bespoke</h3>
-                            <p className="product-title">Signature Embellished Custom Saree</p>
+                            <h3 className="brand-name">
+                                Orange Printed Saree – Bright Casual Ethnic Wear
+                            </h3>
+                            <p className="product-title">
+                                Vibrant orange saree with traditional prints. A lively option for day events.
+                            </p>
                             <div className="rating-block">
                                 <span className="stars">★★★★★</span>
                                 <span className="rating-count">19</span>
@@ -485,8 +546,12 @@ function Sarees() {
                             <div className="swatches">
                                 <div className="swatch" style={{ backgroundColor: '#bb9b9f' }}></div>
                             </div>
-                            <h3 className="brand-name">Maison d'Élégance</h3>
-                            <p className="product-title">Peach Pastel Georgette Gown Saree</p>
+                            <h3 className="brand-name">
+                                Black & Red Handloom Saree – Traditional Statement Wear
+                            </h3>
+                            <p className="product-title">
+                                Handwoven saree with bold black and red patterns. Strong and cultural aesthetic.
+                            </p>
                             <div className="rating-block">
                                 <span className="stars">★★★★☆</span>
                                 <span className="rating-count">112</span>
@@ -509,8 +574,12 @@ function Sarees() {
                             <div className="swatches">
                                 <div className="swatch" style={{ backgroundColor: '#5d675b' }}></div>
                             </div>
-                            <h3 className="brand-name">Queen's Wardrobe</h3>
-                            <p className="product-title">Festive Green Pre-Stitched Gown</p>
+                            <h3 className="brand-name">
+                                Mint Green Sheer Saree – Contemporary Ethnic Wear
+                            </h3>
+                            <p className="product-title">
+                                Light mint saree with sheer texture and subtle shine. Perfect for modern styling.
+                            </p>
                             <div className="rating-block">
                                 <span className="stars">★★★★★</span>
                                 <span className="rating-count">478</span>
@@ -533,8 +602,12 @@ function Sarees() {
                             <div className="swatches">
                                 <div className="swatch" style={{ backgroundColor: '#2F2A26' }}></div>
                             </div>
-                            <h3 className="brand-name">Western Elegance</h3>
-                            <p className="product-title">Classic Black Contemporary Wrap Saree</p>
+                            <h3 className="brand-name">
+                                Maroon Embroidered Saree – Rich Evening Wear
+                            </h3>
+                            <p className="product-title">
+                                Deep maroon saree with intricate embroidery and detailed border. Ideal for evening occasions.
+                            </p>
                             <div className="rating-block">
                                 <span className="stars">★★★★☆</span>
                                 <span className="rating-count">334</span>
@@ -551,14 +624,18 @@ function Sarees() {
                     {/* CARD 19 */}
                     <div className="product-card" style={{ position: "relative" }}>
                         <WishlistHeart item={{ id: "Sarees_Rich Indigo Occasion Wear Layout Saree", title: "Rich Indigo Occasion Wear Layout Saree", image: "", brand: "Heritage Silks", price: <><span>₹</span>21,000</> }} />
-                        <img src="https://res.cloudinary.com/dugksxwkr/image/upload/v1776148765/9b326d857f3cfb0dcb5a1f83eec621c5-removebg-preview_lzpa3z.png"
+                        <img src="https://res.cloudinary.com/dodmxncwc/image/upload/v1777462456/06db3ff563ef4a668a632f1fd2280ce7-removebg-preview_eoeesn.png"
                             alt="Royal Saree" className="card-image" style={{ backgroundColor: '#fceceb' }} />
                         <div className="card-content">
                             <div className="swatches">
                                 <div className="swatch" style={{ backgroundColor: '#0b2b4e' }}></div>
                             </div>
-                            <h3 className="brand-name">Heritage Silks</h3>
-                            <p className="product-title">Rich Indigo Occasion Wear Layout Saree</p>
+                            <h3 className="brand-name">
+                                Floral Printed Dark Saree – Modern Casual Wear
+                            </h3>
+                            <p className="product-title">
+                                Dark-toned saree with bold floral prints. Stylish and contemporary for everyday wear.
+                            </p>
                             <div className="rating-block">
                                 <span className="stars">★★★★★</span>
                                 <span className="rating-count">650</span>
@@ -582,8 +659,12 @@ function Sarees() {
                                 <div className="swatch" style={{ backgroundColor: '#d1bfae' }}></div>
                                 <div className="swatch" style={{ backgroundColor: '#bb9b9f' }}></div>
                             </div>
-                            <h3 className="brand-name">Queen's Bespoke</h3>
-                            <p className="product-title">Taupe High-Society Event Saree</p>
+                            <h3 className="brand-name">
+                                Beige Shimmer Saree – Minimal Luxe Occasion Wear
+                            </h3>
+                            <p className="product-title">
+                                Soft beige saree with a subtle shimmer finish. Elegant and perfect for refined events.
+                            </p>
                             <div className="rating-block">
                                 <span className="stars">★★★★★</span>
                                 <span className="rating-count">93</span>
