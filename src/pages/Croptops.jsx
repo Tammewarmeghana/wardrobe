@@ -22,12 +22,12 @@ function Croptops() {
 
     return (
         <div className="gownsaree-wrapper gown-saree-page-container">
-            <div className="page-container" style={{overflowX: 'hidden'}}>
+            <div className="page-container" style={{ overflowX: 'hidden' }}>
                 {/* Header & Tabs */}
                 <div className="page-header">
                     {/* Search & Actions */}
                     <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: '24px', paddingBottom: '20px' }}>
-                        
+
                         <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
                             <button onClick={() => navigate(-1)} title="Go Back" style={{ background: 'none', border: 'none', cursor: 'pointer', padding: '0', display: 'flex', alignItems: 'center', color: 'var(--text-main)' }}>
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -52,25 +52,25 @@ function Croptops() {
                 {/* Filters */}
                 <div className="filter-row">
                     <div className="filter-pill">Price <svg width="12" height="12" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" strokeWidth="2">
-                            <path d="M6 9l6 6 6-6" />
-                        </svg></div>
+                        stroke="currentColor" strokeWidth="2">
+                        <path d="M6 9l6 6 6-6" />
+                    </svg></div>
                     <div className="filter-pill">4 stars & up <svg width="12" height="12" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" strokeWidth="2">
-                            <path d="M6 9l6 6 6-6" />
-                        </svg></div>
+                        stroke="currentColor" strokeWidth="2">
+                        <path d="M6 9l6 6 6-6" />
+                    </svg></div>
                     <div className="filter-pill">Brand <svg width="12" height="12" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" strokeWidth="2">
-                            <path d="M6 9l6 6 6-6" />
-                        </svg></div>
+                        stroke="currentColor" strokeWidth="2">
+                        <path d="M6 9l6 6 6-6" />
+                    </svg></div>
                     <div className="filter-pill">Color <svg width="12" height="12" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" strokeWidth="2">
-                            <path d="M6 9l6 6 6-6" />
-                        </svg></div>
+                        stroke="currentColor" strokeWidth="2">
+                        <path d="M6 9l6 6 6-6" />
+                    </svg></div>
                     <div className="filter-pill">Fabric <svg width="12" height="12" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" strokeWidth="2">
-                            <path d="M6 9l6 6 6-6" />
-                        </svg></div>
+                        stroke="currentColor" strokeWidth="2">
+                        <path d="M6 9l6 6 6-6" />
+                    </svg></div>
                 </div>
 
                 {/* Product Grid */}
@@ -87,8 +87,12 @@ function Croptops() {
                                 <div className="swatch" style={{ backgroundColor: '#bb9b9f' }}></div>
                                 <div className="swatch" style={{ backgroundColor: '#2F2A26' }}></div>
                             </div>
-                            <h3 className="brand-name">Maison d'Élégance</h3>
-                            <p className="product-title">Premium Pre-Draped Saree Gown in Soft Georgette with Embellished Belt</p>
+                            <h3 className="brand-name">
+                                Brown Layered Peplum Crop Top – Feminine Casual Wear
+                            </h3>
+                            <p className="product-title">
+                                Flowy layered peplum crop top with a soft silhouette. Perfect for casual outings and brunch looks.
+                            </p>
 
                             <div className="rating-block">
                                 <span className="stars">★★★★☆</span>
@@ -117,9 +121,12 @@ function Croptops() {
                                 <div className="swatch" style={{ backgroundColor: '#a37272' }}></div>
                                 <div className="swatch" style={{ backgroundColor: '#5d675b' }}></div>
                             </div>
-                            <h3 className="brand-name">Queen's Wardrobe</h3>
-                            <p className="product-title">Modern Indo-Western Fusion Saree with Attached Pallu</p>
-
+                            <h3 className="brand-name">
+                                Rust Off-Shoulder Crop Top – Trendy Casual Wear
+                            </h3>
+                            <p className="product-title">
+                                Stylish off-shoulder design with ruched detailing. A chic pick for modern casual styling.
+                            </p>
                             <div className="rating-block">
                                 <span className="stars">★★★★★</span>
                                 <span className="rating-count">892</span>
@@ -146,8 +153,12 @@ function Croptops() {
                             <div className="swatches">
                                 <div className="swatch" style={{ backgroundColor: '#2F2A26' }}></div>
                             </div>
-                            <h3 className="brand-name">Western Elegance</h3>
-                            <p className="product-title">Cocktail Saree Gown with Cape Sleeves</p>
+                            <h3 className="brand-name">
+                                Black Tie-Up Crop Top – Classic Chic Wear
+                            </h3>
+                            <p className="product-title">
+                                Minimal black crop top with front tie-up detail. Easy to style for everyday fashion.
+                            </p>
 
                             <div className="rating-block">
                                 <span className="stars">★★★★☆</span>
@@ -177,9 +188,12 @@ function Croptops() {
                                 <div className="swatch" style={{ backgroundColor: '#0b2b4e' }}></div>
                                 <div className="swatch" style={{ backgroundColor: '#b08a5d' }}></div>
                             </div>
-                            <h3 className="brand-name">Maison d'Élégance</h3>
-                            <p className="product-title">Heritage Silk Trim Saree Gown for Wedding Receptions</p>
-
+                            <h3 className="brand-name">
+                                Light Brown Corset Crop Top – Structured Modern Wear
+                            </h3>
+                            <p className="product-title">
+                                Fitted corset-style crop top with clean lines. Perfect for a sharp and modern outfit.
+                            </p>
                             <div className="rating-block">
                                 <span className="stars">★★★★★</span>
                                 <span className="rating-count">2,109</span>
@@ -207,8 +221,12 @@ function Croptops() {
                                 <div className="swatch" style={{ backgroundColor: '#d1bfae' }}></div>
                                 <div className="swatch" style={{ backgroundColor: '#e8e8e8' }}></div>
                             </div>
-                            <h3 className="brand-name">Queen's Bespoke</h3>
-                            <p className="product-title">Custom-Fit Sequined Saree Dress</p>
+                            <h3 className="brand-name">
+                                Brown Crop Top – Casual Streetwear Style
+                            </h3>
+                            <p className="product-title">
+                                Classic denim crop top with a structured fit. A versatile everyday piece.
+                            </p>
 
                             <div className="rating-block">
                                 <span className="stars">★★★★☆</span>
@@ -237,8 +255,13 @@ function Croptops() {
                             <div className="swatches">
                                 <div className="swatch" style={{ backgroundColor: '#bb9b9f' }}></div>
                             </div>
-                            <h3 className="brand-name">Maison d'Élégance</h3>
-                            <p className="product-title">Embroidered Pastel Saree Gown with Dupatta</p>
+                            <h3 className="brand-name">
+                              Black Sleeve Crop Top – Soft Feminine Wear
+                            </h3>
+                            <p className="product-title">
+                                Crop top with voluminous puff sleeves and a fitted waist. Cute and stylish.
+                            </p>
+
                             <div className="rating-block">
                                 <span className="stars">★★★★☆</span>
                                 <span className="rating-count">85</span>
@@ -263,8 +286,12 @@ function Croptops() {
                                 <div className="swatch" style={{ backgroundColor: '#5d675b' }}></div>
                                 <div className="swatch" style={{ backgroundColor: '#a37272' }}></div>
                             </div>
-                            <h3 className="brand-name">Queen's Wardrobe</h3>
-                            <p className="product-title">Olive Green Sequin Trim Saree</p>
+                            <h3 className="brand-name">
+                                Beige Ribbed Crop Top – Minimal Everyday Wear
+                            </h3>
+                            <p className="product-title">
+                                Simple ribbed crop top with a snug fit. Perfect for layering and daily wear.
+                            </p>
                             <div className="rating-block">
                                 <span className="stars">★★★★★</span>
                                 <span className="rating-count">430</span>
@@ -289,8 +316,12 @@ function Croptops() {
                                 <div className="swatch" style={{ backgroundColor: '#2F2A26' }}></div>
                                 <div className="swatch" style={{ backgroundColor: '#e5ccce' }}></div>
                             </div>
-                            <h3 className="brand-name">Western Elegance</h3>
-                            <p className="product-title">Midnight Black Chiffon Saree Gown</p>
+                            <h3 className="brand-name">
+                                Green Wrap Crop Top – Chic Casual Wear
+                            </h3>
+                            <p className="product-title">
+                                Wrap-style crop top with a flattering fit. Stylish and comfortable for any occasion.
+                            </p>
                             <div className="rating-block">
                                 <span className="stars">★★★★☆</span>
                                 <span className="rating-count">612</span>
@@ -314,8 +345,12 @@ function Croptops() {
                             <div className="swatches">
                                 <div className="swatch" style={{ backgroundColor: '#0b2b4e' }}></div>
                             </div>
-                            <h3 className="brand-name">Maison d'Élégance</h3>
-                            <p className="product-title">Royal Navy Blue Designer Saree with Floral Appliques</p>
+                            <h3 className="brand-name">
+                                Choco Brown  Crop Top – Romantic Feminine Wear
+                            </h3>
+                            <p className="product-title">
+                                Delicate lace crop top with soft detailing. Ideal for elegant casual outfits.
+                            </p>
                             <div className="rating-block">
                                 <span className="stars">★★★★★</span>
                                 <span className="rating-count">190</span>
@@ -339,8 +374,12 @@ function Croptops() {
                             <div className="swatches">
                                 <div className="swatch" style={{ backgroundColor: '#d1bfae' }}></div>
                             </div>
-                            <h3 className="brand-name">Queen's Bespoke</h3>
-                            <p className="product-title">Nude Beige Premium Drape</p>
+                            <h3 className="brand-name">
+                                Black Strapless Crop Top – Sleek Party Wear
+                            </h3>
+                            <p className="product-title">
+                                Minimal strapless design with a fitted silhouette. Perfect for bold styling.
+                            </p>
                             <div className="rating-block">
                                 <span className="stars">★★★★☆</span>
                                 <span className="rating-count">56</span>
@@ -364,8 +403,12 @@ function Croptops() {
                             <div className="swatches">
                                 <div className="swatch" style={{ backgroundColor: '#e5ccce' }}></div>
                             </div>
-                            <h3 className="brand-name">Maison d'Élégance</h3>
-                            <p className="product-title">Draped Georgette Saree Gown in Rose Pink</p>
+                            <h3 className="brand-name">
+                                Lavender Soft Crop Top – Pastel Casual Wear
+                            </h3>
+                            <p className="product-title">
+                                Soft pastel crop top with a relaxed fit. Light and comfortable for everyday wear.
+                            </p>
                             <div className="rating-block">
                                 <span className="stars">★★★★★</span>
                                 <span className="rating-count">140</span>
@@ -388,8 +431,12 @@ function Croptops() {
                             <div className="swatches">
                                 <div className="swatch" style={{ backgroundColor: '#a37272' }}></div>
                             </div>
-                            <h3 className="brand-name">Queen's Wardrobe</h3>
-                            <p className="product-title">Pleated Indo-Western Saree with Matching Clutch</p>
+                            <h3 className="brand-name">
+                                Grey Basic Crop Top – Essential Casual Wear
+                            </h3>
+                            <p className="product-title">
+                                Simple and versatile crop top for daily styling. A wardrobe essential.
+                            </p>
                             <div className="rating-block">
                                 <span className="stars">★★★★☆</span>
                                 <span className="rating-count">245</span>
@@ -412,8 +459,12 @@ function Croptops() {
                             <div className="swatches">
                                 <div className="swatch" style={{ backgroundColor: '#2F2A26' }}></div>
                             </div>
-                            <h3 className="brand-name">Western Elegance</h3>
-                            <p className="product-title">Minimalist Evening Gown Saree</p>
+                            <h3 className="brand-name">
+                                Yellow Tie-Front Crop Top – Bright Summer Wear
+                            </h3>
+                            <p className="product-title">
+                                Tie-front design with a breezy fit. Perfect for summer outfits.
+                            </p>
                             <div className="rating-block">
                                 <span className="stars">★★★★★</span>
                                 <span className="rating-count">88</span>
@@ -437,8 +488,12 @@ function Croptops() {
                                 <div className="swatch" style={{ backgroundColor: '#c93b4a' }}></div>
                                 <div className="swatch" style={{ backgroundColor: '#0b2b4e' }}></div>
                             </div>
-                            <h3 className="brand-name">Heritage Silks</h3>
-                            <p className="product-title">Handloom Silk Saree Gown for Receptions</p>
+                            <h3 className="brand-name">
+                                Black Mesh Sleeve Crop Top – Edgy Party Wear
+                            </h3>
+                            <p className="product-title">
+                                Crop top with sheer mesh sleeves. A bold and edgy fashion statement.
+                            </p>
                             <div className="rating-block">
                                 <span className="stars">★★★★☆</span>
                                 <span className="rating-count">421</span>
@@ -455,14 +510,18 @@ function Croptops() {
                     {/* CARD 15 */}
                     <div className="product-card" style={{ position: "relative" }}>
                         <WishlistHeart item={{ id: "Croptops_Signature Embellished Custom Saree", title: "Signature Embellished Custom Saree", image: "https://res.cloudinary.com/dugksxwkr/image/upload/v1776155835/c0f551a3bc66b6b8109c39bfc201a67b-removebg-preview_uqx2f5.png", brand: "Queen's Bespoke", price: <><span>₹</span>45,000</> }} />
-                        <img src="https://res.cloudinary.com/dugksxwkr/image/upload/v1776155835/c0f551a3bc66b6b8109c39bfc201a67b-removebg-preview_uqx2f5.png"
+                        <img src="https://res.cloudinary.com/dugksxwkr/image/upload/v1776512463/eb26ee671b362324b8449edce2f980c6-removebg-preview_ipswkx.png"
                             alt="Bespoke Saree Gown" className="card-image" style={{ backgroundColor: '#e5e0dc' }} />
                         <div className="card-content">
                             <div className="swatches">
                                 <div className="swatch" style={{ backgroundColor: '#d1bfae' }}></div>
                             </div>
-                            <h3 className="brand-name">Queen's Bespoke</h3>
-                            <p className="product-title">Signature Embellished Custom Saree</p>
+                            <h3 className="brand-name">
+                                Cream Satin Crop Top – Elegant Casual Wear
+                            </h3>
+                            <p className="product-title">
+                                Smooth satin finish with a soft drape. Perfect for refined casual styling.
+                            </p>
                             <div className="rating-block">
                                 <span className="stars">★★★★★</span>
                                 <span className="rating-count">19</span>
@@ -485,8 +544,13 @@ function Croptops() {
                             <div className="swatches">
                                 <div className="swatch" style={{ backgroundColor: '#bb9b9f' }}></div>
                             </div>
-                            <h3 className="brand-name">Maison d'Élégance</h3>
-                            <p className="product-title">Peach Pastel Georgette Gown Saree</p>
+                            <h3 className="brand-name">
+                                Teal Fitted Crop Top – Minimal Modern Wear
+                            </h3>
+                            <p className="product-title">
+                                Clean fitted design with a sleek look. Stylish and versatile.
+                            </p>
+
                             <div className="rating-block">
                                 <span className="stars">★★★★☆</span>
                                 <span className="rating-count">112</span>
@@ -509,8 +573,12 @@ function Croptops() {
                             <div className="swatches">
                                 <div className="swatch" style={{ backgroundColor: '#5d675b' }}></div>
                             </div>
-                            <h3 className="brand-name">Queen's Wardrobe</h3>
-                            <p className="product-title">Festive Green Pre-Stitched Gown</p>
+                            <h3 className="brand-name">
+                                Maroon Ruched Crop Top – Trendy Casual Wear
+                            </h3>
+                            <p className="product-title">
+                                Ruched detailing with a flattering fit. A stylish addition to your wardrobe.
+                            </p>
                             <div className="rating-block">
                                 <span className="stars">★★★★★</span>
                                 <span className="rating-count">478</span>
@@ -533,8 +601,12 @@ function Croptops() {
                             <div className="swatches">
                                 <div className="swatch" style={{ backgroundColor: '#2F2A26' }}></div>
                             </div>
-                            <h3 className="brand-name">Western Elegance</h3>
-                            <p className="product-title">Classic Black Contemporary Wrap Saree</p>
+                            <h3 className="brand-name">
+                                White Button Crop Top – Classic Everyday Wear
+                            </h3>
+                            <p className="product-title">
+                                Button-down crop top with a structured fit. Simple and timeless.
+                            </p>
                             <div className="rating-block">
                                 <span className="stars">★★★★☆</span>
                                 <span className="rating-count">334</span>
@@ -557,8 +629,12 @@ function Croptops() {
                             <div className="swatches">
                                 <div className="swatch" style={{ backgroundColor: '#0b2b4e' }}></div>
                             </div>
-                            <h3 className="brand-name">Heritage Silks</h3>
-                            <p className="product-title">Rich Indigo Occasion Wear Layout Saree</p>
+                            <h3 className="brand-name">
+                                Olive Green Casual Crop Top – Relaxed Streetwear
+                            </h3>
+                            <p className="product-title">
+                                Comfortable crop top with a relaxed silhouette. Perfect for street-style outfits.
+                            </p>
                             <div className="rating-block">
                                 <span className="stars">★★★★★</span>
                                 <span className="rating-count">650</span>
@@ -575,15 +651,19 @@ function Croptops() {
                     {/* CARD 20 */}
                     <div className="product-card" style={{ position: "relative" }}>
                         <WishlistHeart item={{ id: "Croptops_Taupe High-Society Event Saree", title: "Taupe High-Society Event Saree", image: "https://res.cloudinary.com/dugksxwkr/image/upload/v1776155837/bbb1d088d656d6ce9c496fd9aad95769-removebg-preview_cnc65f.png", brand: "Queen's Bespoke", price: <><span>₹</span>30,800</> }} />
-                        <img src="https://res.cloudinary.com/dugksxwkr/image/upload/v1776155837/bbb1d088d656d6ce9c496fd9aad95769-removebg-preview_cnc65f.png"
+                        <img src="https://res.cloudinary.com/dugksxwkr/image/upload/v1776512993/d75ae25def67a93389b3967b498160ea-removebg-preview_1_e40zp0.png"
                             alt="Premium Drape" className="card-image" style={{ backgroundColor: '#e5e0dc' }} />
                         <div className="card-content">
                             <div className="swatches">
                                 <div className="swatch" style={{ backgroundColor: '#d1bfae' }}></div>
                                 <div className="swatch" style={{ backgroundColor: '#bb9b9f' }}></div>
                             </div>
-                            <h3 className="brand-name">Queen's Bespoke</h3>
-                            <p className="product-title">Taupe High-Society Event Saree</p>
+                            <h3 className="brand-name">
+                                Black Basic Crop Top – Minimal Essential Wear
+                            </h3>
+                            <p className="product-title">
+                                Simple black crop top with a clean fit. A must-have staple for any wardrobe.
+                            </p>
                             <div className="rating-block">
                                 <span className="stars">★★★★★</span>
                                 <span className="rating-count">93</span>
@@ -599,7 +679,7 @@ function Croptops() {
 
                 </div>
             </div>
-            
+
             {/* Hamburger Sidebar Menu */}
             <div className={`sidebar-overlay ${isSidebarOpen ? 'active' : ''}`} id="sidebar-overlay" onClick={closeSidebar}></div>
             <div className={`sidebar-panel ${isSidebarOpen ? 'active' : ''}`} id="sidebar">

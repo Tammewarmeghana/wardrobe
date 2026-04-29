@@ -22,12 +22,12 @@ function MaxiDresses() {
 
     return (
         <div className="gownsaree-wrapper gown-saree-page-container">
-            <div className="page-container" style={{overflowX: 'hidden'}}>
+            <div className="page-container" style={{ overflowX: 'hidden' }}>
                 {/* Header & Tabs */}
                 <div className="page-header">
                     {/* Search & Actions */}
                     <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: '24px', paddingBottom: '20px' }}>
-                        
+
                         <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
                             <button onClick={() => navigate(-1)} title="Go Back" style={{ background: 'none', border: 'none', cursor: 'pointer', padding: '0', display: 'flex', alignItems: 'center', color: 'var(--text-main)' }}>
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -52,25 +52,25 @@ function MaxiDresses() {
                 {/* Filters */}
                 <div className="filter-row">
                     <div className="filter-pill">Price <svg width="12" height="12" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" strokeWidth="2">
-                            <path d="M6 9l6 6 6-6" />
-                        </svg></div>
+                        stroke="currentColor" strokeWidth="2">
+                        <path d="M6 9l6 6 6-6" />
+                    </svg></div>
                     <div className="filter-pill">4 stars & up <svg width="12" height="12" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" strokeWidth="2">
-                            <path d="M6 9l6 6 6-6" />
-                        </svg></div>
+                        stroke="currentColor" strokeWidth="2">
+                        <path d="M6 9l6 6 6-6" />
+                    </svg></div>
                     <div className="filter-pill">Brand <svg width="12" height="12" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" strokeWidth="2">
-                            <path d="M6 9l6 6 6-6" />
-                        </svg></div>
+                        stroke="currentColor" strokeWidth="2">
+                        <path d="M6 9l6 6 6-6" />
+                    </svg></div>
                     <div className="filter-pill">Color <svg width="12" height="12" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" strokeWidth="2">
-                            <path d="M6 9l6 6 6-6" />
-                        </svg></div>
+                        stroke="currentColor" strokeWidth="2">
+                        <path d="M6 9l6 6 6-6" />
+                    </svg></div>
                     <div className="filter-pill">Fabric <svg width="12" height="12" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" strokeWidth="2">
-                            <path d="M6 9l6 6 6-6" />
-                        </svg></div>
+                        stroke="currentColor" strokeWidth="2">
+                        <path d="M6 9l6 6 6-6" />
+                    </svg></div>
                 </div>
 
                 {/* Product Grid */}
@@ -87,9 +87,12 @@ function MaxiDresses() {
                                 <div className="swatch" style={{ backgroundColor: '#bb9b9f' }}></div>
                                 <div className="swatch" style={{ backgroundColor: '#2F2A26' }}></div>
                             </div>
-                            <h3 className="brand-name">Maison d'Élégance</h3>
-                            <p className="product-title">Premium Pre-Draped Saree Gown in Soft Georgette with Embellished Belt</p>
-
+                            <h3 className="brand-name">
+                                Beige Button-Front Midi Skirt with Tee – Minimal Casual Wear
+                            </h3>
+                            <p className="product-title">
+                                High-waisted beige midi skirt with front buttons paired with a simple tee. Clean and effortless everyday styling.
+                            </p>
                             <div className="rating-block">
                                 <span className="stars">★★★★☆</span>
                                 <span className="rating-count">1,245</span>
@@ -117,9 +120,12 @@ function MaxiDresses() {
                                 <div className="swatch" style={{ backgroundColor: '#a37272' }}></div>
                                 <div className="swatch" style={{ backgroundColor: '#5d675b' }}></div>
                             </div>
-                            <h3 className="brand-name">Queen's Wardrobe</h3>
-                            <p className="product-title">Modern Indo-Western Fusion Saree with Attached Pallu</p>
-
+                            <h3 className="brand-name">
+                                Lavender Top with Floral Maxi Skirt – Soft Feminine Outfit
+                            </h3>
+                            <p className="product-title">
+                                Flowy floral maxi skirt paired with a fitted lavender top. A light and graceful daytime look.
+                            </p>
                             <div className="rating-block">
                                 <span className="stars">★★★★★</span>
                                 <span className="rating-count">892</span>
@@ -146,9 +152,12 @@ function MaxiDresses() {
                             <div className="swatches">
                                 <div className="swatch" style={{ backgroundColor: '#2F2A26' }}></div>
                             </div>
-                            <h3 className="brand-name">Western Elegance</h3>
-                            <p className="product-title">Cocktail Saree Gown with Cape Sleeves</p>
-
+                            <h3 className="brand-name">
+                                Yellow Tee with Sage Midi Skirt – Casual Summer Wear
+                            </h3>
+                            <p className="product-title">
+                                Relaxed yellow top styled with a soft sage midi skirt. Comfortable and perfect for warm days.
+                            </p>
                             <div className="rating-block">
                                 <span className="stars">★★★★☆</span>
                                 <span className="rating-count">340</span>
@@ -177,9 +186,12 @@ function MaxiDresses() {
                                 <div className="swatch" style={{ backgroundColor: '#0b2b4e' }}></div>
                                 <div className="swatch" style={{ backgroundColor: '#b08a5d' }}></div>
                             </div>
-                            <h3 className="brand-name">Maison d'Élégance</h3>
-                            <p className="product-title">Heritage Silk Trim Saree Gown for Wedding Receptions</p>
-
+                            <h3 className="brand-name">
+                                Blue Top with Floral A-Line Skirt – Breezy Daywear
+                            </h3>
+                            <p className="product-title">
+                                Light blue top paired with a printed A-line skirt. Fresh and easygoing for casual outings.
+                            </p>
                             <div className="rating-block">
                                 <span className="stars">★★★★★</span>
                                 <span className="rating-count">2,109</span>
@@ -207,9 +219,12 @@ function MaxiDresses() {
                                 <div className="swatch" style={{ backgroundColor: '#d1bfae' }}></div>
                                 <div className="swatch" style={{ backgroundColor: '#e8e8e8' }}></div>
                             </div>
-                            <h3 className="brand-name">Queen's Bespoke</h3>
-                            <p className="product-title">Custom-Fit Sequined Saree Dress</p>
-
+                            <h3 className="brand-name">
+                                Blue Shirt with Printed Pencil Skirt – Smart Casual Look
+                            </h3>
+                            <p className="product-title">
+                                Structured shirt styled with a fitted printed skirt. A polished everyday outfit.
+                            </p>
                             <div className="rating-block">
                                 <span className="stars">★★★★☆</span>
                                 <span className="rating-count">112</span>
@@ -237,8 +252,12 @@ function MaxiDresses() {
                             <div className="swatches">
                                 <div className="swatch" style={{ backgroundColor: '#bb9b9f' }}></div>
                             </div>
-                            <h3 className="brand-name">Maison d'Élégance</h3>
-                            <p className="product-title">Embroidered Pastel Saree Gown with Dupatta</p>
+                            <h3 className="brand-name">
+                                Mint Cardigan with Pleated Midi Skirt – Soft Casual Wear
+                            </h3>
+                            <p className="product-title">
+                                Light cardigan layered over a tee with a flowy pleated skirt. Cozy and feminine.
+                            </p>
                             <div className="rating-block">
                                 <span className="stars">★★★★☆</span>
                                 <span className="rating-count">85</span>
@@ -263,8 +282,12 @@ function MaxiDresses() {
                                 <div className="swatch" style={{ backgroundColor: '#5d675b' }}></div>
                                 <div className="swatch" style={{ backgroundColor: '#a37272' }}></div>
                             </div>
-                            <h3 className="brand-name">Queen's Wardrobe</h3>
-                            <p className="product-title">Olive Green Sequin Trim Saree</p>
+                            <h3 className="brand-name">
+                                White Top with Pink Floral Midi Skirt – Feminine Day Outfit
+                            </h3>
+                            <p className="product-title">
+                                Soft floral midi skirt paired with a relaxed white top. Perfect for casual and brunch looks.
+                            </p>
                             <div className="rating-block">
                                 <span className="stars">★★★★★</span>
                                 <span className="rating-count">430</span>
@@ -289,8 +312,12 @@ function MaxiDresses() {
                                 <div className="swatch" style={{ backgroundColor: '#2F2A26' }}></div>
                                 <div className="swatch" style={{ backgroundColor: '#e5ccce' }}></div>
                             </div>
-                            <h3 className="brand-name">Western Elegance</h3>
-                            <p className="product-title">Midnight Black Chiffon Saree Gown</p>
+                            <h3 className="brand-name">
+                                Crop Top with Tiered Maxi Skirt – Boho Summer Wear
+                            </h3>
+                            <p className="product-title">
+                                Light crop top paired with a tiered maxi skirt. Breezy and stylish for summer days.
+                            </p>
                             <div className="rating-block">
                                 <span className="stars">★★★★☆</span>
                                 <span className="rating-count">612</span>
@@ -314,8 +341,12 @@ function MaxiDresses() {
                             <div className="swatches">
                                 <div className="swatch" style={{ backgroundColor: '#0b2b4e' }}></div>
                             </div>
-                            <h3 className="brand-name">Maison d'Élégance</h3>
-                            <p className="product-title">Royal Navy Blue Designer Saree with Floral Appliques</p>
+                            <h3 className="brand-name">
+                                Blue Blouse with Satin Flared Skirt – Elegant Evening Look
+                            </h3>
+                            <p className="product-title">
+                                Structured blouse paired with a flowy satin skirt. Perfect for semi-formal occasions.
+                            </p>
                             <div className="rating-block">
                                 <span className="stars">★★★★★</span>
                                 <span className="rating-count">190</span>
@@ -339,8 +370,13 @@ function MaxiDresses() {
                             <div className="swatches">
                                 <div className="swatch" style={{ backgroundColor: '#d1bfae' }}></div>
                             </div>
-                            <h3 className="brand-name">Queen's Bespoke</h3>
-                            <p className="product-title">Nude Beige Premium Drape</p>
+                            <h3 className="brand-name">
+                                White Top with Grey Maxi Skirt – Minimal Elegant Wear
+                            </h3>
+                            <p className="product-title">
+                                Simple fitted top styled with a soft grey maxi skirt. Clean and timeless.
+                            </p>
+
                             <div className="rating-block">
                                 <span className="stars">★★★★☆</span>
                                 <span className="rating-count">56</span>
@@ -364,8 +400,12 @@ function MaxiDresses() {
                             <div className="swatches">
                                 <div className="swatch" style={{ backgroundColor: '#e5ccce' }}></div>
                             </div>
-                            <h3 className="brand-name">Maison d'Élégance</h3>
-                            <p className="product-title">Draped Georgette Saree Gown in Rose Pink</p>
+                            <h3 className="brand-name">
+                                Black Tank Top with White Slit Skirt – Chic Streetwear Look
+                            </h3>
+                            <p className="product-title">
+                                Fitted tank paired with a high-slit white skirt. A bold and modern outfit.
+                            </p>
                             <div className="rating-block">
                                 <span className="stars">★★★★★</span>
                                 <span className="rating-count">140</span>
@@ -388,8 +428,13 @@ function MaxiDresses() {
                             <div className="swatches">
                                 <div className="swatch" style={{ backgroundColor: '#a37272' }}></div>
                             </div>
-                            <h3 className="brand-name">Queen's Wardrobe</h3>
-                            <p className="product-title">Pleated Indo-Western Saree with Matching Clutch</p>
+                            <h3 className="brand-name">
+                                White Shirt with Dusty Pink Midi Skirt – Soft Formal Wear
+                            </h3>
+                            <p className="product-title">
+                                Classic white shirt styled with a high-waisted pink midi skirt. Elegant and polished.
+                            </p>
+
                             <div className="rating-block">
                                 <span className="stars">★★★★☆</span>
                                 <span className="rating-count">245</span>
@@ -412,8 +457,12 @@ function MaxiDresses() {
                             <div className="swatches">
                                 <div className="swatch" style={{ backgroundColor: '#2F2A26' }}></div>
                             </div>
-                            <h3 className="brand-name">Western Elegance</h3>
-                            <p className="product-title">Minimalist Evening Gown Saree</p>
+                            <h3 className="brand-name">
+                                Off-Shoulder Top with Layered Maxi Skirt – Statement Feminine Wear
+                            </h3>
+                            <p className="product-title">
+                                Flowy layered skirt paired with an off-shoulder top. Dramatic and stylish for occasions.
+                            </p>
                             <div className="rating-block">
                                 <span className="stars">★★★★★</span>
                                 <span className="rating-count">88</span>
@@ -437,8 +486,12 @@ function MaxiDresses() {
                                 <div className="swatch" style={{ backgroundColor: '#c93b4a' }}></div>
                                 <div className="swatch" style={{ backgroundColor: '#0b2b4e' }}></div>
                             </div>
-                            <h3 className="brand-name">Heritage Silks</h3>
-                            <p className="product-title">Handloom Silk Saree Gown for Receptions</p>
+                            <h3 className="brand-name">
+                                Pink Tee with Floral Midi Skirt – Casual Cute Outfit
+                            </h3>
+                            <p className="product-title">
+                                Simple pink top styled with a printed midi skirt. Easy and comfortable daily wear.
+                            </p>
                             <div className="rating-block">
                                 <span className="stars">★★★★☆</span>
                                 <span className="rating-count">421</span>
@@ -461,8 +514,12 @@ function MaxiDresses() {
                             <div className="swatches">
                                 <div className="swatch" style={{ backgroundColor: '#d1bfae' }}></div>
                             </div>
-                            <h3 className="brand-name">Queen's Bespoke</h3>
-                            <p className="product-title">Signature Embellished Custom Saree</p>
+                            <h3 className="brand-name">
+                                Brown Top with Tiered White Skirt – Boho Chic Wear
+                            </h3>
+                            <p className="product-title">
+                                Earthy-toned top paired with a tiered white skirt. Relaxed and trendy.
+                            </p>
                             <div className="rating-block">
                                 <span className="stars">★★★★★</span>
                                 <span className="rating-count">19</span>
@@ -485,8 +542,12 @@ function MaxiDresses() {
                             <div className="swatches">
                                 <div className="swatch" style={{ backgroundColor: '#bb9b9f' }}></div>
                             </div>
-                            <h3 className="brand-name">Maison d'Élégance</h3>
-                            <p className="product-title">Peach Pastel Georgette Gown Saree</p>
+                            <h3 className="brand-name">
+                                White Crop Top with Printed Slit Skirt – Casual Summer Look
+                            </h3>
+                            <p className="product-title">
+                                Light crop top styled with a printed slit skirt. Perfect for a breezy modern outfit.
+                            </p>
                             <div className="rating-block">
                                 <span className="stars">★★★★☆</span>
                                 <span className="rating-count">112</span>
@@ -509,8 +570,12 @@ function MaxiDresses() {
                             <div className="swatches">
                                 <div className="swatch" style={{ backgroundColor: '#5d675b' }}></div>
                             </div>
-                            <h3 className="brand-name">Queen's Wardrobe</h3>
-                            <p className="product-title">Festive Green Pre-Stitched Gown</p>
+                            <h3 className="brand-name">
+                                White Tee with Black Satin Midi Skirt – Minimal Chic Wear
+                            </h3>
+                            <p className="product-title">
+                                Basic tee paired with a sleek satin skirt. Effortless and stylish.
+                            </p>
                             <div className="rating-block">
                                 <span className="stars">★★★★★</span>
                                 <span className="rating-count">478</span>
@@ -533,8 +598,12 @@ function MaxiDresses() {
                             <div className="swatches">
                                 <div className="swatch" style={{ backgroundColor: '#2F2A26' }}></div>
                             </div>
-                            <h3 className="brand-name">Western Elegance</h3>
-                            <p className="product-title">Classic Black Contemporary Wrap Saree</p>
+                            <h3 className="brand-name">
+                                Sleeveless Top with Denim Slit Skirt – Casual Street Style
+                            </h3>
+                            <p className="product-title">
+                                Denim skirt with front slit paired with a fitted sleeveless top. Trendy everyday look.
+                            </p>
                             <div className="rating-block">
                                 <span className="stars">★★★★☆</span>
                                 <span className="rating-count">334</span>
@@ -557,8 +626,12 @@ function MaxiDresses() {
                             <div className="swatches">
                                 <div className="swatch" style={{ backgroundColor: '#0b2b4e' }}></div>
                             </div>
-                            <h3 className="brand-name">Heritage Silks</h3>
-                            <p className="product-title">Rich Indigo Occasion Wear Layout Saree</p>
+                            <h3 className="brand-name">
+                                Black Top with White Pencil Skirt – Modern Formal Wear
+                            </h3>
+                            <p className="product-title">
+                                Clean monochrome outfit with a fitted pencil skirt. Perfect for office or formal settings.
+                            </p>
                             <div className="rating-block">
                                 <span className="stars">★★★★★</span>
                                 <span className="rating-count">650</span>
@@ -582,8 +655,12 @@ function MaxiDresses() {
                                 <div className="swatch" style={{ backgroundColor: '#d1bfae' }}></div>
                                 <div className="swatch" style={{ backgroundColor: '#bb9b9f' }}></div>
                             </div>
-                            <h3 className="brand-name">Queen's Bespoke</h3>
-                            <p className="product-title">Taupe High-Society Event Saree</p>
+                            <h3 className="brand-name">
+                                Black Tee with Printed Midi Skirt – Casual Everyday Wear
+                            </h3>
+                            <p className="product-title">
+                                Simple black tee styled with a printed midi skirt. Comfortable and easy to wear.
+                            </p>
                             <div className="rating-block">
                                 <span className="stars">★★★★★</span>
                                 <span className="rating-count">93</span>
@@ -599,7 +676,7 @@ function MaxiDresses() {
 
                 </div>
             </div>
-            
+
             {/* Hamburger Sidebar Menu */}
             <div className={`sidebar-overlay ${isSidebarOpen ? 'active' : ''}`} id="sidebar-overlay" onClick={closeSidebar}></div>
             <div className={`sidebar-panel ${isSidebarOpen ? 'active' : ''}`} id="sidebar">

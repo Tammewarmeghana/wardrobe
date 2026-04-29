@@ -22,12 +22,12 @@ function ShararaPeplum() {
 
     return (
         <div className="gownsaree-wrapper gown-saree-page-container">
-            <div className="page-container" style={{overflowX: 'hidden'}}>
+            <div className="page-container" style={{ overflowX: 'hidden' }}>
                 {/* Header & Tabs */}
                 <div className="page-header">
                     {/* Search & Actions */}
                     <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: '24px', paddingBottom: '20px' }}>
-                        
+
                         <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
                             <button onClick={() => navigate(-1)} title="Go Back" style={{ background: 'none', border: 'none', cursor: 'pointer', padding: '0', display: 'flex', alignItems: 'center', color: 'var(--text-main)' }}>
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -52,25 +52,25 @@ function ShararaPeplum() {
                 {/* Filters */}
                 <div className="filter-row">
                     <div className="filter-pill">Price <svg width="12" height="12" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" strokeWidth="2">
-                            <path d="M6 9l6 6 6-6" />
-                        </svg></div>
+                        stroke="currentColor" strokeWidth="2">
+                        <path d="M6 9l6 6 6-6" />
+                    </svg></div>
                     <div className="filter-pill">4 stars & up <svg width="12" height="12" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" strokeWidth="2">
-                            <path d="M6 9l6 6 6-6" />
-                        </svg></div>
+                        stroke="currentColor" strokeWidth="2">
+                        <path d="M6 9l6 6 6-6" />
+                    </svg></div>
                     <div className="filter-pill">Brand <svg width="12" height="12" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" strokeWidth="2">
-                            <path d="M6 9l6 6 6-6" />
-                        </svg></div>
+                        stroke="currentColor" strokeWidth="2">
+                        <path d="M6 9l6 6 6-6" />
+                    </svg></div>
                     <div className="filter-pill">Color <svg width="12" height="12" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" strokeWidth="2">
-                            <path d="M6 9l6 6 6-6" />
-                        </svg></div>
+                        stroke="currentColor" strokeWidth="2">
+                        <path d="M6 9l6 6 6-6" />
+                    </svg></div>
                     <div className="filter-pill">Fabric <svg width="12" height="12" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" strokeWidth="2">
-                            <path d="M6 9l6 6 6-6" />
-                        </svg></div>
+                        stroke="currentColor" strokeWidth="2">
+                        <path d="M6 9l6 6 6-6" />
+                    </svg></div>
                 </div>
 
                 {/* Product Grid */}
@@ -87,9 +87,12 @@ function ShararaPeplum() {
                                 <div className="swatch" style={{ backgroundColor: '#bb9b9f' }}></div>
                                 <div className="swatch" style={{ backgroundColor: '#2F2A26' }}></div>
                             </div>
-                            <h3 className="brand-name">Maison d'Élégance</h3>
-                            <p className="product-title">Premium Pre-Draped Saree Gown in Soft Georgette with Embellished Belt</p>
-
+                            <h3 className="brand-name">
+                                Blush Pink Peplum Sharara – Soft Festive Ethnic Set
+                            </h3>
+                            <p className="product-title">
+                                Soft georgette set with an embellished peplum top and flowy sharara. Perfect for festive occasions and celebrations.
+                            </p>
                             <div className="rating-block">
                                 <span className="stars">★★★★☆</span>
                                 <span className="rating-count">1,245</span>
@@ -117,9 +120,12 @@ function ShararaPeplum() {
                                 <div className="swatch" style={{ backgroundColor: '#a37272' }}></div>
                                 <div className="swatch" style={{ backgroundColor: '#5d675b' }}></div>
                             </div>
-                            <h3 className="brand-name">Queen's Wardrobe</h3>
-                            <p className="product-title">Modern Indo-Western Fusion Saree with Attached Pallu</p>
-
+                            <h3 className="brand-name">
+                                Beige Embroidered Sharara Set – Elegant Ethnic Wear
+                            </h3>
+                            <p className="product-title">
+                                Elegant peplum top with intricate embroidery paired with flared sharara bottoms. A refined festive look.
+                            </p>
                             <div className="rating-block">
                                 <span className="stars">★★★★★</span>
                                 <span className="rating-count">892</span>
@@ -146,8 +152,12 @@ function ShararaPeplum() {
                             <div className="swatches">
                                 <div className="swatch" style={{ backgroundColor: '#2F2A26' }}></div>
                             </div>
-                            <h3 className="brand-name">Western Elegance</h3>
-                            <p className="product-title">Cocktail Saree Gown with Cape Sleeves</p>
+                            <h3 className="brand-name">
+                                Peach Cape Sharara – Modern Festive Ethnic Wear
+                            </h3>
+                            <p className="product-title">
+                                Stylish peplum sharara set with cape-style sleeves. A contemporary pick for weddings and festive evenings.
+                            </p>
 
                             <div className="rating-block">
                                 <span className="stars">★★★★☆</span>
@@ -177,8 +187,12 @@ function ShararaPeplum() {
                                 <div className="swatch" style={{ backgroundColor: '#0b2b4e' }}></div>
                                 <div className="swatch" style={{ backgroundColor: '#b08a5d' }}></div>
                             </div>
-                            <h3 className="brand-name">Maison d'Élégance</h3>
-                            <p className="product-title">Heritage Silk Trim Saree Gown for Wedding Receptions</p>
+                            <h3 className="brand-name">
+                                Ivory Layered Sharara – Minimal Elegant Ethnic Set
+                            </h3>
+                            <p className="product-title">
+                                Subtle peplum design paired with layered sharara. Graceful and perfect for daytime festive occasions.
+                            </p>
 
                             <div className="rating-block">
                                 <span className="stars">★★★★★</span>
@@ -207,8 +221,12 @@ function ShararaPeplum() {
                                 <div className="swatch" style={{ backgroundColor: '#d1bfae' }}></div>
                                 <div className="swatch" style={{ backgroundColor: '#e8e8e8' }}></div>
                             </div>
-                            <h3 className="brand-name">Queen's Bespoke</h3>
-                            <p className="product-title">Custom-Fit Sequined Saree Dress</p>
+                            <h3 className="brand-name">
+                                Lilac Festive Sharara – Soft Pastel Ethnic Wear
+                            </h3>
+                            <p className="product-title">
+                                Lightly embellished peplum with soft net dupatta and flowy sharara. Feminine and festive.
+                            </p>
 
                             <div className="rating-block">
                                 <span className="stars">★★★★☆</span>
@@ -237,8 +255,12 @@ function ShararaPeplum() {
                             <div className="swatches">
                                 <div className="swatch" style={{ backgroundColor: '#bb9b9f' }}></div>
                             </div>
-                            <h3 className="brand-name">Maison d'Élégance</h3>
-                            <p className="product-title">Embroidered Pastel Saree Gown with Dupatta</p>
+                            <h3 className="brand-name">
+                                Green Embroidered Sharara – Classic Festive Ethnic Wear
+                            </h3>
+                            <p className="product-title">
+                                Traditional peplum with rich embroidery paired with flared sharara and dupatta. Perfect for weddings.
+                            </p>
                             <div className="rating-block">
                                 <span className="stars">★★★★☆</span>
                                 <span className="rating-count">85</span>
@@ -263,8 +285,12 @@ function ShararaPeplum() {
                                 <div className="swatch" style={{ backgroundColor: '#5d675b' }}></div>
                                 <div className="swatch" style={{ backgroundColor: '#a37272' }}></div>
                             </div>
-                            <h3 className="brand-name">Queen's Wardrobe</h3>
-                            <p className="product-title">Olive Green Sequin Trim Saree</p>
+                            <h3 className="brand-name">
+                                Mint Pastel Sharara Set – Fresh Festive Ethnic Look
+                            </h3>
+                            <p className="product-title">
+                                Soft pastel peplum with light flared sharara. A fresh and elegant outfit for celebrations.
+                            </p>
                             <div className="rating-block">
                                 <span className="stars">★★★★★</span>
                                 <span className="rating-count">430</span>
@@ -289,8 +315,12 @@ function ShararaPeplum() {
                                 <div className="swatch" style={{ backgroundColor: '#2F2A26' }}></div>
                                 <div className="swatch" style={{ backgroundColor: '#e5ccce' }}></div>
                             </div>
-                            <h3 className="brand-name">Western Elegance</h3>
-                            <p className="product-title">Midnight Black Chiffon Saree Gown</p>
+                            <h3 className="brand-name">
+                                Navy Blue Designer Sharara – Bold Festive Ethnic Wear
+                            </h3>
+                            <p className="product-title">
+                                Statement peplum with detailed patterns and flowy sharara. Ideal for evening festive events.
+                            </p>
                             <div className="rating-block">
                                 <span className="stars">★★★★☆</span>
                                 <span className="rating-count">612</span>
@@ -314,8 +344,12 @@ function ShararaPeplum() {
                             <div className="swatches">
                                 <div className="swatch" style={{ backgroundColor: '#0b2b4e' }}></div>
                             </div>
-                            <h3 className="brand-name">Maison d'Élégance</h3>
-                            <p className="product-title">Royal Navy Blue Designer Saree with Floral Appliques</p>
+                            <h3 className="brand-name">
+                                Dusty Pink Sharara Set – Feminine Ethnic Elegance
+                            </h3>
+                            <p className="product-title">
+                                Minimal peplum with a soft feminine silhouette and flared sharara. Graceful and stylish.
+                            </p>
                             <div className="rating-block">
                                 <span className="stars">★★★★★</span>
                                 <span className="rating-count">190</span>
@@ -339,8 +373,12 @@ function ShararaPeplum() {
                             <div className="swatches">
                                 <div className="swatch" style={{ backgroundColor: '#d1bfae' }}></div>
                             </div>
-                            <h3 className="brand-name">Queen's Bespoke</h3>
-                            <p className="product-title">Nude Beige Premium Drape</p>
+                            <h3 className="brand-name">
+                                Nude Beige Sharara Suit – Subtle Festive Wear
+                            </h3>
+                            <p className="product-title">
+                                Neutral-toned peplum paired with elegant sharara pants. Understated and classy for occasions.
+                            </p>
                             <div className="rating-block">
                                 <span className="stars">★★★★☆</span>
                                 <span className="rating-count">56</span>
@@ -364,8 +402,13 @@ function ShararaPeplum() {
                             <div className="swatches">
                                 <div className="swatch" style={{ backgroundColor: '#e5ccce' }}></div>
                             </div>
-                            <h3 className="brand-name">Maison d'Élégance</h3>
-                            <p className="product-title">Draped Georgette Saree Gown in Rose Pink</p>
+                            <h3 className="brand-name">
+                                Aqua Blue Peplum Sharara – Bright Festive Ethnic Set
+                            </h3>
+                            <p className="product-title">
+                                Vibrant peplum with layered sharara. A lively and eye-catching festive outfit.
+                            </p>
+
                             <div className="rating-block">
                                 <span className="stars">★★★★★</span>
                                 <span className="rating-count">140</span>
@@ -388,8 +431,12 @@ function ShararaPeplum() {
                             <div className="swatches">
                                 <div className="swatch" style={{ backgroundColor: '#a37272' }}></div>
                             </div>
-                            <h3 className="brand-name">Queen's Wardrobe</h3>
-                            <p className="product-title">Pleated Indo-Western Saree with Matching Clutch</p>
+                            <h3 className="brand-name">
+                                Indigo Fusion Sharara – Indo-Western Ethnic Wear
+                            </h3>
+                            <p className="product-title">
+                                Modern peplum with wide sharara pants. A fusion look perfect for festive evenings.
+                            </p>
                             <div className="rating-block">
                                 <span className="stars">★★★★☆</span>
                                 <span className="rating-count">245</span>
@@ -412,8 +459,12 @@ function ShararaPeplum() {
                             <div className="swatches">
                                 <div className="swatch" style={{ backgroundColor: '#2F2A26' }}></div>
                             </div>
-                            <h3 className="brand-name">Western Elegance</h3>
-                            <p className="product-title">Minimalist Evening Gown Saree</p>
+                            <h3 className="brand-name">
+                                Steel Blue Minimal Sharara – Contemporary Ethnic Wear
+                            </h3>
+                            <p className="product-title">
+                                Clean peplum design with soft flowy sharara. Minimal yet elegant festive styling.
+                            </p>
                             <div className="rating-block">
                                 <span className="stars">★★★★★</span>
                                 <span className="rating-count">88</span>
@@ -437,8 +488,12 @@ function ShararaPeplum() {
                                 <div className="swatch" style={{ backgroundColor: '#c93b4a' }}></div>
                                 <div className="swatch" style={{ backgroundColor: '#0b2b4e' }}></div>
                             </div>
-                            <h3 className="brand-name">Heritage Silks</h3>
-                            <p className="product-title">Handloom Silk Saree Gown for Receptions</p>
+                            <h3 className="brand-name">
+                                Rose Pink Party Sharara – Chic Festive Ethnic Wear
+                            </h3>
+                            <p className="product-title">
+                                Stylish peplum with scalloped detailing paired with flared sharara. Perfect for parties.
+                            </p>
                             <div className="rating-block">
                                 <span className="stars">★★★★☆</span>
                                 <span className="rating-count">421</span>
@@ -461,8 +516,13 @@ function ShararaPeplum() {
                             <div className="swatches">
                                 <div className="swatch" style={{ backgroundColor: '#d1bfae' }}></div>
                             </div>
-                            <h3 className="brand-name">Queen's Bespoke</h3>
-                            <p className="product-title">Signature Embellished Custom Saree</p>
+                            <h3 className="brand-name">
+                                Champagne Embellished Sharara – Luxe Festive Ethnic Wear
+                            </h3>
+                            <p className="product-title">
+                                Heavily embellished peplum with detailed embroidery and rich sharara. Ideal for grand occasions.
+                            </p>
+
                             <div className="rating-block">
                                 <span className="stars">★★★★★</span>
                                 <span className="rating-count">19</span>
@@ -485,8 +545,12 @@ function ShararaPeplum() {
                             <div className="swatches">
                                 <div className="swatch" style={{ backgroundColor: '#bb9b9f' }}></div>
                             </div>
-                            <h3 className="brand-name">Maison d'Élégance</h3>
-                            <p className="product-title">Peach Pastel Georgette Gown Saree</p>
+                            <h3 className="brand-name">
+                                Peach Pastel Sharara – Soft Feminine Festive Wear
+                            </h3>
+                            <p className="product-title">
+                                Light peplum paired with soft pastel sharara. Elegant and perfect for daytime celebrations.
+                            </p>
                             <div className="rating-block">
                                 <span className="stars">★★★★☆</span>
                                 <span className="rating-count">112</span>
@@ -509,8 +573,12 @@ function ShararaPeplum() {
                             <div className="swatches">
                                 <div className="swatch" style={{ backgroundColor: '#5d675b' }}></div>
                             </div>
-                            <h3 className="brand-name">Queen's Wardrobe</h3>
-                            <p className="product-title">Festive Green Pre-Stitched Gown</p>
+                            <h3 className="brand-name">
+                                Mustard Festive Sharara – Vibrant Traditional Ethnic Wear
+                            </h3>
+                            <p className="product-title">
+                                Bright mustard peplum with flared sharara. A bold festive pick for celebrations.
+                            </p>
                             <div className="rating-block">
                                 <span className="stars">★★★★★</span>
                                 <span className="rating-count">478</span>
@@ -533,8 +601,12 @@ function ShararaPeplum() {
                             <div className="swatches">
                                 <div className="swatch" style={{ backgroundColor: '#2F2A26' }}></div>
                             </div>
-                            <h3 className="brand-name">Western Elegance</h3>
-                            <p className="product-title">Classic Black Contemporary Wrap Saree</p>
+                            <h3 className="brand-name">
+                                Red Classic Sharara Set – Bold Festive Ethnic Wear
+                            </h3>
+                            <p className="product-title">
+                                Rich red peplum with traditional sharara. A timeless outfit for weddings and festivities.
+                            </p>
                             <div className="rating-block">
                                 <span className="stars">★★★★☆</span>
                                 <span className="rating-count">334</span>
@@ -557,8 +629,13 @@ function ShararaPeplum() {
                             <div className="swatches">
                                 <div className="swatch" style={{ backgroundColor: '#0b2b4e' }}></div>
                             </div>
-                            <h3 className="brand-name">Heritage Silks</h3>
-                            <p className="product-title">Rich Indigo Occasion Wear Layout Saree</p>
+                            <h3 className="brand-name">
+                                Beige Elegant Sharara – Minimal Ethnic Luxe
+                            </h3>
+                            <p className="product-title">
+                                Subtle peplum with graceful sharara drape. A refined and classy festive option.
+                            </p>
+
                             <div className="rating-block">
                                 <span className="stars">★★★★★</span>
                                 <span className="rating-count">650</span>
@@ -582,8 +659,12 @@ function ShararaPeplum() {
                                 <div className="swatch" style={{ backgroundColor: '#d1bfae' }}></div>
                                 <div className="swatch" style={{ backgroundColor: '#bb9b9f' }}></div>
                             </div>
-                            <h3 className="brand-name">Queen's Bespoke</h3>
-                            <p className="product-title">Taupe High-Society Event Saree</p>
+                            <h3 className="brand-name">
+                                Rust Orange Occasion Sharara – Statement Festive Ethnic Wear
+                            </h3>
+                            <p className="product-title">
+                                Bold rust orange peplum paired with flowy sharara. Perfect for standout festive looks.
+                            </p>
                             <div className="rating-block">
                                 <span className="stars">★★★★★</span>
                                 <span className="rating-count">93</span>
@@ -599,7 +680,7 @@ function ShararaPeplum() {
 
                 </div>
             </div>
-            
+
             {/* Hamburger Sidebar Menu */}
             <div className={`sidebar-overlay ${isSidebarOpen ? 'active' : ''}`} id="sidebar-overlay" onClick={closeSidebar}></div>
             <div className={`sidebar-panel ${isSidebarOpen ? 'active' : ''}`} id="sidebar">

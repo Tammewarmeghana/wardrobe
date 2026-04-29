@@ -22,12 +22,12 @@ function AsymmetricKurtas() {
 
     return (
         <div className="gownsaree-wrapper gown-saree-page-container">
-            <div className="page-container" style={{overflowX: 'hidden'}}>
+            <div className="page-container" style={{ overflowX: 'hidden' }}>
                 {/* Header & Tabs */}
                 <div className="page-header">
                     {/* Search & Actions */}
                     <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: '24px', paddingBottom: '20px' }}>
-                        
+
                         <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
                             <button onClick={() => navigate(-1)} title="Go Back" style={{ background: 'none', border: 'none', cursor: 'pointer', padding: '0', display: 'flex', alignItems: 'center', color: 'var(--text-main)' }}>
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -52,25 +52,25 @@ function AsymmetricKurtas() {
                 {/* Filters */}
                 <div className="filter-row">
                     <div className="filter-pill">Price <svg width="12" height="12" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" strokeWidth="2">
-                            <path d="M6 9l6 6 6-6" />
-                        </svg></div>
+                        stroke="currentColor" strokeWidth="2">
+                        <path d="M6 9l6 6 6-6" />
+                    </svg></div>
                     <div className="filter-pill">4 stars & up <svg width="12" height="12" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" strokeWidth="2">
-                            <path d="M6 9l6 6 6-6" />
-                        </svg></div>
+                        stroke="currentColor" strokeWidth="2">
+                        <path d="M6 9l6 6 6-6" />
+                    </svg></div>
                     <div className="filter-pill">Brand <svg width="12" height="12" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" strokeWidth="2">
-                            <path d="M6 9l6 6 6-6" />
-                        </svg></div>
+                        stroke="currentColor" strokeWidth="2">
+                        <path d="M6 9l6 6 6-6" />
+                    </svg></div>
                     <div className="filter-pill">Color <svg width="12" height="12" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" strokeWidth="2">
-                            <path d="M6 9l6 6 6-6" />
-                        </svg></div>
+                        stroke="currentColor" strokeWidth="2">
+                        <path d="M6 9l6 6 6-6" />
+                    </svg></div>
                     <div className="filter-pill">Fabric <svg width="12" height="12" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" strokeWidth="2">
-                            <path d="M6 9l6 6 6-6" />
-                        </svg></div>
+                        stroke="currentColor" strokeWidth="2">
+                        <path d="M6 9l6 6 6-6" />
+                    </svg></div>
                 </div>
 
                 {/* Product Grid */}
@@ -87,8 +87,8 @@ function AsymmetricKurtas() {
                                 <div className="swatch" style={{ backgroundColor: '#bb9b9f' }}></div>
                                 <div className="swatch" style={{ backgroundColor: '#2F2A26' }}></div>
                             </div>
-                            <h3 className="brand-name">Maison d'Élégance</h3>
-                            <p className="product-title">Premium Pre-Draped Saree Gown in Soft Georgette with Embellished Belt</p>
+                            <h3 className="brand-name">Hot Pink Asymmetric Hem Kurti – Bold Festive Ethnic Wear for Women</h3>
+                            <p className="product-title">Make a statement in this vibrant hot pink asymmetric hemline kurti with a flowy draped silhouette. Effortlessly chic for festive evenings, sangeet nights, and celebrations</p>
 
                             <div className="rating-block">
                                 <span className="stars">★★★★☆</span>
@@ -96,8 +96,8 @@ function AsymmetricKurtas() {
                             </div>
 
                             <div className="pricing-block">
-                                <span className="discount">-58%</span>
-                                <span className="price"><span>₹</span>14,999</span>
+                                <span className="discount">-50%</span>
+                                <span className="price"><span>₹</span>12,999</span>
                                 <span className="original-price">₹35,999</span>
                             </div>
 
@@ -117,8 +117,8 @@ function AsymmetricKurtas() {
                                 <div className="swatch" style={{ backgroundColor: '#a37272' }}></div>
                                 <div className="swatch" style={{ backgroundColor: '#5d675b' }}></div>
                             </div>
-                            <h3 className="brand-name">Queen's Wardrobe</h3>
-                            <p className="product-title">Modern Indo-Western Fusion Saree with Attached Pallu</p>
+                            <h3 className="brand-name">Mustard Yellow Asymmetric Kurti with Palazzo – Elegant Indo-Western Ensemble</h3>
+                            <p className="product-title">This mustard yellow asymmetric kurti paired with matching palazzo pants is the perfect festive ensemble. Graceful, flowy, and sophisticated.</p>
 
                             <div className="rating-block">
                                 <span className="stars">★★★★★</span>
@@ -146,8 +146,8 @@ function AsymmetricKurtas() {
                             <div className="swatches">
                                 <div className="swatch" style={{ backgroundColor: '#2F2A26' }}></div>
                             </div>
-                            <h3 className="brand-name">Western Elegance</h3>
-                            <p className="product-title">Cocktail Saree Gown with Cape Sleeves</p>
+                            <h3 className="brand-name">Teal Green Sleeveless Asymmetric Kurti – Contemporary Ethnic Luxe</h3>
+                            <p className="product-title">Sleek and modern, this teal green sleeveless asymmetric kurti brings understated elegance to every occasion. </p>
 
                             <div className="rating-block">
                                 <span className="stars">★★★★☆</span>
@@ -177,8 +177,8 @@ function AsymmetricKurtas() {
                                 <div className="swatch" style={{ backgroundColor: '#0b2b4e' }}></div>
                                 <div className="swatch" style={{ backgroundColor: '#b08a5d' }}></div>
                             </div>
-                            <h3 className="brand-name">Maison d'Élégance</h3>
-                            <p className="product-title">Heritage Silk Trim Saree Gown for Wedding Receptions</p>
+                            <h3 className="brand-name">Dusty Rose Flowy Asymmetric Kurti – Feminine Ethnic Elegance</h3>
+                            <p className="product-title">Soft, romantic, and effortlessly graceful — this dusty rose asymmetric kurti drapes beautifully for weddings, receptions, and festive get-togethers. </p>
 
                             <div className="rating-block">
                                 <span className="stars">★★★★★</span>
@@ -207,8 +207,8 @@ function AsymmetricKurtas() {
                                 <div className="swatch" style={{ backgroundColor: '#d1bfae' }}></div>
                                 <div className="swatch" style={{ backgroundColor: '#e8e8e8' }}></div>
                             </div>
-                            <h3 className="brand-name">Queen's Bespoke</h3>
-                            <p className="product-title">Custom-Fit Sequined Saree Dress</p>
+                            <h3 className="brand-name">Sage Green Halter Neck Asymmetric Kurti – Modern Indian Ethnic Wear</h3>
+                            <p className="product-title">This sage green halter neck asymmetric kurti is a stunning blend of contemporary cuts and traditional charm. I</p>
 
                             <div className="rating-block">
                                 <span className="stars">★★★★☆</span>
@@ -237,8 +237,8 @@ function AsymmetricKurtas() {
                             <div className="swatches">
                                 <div className="swatch" style={{ backgroundColor: '#bb9b9f' }}></div>
                             </div>
-                            <h3 className="brand-name">Maison d'Élégance</h3>
-                            <p className="product-title">Embroidered Pastel Saree Gown with Dupatta</p>
+                            <h3 className="brand-name">Ivory Cream Embroidered Asymmetric Kurti – Timeless Ethnic Sophistication</h3>
+                            <p className="product-title">Understated luxury in ivory — this embroidered asymmetric kurti exudes quiet elegance. Perfect for pujas, festive occasions.</p>
                             <div className="rating-block">
                                 <span className="stars">★★★★☆</span>
                                 <span className="rating-count">85</span>
@@ -263,8 +263,8 @@ function AsymmetricKurtas() {
                                 <div className="swatch" style={{ backgroundColor: '#5d675b' }}></div>
                                 <div className="swatch" style={{ backgroundColor: '#a37272' }}></div>
                             </div>
-                            <h3 className="brand-name">Queen's Wardrobe</h3>
-                            <p className="product-title">Olive Green Sequin Trim Saree</p>
+                            <h3 className="brand-name">Lavender Asymmetric Kurti with Straight Pants – Soft Festive Ethnic Set</h3>
+                            <p className="product-title">Draped in soft lavender, this asymmetric kurti with matching straight pants is the perfect festive set for sangeet, mehendi, and evening celebrations. </p>
                             <div className="rating-block">
                                 <span className="stars">★★★★★</span>
                                 <span className="rating-count">430</span>
@@ -282,15 +282,15 @@ function AsymmetricKurtas() {
                     {/* CARD 8 */}
                     <div className="product-card" style={{ position: "relative" }}>
                         <WishlistHeart item={{ id: "AsymmetricKurtas_Midnight Black Chiffon Saree Gown", title: "Midnight Black Chiffon Saree Gown", image: "https://res.cloudinary.com/dugksxwkr/image/upload/v1776054424/1a92603af92873f09f72d85f6dc21527-removebg-preview_kvchaa.png", brand: "Western Elegance", price: <><span>₹</span>12,499</> }} />
-                        <img src="https://res.cloudinary.com/dugksxwkr/image/upload/v1776054424/1a92603af92873f09f72d85f6dc21527-removebg-preview_kvchaa.png"
+                        <img src="https://res.cloudinary.com/dodmxncwc/image/upload/v1776334977/a8c23c9fdfdfd40a04f1edcdc38ce991-removebg-preview_fl4fa8.png"
                             alt="Chiffon Saree Gown" className="card-image" />
                         <div className="card-content">
                             <div className="swatches">
                                 <div className="swatch" style={{ backgroundColor: '#2F2A26' }}></div>
                                 <div className="swatch" style={{ backgroundColor: '#e5ccce' }}></div>
                             </div>
-                            <h3 className="brand-name">Western Elegance</h3>
-                            <p className="product-title">Midnight Black Chiffon Saree Gown</p>
+                            <h3 className="brand-name">Mauve Purple Kaftan Asymmetric Kurti – Boho Ethnic Elegance</h3>
+                            <p className="product-title">Gorgeous mauve purple kaftan-style asymmetric kurti with embellished neckline and bell sleeves. A statement piece for cocktail evenings and festive functions.</p>
                             <div className="rating-block">
                                 <span className="stars">★★★★☆</span>
                                 <span className="rating-count">612</span>
@@ -314,7 +314,7 @@ function AsymmetricKurtas() {
                             <div className="swatches">
                                 <div className="swatch" style={{ backgroundColor: '#0b2b4e' }}></div>
                             </div>
-                            <h3 className="brand-name">Maison d'Élégance</h3>
+                            <h3 className="brand-name">Off-White Asymmetric Kurti with Black Floral Appliqué – Contemporary Ethnic Wear</h3>
                             <p className="product-title">Royal Navy Blue Designer Saree with Floral Appliques</p>
                             <div className="rating-block">
                                 <span className="stars">★★★★★</span>
@@ -339,8 +339,8 @@ function AsymmetricKurtas() {
                             <div className="swatches">
                                 <div className="swatch" style={{ backgroundColor: '#d1bfae' }}></div>
                             </div>
-                            <h3 className="brand-name">Queen's Bespoke</h3>
-                            <p className="product-title">Nude Beige Premium Drape</p>
+                            <h3 className="brand-name">Royal Purple Asymmetric Kurti with Palazzo – Dramatic Festive Ethnic Wear</h3>
+                            <p className="product-title">Rich royal purple asymmetric kurti with a flowy palazzo — bold, dramatic, and deeply elegant. Perfect for receptions, cocktail evenings, and grand celebrations.</p>
                             <div className="rating-block">
                                 <span className="stars">★★★★☆</span>
                                 <span className="rating-count">56</span>
@@ -364,8 +364,8 @@ function AsymmetricKurtas() {
                             <div className="swatches">
                                 <div className="swatch" style={{ backgroundColor: '#e5ccce' }}></div>
                             </div>
-                            <h3 className="brand-name">Maison d'Élégance</h3>
-                            <p className="product-title">Draped Georgette Saree Gown in Rose Pink</p>
+                            <h3 className="brand-name">Lavender Asymmetric Kurti with Palazzo – Elegant Festive Wear</h3>
+                            <p className="product-title"> Soft lavender asymmetric kurti with matching palazzo. Light, flowy, and perfect for festive occasions and celebrations.</p>
                             <div className="rating-block">
                                 <span className="stars">★★★★★</span>
                                 <span className="rating-count">140</span>
@@ -388,8 +388,8 @@ function AsymmetricKurtas() {
                             <div className="swatches">
                                 <div className="swatch" style={{ backgroundColor: '#a37272' }}></div>
                             </div>
-                            <h3 className="brand-name">Queen's Wardrobe</h3>
-                            <p className="product-title">Pleated Indo-Western Saree with Matching Clutch</p>
+                            <h3 className="brand-name">Dusty Rose Asymmetric Kurti with Floral Detail – Chic Ethnic Wear</h3>
+                            <p className="product-title">Elegant dusty rose asymmetric kurti with floral embroidery and wide palazzo. A graceful pick for receptions and festive evenings.</p>
                             <div className="rating-block">
                                 <span className="stars">★★★★☆</span>
                                 <span className="rating-count">245</span>
@@ -412,8 +412,8 @@ function AsymmetricKurtas() {
                             <div className="swatches">
                                 <div className="swatch" style={{ backgroundColor: '#2F2A26' }}></div>
                             </div>
-                            <h3 className="brand-name">Western Elegance</h3>
-                            <p className="product-title">Minimalist Evening Gown Saree</p>
+                            <h3 className="brand-name"> Olive Green Wrap Asymmetric Kurti – Indo-Western Ethnic Set</h3>
+                            <p className="product-title"> Bold olive green wrap-style asymmetric kurti with white palazzo. Stylish and modern for cocktail evenings and festive occasions.</p>
                             <div className="rating-block">
                                 <span className="stars">★★★★★</span>
                                 <span className="rating-count">88</span>
@@ -437,8 +437,8 @@ function AsymmetricKurtas() {
                                 <div className="swatch" style={{ backgroundColor: '#c93b4a' }}></div>
                                 <div className="swatch" style={{ backgroundColor: '#0b2b4e' }}></div>
                             </div>
-                            <h3 className="brand-name">Heritage Silks</h3>
-                            <p className="product-title">Handloom Silk Saree Gown for Receptions</p>
+                            <h3 className="brand-name">White Floral Embroidered Asymmetric Kurti – Elegant Ethnic Wear</h3>
+                            <p className="product-title"> Crisp white asymmetric kurti with delicate floral embroidery paired with slim pants. Refined and perfect for receptions and festive events.</p>
                             <div className="rating-block">
                                 <span className="stars">★★★★☆</span>
                                 <span className="rating-count">421</span>
@@ -461,8 +461,8 @@ function AsymmetricKurtas() {
                             <div className="swatches">
                                 <div className="swatch" style={{ backgroundColor: '#d1bfae' }}></div>
                             </div>
-                            <h3 className="brand-name">Queen's Bespoke</h3>
-                            <p className="product-title">Signature Embellished Custom Saree</p>
+                            <h3 className="brand-name">Crimson Red Embroidered Asymmetric Kurti – Bold Festive Ethnic Wear</h3>
+                            <p className="product-title">Rich crimson red asymmetric kurti with intricate floral embroidery. A striking festive pick for weddings and grand celebrations.</p>
                             <div className="rating-block">
                                 <span className="stars">★★★★★</span>
                                 <span className="rating-count">19</span>
@@ -485,8 +485,12 @@ function AsymmetricKurtas() {
                             <div className="swatches">
                                 <div className="swatch" style={{ backgroundColor: '#bb9b9f' }}></div>
                             </div>
-                            <h3 className="brand-name">Maison d'Élégance</h3>
-                            <p className="product-title">Peach Pastel Georgette Gown Saree</p>
+                            <h3 className="brand-name">
+                                Steel Blue Floral Asymmetric Kurti – Contemporary Ethnic Luxe
+                            </h3>
+                            <p className="product-title">
+                                Deep steel blue asymmetric kurti with gold floral embroidery and white pants. Elegant and perfect for festive and formal occasions.
+                            </p>
                             <div className="rating-block">
                                 <span className="stars">★★★★☆</span>
                                 <span className="rating-count">112</span>
@@ -509,8 +513,12 @@ function AsymmetricKurtas() {
                             <div className="swatches">
                                 <div className="swatch" style={{ backgroundColor: '#5d675b' }}></div>
                             </div>
-                            <h3 className="brand-name">Queen's Wardrobe</h3>
-                            <p className="product-title">Festive Green Pre-Stitched Gown</p>
+                            <h3 className="brand-name">
+                                Peach Asymmetric High-Low Kurti – Feminine Festive Ethnic Wear
+                            </h3>
+                            <p className="product-title">
+                                Soft peach asymmetric high-low kurti with floral detailing and beige palazzo. Graceful and feminine for mehendi and festive functions.
+                            </p>
                             <div className="rating-block">
                                 <span className="stars">★★★★★</span>
                                 <span className="rating-count">478</span>
@@ -533,8 +541,13 @@ function AsymmetricKurtas() {
                             <div className="swatches">
                                 <div className="swatch" style={{ backgroundColor: '#2F2A26' }}></div>
                             </div>
-                            <h3 className="brand-name">Western Elegance</h3>
-                            <p className="product-title">Classic Black Contemporary Wrap Saree</p>
+                            <h3 className="brand-name">
+                                Sky Blue Asymmetric Kurti with Palazzo – Soft Elegant Ethnic Set
+                            </h3>
+                            <p className="product-title">
+                                Flowy sky blue asymmetric kurti with embroidered detail paired with matching palazzo. Light and sophisticated for any festive occasion.
+                            </p>
+
                             <div className="rating-block">
                                 <span className="stars">★★★★☆</span>
                                 <span className="rating-count">334</span>
@@ -557,8 +570,13 @@ function AsymmetricKurtas() {
                             <div className="swatches">
                                 <div className="swatch" style={{ backgroundColor: '#0b2b4e' }}></div>
                             </div>
-                            <h3 className="brand-name">Heritage Silks</h3>
-                            <p className="product-title">Rich Indigo Occasion Wear Layout Saree</p>
+                            <h3 className="brand-name">
+                                Olive Kaftan Asymmetric Kurti – Boho Ethnic Statement Wear
+                            </h3>
+                            <p className="product-title">
+                                Rich olive kaftan-style asymmetric kurti with embellished neckline. A bold, luxurious pick for cocktail evenings and festive celebrations.
+                            </p>
+
                             <div className="rating-block">
                                 <span className="stars">★★★★★</span>
                                 <span className="rating-count">650</span>
@@ -582,8 +600,12 @@ function AsymmetricKurtas() {
                                 <div className="swatch" style={{ backgroundColor: '#d1bfae' }}></div>
                                 <div className="swatch" style={{ backgroundColor: '#bb9b9f' }}></div>
                             </div>
-                            <h3 className="brand-name">Queen's Bespoke</h3>
-                            <p className="product-title">Taupe High-Society Event Saree</p>
+                            <h3 className="brand-name">
+                                Dusty Pink Floral Asymmetric Kurti – Premium Ethnic Occasion Wear
+                            </h3>
+                            <p className="product-title">
+                                Elegant dusty pink asymmetric kurti with all-over floral print paired with white pants. Refined and perfect for festive and wedding occasions.
+                            </p>
                             <div className="rating-block">
                                 <span className="stars">★★★★★</span>
                                 <span className="rating-count">93</span>
@@ -599,7 +621,7 @@ function AsymmetricKurtas() {
 
                 </div>
             </div>
-            
+
             {/* Hamburger Sidebar Menu */}
             <div className={`sidebar-overlay ${isSidebarOpen ? 'active' : ''}`} id="sidebar-overlay" onClick={closeSidebar}></div>
             <div className={`sidebar-panel ${isSidebarOpen ? 'active' : ''}`} id="sidebar">

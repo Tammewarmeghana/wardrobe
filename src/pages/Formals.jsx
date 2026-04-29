@@ -87,8 +87,12 @@ function Formals() {
                                 <div className="swatch" style={{ backgroundColor: '#bb9b9f' }}></div>
                                 <div className="swatch" style={{ backgroundColor: '#2F2A26' }}></div>
                             </div>
-                            <h3 className="brand-name">Maison d'Élégance</h3>
-                            <p className="product-title">Premium Pre-Draped Saree Gown in Soft Georgette with Embellished Belt</p>
+                          <h3 className="brand-name">
+Black Shirt with Cream Wide-Leg Trousers – Elegant Office Wear
+</h3>
+<p className="product-title">
+Classic black shirt paired with high-waisted cream wide-leg trousers. Clean and powerful formal styling.
+</p>
 
                             <div className="rating-block">
                                 <span className="stars">★★★★☆</span>
@@ -117,8 +121,12 @@ function Formals() {
                                 <div className="swatch" style={{ backgroundColor: '#a37272' }}></div>
                                 <div className="swatch" style={{ backgroundColor: '#5d675b' }}></div>
                             </div>
-                            <h3 className="brand-name">Queen's Wardrobe</h3>
-                            <p className="product-title">Modern Indo-Western Fusion Saree with Attached Pallu</p>
+                           <h3 className="brand-name">
+White Shirt with Black Tailored Pants – Minimal Formal Look
+</h3>
+<p className="product-title">
+Crisp white shirt styled with straight-fit black trousers. A timeless office essential.
+</p>
 
                             <div className="rating-block">
                                 <span className="stars">★★★★★</span>
@@ -146,8 +154,12 @@ function Formals() {
                             <div className="swatches">
                                 <div className="swatch" style={{ backgroundColor: '#2F2A26' }}></div>
                             </div>
-                            <h3 className="brand-name">Western Elegance</h3>
-                            <p className="product-title">Cocktail Saree Gown with Cape Sleeves</p>
+                          <h3 className="brand-name">
+Striped Blue Shirt with Beige Trousers – Smart Casual Workwear
+</h3>
+<p className="product-title">
+Relaxed striped shirt paired with neutral beige trousers. Perfect for modern office style.
+</p>
 
                             <div className="rating-block">
                                 <span className="stars">★★★★☆</span>
@@ -177,8 +189,12 @@ function Formals() {
                                 <div className="swatch" style={{ backgroundColor: '#0b2b4e' }}></div>
                                 <div className="swatch" style={{ backgroundColor: '#b08a5d' }}></div>
                             </div>
-                            <h3 className="brand-name">Maison d'Élégance</h3>
-                            <p className="product-title">Heritage Silk Trim Saree Gown for Wedding Receptions</p>
+                           <h3 className="brand-name">
+Light Blue Shirt with Pleated Cream Pants – Chic Office Outfit
+</h3>
+<p className="product-title">
+Soft blue shirt tucked into pleated cream trousers. Elegant and effortless.
+</p>
 
                             <div className="rating-block">
                                 <span className="stars">★★★★★</span>
@@ -207,8 +223,12 @@ function Formals() {
                                 <div className="swatch" style={{ backgroundColor: '#d1bfae' }}></div>
                                 <div className="swatch" style={{ backgroundColor: '#e8e8e8' }}></div>
                             </div>
-                            <h3 className="brand-name">Queen's Bespoke</h3>
-                            <p className="product-title">Custom-Fit Sequined Saree Dress</p>
+                         <h3 className="brand-name">
+Burgundy Shirt with Olive Trousers – Contemporary Formal Wear
+</h3>
+<p className="product-title">
+Deep-toned shirt styled with high-waisted olive trousers. A bold yet refined look.
+</p>
 
                             <div className="rating-block">
                                 <span className="stars">★★★★☆</span>
@@ -237,8 +257,12 @@ function Formals() {
                             <div className="swatches">
                                 <div className="swatch" style={{ backgroundColor: '#bb9b9f' }}></div>
                             </div>
-                            <h3 className="brand-name">Maison d'Élégance</h3>
-                            <p className="product-title">Embroidered Pastel Saree Gown with Dupatta</p>
+                        <h3 className="brand-name">
+Olive Sweater Vest with Black Trousers – Layered Smart Wear
+</h3>
+<p className="product-title">
+Layered vest over shirt paired with straight black trousers. Stylish and structured.
+</p>
                             <div className="rating-block">
                                 <span className="stars">★★★★☆</span>
                                 <span className="rating-count">85</span>
@@ -263,8 +287,12 @@ function Formals() {
                                 <div className="swatch" style={{ backgroundColor: '#5d675b' }}></div>
                                 <div className="swatch" style={{ backgroundColor: '#a37272' }}></div>
                             </div>
-                            <h3 className="brand-name">Queen's Wardrobe</h3>
-                            <p className="product-title">Olive Green Sequin Trim Saree</p>
+                           <h3 className="brand-name">
+Beige Knit Vest with Black Pants – Minimal Office Styling
+</h3>
+<p className="product-title">
+Soft knit vest styled with tailored trousers. Comfortable yet professional.
+</p>
                             <div className="rating-block">
                                 <span className="stars">★★★★★</span>
                                 <span className="rating-count">430</span>
@@ -289,8 +317,12 @@ function Formals() {
                                 <div className="swatch" style={{ backgroundColor: '#2F2A26' }}></div>
                                 <div className="swatch" style={{ backgroundColor: '#e5ccce' }}></div>
                             </div>
-                            <h3 className="brand-name">Western Elegance</h3>
-                            <p className="product-title">Midnight Black Chiffon Saree Gown</p>
+                        <h3 className="brand-name">
+Brown Sweater with Black Trousers – Cozy Formal Wear
+</h3>
+<p className="product-title">
+Relaxed sweater paired with straight-fit trousers. Perfect for winter office looks.
+</p>
                             <div className="rating-block">
                                 <span className="stars">★★★★☆</span>
                                 <span className="rating-count">612</span>
@@ -314,8 +346,12 @@ function Formals() {
                             <div className="swatches">
                                 <div className="swatch" style={{ backgroundColor: '#0b2b4e' }}></div>
                             </div>
-                            <h3 className="brand-name">Maison d'Élégance</h3>
-                            <p className="product-title">Royal Navy Blue Designer Saree with Floral Appliques</p>
+                     <h3 className="brand-name">
+White Shirt with Cream High-Waist Pants – Elegant Neutral Outfit
+</h3>
+<p className="product-title">
+Clean monochrome look with structured trousers. Sophisticated and timeless.
+</p>
                             <div className="rating-block">
                                 <span className="stars">★★★★★</span>
                                 <span className="rating-count">190</span>
@@ -339,8 +375,12 @@ function Formals() {
                             <div className="swatches">
                                 <div className="swatch" style={{ backgroundColor: '#d1bfae' }}></div>
                             </div>
-                            <h3 className="brand-name">Queen's Bespoke</h3>
-                            <p className="product-title">Nude Beige Premium Drape</p>
+                       <h3 className="brand-name">
+Beige Blazer with Cream Trousers – Soft Power Dressing
+</h3>
+<p className="product-title">
+Light blazer layered over fitted trousers. Perfect for polished formal styling.
+</p>
                             <div className="rating-block">
                                 <span className="stars">★★★★☆</span>
                                 <span className="rating-count">56</span>
@@ -364,8 +404,12 @@ function Formals() {
                             <div className="swatches">
                                 <div className="swatch" style={{ backgroundColor: '#e5ccce' }}></div>
                             </div>
-                            <h3 className="brand-name">Maison d'Élégance</h3>
-                            <p className="product-title">Draped Georgette Saree Gown in Rose Pink</p>
+                         <h3 className="brand-name">
+Satin Blouse with Cream Trousers – Luxe Office Wear
+</h3>
+<p className="product-title">
+Soft satin blouse paired with high-waist trousers. Elegant and refined.
+</p>
                             <div className="rating-block">
                                 <span className="stars">★★★★★</span>
                                 <span className="rating-count">140</span>
@@ -388,8 +432,12 @@ function Formals() {
                             <div className="swatches">
                                 <div className="swatch" style={{ backgroundColor: '#a37272' }}></div>
                             </div>
-                            <h3 className="brand-name">Queen's Wardrobe</h3>
-                            <p className="product-title">Pleated Indo-Western Saree with Matching Clutch</p>
+                          <h3 className="brand-name">
+Black Top with Beige Pleated Pants – Smart Casual Outfit
+</h3>
+<p className="product-title">
+Fitted black top styled with pleated trousers. Clean and modern.
+</p>
                             <div className="rating-block">
                                 <span className="stars">★★★★☆</span>
                                 <span className="rating-count">245</span>
@@ -412,8 +460,13 @@ function Formals() {
                             <div className="swatches">
                                 <div className="swatch" style={{ backgroundColor: '#2F2A26' }}></div>
                             </div>
-                            <h3 className="brand-name">Western Elegance</h3>
-                            <p className="product-title">Minimalist Evening Gown Saree</p>
+                        <h3 className="brand-name">
+Black Blazer with Cream Wide-Leg Pants – Contemporary Formal Wear
+</h3>
+<p className="product-title">
+Structured blazer paired with flowy wide-leg trousers. Stylish and professional.
+</p>
+
                             <div className="rating-block">
                                 <span className="stars">★★★★★</span>
                                 <span className="rating-count">88</span>
@@ -437,8 +490,12 @@ function Formals() {
                                 <div className="swatch" style={{ backgroundColor: '#c93b4a' }}></div>
                                 <div className="swatch" style={{ backgroundColor: '#0b2b4e' }}></div>
                             </div>
-                            <h3 className="brand-name">Heritage Silks</h3>
-                            <p className="product-title">Handloom Silk Saree Gown for Receptions</p>
+                        <h3 className="brand-name">
+Olive Shirt with Relaxed Fit Trousers – Casual Workwear Look
+</h3>
+<p className="product-title">
+Relaxed olive shirt paired with neutral trousers. Comfortable and chic.
+</p>
                             <div className="rating-block">
                                 <span className="stars">★★★★☆</span>
                                 <span className="rating-count">421</span>
@@ -461,8 +518,12 @@ function Formals() {
                             <div className="swatches">
                                 <div className="swatch" style={{ backgroundColor: '#d1bfae' }}></div>
                             </div>
-                            <h3 className="brand-name">Queen's Bespoke</h3>
-                            <p className="product-title">Signature Embellished Custom Saree</p>
+                      <h3 className="brand-name">
+Blue Shirt with Taupe Wide-Leg Pants – Smart Everyday Wear
+</h3>
+<p className="product-title">
+Soft blue shirt styled with high-waist taupe trousers. Easy and elegant.
+</p>
                             <div className="rating-block">
                                 <span className="stars">★★★★★</span>
                                 <span className="rating-count">19</span>
@@ -485,8 +546,12 @@ function Formals() {
                             <div className="swatches">
                                 <div className="swatch" style={{ backgroundColor: '#bb9b9f' }}></div>
                             </div>
-                            <h3 className="brand-name">Maison d'Élégance</h3>
-                            <p className="product-title">Peach Pastel Georgette Gown Saree</p>
+                         <h3 className="brand-name">
+Navy Shirt with White Trousers – Classic Office Combination
+</h3>
+<p className="product-title">
+Dark navy shirt paired with crisp white trousers. Clean contrast styling.
+</p>
                             <div className="rating-block">
                                 <span className="stars">★★★★☆</span>
                                 <span className="rating-count">112</span>
@@ -509,8 +574,13 @@ function Formals() {
                             <div className="swatches">
                                 <div className="swatch" style={{ backgroundColor: '#5d675b' }}></div>
                             </div>
-                            <h3 className="brand-name">Queen's Wardrobe</h3>
-                            <p className="product-title">Festive Green Pre-Stitched Gown</p>
+                          <h3 className="brand-name">
+White Shirt with High-Waist Wide Pants – Minimal Elegant Wear
+</h3>
+<p className="product-title">
+Structured white shirt styled with flowy high-waist trousers. Timeless and refined.
+</p>
+
                             <div className="rating-block">
                                 <span className="stars">★★★★★</span>
                                 <span className="rating-count">478</span>
@@ -533,8 +603,12 @@ function Formals() {
                             <div className="swatches">
                                 <div className="swatch" style={{ backgroundColor: '#2F2A26' }}></div>
                             </div>
-                            <h3 className="brand-name">Western Elegance</h3>
-                            <p className="product-title">Classic Black Contemporary Wrap Saree</p>
+                         <h3 className="brand-name">
+White Shirt with Belted Cream Pants – Structured Formal Look
+</h3>
+<p className="product-title">
+Crisp shirt tucked into belted trousers. Sharp and polished.
+</p>
                             <div className="rating-block">
                                 <span className="stars">★★★★☆</span>
                                 <span className="rating-count">334</span>
@@ -557,8 +631,12 @@ function Formals() {
                             <div className="swatches">
                                 <div className="swatch" style={{ backgroundColor: '#0b2b4e' }}></div>
                             </div>
-                            <h3 className="brand-name">Heritage Silks</h3>
-                            <p className="product-title">Rich Indigo Occasion Wear Layout Saree</p>
+                        <h3 className="brand-name">
+Black Polo Top with Cream Trousers – Modern Smart Casual Wear
+</h3>
+<p className="product-title">
+Fitted polo paired with tailored trousers. A contemporary everyday outfit.
+</p>
                             <div className="rating-block">
                                 <span className="stars">★★★★★</span>
                                 <span className="rating-count">650</span>
@@ -582,8 +660,12 @@ function Formals() {
                                 <div className="swatch" style={{ backgroundColor: '#d1bfae' }}></div>
                                 <div className="swatch" style={{ backgroundColor: '#bb9b9f' }}></div>
                             </div>
-                            <h3 className="brand-name">Queen's Bespoke</h3>
-                            <p className="product-title">Taupe High-Society Event Saree</p>
+                       <h3 className="brand-name">
+Blue Shirt with Flowy Wide Pants – Soft Office Casual Wear
+</h3>
+<p className="product-title">
+Relaxed blue shirt styled with airy wide-leg trousers. Comfortable and stylish.
+</p>
                             <div className="rating-block">
                                 <span className="stars">★★★★★</span>
                                 <span className="rating-count">93</span>

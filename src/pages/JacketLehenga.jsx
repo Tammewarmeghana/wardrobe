@@ -22,12 +22,12 @@ function JacketLehenga() {
 
     return (
         <div className="gownsaree-wrapper gown-saree-page-container">
-            <div className="page-container" style={{overflowX: 'hidden'}}>
+            <div className="page-container" style={{ overflowX: 'hidden' }}>
                 {/* Header & Tabs */}
                 <div className="page-header">
                     {/* Search & Actions */}
                     <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: '24px', paddingBottom: '20px' }}>
-                        
+
                         <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
                             <button onClick={() => navigate(-1)} title="Go Back" style={{ background: 'none', border: 'none', cursor: 'pointer', padding: '0', display: 'flex', alignItems: 'center', color: 'var(--text-main)' }}>
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -52,25 +52,25 @@ function JacketLehenga() {
                 {/* Filters */}
                 <div className="filter-row">
                     <div className="filter-pill">Price <svg width="12" height="12" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" strokeWidth="2">
-                            <path d="M6 9l6 6 6-6" />
-                        </svg></div>
+                        stroke="currentColor" strokeWidth="2">
+                        <path d="M6 9l6 6 6-6" />
+                    </svg></div>
                     <div className="filter-pill">4 stars & up <svg width="12" height="12" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" strokeWidth="2">
-                            <path d="M6 9l6 6 6-6" />
-                        </svg></div>
+                        stroke="currentColor" strokeWidth="2">
+                        <path d="M6 9l6 6 6-6" />
+                    </svg></div>
                     <div className="filter-pill">Brand <svg width="12" height="12" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" strokeWidth="2">
-                            <path d="M6 9l6 6 6-6" />
-                        </svg></div>
+                        stroke="currentColor" strokeWidth="2">
+                        <path d="M6 9l6 6 6-6" />
+                    </svg></div>
                     <div className="filter-pill">Color <svg width="12" height="12" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" strokeWidth="2">
-                            <path d="M6 9l6 6 6-6" />
-                        </svg></div>
+                        stroke="currentColor" strokeWidth="2">
+                        <path d="M6 9l6 6 6-6" />
+                    </svg></div>
                     <div className="filter-pill">Fabric <svg width="12" height="12" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" strokeWidth="2">
-                            <path d="M6 9l6 6 6-6" />
-                        </svg></div>
+                        stroke="currentColor" strokeWidth="2">
+                        <path d="M6 9l6 6 6-6" />
+                    </svg></div>
                 </div>
 
                 {/* Product Grid */}
@@ -87,8 +87,12 @@ function JacketLehenga() {
                                 <div className="swatch" style={{ backgroundColor: '#bb9b9f' }}></div>
                                 <div className="swatch" style={{ backgroundColor: '#2F2A26' }}></div>
                             </div>
-                            <h3 className="brand-name">Maison d'Élégance</h3>
-                            <p className="product-title">Premium Pre-Draped Saree Gown in Soft Georgette with Embellished Belt</p>
+                            <h3 className="brand-name">
+                                Gold Embroidered Bridal Lehenga Set – Royal Wedding Wear
+                            </h3>
+                            <p className="product-title">
+                                Luxurious gold embroidered lehenga with embellished blouse. A regal bridal pick for weddings and grand celebrations.
+                            </p>
 
                             <div className="rating-block">
                                 <span className="stars">★★★★☆</span>
@@ -117,8 +121,12 @@ function JacketLehenga() {
                                 <div className="swatch" style={{ backgroundColor: '#a37272' }}></div>
                                 <div className="swatch" style={{ backgroundColor: '#5d675b' }}></div>
                             </div>
-                            <h3 className="brand-name">Queen's Wardrobe</h3>
-                            <p className="product-title">Modern Indo-Western Fusion Saree with Attached Pallu</p>
+                            <h3 className="brand-name">
+                                Lavender Floral Lehenga with Embroidered Jacket – Festive Ethnic Wear
+                            </h3>
+                            <p className="product-title">
+                                Stunning lavender lehenga with a heavily embroidered jacket. Perfect for sangeet, receptions, and wedding festivities.
+                            </p>
 
                             <div className="rating-block">
                                 <span className="stars">★★★★★</span>
@@ -146,8 +154,12 @@ function JacketLehenga() {
                             <div className="swatches">
                                 <div className="swatch" style={{ backgroundColor: '#2F2A26' }}></div>
                             </div>
-                            <h3 className="brand-name">Western Elegance</h3>
-                            <p className="product-title">Cocktail Saree Gown with Cape Sleeves</p>
+                            <h3 className="brand-name">
+                                Pink Embroidered Lehenga with Sheer Net Dupatta – Bridal Festive Wear
+                            </h3>
+                            <p className="product-title">
+                                Gorgeous pink lehenga with intricate embroidery and flowing net dupatta. A dreamy pick for brides and wedding guests.
+                            </p>
 
                             <div className="rating-block">
                                 <span className="stars">★★★★☆</span>
@@ -177,8 +189,12 @@ function JacketLehenga() {
                                 <div className="swatch" style={{ backgroundColor: '#0b2b4e' }}></div>
                                 <div className="swatch" style={{ backgroundColor: '#b08a5d' }}></div>
                             </div>
-                            <h3 className="brand-name">Maison d'Élégance</h3>
-                            <p className="product-title">Heritage Silk Trim Saree Gown for Wedding Receptions</p>
+                            <h3 className="brand-name">
+                                Wine Gold Heavy Embroidered Lehenga – Grand Wedding Occasion Wear
+                            </h3>
+                            <p className="product-title">
+                                Rich wine lehenga with gold heavy embroidery and cape-style dupatta. Stunning for weddings and festive celebrations.
+                            </p>
 
                             <div className="rating-block">
                                 <span className="stars">★★★★★</span>
@@ -207,9 +223,12 @@ function JacketLehenga() {
                                 <div className="swatch" style={{ backgroundColor: '#d1bfae' }}></div>
                                 <div className="swatch" style={{ backgroundColor: '#e8e8e8' }}></div>
                             </div>
-                            <h3 className="brand-name">Queen's Bespoke</h3>
-                            <p className="product-title">Custom-Fit Sequined Saree Dress</p>
-
+                            <h3 className="brand-name">
+                                Royal Blue Floral Embroidered Lehenga – Vibrant Wedding Ethnic Wear
+                            </h3>
+                            <p className="product-title">
+                                Bold royal blue lehenga with vibrant floral embroidery. A striking festive pick for weddings and reception nights.
+                            </p>
                             <div className="rating-block">
                                 <span className="stars">★★★★☆</span>
                                 <span className="rating-count">112</span>
@@ -231,14 +250,18 @@ function JacketLehenga() {
                     {/* CARD 6 */}
                     <div className="product-card" style={{ position: "relative" }}>
                         <WishlistHeart item={{ id: "JacketLehenga_Embroidered Pastel Saree Gown with Dupatta", title: "Embroidered Pastel Saree Gown with Dupatta", image: "https://res.cloudinary.com/dodmxncwc/image/upload/v1775991883/8f77448b-e3e1-4502-9e7b-970ec01ff681_myzq3n.png", brand: "Maison d'Élégance", price: <><span>₹</span>19,500</> }} />
-                        <img src="https://res.cloudinary.com/dodmxncwc/image/upload/v1775991883/8f77448b-e3e1-4502-9e7b-970ec01ff681_myzq3n.png"
+                        <img src="https://res.cloudinary.com/dw95uihdu/image/upload/v1776506806/9912340117849403e1319f7cdb3dc64e-removebg-preview_1_jqtdev.png"
                             alt="Embroidered Saree Gown" className="card-image" style={{ backgroundColor: '#fceceb' }} />
                         <div className="card-content">
                             <div className="swatches">
                                 <div className="swatch" style={{ backgroundColor: '#bb9b9f' }}></div>
                             </div>
-                            <h3 className="brand-name">Maison d'Élégance</h3>
-                            <p className="product-title">Embroidered Pastel Saree Gown with Dupatta</p>
+                            <h3 className="brand-name">
+                                Aubergine Multicolor Embroidered Lehenga with Crop Blouse – Festive Ethnic Wear
+                            </h3>
+                            <p className="product-title">
+                                Vibrant multicolor lehenga with intricate embroidery and matching blouse. A bold festive pick for weddings and celebrations.
+                            </p>
                             <div className="rating-block">
                                 <span className="stars">★★★★☆</span>
                                 <span className="rating-count">85</span>
@@ -263,8 +286,13 @@ function JacketLehenga() {
                                 <div className="swatch" style={{ backgroundColor: '#5d675b' }}></div>
                                 <div className="swatch" style={{ backgroundColor: '#a37272' }}></div>
                             </div>
-                            <h3 className="brand-name">Queen's Wardrobe</h3>
-                            <p className="product-title">Olive Green Sequin Trim Saree</p>
+                            <h3 className="brand-name">
+                                Navy Blue Embroidered Lehenga with Olive Dupatta – Rich Festive Ethnic Wear
+                            </h3>
+                            <p className="product-title">
+                                Deep navy blue embroidered lehenga with contrasting olive green dupatta. A bold and elegant pick for weddings and festive occasions.
+                            </p>
+
                             <div className="rating-block">
                                 <span className="stars">★★★★★</span>
                                 <span className="rating-count">430</span>
@@ -282,15 +310,19 @@ function JacketLehenga() {
                     {/* CARD 8 */}
                     <div className="product-card" style={{ position: "relative" }}>
                         <WishlistHeart item={{ id: "JacketLehenga_Midnight Black Chiffon Saree Gown", title: "Midnight Black Chiffon Saree Gown", image: "https://res.cloudinary.com/dodmxncwc/image/upload/v1775992009/indo_west_2nd-removebg-preview_23_anxrk1.png", brand: "Western Elegance", price: <><span>₹</span>12,499</> }} />
-                        <img src="https://res.cloudinary.com/dodmxncwc/image/upload/v1775992009/indo_west_2nd-removebg-preview_23_anxrk1.png"
+                        <img src="https://res.cloudinary.com/dw95uihdu/image/upload/v1776506492/b83c7d38161462543c13563e92acabff-removebg-preview_bosles.png"
                             alt="Chiffon Saree Gown" className="card-image" />
                         <div className="card-content">
                             <div className="swatches">
                                 <div className="swatch" style={{ backgroundColor: '#2F2A26' }}></div>
                                 <div className="swatch" style={{ backgroundColor: '#e5ccce' }}></div>
                             </div>
-                            <h3 className="brand-name">Western Elegance</h3>
-                            <p className="product-title">Midnight Black Chiffon Saree Gown</p>
+                            <h3 className="brand-name">
+                                Teal Blue Embroidered Lehenga with Cape Jacket – Bridal Occasion Wear
+                            </h3>
+                            <p className="product-title">
+                                Flowy teal lehenga with intricate embroidery and a sheer cape jacket. Perfect for receptions and wedding functions.
+                            </p>
                             <div className="rating-block">
                                 <span className="stars">★★★★☆</span>
                                 <span className="rating-count">612</span>
@@ -308,14 +340,19 @@ function JacketLehenga() {
                     {/* CARD 9 */}
                     <div className="product-card" style={{ position: "relative" }}>
                         <WishlistHeart item={{ id: "JacketLehenga_Royal Navy Blue Designer Saree with Floral Appliques", title: "Royal Navy Blue Designer Saree with Floral Appliques", image: "https://res.cloudinary.com/dodmxncwc/image/upload/v1775992009/indo_west_2nd-removebg-preview_23_anxrk1.png", brand: "Maison d'Élégance", price: <><span>₹</span>28,000</> }} />
-                        <img src="https://res.cloudinary.com/dodmxncwc/image/upload/v1775992009/indo_west_2nd-removebg-preview_23_anxrk1.png"
+                        <img src="https://res.cloudinary.com/dw95uihdu/image/upload/v1776506592/d5a12336a9ef43eb828e02e63b7831f1-removebg-preview_a9pk4x.png"
                             alt="Royal Saree" className="card-image" style={{ backgroundColor: '#fceceb' }} />
                         <div className="card-content">
                             <div className="swatches">
                                 <div className="swatch" style={{ backgroundColor: '#0b2b4e' }}></div>
                             </div>
-                            <h3 className="brand-name">Maison d'Élégance</h3>
-                            <p className="product-title">Royal Navy Blue Designer Saree with Floral Appliques</p>
+                            <h3 className="brand-name">
+                                Floral Printed Lehenga with Sheer Cape – Contemporary Ethnic Wear
+                            </h3>
+                            <p className="product-title">
+                                Lightweight floral lehenga paired with a flowy sheer cape. A modern and stylish festive outfit.
+                            </p>
+
                             <div className="rating-block">
                                 <span className="stars">★★★★★</span>
                                 <span className="rating-count">190</span>
@@ -339,8 +376,12 @@ function JacketLehenga() {
                             <div className="swatches">
                                 <div className="swatch" style={{ backgroundColor: '#d1bfae' }}></div>
                             </div>
-                            <h3 className="brand-name">Queen's Bespoke</h3>
-                            <p className="product-title">Nude Beige Premium Drape</p>
+                            <h3 className="brand-name">
+                                Hot Pink Floral Embroidered Lehenga – Vibrant Festive Bridal Wear
+                            </h3>
+                            <p className="product-title">
+                                Vibrant hot pink lehenga with all-over floral embroidery. A bold and festive pick for weddings and celebrations.
+                            </p>
                             <div className="rating-block">
                                 <span className="stars">★★★★☆</span>
                                 <span className="rating-count">56</span>
@@ -358,14 +399,18 @@ function JacketLehenga() {
                     {/* CARD 11 */}
                     <div className="product-card" style={{ position: "relative" }}>
                         <WishlistHeart item={{ id: "JacketLehenga_Draped Georgette Saree Gown in Rose Pink", title: "Draped Georgette Saree Gown in Rose Pink", image: "https://res.cloudinary.com/dodmxncwc/image/upload/v1775992065/indo_west_2nd-removebg-preview_22_modwto.png", brand: "Maison d'Élégance", price: <><span>₹</span>18,000</> }} />
-                        <img src="https://res.cloudinary.com/dodmxncwc/image/upload/v1775992065/indo_west_2nd-removebg-preview_22_modwto.png"
+                        <img src="https://res.cloudinary.com/dodmxncwc/image/upload/v1775991883/8f77448b-e3e1-4502-9e7b-970ec01ff681_myzq3n.png"
                             alt="Saree Gown" className="card-image" style={{ backgroundColor: '#e5ccce' }} />
                         <div className="card-content">
                             <div className="swatches">
                                 <div className="swatch" style={{ backgroundColor: '#e5ccce' }}></div>
                             </div>
-                            <h3 className="brand-name">Maison d'Élégance</h3>
-                            <p className="product-title">Draped Georgette Saree Gown in Rose Pink</p>
+                            <h3 className="brand-name">
+                                Silver White Embroidered Lehenga with Cape Blouse – Elegant Bridal Wear
+                            </h3>
+                            <p className="product-title">
+                                Exquisite silver white lehenga with a beautiful cape-style embroidered blouse. Perfect for brides and wedding receptions.
+                            </p>
                             <div className="rating-block">
                                 <span className="stars">★★★★★</span>
                                 <span className="rating-count">140</span>
@@ -388,8 +433,12 @@ function JacketLehenga() {
                             <div className="swatches">
                                 <div className="swatch" style={{ backgroundColor: '#a37272' }}></div>
                             </div>
-                            <h3 className="brand-name">Queen's Wardrobe</h3>
-                            <p className="product-title">Pleated Indo-Western Saree with Matching Clutch</p>
+                            <h3 className="brand-name">
+                                Purple Flowy Lehenga with Sheer Dupatta – Dreamy Festive Ethnic Wear
+                            </h3>
+                            <p className="product-title">
+                                Gorgeous purple lehenga with a dramatic flowy silhouette and sheer dupatta. Ideal for festive occasions.
+                            </p>
                             <div className="rating-block">
                                 <span className="stars">★★★★☆</span>
                                 <span className="rating-count">245</span>
@@ -412,8 +461,13 @@ function JacketLehenga() {
                             <div className="swatches">
                                 <div className="swatch" style={{ backgroundColor: '#2F2A26' }}></div>
                             </div>
-                            <h3 className="brand-name">Western Elegance</h3>
-                            <p className="product-title">Minimalist Evening Gown Saree</p>
+                            <h3 className="brand-name">
+                                Orange Ombre Embroidered Lehenga – Bold Festive Bridal Wear
+                            </h3>
+                            <p className="product-title">
+                                Striking orange to deep red ombre lehenga with rich embroidery. A bold, vibrant pick for weddings.
+                            </p>
+
                             <div className="rating-block">
                                 <span className="stars">★★★★★</span>
                                 <span className="rating-count">88</span>
@@ -437,8 +491,12 @@ function JacketLehenga() {
                                 <div className="swatch" style={{ backgroundColor: '#c93b4a' }}></div>
                                 <div className="swatch" style={{ backgroundColor: '#0b2b4e' }}></div>
                             </div>
-                            <h3 className="brand-name">Heritage Silks</h3>
-                            <p className="product-title">Handloom Silk Saree Gown for Receptions</p>
+                            <h3 className="brand-name">
+                                Mint Green Lehenga with Gold Embroidered Jacket – Royal Wedding Wear
+                            </h3>
+                            <p className="product-title">
+                                Elegant mint green lehenga paired with a heavily embroidered gold jacket. Regal and perfect for receptions.
+                            </p>
                             <div className="rating-block">
                                 <span className="stars">★★★★☆</span>
                                 <span className="rating-count">421</span>
@@ -461,8 +519,13 @@ function JacketLehenga() {
                             <div className="swatches">
                                 <div className="swatch" style={{ backgroundColor: '#d1bfae' }}></div>
                             </div>
-                            <h3 className="brand-name">Queen's Bespoke</h3>
-                            <p className="product-title">Signature Embellished Custom Saree</p>
+                            <h3 className="brand-name">
+                                Black Lehenga with Embroidered Cape Blouse – Dramatic Ethnic Wear
+                            </h3>
+                            <p className="product-title">
+                                Sleek black lehenga with an intricately embroidered cape blouse. Bold and sophisticated for cocktail evenings.
+                            </p>
+
                             <div className="rating-block">
                                 <span className="stars">★★★★★</span>
                                 <span className="rating-count">19</span>
@@ -485,8 +548,12 @@ function JacketLehenga() {
                             <div className="swatches">
                                 <div className="swatch" style={{ backgroundColor: '#bb9b9f' }}></div>
                             </div>
-                            <h3 className="brand-name">Maison d'Élégance</h3>
-                            <p className="product-title">Peach Pastel Georgette Gown Saree</p>
+                            <h3 className="brand-name">
+                                Purple Floral Lehenga with Embroidered Jacket – Rich Festive Ethnic Wear
+                            </h3>
+                            <p className="product-title">
+                                Deep purple lehenga with floral embroidery and a matching jacket blouse. A luxurious festive pick.
+                            </p>
                             <div className="rating-block">
                                 <span className="stars">★★★★☆</span>
                                 <span className="rating-count">112</span>
@@ -509,8 +576,12 @@ function JacketLehenga() {
                             <div className="swatches">
                                 <div className="swatch" style={{ backgroundColor: '#5d675b' }}></div>
                             </div>
-                            <h3 className="brand-name">Queen's Wardrobe</h3>
-                            <p className="product-title">Festive Green Pre-Stitched Gown</p>
+                            <h3 className="brand-name">
+                                Brown Gold Embroidered Lehenga with Cape – Earthy Bridal Ethnic Wear
+                            </h3>
+                            <p className="product-title">
+                                Rich brown lehenga with gold embroidery and a flowy cape blouse. Warm and elegant for weddings.
+                            </p>
                             <div className="rating-block">
                                 <span className="stars">★★★★★</span>
                                 <span className="rating-count">478</span>
@@ -533,8 +604,12 @@ function JacketLehenga() {
                             <div className="swatches">
                                 <div className="swatch" style={{ backgroundColor: '#2F2A26' }}></div>
                             </div>
-                            <h3 className="brand-name">Western Elegance</h3>
-                            <p className="product-title">Classic Black Contemporary Wrap Saree</p>
+                            <h3 className="brand-name">
+                                Ivory Cream Embroidered Lehenga with Jacket – Timeless Bridal Wear
+                            </h3>
+                            <p className="product-title">
+                                Elegant ivory cream lehenga with intricate embroidery and a matching jacket. A classic refined look.
+                            </p>
                             <div className="rating-block">
                                 <span className="stars">★★★★☆</span>
                                 <span className="rating-count">334</span>
@@ -551,14 +626,18 @@ function JacketLehenga() {
                     {/* CARD 19 */}
                     <div className="product-card" style={{ position: "relative" }}>
                         <WishlistHeart item={{ id: "JacketLehenga_Rich Indigo Occasion Wear Layout Saree", title: "Rich Indigo Occasion Wear Layout Saree", image: "https://res.cloudinary.com/dodmxncwc/image/upload/v1775992227/indo_west_2nd-removebg-preview_24_ayhqb4.png", brand: "Heritage Silks", price: <><span>₹</span>21,000</> }} />
-                        <img src="https://res.cloudinary.com/dodmxncwc/image/upload/v1775992227/indo_west_2nd-removebg-preview_24_ayhqb4.png"
+                        <img src="https://res.cloudinary.com/dw95uihdu/image/upload/v1776506593/0a3d16c6ce1aa167bbbcdaf8cca66926-removebg-preview_yuadag.png"
                             alt="Royal Saree" className="card-image" style={{ backgroundColor: '#fceceb' }} />
                         <div className="card-content">
                             <div className="swatches">
                                 <div className="swatch" style={{ backgroundColor: '#0b2b4e' }}></div>
                             </div>
-                            <h3 className="brand-name">Heritage Silks</h3>
-                            <p className="product-title">Rich Indigo Occasion Wear Layout Saree</p>
+                            <h3 className="brand-name">
+                                Pastel Pink Lehenga with Long Jacket – Elegant Festive Wear
+                            </h3>
+                            <p className="product-title">
+                                Soft pastel lehenga paired with a long embroidered jacket. Graceful and refined for festive occasions.
+                            </p>
                             <div className="rating-block">
                                 <span className="stars">★★★★★</span>
                                 <span className="rating-count">650</span>
@@ -575,15 +654,19 @@ function JacketLehenga() {
                     {/* CARD 20 */}
                     <div className="product-card" style={{ position: "relative" }}>
                         <WishlistHeart item={{ id: "JacketLehenga_Taupe High-Society Event Saree", title: "Taupe High-Society Event Saree", image: "https://res.cloudinary.com/dodmxncwc/image/upload/v1775992380/indo_west_2nd-removebg-preview_28_rzrwzx.png", brand: "Queen's Bespoke", price: <><span>₹</span>30,800</> }} />
-                        <img src="https://res.cloudinary.com/dodmxncwc/image/upload/v1775992380/indo_west_2nd-removebg-preview_28_rzrwzx.png"
+                        <img src="https://res.cloudinary.com/dw95uihdu/image/upload/v1776506806/65ba29cb64d16785717636d97bfabcd2-removebg-preview_k39jri.png"
                             alt="Premium Drape" className="card-image" style={{ backgroundColor: '#e5e0dc' }} />
                         <div className="card-content">
                             <div className="swatches">
                                 <div className="swatch" style={{ backgroundColor: '#d1bfae' }}></div>
                                 <div className="swatch" style={{ backgroundColor: '#bb9b9f' }}></div>
                             </div>
-                            <h3 className="brand-name">Queen's Bespoke</h3>
-                            <p className="product-title">Taupe High-Society Event Saree</p>
+                            <h3 className="brand-name">
+                                Grey Pleated Lehenga with Embroidered Jacket – Modern Ethnic Wear
+                            </h3>
+                            <p className="product-title">
+                                Pleated grey lehenga paired with a structured embroidered jacket. Contemporary and sophisticated.
+                            </p>
                             <div className="rating-block">
                                 <span className="stars">★★★★★</span>
                                 <span className="rating-count">93</span>
@@ -599,7 +682,7 @@ function JacketLehenga() {
 
                 </div>
             </div>
-            
+
             {/* Hamburger Sidebar Menu */}
             <div className={`sidebar-overlay ${isSidebarOpen ? 'active' : ''}`} id="sidebar-overlay" onClick={closeSidebar}></div>
             <div className={`sidebar-panel ${isSidebarOpen ? 'active' : ''}`} id="sidebar">

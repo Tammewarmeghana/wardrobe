@@ -22,12 +22,12 @@ function PeplumPantsuit() {
 
     return (
         <div className="gownsaree-wrapper gown-saree-page-container">
-            <div className="page-container" style={{overflowX: 'hidden'}}>
+            <div className="page-container" style={{ overflowX: 'hidden' }}>
                 {/* Header & Tabs */}
                 <div className="page-header">
                     {/* Search & Actions */}
                     <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: '24px', paddingBottom: '20px' }}>
-                        
+
                         <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
                             <button onClick={() => navigate(-1)} title="Go Back" style={{ background: 'none', border: 'none', cursor: 'pointer', padding: '0', display: 'flex', alignItems: 'center', color: 'var(--text-main)' }}>
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -52,25 +52,25 @@ function PeplumPantsuit() {
                 {/* Filters */}
                 <div className="filter-row">
                     <div className="filter-pill">Price <svg width="12" height="12" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" strokeWidth="2">
-                            <path d="M6 9l6 6 6-6" />
-                        </svg></div>
+                        stroke="currentColor" strokeWidth="2">
+                        <path d="M6 9l6 6 6-6" />
+                    </svg></div>
                     <div className="filter-pill">4 stars & up <svg width="12" height="12" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" strokeWidth="2">
-                            <path d="M6 9l6 6 6-6" />
-                        </svg></div>
+                        stroke="currentColor" strokeWidth="2">
+                        <path d="M6 9l6 6 6-6" />
+                    </svg></div>
                     <div className="filter-pill">Brand <svg width="12" height="12" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" strokeWidth="2">
-                            <path d="M6 9l6 6 6-6" />
-                        </svg></div>
+                        stroke="currentColor" strokeWidth="2">
+                        <path d="M6 9l6 6 6-6" />
+                    </svg></div>
                     <div className="filter-pill">Color <svg width="12" height="12" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" strokeWidth="2">
-                            <path d="M6 9l6 6 6-6" />
-                        </svg></div>
+                        stroke="currentColor" strokeWidth="2">
+                        <path d="M6 9l6 6 6-6" />
+                    </svg></div>
                     <div className="filter-pill">Fabric <svg width="12" height="12" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" strokeWidth="2">
-                            <path d="M6 9l6 6 6-6" />
-                        </svg></div>
+                        stroke="currentColor" strokeWidth="2">
+                        <path d="M6 9l6 6 6-6" />
+                    </svg></div>
                 </div>
 
                 {/* Product Grid */}
@@ -87,8 +87,13 @@ function PeplumPantsuit() {
                                 <div className="swatch" style={{ backgroundColor: '#bb9b9f' }}></div>
                                 <div className="swatch" style={{ backgroundColor: '#2F2A26' }}></div>
                             </div>
-                            <h3 className="brand-name">Maison d'Élégance</h3>
-                            <p className="product-title">Premium Pre-Draped Saree Gown in Soft Georgette with Embellished Belt</p>
+                            <h3 className="brand-name">
+                                Champagne Embellished Peplum Suit – Elegant Festive Wear
+                            </h3>
+                            <p className="product-title">
+                                Elegant peplum top with intricate detailing paired with tailored pants. A refined festive look for special occasions.
+                            </p>
+
 
                             <div className="rating-block">
                                 <span className="stars">★★★★☆</span>
@@ -117,8 +122,12 @@ function PeplumPantsuit() {
                                 <div className="swatch" style={{ backgroundColor: '#a37272' }}></div>
                                 <div className="swatch" style={{ backgroundColor: '#5d675b' }}></div>
                             </div>
-                            <h3 className="brand-name">Queen's Wardrobe</h3>
-                            <p className="product-title">Modern Indo-Western Fusion Saree with Attached Pallu</p>
+                            <h3 className="brand-name">
+                                Blush Pink Peplum Pantsuit – Soft Feminine Ethnic Wear
+                            </h3>
+                            <p className="product-title">
+                                Soft-toned peplum top with subtle texture styled with straight-fit pants. Graceful and elegant for celebrations.
+                            </p>
 
                             <div className="rating-block">
                                 <span className="stars">★★★★★</span>
@@ -146,8 +155,12 @@ function PeplumPantsuit() {
                             <div className="swatches">
                                 <div className="swatch" style={{ backgroundColor: '#2F2A26' }}></div>
                             </div>
-                            <h3 className="brand-name">Western Elegance</h3>
-                            <p className="product-title">Cocktail Saree Gown with Cape Sleeves</p>
+                            <h3 className="brand-name">
+                                Sage Green Peplum Suit – Modern Ethnic Wear
+                            </h3>
+                            <p className="product-title">
+                                Structured peplum with delicate embroidery paired with flowy pants. A contemporary festive outfit.
+                            </p>
 
                             <div className="rating-block">
                                 <span className="stars">★★★★☆</span>
@@ -177,8 +190,13 @@ function PeplumPantsuit() {
                                 <div className="swatch" style={{ backgroundColor: '#0b2b4e' }}></div>
                                 <div className="swatch" style={{ backgroundColor: '#b08a5d' }}></div>
                             </div>
-                            <h3 className="brand-name">Maison d'Élégance</h3>
-                            <p className="product-title">Heritage Silk Trim Saree Gown for Wedding Receptions</p>
+                            <h3 className="brand-name">
+                                Mauve Designer Peplum Set – Stylish Festive Wear
+                            </h3>
+                            <p className="product-title">
+                                Textured peplum top with flared hem styled with wide-leg pants. Elegant and modern.
+                            </p>
+
 
                             <div className="rating-block">
                                 <span className="stars">★★★★★</span>
@@ -207,8 +225,13 @@ function PeplumPantsuit() {
                                 <div className="swatch" style={{ backgroundColor: '#d1bfae' }}></div>
                                 <div className="swatch" style={{ backgroundColor: '#e8e8e8' }}></div>
                             </div>
-                            <h3 className="brand-name">Queen's Bespoke</h3>
-                            <p className="product-title">Custom-Fit Sequined Saree Dress</p>
+                            <h3 className="brand-name">
+                                Ivory Classic Peplum Suit – Timeless Ethnic Wear
+                            </h3>
+                            <p className="product-title">
+                                Minimal peplum top with clean lines paired with soft flared pants. A classic festive look.
+                            </p>
+
 
                             <div className="rating-block">
                                 <span className="stars">★★★★☆</span>
@@ -237,8 +260,13 @@ function PeplumPantsuit() {
                             <div className="swatches">
                                 <div className="swatch" style={{ backgroundColor: '#bb9b9f' }}></div>
                             </div>
-                            <h3 className="brand-name">Maison d'Élégance</h3>
-                            <p className="product-title">Embroidered Pastel Saree Gown with Dupatta</p>
+                            <h3 className="brand-name">
+                                Black Statement Peplum Suit – Bold Evening Wear
+                            </h3>
+                            <p className="product-title">
+                                Bold peplum silhouette with fitted pants. Perfect for evening occasions and stylish events.
+                            </p>
+
                             <div className="rating-block">
                                 <span className="stars">★★★★☆</span>
                                 <span className="rating-count">85</span>
@@ -263,8 +291,12 @@ function PeplumPantsuit() {
                                 <div className="swatch" style={{ backgroundColor: '#5d675b' }}></div>
                                 <div className="swatch" style={{ backgroundColor: '#a37272' }}></div>
                             </div>
-                            <h3 className="brand-name">Queen's Wardrobe</h3>
-                            <p className="product-title">Olive Green Sequin Trim Saree</p>
+                            <h3 className="brand-name">
+                                Powder Blue Peplum Set – Soft Festive Ethnic Wear
+                            </h3>
+                            <p className="product-title">
+                                Soft peplum top with layered detailing paired with relaxed-fit pants. Chic and elegant.
+                            </p>
                             <div className="rating-block">
                                 <span className="stars">★★★★★</span>
                                 <span className="rating-count">430</span>
@@ -289,8 +321,12 @@ function PeplumPantsuit() {
                                 <div className="swatch" style={{ backgroundColor: '#2F2A26' }}></div>
                                 <div className="swatch" style={{ backgroundColor: '#e5ccce' }}></div>
                             </div>
-                            <h3 className="brand-name">Western Elegance</h3>
-                            <p className="product-title">Midnight Black Chiffon Saree Gown</p>
+                            <h3 className="brand-name">
+                                Blush Satin Peplum Suit – Luxe Ethnic Wear
+                            </h3>
+                            <p className="product-title">
+                                Flowy satin peplum with soft volume sleeves paired with straight pants. Perfect for receptions.
+                            </p>
                             <div className="rating-block">
                                 <span className="stars">★★★★☆</span>
                                 <span className="rating-count">612</span>
@@ -314,8 +350,12 @@ function PeplumPantsuit() {
                             <div className="swatches">
                                 <div className="swatch" style={{ backgroundColor: '#0b2b4e' }}></div>
                             </div>
-                            <h3 className="brand-name">Maison d'Élégance</h3>
-                            <p className="product-title">Royal Navy Blue Designer Saree with Floral Appliques</p>
+                            <h3 className="brand-name">
+                                Red Structured Peplum Suit – Bold Festive Wear
+                            </h3>
+                            <p className="product-title">
+                                Sharp peplum cut with fitted trousers. A powerful and stylish festive outfit.
+                            </p>
                             <div className="rating-block">
                                 <span className="stars">★★★★★</span>
                                 <span className="rating-count">190</span>
@@ -339,8 +379,13 @@ function PeplumPantsuit() {
                             <div className="swatches">
                                 <div className="swatch" style={{ backgroundColor: '#d1bfae' }}></div>
                             </div>
-                            <h3 className="brand-name">Queen's Bespoke</h3>
-                            <p className="product-title">Nude Beige Premium Drape</p>
+                            <h3 className="brand-name">
+                                Royal Blue Peplum Suit – Statement Ethnic Wear
+                            </h3>
+                            <p className="product-title">
+                                Rich-toned peplum with embellished neckline paired with sleek pants. Perfect for bold festive looks.
+                            </p>
+
                             <div className="rating-block">
                                 <span className="stars">★★★★☆</span>
                                 <span className="rating-count">56</span>
@@ -364,8 +409,13 @@ function PeplumPantsuit() {
                             <div className="swatches">
                                 <div className="swatch" style={{ backgroundColor: '#e5ccce' }}></div>
                             </div>
-                            <h3 className="brand-name">Maison d'Élégance</h3>
-                            <p className="product-title">Draped Georgette Saree Gown in Rose Pink</p>
+                            <h3 className="brand-name">
+                                Mint Green Peplum Pantsuit – Fresh Festive Wear
+                            </h3>
+                            <p className="product-title">
+                                Pastel peplum with soft detailing paired with flared pants. Ideal for daytime events.
+                            </p>
+
                             <div className="rating-block">
                                 <span className="stars">★★★★★</span>
                                 <span className="rating-count">140</span>
@@ -388,8 +438,12 @@ function PeplumPantsuit() {
                             <div className="swatches">
                                 <div className="swatch" style={{ backgroundColor: '#a37272' }}></div>
                             </div>
-                            <h3 className="brand-name">Queen's Wardrobe</h3>
-                            <p className="product-title">Pleated Indo-Western Saree with Matching Clutch</p>
+                            <h3 className="brand-name">
+                                Soft Pink Formal Peplum Suit – Modern Elegant Wear
+                            </h3>
+                            <p className="product-title">
+                                Tailored peplum blazer with fitted pants. Clean and polished for formal occasions.
+                            </p>
                             <div className="rating-block">
                                 <span className="stars">★★★★☆</span>
                                 <span className="rating-count">245</span>
@@ -406,14 +460,18 @@ function PeplumPantsuit() {
                     {/* CARD 13 */}
                     <div className="product-card" style={{ position: "relative" }}>
                         <WishlistHeart item={{ id: "PeplumPantsuit_Minimalist Evening Gown Saree", title: "Minimalist Evening Gown Saree", image: "https://res.cloudinary.com/dugksxwkr/image/upload/v1776069837/p14-removebg-preview_alhi8c.png", brand: "Western Elegance", price: <><span>₹</span>21,000</> }} />
-                        <img src="https://res.cloudinary.com/dugksxwkr/image/upload/v1776069837/p14-removebg-preview_alhi8c.png"
+                        <img src="https://res.cloudinary.com/dugksxwkr/image/upload/v1776512018/53b250fe418e9f24b848baf393506529-removebg-preview_jfrigl.png"
                             alt="Saree Gown" className="card-image" />
                         <div className="card-content">
                             <div className="swatches">
                                 <div className="swatch" style={{ backgroundColor: '#2F2A26' }}></div>
                             </div>
-                            <h3 className="brand-name">Western Elegance</h3>
-                            <p className="product-title">Minimalist Evening Gown Saree</p>
+                            <h3 className="brand-name">
+                                Yellow Peplum Suit – Minimal Ethnic Luxe
+                            </h3>
+                            <p className="product-title">
+                                Neutral-toned peplum with structured fit paired with straight pants. Understated elegance.
+                            </p>
                             <div className="rating-block">
                                 <span className="stars">★★★★★</span>
                                 <span className="rating-count">88</span>
@@ -437,8 +495,12 @@ function PeplumPantsuit() {
                                 <div className="swatch" style={{ backgroundColor: '#c93b4a' }}></div>
                                 <div className="swatch" style={{ backgroundColor: '#0b2b4e' }}></div>
                             </div>
-                            <h3 className="brand-name">Heritage Silks</h3>
-                            <p className="product-title">Handloom Silk Saree Gown for Receptions</p>
+                            <h3 className="brand-name">
+                                Navy Blue Power Peplum Set – Sophisticated Evening Wear
+                            </h3>
+                            <p className="product-title">
+                                Sleek peplum design paired with wide-leg pants. Perfect for evening styling.
+                            </p>
                             <div className="rating-block">
                                 <span className="stars">★★★★☆</span>
                                 <span className="rating-count">421</span>
@@ -461,8 +523,12 @@ function PeplumPantsuit() {
                             <div className="swatches">
                                 <div className="swatch" style={{ backgroundColor: '#d1bfae' }}></div>
                             </div>
-                            <h3 className="brand-name">Queen's Bespoke</h3>
-                            <p className="product-title">Signature Embellished Custom Saree</p>
+                            <h3 className="brand-name">
+                                Pearl White Peplum Suit – Refined Minimal Ethnic Wear
+                            </h3>
+                            <p className="product-title">
+                                Light peplum top with soft flare paired with tailored pants. Elegant and timeless.
+                            </p>
                             <div className="rating-block">
                                 <span className="stars">★★★★★</span>
                                 <span className="rating-count">19</span>
@@ -485,8 +551,12 @@ function PeplumPantsuit() {
                             <div className="swatches">
                                 <div className="swatch" style={{ backgroundColor: '#bb9b9f' }}></div>
                             </div>
-                            <h3 className="brand-name">Maison d'Élégance</h3>
-                            <p className="product-title">Peach Pastel Georgette Gown Saree</p>
+                            <h3 className="brand-name">
+                                Deep Purple Peplum Suit – Rich Festive Ethnic Wear
+                            </h3>
+                            <p className="product-title">
+                                Rich-toned peplum with sharp tailoring paired with flared pants. A bold festive choice.
+                            </p>
                             <div className="rating-block">
                                 <span className="stars">★★★★☆</span>
                                 <span className="rating-count">112</span>
@@ -509,8 +579,12 @@ function PeplumPantsuit() {
                             <div className="swatches">
                                 <div className="swatch" style={{ backgroundColor: '#5d675b' }}></div>
                             </div>
-                            <h3 className="brand-name">Queen's Wardrobe</h3>
-                            <p className="product-title">Festive Green Pre-Stitched Gown</p>
+                            <h3 className="brand-name">
+                                Ivory Modern Peplum Set – Contemporary Ethnic Wear
+                            </h3>
+                            <p className="product-title">
+                                Clean peplum silhouette paired with structured pants. A chic modern outfit.
+                            </p>
                             <div className="rating-block">
                                 <span className="stars">★★★★★</span>
                                 <span className="rating-count">478</span>
@@ -533,8 +607,13 @@ function PeplumPantsuit() {
                             <div className="swatches">
                                 <div className="swatch" style={{ backgroundColor: '#2F2A26' }}></div>
                             </div>
-                            <h3 className="brand-name">Western Elegance</h3>
-                            <p className="product-title">Classic Black Contemporary Wrap Saree</p>
+                            <h3 className="brand-name">
+                                Black Contemporary Peplum Suit – Stylish Evening Wear
+                            </h3>
+                            <p className="product-title">
+                                Modern peplum design with fitted pants. Sleek and bold for evening events.
+                            </p>
+
                             <div className="rating-block">
                                 <span className="stars">★★★★☆</span>
                                 <span className="rating-count">334</span>
@@ -557,8 +636,12 @@ function PeplumPantsuit() {
                             <div className="swatches">
                                 <div className="swatch" style={{ backgroundColor: '#0b2b4e' }}></div>
                             </div>
-                            <h3 className="brand-name">Heritage Silks</h3>
-                            <p className="product-title">Rich Indigo Occasion Wear Layout Saree</p>
+                            <h3 className="brand-name">
+                                Beige Casual Peplum Set – Everyday Ethnic Wear
+                            </h3>
+                            <p className="product-title">
+                                Relaxed peplum design paired with straight pants. Comfortable and elegant for day wear.
+                            </p>
                             <div className="rating-block">
                                 <span className="stars">★★★★★</span>
                                 <span className="rating-count">650</span>
@@ -582,8 +665,12 @@ function PeplumPantsuit() {
                                 <div className="swatch" style={{ backgroundColor: '#d1bfae' }}></div>
                                 <div className="swatch" style={{ backgroundColor: '#bb9b9f' }}></div>
                             </div>
-                            <h3 className="brand-name">Queen's Bespoke</h3>
-                            <p className="product-title">Taupe High-Society Event Saree</p>
+                            <h3 className="brand-name">
+                                Taupe Elegant Peplum Suit – Soft Festive Ethnic Wear
+                            </h3>
+                            <p className="product-title">
+                                Soft-toned peplum with minimal detailing paired with flowy pants. Graceful and refined.
+                            </p>
                             <div className="rating-block">
                                 <span className="stars">★★★★★</span>
                                 <span className="rating-count">93</span>
@@ -599,7 +686,7 @@ function PeplumPantsuit() {
 
                 </div>
             </div>
-            
+
             {/* Hamburger Sidebar Menu */}
             <div className={`sidebar-overlay ${isSidebarOpen ? 'active' : ''}`} id="sidebar-overlay" onClick={closeSidebar}></div>
             <div className={`sidebar-panel ${isSidebarOpen ? 'active' : ''}`} id="sidebar">

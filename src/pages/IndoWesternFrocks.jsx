@@ -1,4 +1,4 @@
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                import React, { useState } from 'react';
+import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import './gownsaree.css';
 import './sidebar.css';
@@ -22,12 +22,12 @@ function IndoWesternFrocks() {
 
     return (
         <div className="gownsaree-wrapper gown-saree-page-container">
-            <div className="page-container" style={{overflowX: 'hidden'}}>
+            <div className="page-container" style={{ overflowX: 'hidden' }}>
                 {/* Header & Tabs */}
                 <div className="page-header">
                     {/* Search & Actions */}
                     <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: '24px', paddingBottom: '20px' }}>
-                        
+
                         <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
                             <button onClick={() => navigate(-1)} title="Go Back" style={{ background: 'none', border: 'none', cursor: 'pointer', padding: '0', display: 'flex', alignItems: 'center', color: 'var(--text-main)' }}>
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -52,25 +52,25 @@ function IndoWesternFrocks() {
                 {/* Filters */}
                 <div className="filter-row">
                     <div className="filter-pill">Price <svg width="12" height="12" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" strokeWidth="2">
-                            <path d="M6 9l6 6 6-6" />
-                        </svg></div>
+                        stroke="currentColor" strokeWidth="2">
+                        <path d="M6 9l6 6 6-6" />
+                    </svg></div>
                     <div className="filter-pill">4 stars & up <svg width="12" height="12" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" strokeWidth="2">
-                            <path d="M6 9l6 6 6-6" />
-                        </svg></div>
+                        stroke="currentColor" strokeWidth="2">
+                        <path d="M6 9l6 6 6-6" />
+                    </svg></div>
                     <div className="filter-pill">Brand <svg width="12" height="12" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" strokeWidth="2">
-                            <path d="M6 9l6 6 6-6" />
-                        </svg></div>
+                        stroke="currentColor" strokeWidth="2">
+                        <path d="M6 9l6 6 6-6" />
+                    </svg></div>
                     <div className="filter-pill">Color <svg width="12" height="12" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" strokeWidth="2">
-                            <path d="M6 9l6 6 6-6" />
-                        </svg></div>
+                        stroke="currentColor" strokeWidth="2">
+                        <path d="M6 9l6 6 6-6" />
+                    </svg></div>
                     <div className="filter-pill">Fabric <svg width="12" height="12" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" strokeWidth="2">
-                            <path d="M6 9l6 6 6-6" />
-                        </svg></div>
+                        stroke="currentColor" strokeWidth="2">
+                        <path d="M6 9l6 6 6-6" />
+                    </svg></div>
                 </div>
 
                 {/* Product Grid */}
@@ -79,7 +79,7 @@ function IndoWesternFrocks() {
                     {/* CARD 1 */}
                     <div className="product-card" style={{ position: "relative" }}>
                         <WishlistHeart item={{ id: "IndoWesternFrocks_Premium Pre-Draped Saree Gown in Soft Georgette with Embellished Belt", title: "Premium Pre-Draped Saree Gown in Soft Georgette with Embellished Belt", image: "https://res.cloudinary.com/dodmxncwc/image/upload/q_auto/f_auto/v1775912540/indo_western_1st-removebg-preview_qxzjrq.png", brand: "Maison d'Élégance", price: <><span>₹</span>14,999</> }} />
-                        <img src="https://res.cloudinary.com/dodmxncwc/image/upload/q_auto/f_auto/v1775912540/indo_western_1st-removebg-preview_qxzjrq.png"
+                        <img src="https://res.cloudinary.com/dugksxwkr/image/upload/v1776495517/3ba13a5dc018a2a1ef388551bf441025-removebg-preview_du5trc.png"
                             alt="Saree Gown" className="card-image" style={{ backgroundColor: '#e5ccce' }} />
                         <div className="card-content">
                             <div className="swatches">
@@ -87,8 +87,12 @@ function IndoWesternFrocks() {
                                 <div className="swatch" style={{ backgroundColor: '#bb9b9f' }}></div>
                                 <div className="swatch" style={{ backgroundColor: '#2F2A26' }}></div>
                             </div>
-                            <h3 className="brand-name">Maison d'Élégance</h3>
-                            <p className="product-title">Premium Pre-Draped Saree Gown in Soft Georgette with Embellished Belt</p>
+                            <h3 className="brand-name">
+                                Champagne Embroidered Ball Gown – Luxe Evening Wear
+                            </h3>
+                            <p className="product-title">
+                                Elegant champagne gown with intricate embroidery and voluminous flare. Perfect for receptions and grand occasions.
+                            </p>
 
                             <div className="rating-block">
                                 <span className="stars">★★★★☆</span>
@@ -110,16 +114,19 @@ function IndoWesternFrocks() {
                     {/* CARD 2 */}
                     <div className="product-card" style={{ position: "relative" }}>
                         <WishlistHeart item={{ id: "IndoWesternFrocks_Modern Indo-Western Fusion Saree with Attached Pallu", title: "Modern Indo-Western Fusion Saree with Attached Pallu", image: "https://res.cloudinary.com/dodmxncwc/image/upload/v1775885562/INDO_WESTERN_collection_1_q1xrzt.jpg", brand: "Queen's Wardrobe", price: <><span>₹</span>18,499</> }} />
-                        <img src="https://res.cloudinary.com/dodmxncwc/image/upload/v1775885562/INDO_WESTERN_collection_1_q1xrzt.jpg"
+                        <img src="https://res.cloudinary.com/dugksxwkr/image/upload/v1776495519/ab72ca0b04667a9a70eb8ffcbbfda0a6-removebg-preview_nbx5eu.png"
                             alt="Indo Western Saree" className="card-image" />
                         <div className="card-content">
                             <div className="swatches">
                                 <div className="swatch" style={{ backgroundColor: '#a37272' }}></div>
                                 <div className="swatch" style={{ backgroundColor: '#5d675b' }}></div>
                             </div>
-                            <h3 className="brand-name">Queen's Wardrobe</h3>
-                            <p className="product-title">Modern Indo-Western Fusion Saree with Attached Pallu</p>
-
+                            <h3 className="brand-name">
+                                Lavender Layered Ruffle Gown – Feminine Party Wear
+                            </h3>
+                            <p className="product-title">
+                                Soft lavender gown with cascading ruffle layers and fitted bodice. A dreamy evening outfit.
+                            </p>
                             <div className="rating-block">
                                 <span className="stars">★★★★★</span>
                                 <span className="rating-count">892</span>
@@ -140,14 +147,18 @@ function IndoWesternFrocks() {
                     {/* CARD 3 */}
                     <div className="product-card" style={{ position: "relative" }}>
                         <WishlistHeart item={{ id: "IndoWesternFrocks_Cocktail Saree Gown with Cape Sleeves", title: "Cocktail Saree Gown with Cape Sleeves", image: "https://res.cloudinary.com/dodmxncwc/image/upload/v1775884629/western_iqmuat.jpg", brand: "Western Elegance", price: <><span>₹</span>24,999</> }} />
-                        <img src="https://res.cloudinary.com/dodmxncwc/image/upload/v1775884629/western_iqmuat.jpg"
+                        <img src="https://res.cloudinary.com/dugksxwkr/image/upload/v1776495519/34f67b978ba181b1179dff2a05e5b962-removebg-preview_eihd5e.png"
                             alt="Modern Saree" className="card-image" />
                         <div className="card-content">
                             <div className="swatches">
                                 <div className="swatch" style={{ backgroundColor: '#2F2A26' }}></div>
                             </div>
-                            <h3 className="brand-name">Western Elegance</h3>
-                            <p className="product-title">Cocktail Saree Gown with Cape Sleeves</p>
+                            <h3 className="brand-name">
+                                Teal Tiered Tulle Gown – Statement Evening Wear
+                            </h3>
+                            <p className="product-title">
+                                Dramatic tiered tulle gown with a structured bodice. Bold and elegant for special events.
+                            </p>
 
                             <div className="rating-block">
                                 <span className="stars">★★★★☆</span>
@@ -169,7 +180,7 @@ function IndoWesternFrocks() {
                     {/* CARD 4 */}
                     <div className="product-card" style={{ position: "relative" }}>
                         <WishlistHeart item={{ id: "IndoWesternFrocks_Heritage Silk Trim Saree Gown for Wedding Receptions", title: "Heritage Silk Trim Saree Gown for Wedding Receptions", image: "https://res.cloudinary.com/dodmxncwc/image/upload/v1775827984/a58a309b-2a19-49a4-82fa-3ad68b470ebb_ey4nlr.png", brand: "Maison d'Élégance", price: <><span>₹</span>21,000</> }} />
-                        <img src="https://res.cloudinary.com/dodmxncwc/image/upload/v1775827984/a58a309b-2a19-49a4-82fa-3ad68b470ebb_ey4nlr.png"
+                        <img src="https://res.cloudinary.com/dugksxwkr/image/upload/v1776495517/cc93bfb0863dc6e9b3966cfc322a2c23-removebg-preview_xs33ea.png"
                             alt="Traditional Saree Gown" className="card-image" style={{ backgroundColor: '#fceceb' }} />
                         <div className="card-content">
                             <div className="swatches">
@@ -177,8 +188,12 @@ function IndoWesternFrocks() {
                                 <div className="swatch" style={{ backgroundColor: '#0b2b4e' }}></div>
                                 <div className="swatch" style={{ backgroundColor: '#b08a5d' }}></div>
                             </div>
-                            <h3 className="brand-name">Maison d'Élégance</h3>
-                            <p className="product-title">Heritage Silk Trim Saree Gown for Wedding Receptions</p>
+                            <h3 className="brand-name">
+                                Blush Embroidered Flare Gown – Elegant Occasion Wear
+                            </h3>
+                            <p className="product-title">
+                                Soft blush gown with delicate embroidery and full flare silhouette. Timeless and graceful.
+                            </p>
 
                             <div className="rating-block">
                                 <span className="stars">★★★★★</span>
@@ -200,15 +215,19 @@ function IndoWesternFrocks() {
                     {/* CARD 5 */}
                     <div className="product-card" style={{ position: "relative" }}>
                         <WishlistHeart item={{ id: "IndoWesternFrocks_Custom-Fit Sequined Saree Dress", title: "Custom-Fit Sequined Saree Dress", image: "https://res.cloudinary.com/dodmxncwc/image/upload/v1775886477/resized_image_svojak.png", brand: "Queen's Bespoke", price: <><span>₹</span>38,500</> }} />
-                        <img src="https://res.cloudinary.com/dodmxncwc/image/upload/v1775886477/resized_image_svojak.png"
+                        <img src="https://res.cloudinary.com/dugksxwkr/image/upload/v1776495516/d045146c8daebb861770211bee7f669c-removebg-preview_vcroou.png"
                             alt="Bespoke Saree Gown" className="card-image" style={{ backgroundColor: '#e5e0dc' }} />
                         <div className="card-content">
                             <div className="swatches">
                                 <div className="swatch" style={{ backgroundColor: '#d1bfae' }}></div>
                                 <div className="swatch" style={{ backgroundColor: '#e8e8e8' }}></div>
                             </div>
-                            <h3 className="brand-name">Queen's Bespoke</h3>
-                            <p className="product-title">Custom-Fit Sequined Saree Dress</p>
+                            <h3 className="brand-name">
+                                Dusty Pink Ruffle Gown – Soft Glam Wear
+                            </h3>
+                            <p className="product-title">
+                                Flowy dusty pink gown with layered detailing. Perfect for a romantic evening look.
+                            </p>
 
                             <div className="rating-block">
                                 <span className="stars">★★★★☆</span>
@@ -231,14 +250,19 @@ function IndoWesternFrocks() {
                     {/* CARD 6 */}
                     <div className="product-card" style={{ position: "relative" }}>
                         <WishlistHeart item={{ id: "IndoWesternFrocks_Embroidered Pastel Saree Gown with Dupatta", title: "Embroidered Pastel Saree Gown with Dupatta", image: "https://res.cloudinary.com/dodmxncwc/image/upload/q_auto/f_auto/v1775912540/indo_western_1st-removebg-preview_qxzjrq.png", brand: "Maison d'Élégance", price: <><span>₹</span>19,500</> }} />
-                        <img src="https://res.cloudinary.com/dodmxncwc/image/upload/q_auto/f_auto/v1775912540/indo_western_1st-removebg-preview_qxzjrq.png"
+                        <img src="https://res.cloudinary.com/dugksxwkr/image/upload/v1776495517/0a09bd0938349d419e772d718e2aa896-removebg-preview_oo8mjj.png"
                             alt="Embroidered Saree Gown" className="card-image" style={{ backgroundColor: '#fceceb' }} />
                         <div className="card-content">
                             <div className="swatches">
                                 <div className="swatch" style={{ backgroundColor: '#bb9b9f' }}></div>
                             </div>
-                            <h3 className="brand-name">Maison d'Élégance</h3>
-                            <p className="product-title">Embroidered Pastel Saree Gown with Dupatta</p>
+                            <h3 className="brand-name">
+                                Orange Tulle Ball Gown – Bold Festive Wear
+                            </h3>
+                            <p className="product-title">
+                                Vibrant orange gown with voluminous tulle layers. A striking statement piece.
+                            </p>
+
                             <div className="rating-block">
                                 <span className="stars">★★★★☆</span>
                                 <span className="rating-count">85</span>
@@ -256,15 +280,19 @@ function IndoWesternFrocks() {
                     {/* CARD 7 */}
                     <div className="product-card" style={{ position: "relative" }}>
                         <WishlistHeart item={{ id: "IndoWesternFrocks_Olive Green Sequin Trim Saree", title: "Olive Green Sequin Trim Saree", image: "https://res.cloudinary.com/dodmxncwc/image/upload/v1775885562/INDO_WESTERN_collection_1_q1xrzt.jpg", brand: "Queen's Wardrobe", price: <><span>₹</span>16,200</> }} />
-                        <img src="https://res.cloudinary.com/dodmxncwc/image/upload/v1775885562/INDO_WESTERN_collection_1_q1xrzt.jpg"
+                        <img src="https://res.cloudinary.com/dugksxwkr/image/upload/v1776508463/ba1e0a2e5588bb02f1ca55f13675ce19-removebg-preview_rntw6i.png"
                             alt="Sequin Saree" className="card-image" />
                         <div className="card-content">
                             <div className="swatches">
                                 <div className="swatch" style={{ backgroundColor: '#5d675b' }}></div>
                                 <div className="swatch" style={{ backgroundColor: '#a37272' }}></div>
                             </div>
-                            <h3 className="brand-name">Queen's Wardrobe</h3>
-                            <p className="product-title">Olive Green Sequin Trim Saree</p>
+                            <h3 className="brand-name">
+                                Deep Purple Ruffle Slit Gown – Dramatic Party Wear
+                            </h3>
+                            <p className="product-title">
+                                Rich purple gown with layered ruffles and thigh slit. Bold and glamorous.
+                            </p>
                             <div className="rating-block">
                                 <span className="stars">★★★★★</span>
                                 <span className="rating-count">430</span>
@@ -282,15 +310,19 @@ function IndoWesternFrocks() {
                     {/* CARD 8 */}
                     <div className="product-card" style={{ position: "relative" }}>
                         <WishlistHeart item={{ id: "IndoWesternFrocks_Midnight Black Chiffon Saree Gown", title: "Midnight Black Chiffon Saree Gown", image: "https://res.cloudinary.com/dodmxncwc/image/upload/v1775884629/western_iqmuat.jpg", brand: "Western Elegance", price: <><span>₹</span>12,499</> }} />
-                        <img src="https://res.cloudinary.com/dodmxncwc/image/upload/v1775884629/western_iqmuat.jpg"
+                        <img src="https://res.cloudinary.com/dugksxwkr/image/upload/v1776508459/e50165984272afc90f09931908f7eb7e-removebg-preview_aw7ldo.png"
                             alt="Chiffon Saree Gown" className="card-image" />
                         <div className="card-content">
                             <div className="swatches">
                                 <div className="swatch" style={{ backgroundColor: '#2F2A26' }}></div>
                                 <div className="swatch" style={{ backgroundColor: '#e5ccce' }}></div>
                             </div>
-                            <h3 className="brand-name">Western Elegance</h3>
-                            <p className="product-title">Midnight Black Chiffon Saree Gown</p>
+                            <h3 className="brand-name">
+                                Emerald Green Embroidered Gown – Elegant Evening Wear
+                            </h3>
+                            <p className="product-title">
+                                Structured green gown with subtle embroidery and flared silhouette. Perfect for formal occasions.
+                            </p>
                             <div className="rating-block">
                                 <span className="stars">★★★★☆</span>
                                 <span className="rating-count">612</span>
@@ -308,14 +340,18 @@ function IndoWesternFrocks() {
                     {/* CARD 9 */}
                     <div className="product-card" style={{ position: "relative" }}>
                         <WishlistHeart item={{ id: "IndoWesternFrocks_Royal Navy Blue Designer Saree with Floral Appliques", title: "Royal Navy Blue Designer Saree with Floral Appliques", image: "https://res.cloudinary.com/dodmxncwc/image/upload/v1775827984/a58a309b-2a19-49a4-82fa-3ad68b470ebb_ey4nlr.png", brand: "Maison d'Élégance", price: <><span>₹</span>28,000</> }} />
-                        <img src="https://res.cloudinary.com/dodmxncwc/image/upload/v1775827984/a58a309b-2a19-49a4-82fa-3ad68b470ebb_ey4nlr.png"
+                        <img src="https://res.cloudinary.com/dugksxwkr/image/upload/v1776508463/583bd1fa415e323f18b4557dd744338c-removebg-preview_cezhl5.png"
                             alt="Royal Saree" className="card-image" style={{ backgroundColor: '#fceceb' }} />
                         <div className="card-content">
                             <div className="swatches">
                                 <div className="swatch" style={{ backgroundColor: '#0b2b4e' }}></div>
                             </div>
-                            <h3 className="brand-name">Maison d'Élégance</h3>
-                            <p className="product-title">Royal Navy Blue Designer Saree with Floral Appliques</p>
+                            <h3 className="brand-name">
+                                Black Off-Shoulder Lace Gown – Chic Evening Wear
+                            </h3>
+                            <p className="product-title">
+                                Sleek black gown with lace detailing and off-shoulder neckline. A timeless classic.
+                            </p>
                             <div className="rating-block">
                                 <span className="stars">★★★★★</span>
                                 <span className="rating-count">190</span>
@@ -333,14 +369,18 @@ function IndoWesternFrocks() {
                     {/* CARD 10 */}
                     <div className="product-card" style={{ position: "relative" }}>
                         <WishlistHeart item={{ id: "IndoWesternFrocks_Nude Beige Premium Drape", title: "Nude Beige Premium Drape", image: "https://res.cloudinary.com/dodmxncwc/image/upload/v1775886477/resized_image_svojak.png", brand: "Queen's Bespoke", price: <><span>₹</span>36,100</> }} />
-                        <img src="https://res.cloudinary.com/dodmxncwc/image/upload/v1775886477/resized_image_svojak.png"
+                        <img src="https://res.cloudinary.com/dugksxwkr/image/upload/v1776508460/7f3a165e04a9f355dd0a5bac934b0f9b-removebg-preview_ayfzwe.png"
                             alt="Premium Drape" className="card-image" style={{ backgroundColor: '#e5e0dc' }} />
                         <div className="card-content">
                             <div className="swatches">
                                 <div className="swatch" style={{ backgroundColor: '#d1bfae' }}></div>
                             </div>
-                            <h3 className="brand-name">Queen's Bespoke</h3>
-                            <p className="product-title">Nude Beige Premium Drape</p>
+                            <h3 className="brand-name">
+                                Pastel Ombre Ball Gown – Contemporary Party Wear
+                            </h3>
+                            <p className="product-title">
+                                Soft gradient gown with voluminous skirt and fitted bodice. Modern and dreamy.
+                            </p>
                             <div className="rating-block">
                                 <span className="stars">★★★★☆</span>
                                 <span className="rating-count">56</span>
@@ -358,14 +398,18 @@ function IndoWesternFrocks() {
                     {/* CARD 11 */}
                     <div className="product-card" style={{ position: "relative" }}>
                         <WishlistHeart item={{ id: "IndoWesternFrocks_Draped Georgette Saree Gown in Rose Pink", title: "Draped Georgette Saree Gown in Rose Pink", image: "https://res.cloudinary.com/dugksxwkr/image/upload/v1775877061/WhatsApp_Image_2026-04-10_at_6.57.47_PM-removebg-preview_gkxt88.png", brand: "Maison d'Élégance", price: <><span>₹</span>18,000</> }} />
-                        <img src="https://res.cloudinary.com/dugksxwkr/image/upload/v1775877061/WhatsApp_Image_2026-04-10_at_6.57.47_PM-removebg-preview_gkxt88.png"
+                        <img src="https://res.cloudinary.com/dugksxwkr/image/upload/v1776508459/b82520a1b4dd49e739d3b597dcd47bc0-removebg-preview_xbplqw.png"
                             alt="Saree Gown" className="card-image" style={{ backgroundColor: '#e5ccce' }} />
                         <div className="card-content">
                             <div className="swatches">
                                 <div className="swatch" style={{ backgroundColor: '#e5ccce' }}></div>
                             </div>
-                            <h3 className="brand-name">Maison d'Élégance</h3>
-                            <p className="product-title">Draped Georgette Saree Gown in Rose Pink</p>
+                            <h3 className="brand-name">
+                                Emerald Green High-Low Ruffle Gown – Modern Statement Wear
+                            </h3>
+                            <p className="product-title">
+                                High-low silhouette with dramatic ruffles. A bold and stylish evening look.
+                            </p>
                             <div className="rating-block">
                                 <span className="stars">★★★★★</span>
                                 <span className="rating-count">140</span>
@@ -382,14 +426,18 @@ function IndoWesternFrocks() {
                     {/* CARD 12 */}
                     <div className="product-card" style={{ position: "relative" }}>
                         <WishlistHeart item={{ id: "IndoWesternFrocks_Pleated Indo-Western Saree with Matching Clutch", title: "Pleated Indo-Western Saree with Matching Clutch", image: "https://res.cloudinary.com/dodmxncwc/image/upload/v1775885562/INDO_WESTERN_collection_1_q1xrzt.jpg", brand: "Queen's Wardrobe", price: <><span>₹</span>12,500</> }} />
-                        <img src="https://res.cloudinary.com/dodmxncwc/image/upload/v1775885562/INDO_WESTERN_collection_1_q1xrzt.jpg"
+                        <img src="https://res.cloudinary.com/dugksxwkr/image/upload/v1776508460/d12b3d9a076bc8ed24d2c28dfba0fa2b-removebg-preview_ftvsdt.png"
                             alt="Saree Gown" className="card-image" />
                         <div className="card-content">
                             <div className="swatches">
                                 <div className="swatch" style={{ backgroundColor: '#a37272' }}></div>
                             </div>
-                            <h3 className="brand-name">Queen's Wardrobe</h3>
-                            <p className="product-title">Pleated Indo-Western Saree with Matching Clutch</p>
+                            <h3 className="brand-name">
+                                Ice Blue Layered Tulle Gown – Princess Evening Wear
+                            </h3>
+                            <p className="product-title">
+                                Soft blue gown with layered tulle and fitted bodice. Elegant and graceful.
+                            </p>
                             <div className="rating-block">
                                 <span className="stars">★★★★☆</span>
                                 <span className="rating-count">245</span>
@@ -406,14 +454,18 @@ function IndoWesternFrocks() {
                     {/* CARD 13 */}
                     <div className="product-card" style={{ position: "relative" }}>
                         <WishlistHeart item={{ id: "IndoWesternFrocks_Minimalist Evening Gown Saree", title: "Minimalist Evening Gown Saree", image: "https://res.cloudinary.com/dodmxncwc/image/upload/v1775884629/western_iqmuat.jpg", brand: "Western Elegance", price: <><span>₹</span>21,000</> }} />
-                        <img src="https://res.cloudinary.com/dodmxncwc/image/upload/v1775884629/western_iqmuat.jpg"
+                        <img src="https://res.cloudinary.com/dugksxwkr/image/upload/v1776508221/06570fc3454dd61aca1fab36bea638ec-removebg-preview_uxpain.png"
                             alt="Saree Gown" className="card-image" />
                         <div className="card-content">
                             <div className="swatches">
                                 <div className="swatch" style={{ backgroundColor: '#2F2A26' }}></div>
                             </div>
-                            <h3 className="brand-name">Western Elegance</h3>
-                            <p className="product-title">Minimalist Evening Gown Saree</p>
+                            <h3 className="brand-name">
+                                Rose Pink Strapless Ball Gown – Glam Party Wear
+                            </h3>
+                            <p className="product-title">
+                                Voluminous pink gown with strapless design and dramatic layers. Perfect for grand events.
+                            </p>
                             <div className="rating-block">
                                 <span className="stars">★★★★★</span>
                                 <span className="rating-count">88</span>
@@ -430,15 +482,19 @@ function IndoWesternFrocks() {
                     {/* CARD 14 */}
                     <div className="product-card" style={{ position: "relative" }}>
                         <WishlistHeart item={{ id: "IndoWesternFrocks_Handloom Silk Saree Gown for Receptions", title: "Handloom Silk Saree Gown for Receptions", image: "https://res.cloudinary.com/dodmxncwc/image/upload/v1775827984/a58a309b-2a19-49a4-82fa-3ad68b470ebb_ey4nlr.png", brand: "Heritage Silks", price: <><span>₹</span>14,000</> }} />
-                        <img src="https://res.cloudinary.com/dodmxncwc/image/upload/v1775827984/a58a309b-2a19-49a4-82fa-3ad68b470ebb_ey4nlr.png"
+                        <img src="https://res.cloudinary.com/dugksxwkr/image/upload/v1776508460/bf8adca14907141ee7628398804ad23e-removebg-preview_zydphz.png"
                             alt="Traditional Saree Gown" className="card-image" style={{ backgroundColor: '#fceceb' }} />
                         <div className="card-content">
                             <div className="swatches">
                                 <div className="swatch" style={{ backgroundColor: '#c93b4a' }}></div>
                                 <div className="swatch" style={{ backgroundColor: '#0b2b4e' }}></div>
                             </div>
-                            <h3 className="brand-name">Heritage Silks</h3>
-                            <p className="product-title">Handloom Silk Saree Gown for Receptions</p>
+                            <h3 className="brand-name">
+                                Navy Blue One-Shoulder Embellished Gown – Luxe Evening Wear
+                            </h3>
+                            <p className="product-title">
+                                Deep navy gown with one-shoulder detail and subtle embellishment. Sophisticated and bold.
+                            </p>
                             <div className="rating-block">
                                 <span className="stars">★★★★☆</span>
                                 <span className="rating-count">421</span>
@@ -455,14 +511,18 @@ function IndoWesternFrocks() {
                     {/* CARD 15 */}
                     <div className="product-card" style={{ position: "relative" }}>
                         <WishlistHeart item={{ id: "IndoWesternFrocks_Signature Embellished Custom Saree", title: "Signature Embellished Custom Saree", image: "https://res.cloudinary.com/dodmxncwc/image/upload/v1775886477/resized_image_svojak.png", brand: "Queen's Bespoke", price: <><span>₹</span>45,000</> }} />
-                        <img src="https://res.cloudinary.com/dodmxncwc/image/upload/v1775886477/resized_image_svojak.png"
+                        <img src="https://res.cloudinary.com/dugksxwkr/image/upload/v1776509412/54f1d0ed799e8159fd8d795c44c9f40b-removebg-preview_loqypg.png"
                             alt="Bespoke Saree Gown" className="card-image" style={{ backgroundColor: '#e5e0dc' }} />
                         <div className="card-content">
                             <div className="swatches">
                                 <div className="swatch" style={{ backgroundColor: '#d1bfae' }}></div>
                             </div>
-                            <h3 className="brand-name">Queen's Bespoke</h3>
-                            <p className="product-title">Signature Embellished Custom Saree</p>
+                            <h3 className="brand-name">
+                                Blush Pink Textured Ball Gown – Romantic Occasion Wear
+                            </h3>
+                            <p className="product-title">
+                                Soft textured gown with structured bodice and full skirt. A delicate and feminine look.
+                            </p>
                             <div className="rating-block">
                                 <span className="stars">★★★★★</span>
                                 <span className="rating-count">19</span>
@@ -479,14 +539,18 @@ function IndoWesternFrocks() {
                     {/* CARD 16 */}
                     <div className="product-card" style={{ position: "relative" }}>
                         <WishlistHeart item={{ id: "IndoWesternFrocks_Peach Pastel Georgette Gown Saree", title: "Peach Pastel Georgette Gown Saree", image: "https://res.cloudinary.com/dodmxncwc/image/upload/q_auto/f_auto/v1775912540/indo_western_1st-removebg-preview_qxzjrq.png", brand: "Maison d'Élégance", price: <><span>₹</span>13,300</> }} />
-                        <img src="https://res.cloudinary.com/dodmxncwc/image/upload/q_auto/f_auto/v1775912540/indo_western_1st-removebg-preview_qxzjrq.png"
+                        <img src="https://res.cloudinary.com/dugksxwkr/image/upload/v1776509420/1ae3c9a4aeebcf710bfe694cf40510b0-removebg-preview_y3xxs1.png"
                             alt="Pastel Saree" className="card-image" style={{ backgroundColor: '#fceceb' }} />
                         <div className="card-content">
                             <div className="swatches">
                                 <div className="swatch" style={{ backgroundColor: '#bb9b9f' }}></div>
                             </div>
-                            <h3 className="brand-name">Maison d'Élégance</h3>
-                            <p className="product-title">Peach Pastel Georgette Gown Saree</p>
+                            <h3 className="brand-name">
+                                Purple Corset Ruffle Gown – Dramatic Couture Wear
+                            </h3>
+                            <p className="product-title">
+                                Fitted corset bodice with layered ruffle skirt. A bold couture-inspired outfit.
+                            </p>
                             <div className="rating-block">
                                 <span className="stars">★★★★☆</span>
                                 <span className="rating-count">112</span>
@@ -503,14 +567,18 @@ function IndoWesternFrocks() {
                     {/* CARD 17 */}
                     <div className="product-card" style={{ position: "relative" }}>
                         <WishlistHeart item={{ id: "IndoWesternFrocks_Festive Green Pre-Stitched Gown", title: "Festive Green Pre-Stitched Gown", image: "https://res.cloudinary.com/dodmxncwc/image/upload/v1775885562/INDO_WESTERN_collection_1_q1xrzt.jpg", brand: "Queen's Wardrobe", price: <><span>₹</span>15,400</> }} />
-                        <img src="https://res.cloudinary.com/dodmxncwc/image/upload/v1775885562/INDO_WESTERN_collection_1_q1xrzt.jpg"
+                        <img src="https://res.cloudinary.com/dugksxwkr/image/upload/v1776509416/318897c3167564591981cbd2472c92d0-removebg-preview_lhco5f.png"
                             alt="Festive Gown" className="card-image" />
                         <div className="card-content">
                             <div className="swatches">
                                 <div className="swatch" style={{ backgroundColor: '#5d675b' }}></div>
                             </div>
-                            <h3 className="brand-name">Queen's Wardrobe</h3>
-                            <p className="product-title">Festive Green Pre-Stitched Gown</p>
+                            <h3 className="brand-name">
+                                Red Strapless Ruffle Gown – Statement Evening Wear
+                            </h3>
+                            <p className="product-title">
+                                Bright red gown with cascading ruffles and structured fit. Eye-catching and glamorous.
+                            </p>
                             <div className="rating-block">
                                 <span className="stars">★★★★★</span>
                                 <span className="rating-count">478</span>
@@ -527,14 +595,18 @@ function IndoWesternFrocks() {
                     {/* CARD 18 */}
                     <div className="product-card" style={{ position: "relative" }}>
                         <WishlistHeart item={{ id: "IndoWesternFrocks_Classic Black Contemporary Wrap Saree", title: "Classic Black Contemporary Wrap Saree", image: "https://res.cloudinary.com/dodmxncwc/image/upload/v1775884629/western_iqmuat.jpg", brand: "Western Elegance", price: <><span>₹</span>18,000</> }} />
-                        <img src="https://res.cloudinary.com/dodmxncwc/image/upload/v1775884629/western_iqmuat.jpg"
+                        <img src="https://res.cloudinary.com/dugksxwkr/image/upload/v1776509413/2fa293aa908123881a3793d70c4a2ce8-removebg-preview_s5nlup.png"
                             alt="Gown" className="card-image" />
                         <div className="card-content">
                             <div className="swatches">
                                 <div className="swatch" style={{ backgroundColor: '#2F2A26' }}></div>
                             </div>
-                            <h3 className="brand-name">Western Elegance</h3>
-                            <p className="product-title">Classic Black Contemporary Wrap Saree</p>
+                            <h3 className="brand-name">
+                                Peach Layered Tulle Gown – Soft Glam Party Wear
+                            </h3>
+                            <p className="product-title">
+                                Light peach gown with layered tulle and elegant silhouette. Perfect for celebrations.
+                            </p>
                             <div className="rating-block">
                                 <span className="stars">★★★★☆</span>
                                 <span className="rating-count">334</span>
@@ -551,14 +623,18 @@ function IndoWesternFrocks() {
                     {/* CARD 19 */}
                     <div className="product-card" style={{ position: "relative" }}>
                         <WishlistHeart item={{ id: "IndoWesternFrocks_Rich Indigo Occasion Wear Layout Saree", title: "Rich Indigo Occasion Wear Layout Saree", image: "https://res.cloudinary.com/dodmxncwc/image/upload/v1775827984/a58a309b-2a19-49a4-82fa-3ad68b470ebb_ey4nlr.png", brand: "Heritage Silks", price: <><span>₹</span>21,000</> }} />
-                        <img src="https://res.cloudinary.com/dodmxncwc/image/upload/v1775827984/a58a309b-2a19-49a4-82fa-3ad68b470ebb_ey4nlr.png"
+                        <img src="https://res.cloudinary.com/dugksxwkr/image/upload/v1776509412/c2aa35da66d95364eeddf53b5e1f094e-removebg-preview_hjoarc.png"
                             alt="Royal Saree" className="card-image" style={{ backgroundColor: '#fceceb' }} />
                         <div className="card-content">
                             <div className="swatches">
                                 <div className="swatch" style={{ backgroundColor: '#0b2b4e' }}></div>
                             </div>
-                            <h3 className="brand-name">Heritage Silks</h3>
-                            <p className="product-title">Rich Indigo Occasion Wear Layout Saree</p>
+                            <h3 className="brand-name">
+                                Silver Embellished Tiered Gown – Luxe Occasion Wear
+                            </h3>
+                            <p className="product-title">
+                                Shimmering silver gown with tiered layers and intricate detailing. Ideal for evening glamour.
+                            </p>
                             <div className="rating-block">
                                 <span className="stars">★★★★★</span>
                                 <span className="rating-count">650</span>
@@ -575,15 +651,19 @@ function IndoWesternFrocks() {
                     {/* CARD 20 */}
                     <div className="product-card" style={{ position: "relative" }}>
                         <WishlistHeart item={{ id: "IndoWesternFrocks_Taupe High-Society Event Saree", title: "Taupe High-Society Event Saree", image: "https://res.cloudinary.com/dodmxncwc/image/upload/v1775886477/resized_image_svojak.png", brand: "Queen's Bespoke", price: <><span>₹</span>30,800</> }} />
-                        <img src="https://res.cloudinary.com/dodmxncwc/image/upload/v1775886477/resized_image_svojak.png"
+                        <img src="https://res.cloudinary.com/dugksxwkr/image/upload/v1776509721/06c43ab78e97adb557af149905731fe4-removebg-preview_g60vyx.png"
                             alt="Premium Drape" className="card-image" style={{ backgroundColor: '#e5e0dc' }} />
                         <div className="card-content">
                             <div className="swatches">
                                 <div className="swatch" style={{ backgroundColor: '#d1bfae' }}></div>
                                 <div className="swatch" style={{ backgroundColor: '#bb9b9f' }}></div>
                             </div>
-                            <h3 className="brand-name">Queen's Bespoke</h3>
-                            <p className="product-title">Taupe High-Society Event Saree</p>
+                            <h3 className="brand-name">
+                                Charcoal Grey Layered Ball Gown – Contemporary Formal Wear
+                            </h3>
+                            <p className="product-title">
+                                Dark grey gown with structured layers and modern silhouette. Stylish and refined.
+                            </p>
                             <div className="rating-block">
                                 <span className="stars">★★★★★</span>
                                 <span className="rating-count">93</span>
@@ -599,7 +679,7 @@ function IndoWesternFrocks() {
 
                 </div>
             </div>
-            
+
             {/* Hamburger Sidebar Menu */}
             <div className={`sidebar-overlay ${isSidebarOpen ? 'active' : ''}`} id="sidebar-overlay" onClick={closeSidebar}></div>
             <div className={`sidebar-panel ${isSidebarOpen ? 'active' : ''}`} id="sidebar">
