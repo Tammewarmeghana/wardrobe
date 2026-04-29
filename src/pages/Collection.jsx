@@ -111,7 +111,7 @@ function Collection() {
                     </div>
                     <div className="text-content box-cream text-motion">
                         <span className="collection-num">04</span>
-                        <h2>Readymade</h2>
+                        <h2>Ready To Ship</h2>
                         <div className="small-divider"></div>
                         <p>Chic, ready-to-wear everyday luxury. Thoughtfully designed essentials that offer comfort and
                             versatility without ever compromising on our rigorous high-end fashion standards.</p>
@@ -144,7 +144,7 @@ function Collection() {
 
             <footer className="elegant-footer">
                 <div className="footer-divider"></div>
-                <p>&copy; 2026 Maison d'Élégance - All Rights Reserved.</p>
+                <p>&copy; 2026 Queen's Wardrobe - All Rights Reserved.</p>
             </footer>
         </div>
     );

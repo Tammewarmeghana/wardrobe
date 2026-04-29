@@ -551,7 +551,7 @@ function ReadyMadeItem1() {
                     {/* CARD 19 */}
                     <div className="product-card" style={{ position: "relative" }}>
                         <WishlistHeart item={{ id: "ReadyMadeItem1_Rich Indigo Occasion Wear Layout Saree", title: "Rich Indigo Occasion Wear Layout Saree", image: "", brand: "Heritage Silks", price: <><span>₹</span>21,000</> }} />
-                        <img src="https://res.cloudinary.com/dodmxncwc/image/upload/v1777123520/3956bdc35a13e2ec29e84554a7beb693-removebg-preview_aobwrc.png"
+                        <img src="https://res.cloudinary.com/dugksxwkr/image/upload/v1777472540/529096f4740e0f0d5633c0214bc6d1a7-removebg-preview_lwh8go.png"
                             alt="Royal Saree" className="card-image" style={{ backgroundColor: '#fceceb' }} />
                         <div className="card-content">
                             <div className="swatches">
