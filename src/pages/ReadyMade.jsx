@@ -2,14 +2,14 @@ import React from 'react';
 import IndoWesternSection from '../components/IndoWesternSection';
 
 const data = [
-  { index: "01", title: "Ready Made Item 1", image: "", layoutType: "1", link: "#" },
-  { index: "02", title: "Ready Made Item 2", image: "", backgroundColor: "#ffaec0", layoutType: "2", link: "#" },
-  { index: "03", title: "Ready Made Item 3", image: "", backgroundColor: "#eeb5c4", layoutType: "3", link: "#" },
-  { index: "04", title: "Ready Made Item 4", image: "", backgroundColor: "#ffffff", layoutType: "4", link: "#" },
-  { index: "05", title: "Ready Made Item 5", image: "", backgroundColor: "#fad1df", layoutType: "5", link: "#" },
-  { index: "06", title: "Ready Made Item 6", image: "", backgroundColor: "#faeaed", layoutType: "6", link: "#" },
-  { index: "07", title: "Ready Made Item 7", image: "", backgroundColor: "#efaec3", layoutType: "7", link: "#" },
-  { index: "08", title: "Ready Made Item 8", image: "", backgroundColor: "#ffffff", layoutType: "8", link: "#" },
+  { index: "01", title: "Short Frocks", image: "", layoutType: "1", link: "/readymade-item-1" },
+  { index: "02", title: "Kurthis", image: "", backgroundColor: "#ffaec0", layoutType: "2", link: "/readymade-item-2" },
+  { index: "03", title: "Peplum Tops", image: "", backgroundColor: "#eeb5c4", layoutType: "3", link: "/readymade-item-3" },
+  { index: "04", title: "Plazzo Tops", image: "", backgroundColor: "#ffffff", layoutType: "4", link: "/readymade-item-4" },
+  { index: "05", title: "Skirts", image: "", backgroundColor: "#fad1df", layoutType: "5", link: "/readymade-item-5" },
+  { index: "06", title: "Jumpsuits", image: "", backgroundColor: "#faeaed", layoutType: "6", link: "/readymade-item-6" },
+  { index: "07", title: "Cotton Kaftan", image: "", backgroundColor: "#efaec3", layoutType: "7", link: "/readymade-item-7" },
+  { index: "08", title: "Warp Dresses", image: "", backgroundColor: "#ffffff", layoutType: "8", link: "/readymade-item-8" },
 ];
 
 const ReadyMade = () => {

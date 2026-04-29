@@ -72,9 +72,6 @@ const Appointment = () => {
                         alt="Soft elegant bridal lehenga" 
                         className="appointment-img" 
                     />
-                    <div className="appointment-overlay">
-                        <h2>Let Your Body Rest Today</h2>
-                    </div>
                 </div>
                 
                 <div className="appointment-right">

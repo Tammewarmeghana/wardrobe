@@ -34,9 +34,9 @@ function Collection() {
 
             {/* Hero Header */}
             <header className="hero-header fade-in">
-               <h1>CURATED COLLECTION</h1>
+               <h1>Shop by Style</h1>
                 <div className="divider"></div>
-                <p>Explore our masterfully crafted pieces across four distinct identities.</p>
+                <p>Fusion of modern and traditional styles.</p>
             </header>
 
 
@@ -58,7 +58,7 @@ function Collection() {
                         <div className="small-divider"></div>
                         <p>A harmonious blend of traditional Indian aesthetics and modern Western silhouettes. Intricate
                             embroidery meets contemporary draping, perfect for the modern muse seeking fusion elegance.</p>
-                        <Link to="/indowestern" className="explore-btn">Discover More</Link>
+                        <Link to="/indowestern" className="explore-btn">Shop Now</Link>
                     </div>
                 </section>
 
@@ -77,7 +77,7 @@ function Collection() {
                         <div className="small-divider"></div>
                         <p>Sophisticated evening wear, sharp tailoring, and minimal gowns. Clean lines designed for a global
                             appeal, reflecting power, grace, and timeless high-fashion sensibilities.</p>
-                        <Link to="/western" className="explore-btn">Discover More</Link>
+                        <Link to="/western" className="explore-btn">Shop Now</Link>
                     </div>
                 </section>
 
@@ -96,7 +96,7 @@ function Collection() {
                         <div className="small-divider"></div>
                         <p>Rooted deeply in heritage. Unapologetically traditional pieces featuring master craftsmanship,
                             luxurious silks, and centuries-old weaving techniques preserved for the modern era.</p>
-                        <Link to="/traditional" className="explore-btn">Discover More</Link>
+                        <Link to="/traditional" className="explore-btn">Shop Now</Link>
                     </div>
                 </section>
 
@@ -115,7 +115,7 @@ function Collection() {
                         <div className="small-divider"></div>
                         <p>Chic, ready-to-wear everyday luxury. Thoughtfully designed essentials that offer comfort and
                             versatility without ever compromising on our rigorous high-end fashion standards.</p>
-                        <Link to="/readymade" className="explore-btn">Discover More</Link>
+                        <Link to="/readymade" className="explore-btn">Shop Now</Link>
                     </div>
                 </section>
 

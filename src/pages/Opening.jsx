@@ -22,8 +22,9 @@ function Opening() {
             
             {/* Top Right Navigation */}
             <div className="opening-nav" style={{ justifyContent: 'flex-end', gap: '30px' }}>
-                <Link to="/home" className="nav-link">Dashboard</Link>
-                <Link to="/login" className="nav-link nav-btn">Login / Sign In</Link>
+                <Link to="/home" className="nav-link">My Wardrobe</Link>
+                <Link to="/login" className="nav-link nav-btn">Login</Link>
+                <Link to="/signup" className="nav-link nav-btn">Sign Up</Link>
             </div>
 
             {/* Background glow elements for premium look */}

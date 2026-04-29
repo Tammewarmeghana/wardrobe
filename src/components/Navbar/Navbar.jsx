@@ -43,14 +43,14 @@ const Navbar = () => {
       <div className={`nav-left ${isMenuOpen ? 'mobile-open' : ''}`}>
         <Link 
           to="/home" 
-          className={`nav-link-elegant ${isActive('/home') ? 'active' : ''}`}
+          className="nav-link-elegant"
           onClick={() => setIsMenuOpen(false)}
         >
           HOME
         </Link>
         <Link 
           to="/collection" 
-          className={`nav-link-elegant highlight ${isActive('/collection') ? 'active' : ''}`}
+          className="nav-link-elegant"
           onClick={() => setIsMenuOpen(false)}
         >
           COLLECTIONS
@@ -62,13 +62,13 @@ const Navbar = () => {
         >
           CATEGORIES
         </Link> */}
-        <Link 
+        {/* <Link 
           to="/contact" 
           className={`nav-link-elegant ${isActive('/contact') ? 'active' : ''}`}
           onClick={() => setIsMenuOpen(false)}
         >
           CONTACT
-        </Link>
+        </Link> */}
       </div>
 
       <div className="nav-center">

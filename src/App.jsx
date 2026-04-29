@@ -44,6 +44,14 @@ import { ShopProvider } from './context/ShopContext';
 import Navbar from './components/Navbar/Navbar';
 import Appointment from './pages/Appointment';
 import OrderSuccess from './pages/OrderSuccess';
+import ReadyMadeItem1 from './pages/ReadyMadeItem1';
+import ReadyMadeItem2 from './pages/ReadyMadeItem2';
+import ReadyMadeItem3 from './pages/ReadyMadeItem3';
+import ReadyMadeItem4 from './pages/ReadyMadeItem4';
+import ReadyMadeItem5 from './pages/ReadyMadeItem5';
+import ReadyMadeItem6 from './pages/ReadyMadeItem6';
+import ReadyMadeItem7 from './pages/ReadyMadeItem7';
+import ReadyMadeItem8 from './pages/ReadyMadeItem8';
 
 function App() {
   return (
@@ -94,6 +102,14 @@ function App() {
             <Route path="/koreanwear" element={<KoreanDresses />} />
             <Route path="/fullpage" element={<FullPage />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/readymade-item-1" element={<ReadyMadeItem1 />} />
+            <Route path="/readymade-item-2" element={<ReadyMadeItem2 />} />
+            <Route path="/readymade-item-3" element={<ReadyMadeItem3 />} />
+            <Route path="/readymade-item-4" element={<ReadyMadeItem4 />} />
+            <Route path="/readymade-item-5" element={<ReadyMadeItem5 />} />
+            <Route path="/readymade-item-6" element={<ReadyMadeItem6 />} />
+            <Route path="/readymade-item-7" element={<ReadyMadeItem7 />} />
+            <Route path="/readymade-item-8" element={<ReadyMadeItem8 />} />
           </Routes>
         </div>
       </Router>

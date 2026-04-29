@@ -158,7 +158,7 @@ const FullPage = () => {
                 </div>
                 <div className="video-graphic">
                     <div className="pulse-ring"></div>
-                    <img src="cat_indowestern.png" alt="Video Call Preview" />
+                    <img src="https://res.cloudinary.com/dodmxncwc/image/upload/v1776917091/ChatGPT_Image_Apr_23_2026_09_34_11_AM_qr0zwp.png" alt="Video Call Preview" />
                 </div>
             </section>
 
@@ -185,7 +185,7 @@ const FullPage = () => {
                                 <div className="product-content">
                                     <h3 className="product-title">Bridal Lehenga</h3>
                                     <p className="product-desc">Elegant Floral Bridal Set<br />Perfect for weddings & festive wear</p>
-                                    <button className="product-btn">Shop Now</button>
+                                    <button className="product-btn" onClick={() => navigate('/bridal-lehenga')}>Shop Now</button>
                                 </div>
                             </div>
                         </div>

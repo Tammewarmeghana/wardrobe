@@ -559,6 +559,20 @@ button {
     }
 }
 
+/* Animations for Video Shopping Element (Laptop view only) */
+@media (min-width: 1024px) {
+    .video-graphic img {
+        animation: floatVideoGraphic 6s ease-in-out infinite;
+        transform-origin: center;
+    }
+
+    @keyframes floatVideoGraphic {
+        0% { transform: translateY(0px) rotate(0deg); }
+        50% { transform: translateY(-20px) rotate(1deg); }
+        100% { transform: translateY(0px) rotate(0deg); }
+    }
+}
+
 
 
 /* =======================================
