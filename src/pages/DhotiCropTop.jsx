@@ -22,12 +22,12 @@ function DhotiCropTop() {
 
     return (
         <div className="gownsaree-wrapper gown-saree-page-container">
-            <div className="page-container" style={{overflowX: 'hidden'}}>
+            <div className="page-container" style={{ overflowX: 'hidden' }}>
                 {/* Header & Tabs */}
                 <div className="page-header">
                     {/* Search & Actions */}
                     <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: '24px', paddingBottom: '20px' }}>
-                        
+
                         <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
                             <button onClick={() => navigate(-1)} title="Go Back" style={{ background: 'none', border: 'none', cursor: 'pointer', padding: '0', display: 'flex', alignItems: 'center', color: 'var(--text-main)' }}>
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -52,25 +52,25 @@ function DhotiCropTop() {
                 {/* Filters */}
                 <div className="filter-row">
                     <div className="filter-pill">Price <svg width="12" height="12" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" strokeWidth="2">
-                            <path d="M6 9l6 6 6-6" />
-                        </svg></div>
+                        stroke="currentColor" strokeWidth="2">
+                        <path d="M6 9l6 6 6-6" />
+                    </svg></div>
                     <div className="filter-pill">4 stars & up <svg width="12" height="12" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" strokeWidth="2">
-                            <path d="M6 9l6 6 6-6" />
-                        </svg></div>
+                        stroke="currentColor" strokeWidth="2">
+                        <path d="M6 9l6 6 6-6" />
+                    </svg></div>
                     <div className="filter-pill">Brand <svg width="12" height="12" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" strokeWidth="2">
-                            <path d="M6 9l6 6 6-6" />
-                        </svg></div>
+                        stroke="currentColor" strokeWidth="2">
+                        <path d="M6 9l6 6 6-6" />
+                    </svg></div>
                     <div className="filter-pill">Color <svg width="12" height="12" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" strokeWidth="2">
-                            <path d="M6 9l6 6 6-6" />
-                        </svg></div>
+                        stroke="currentColor" strokeWidth="2">
+                        <path d="M6 9l6 6 6-6" />
+                    </svg></div>
                     <div className="filter-pill">Fabric <svg width="12" height="12" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" strokeWidth="2">
-                            <path d="M6 9l6 6 6-6" />
-                        </svg></div>
+                        stroke="currentColor" strokeWidth="2">
+                        <path d="M6 9l6 6 6-6" />
+                    </svg></div>
                 </div>
 
                 {/* Product Grid */}
@@ -87,9 +87,12 @@ function DhotiCropTop() {
                                 <div className="swatch" style={{ backgroundColor: '#bb9b9f' }}></div>
                                 <div className="swatch" style={{ backgroundColor: '#2F2A26' }}></div>
                             </div>
-                            <h3 className="brand-name">Maison d'Élégance</h3>
-                            <p className="product-title">Premium Pre-Draped Saree Gown in Soft Georgette with Embellished Belt</p>
-
+                            <h3 className="brand-name">
+                                Hot Pink Crop Top with Dhoti Pants & Dupatta – Bold Festive Indo-Western Wear
+                            </h3>
+                            <p className="product-title">
+                                Vibrant hot pink embroidered crop top with matching dhoti pants and dupatta. A stunning festive pick for sangeet and receptions.
+                            </p>
                             <div className="rating-block">
                                 <span className="stars">★★★★☆</span>
                                 <span className="rating-count">1,245</span>
@@ -117,8 +120,12 @@ function DhotiCropTop() {
                                 <div className="swatch" style={{ backgroundColor: '#a37272' }}></div>
                                 <div className="swatch" style={{ backgroundColor: '#5d675b' }}></div>
                             </div>
-                            <h3 className="brand-name">Queen's Wardrobe</h3>
-                            <p className="product-title">Modern Indo-Western Fusion Saree with Attached Pallu</p>
+                            <h3 className="brand-name">
+                                Navy Blue Embroidered Crop Top with Dhoti Pants – Elegant Festive Set
+                            </h3>
+                            <p className="product-title">
+                                Rich navy blue embroidered crop top paired with matching dhoti pants. Sophisticated and perfect for weddings and festive evenings.
+                            </p>
 
                             <div className="rating-block">
                                 <span className="stars">★★★★★</span>
@@ -146,9 +153,12 @@ function DhotiCropTop() {
                             <div className="swatches">
                                 <div className="swatch" style={{ backgroundColor: '#2F2A26' }}></div>
                             </div>
-                            <h3 className="brand-name">Western Elegance</h3>
-                            <p className="product-title">Cocktail Saree Gown with Cape Sleeves</p>
-
+                            <h3 className="brand-name">
+                                Lavender Crop Top with Dhoti Pants & Sheer Cape – Soft Festive Ethnic Set
+                            </h3>
+                            <p className="product-title">
+                                Dreamy lavender crop top with matching dhoti pants and flowy sheer cape. Perfect for receptions and cocktail evenings.
+                            </p>
                             <div className="rating-block">
                                 <span className="stars">★★★★☆</span>
                                 <span className="rating-count">340</span>
@@ -177,9 +187,12 @@ function DhotiCropTop() {
                                 <div className="swatch" style={{ backgroundColor: '#0b2b4e' }}></div>
                                 <div className="swatch" style={{ backgroundColor: '#b08a5d' }}></div>
                             </div>
-                            <h3 className="brand-name">Maison d'Élégance</h3>
-                            <p className="product-title">Heritage Silk Trim Saree Gown for Wedding Receptions</p>
-
+                            <h3 className="brand-name">
+                                Ivory Gold Embroidered Crop Top with Dhoti Pants – Timeless Ethnic Luxe
+                            </h3>
+                            <p className="product-title">
+                                Elegant ivory embroidered crop top with gold detailing and dhoti pants. A refined pick for weddings and upscale celebrations.
+                            </p>
                             <div className="rating-block">
                                 <span className="stars">★★★★★</span>
                                 <span className="rating-count">2,109</span>
@@ -207,8 +220,13 @@ function DhotiCropTop() {
                                 <div className="swatch" style={{ backgroundColor: '#d1bfae' }}></div>
                                 <div className="swatch" style={{ backgroundColor: '#e8e8e8' }}></div>
                             </div>
-                            <h3 className="brand-name">Queen's Bespoke</h3>
-                            <p className="product-title">Custom-Fit Sequined Saree Dress</p>
+                            <h3 className="brand-name">
+                                Steel Blue Crop Top with Dhoti Pants – Contemporary Minimalist Ethnic Wear
+                            </h3>
+                            <p className="product-title">
+                                Sleek steel blue crop top with clean-cut dhoti pants. Modern and sophisticated for cocktail evenings and receptions.
+                            </p>
+
 
                             <div className="rating-block">
                                 <span className="stars">★★★★☆</span>
@@ -237,8 +255,13 @@ function DhotiCropTop() {
                             <div className="swatches">
                                 <div className="swatch" style={{ backgroundColor: '#bb9b9f' }}></div>
                             </div>
-                            <h3 className="brand-name">Maison d'Élégance</h3>
-                            <p className="product-title">Embroidered Pastel Saree Gown with Dupatta</p>
+                            <h3 className="brand-name">
+                                Yellow Embroidered Crop Top with Dhoti Pants – Vibrant Festive Indo-Western Set
+                            </h3>
+                            <p className="product-title">
+                                Bright yellow embroidered crop top with matching dhoti pants. A trendy festive pick for sangeet and mehendi functions.
+                            </p>
+
                             <div className="rating-block">
                                 <span className="stars">★★★★☆</span>
                                 <span className="rating-count">85</span>
@@ -263,8 +286,14 @@ function DhotiCropTop() {
                                 <div className="swatch" style={{ backgroundColor: '#5d675b' }}></div>
                                 <div className="swatch" style={{ backgroundColor: '#a37272' }}></div>
                             </div>
-                            <h3 className="brand-name">Queen's Wardrobe</h3>
-                            <p className="product-title">Olive Green Sequin Trim Saree</p>
+                            <h3 className="brand-name">
+                                Blush Pink Embroidered Crop Top with Dhoti Pants – Feminine Festive Wear
+                            </h3>
+                            <p className="product-title">
+                                Soft blush pink embroidered crop top with flowing dhoti pants. Graceful and elegant for wedding festivities.
+                            </p>
+
+
                             <div className="rating-block">
                                 <span className="stars">★★★★★</span>
                                 <span className="rating-count">430</span>
@@ -289,8 +318,12 @@ function DhotiCropTop() {
                                 <div className="swatch" style={{ backgroundColor: '#2F2A26' }}></div>
                                 <div className="swatch" style={{ backgroundColor: '#e5ccce' }}></div>
                             </div>
-                            <h3 className="brand-name">Western Elegance</h3>
-                            <p className="product-title">Midnight Black Chiffon Saree Gown</p>
+                            <h3 className="brand-name">
+                                Teal Floral Crop Top with Dhoti Pants – Bold Indo-Western Ethnic Wear
+                            </h3>
+                            <p className="product-title">
+                                Stunning teal crop top with floral embroidery paired with dhoti pants. A striking festive pick for sangeet and receptions.
+                            </p>
                             <div className="rating-block">
                                 <span className="stars">★★★★☆</span>
                                 <span className="rating-count">612</span>
@@ -314,8 +347,12 @@ function DhotiCropTop() {
                             <div className="swatches">
                                 <div className="swatch" style={{ backgroundColor: '#0b2b4e' }}></div>
                             </div>
-                            <h3 className="brand-name">Maison d'Élégance</h3>
-                            <p className="product-title">Royal Navy Blue Designer Saree with Floral Appliques</p>
+                            <h3 className="brand-name">
+                                Beige Floral Printed Crop Top with Dhoti Pants – Elegant Festive Set
+                            </h3>
+                            <p className="product-title">
+                                Soft beige floral printed crop top with matching dhoti pants. Light and graceful for festive brunches and wedding functions.
+                            </p>
                             <div className="rating-block">
                                 <span className="stars">★★★★★</span>
                                 <span className="rating-count">190</span>
@@ -339,8 +376,13 @@ function DhotiCropTop() {
                             <div className="swatches">
                                 <div className="swatch" style={{ backgroundColor: '#d1bfae' }}></div>
                             </div>
-                            <h3 className="brand-name">Queen's Bespoke</h3>
-                            <p className="product-title">Nude Beige Premium Drape</p>
+                            <h3 className="brand-name">
+                                Ivory Gold Embroidered Crop Top with Dhoti Pants – Premium Ethnic Wear
+                            </h3>
+                            <p className="product-title">
+                                Luxurious ivory crop top with gold embroidery and matching dhoti pants. Perfect for receptions and grand festive occasions.
+                            </p>
+
                             <div className="rating-block">
                                 <span className="stars">★★★★☆</span>
                                 <span className="rating-count">56</span>
@@ -364,8 +406,12 @@ function DhotiCropTop() {
                             <div className="swatches">
                                 <div className="swatch" style={{ backgroundColor: '#e5ccce' }}></div>
                             </div>
-                            <h3 className="brand-name">Maison d'Élégance</h3>
-                            <p className="product-title">Draped Georgette Saree Gown in Rose Pink</p>
+                            <h3 className="brand-name">
+                                Teal Ruffle Crop Top with Dhoti Pants – Contemporary Indo-Western Wear
+                            </h3>
+                            <p className="product-title">
+                                Bold teal crop top with ruffle detailing paired with draped dhoti pants. A modern festive pick for cocktail evenings.
+                            </p>
                             <div className="rating-block">
                                 <span className="stars">★★★★★</span>
                                 <span className="rating-count">140</span>
@@ -388,8 +434,12 @@ function DhotiCropTop() {
                             <div className="swatches">
                                 <div className="swatch" style={{ backgroundColor: '#a37272' }}></div>
                             </div>
-                            <h3 className="brand-name">Queen's Wardrobe</h3>
-                            <p className="product-title">Pleated Indo-Western Saree with Matching Clutch</p>
+                            <h3 className="brand-name">
+                                Taupe Embroidered Crop Top with Dhoti Pants – Subtle Ethnic Elegance
+                            </h3>
+                            <p className="product-title">
+                                Soft taupe embroidered crop top with flowy dhoti pants. Understated yet elegant for receptions and festive occasions.
+                            </p>
                             <div className="rating-block">
                                 <span className="stars">★★★★☆</span>
                                 <span className="rating-count">245</span>
@@ -412,8 +462,13 @@ function DhotiCropTop() {
                             <div className="swatches">
                                 <div className="swatch" style={{ backgroundColor: '#2F2A26' }}></div>
                             </div>
-                            <h3 className="brand-name">Western Elegance</h3>
-                            <p className="product-title">Minimalist Evening Gown Saree</p>
+                            <h3 className="brand-name">
+                                Lavender Crop Top with Dhoti Pants & Trailing Dupatta – Dreamy Festive Wear
+                            </h3>
+                            <p className="product-title">
+                                Soft lavender crop top with dhoti pants and dramatic trailing dupatta. Romantic and perfect for receptions and cocktail evenings.
+                            </p>
+
                             <div className="rating-block">
                                 <span className="stars">★★★★★</span>
                                 <span className="rating-count">88</span>
@@ -437,8 +492,13 @@ function DhotiCropTop() {
                                 <div className="swatch" style={{ backgroundColor: '#c93b4a' }}></div>
                                 <div className="swatch" style={{ backgroundColor: '#0b2b4e' }}></div>
                             </div>
-                            <h3 className="brand-name">Heritage Silks</h3>
-                            <p className="product-title">Handloom Silk Saree Gown for Receptions</p>
+                            <h3 className="brand-name">
+                                Charcoal Grey Embroidered Crop Top with Dhoti Pants – Edgy Ethnic Glam
+                            </h3>
+                            <p className="product-title">
+                                Sleek charcoal grey embroidered crop top with matching dhoti pants. Bold and sophisticated for festive functions.
+                            </p>
+
                             <div className="rating-block">
                                 <span className="stars">★★★★☆</span>
                                 <span className="rating-count">421</span>
@@ -461,8 +521,13 @@ function DhotiCropTop() {
                             <div className="swatches">
                                 <div className="swatch" style={{ backgroundColor: '#d1bfae' }}></div>
                             </div>
-                            <h3 className="brand-name">Queen's Bespoke</h3>
-                            <p className="product-title">Signature Embellished Custom Saree</p>
+                            <h3 className="brand-name">
+                                Mint Green Embroidered Crop Top with Dhoti Pants – Fresh Festive Ethnic Set
+                            </h3>
+                            <p className="product-title">
+                                Fresh mint green crop top with delicate embroidery and matching dhoti pants. Light and elegant for festive occasions.
+                            </p>
+
                             <div className="rating-block">
                                 <span className="stars">★★★★★</span>
                                 <span className="rating-count">19</span>
@@ -485,8 +550,12 @@ function DhotiCropTop() {
                             <div className="swatches">
                                 <div className="swatch" style={{ backgroundColor: '#bb9b9f' }}></div>
                             </div>
-                            <h3 className="brand-name">Maison d'Élégance</h3>
-                            <p className="product-title">Peach Pastel Georgette Gown Saree</p>
+                            <h3 className="brand-name">
+                                Golden Embroidered Crop Top with Dhoti Pants – Luxe Festive Ethnic Wear
+                            </h3>
+                            <p className="product-title">
+                                Rich golden embroidered crop top with flowy dhoti pants. A luxurious festive pick for weddings and grand celebrations.
+                            </p>
                             <div className="rating-block">
                                 <span className="stars">★★★★☆</span>
                                 <span className="rating-count">112</span>
@@ -509,8 +578,12 @@ function DhotiCropTop() {
                             <div className="swatches">
                                 <div className="swatch" style={{ backgroundColor: '#5d675b' }}></div>
                             </div>
-                            <h3 className="brand-name">Queen's Wardrobe</h3>
-                            <p className="product-title">Festive Green Pre-Stitched Gown</p>
+                            <h3 className="brand-name">
+                                Charcoal Grey Embellished Cape Crop Top with Dhoti Pants – Dramatic Ethnic Luxe
+                            </h3>
+                            <p className="product-title">
+                                Stunning charcoal grey embellished cape crop top paired with dhoti pants. Bold and dramatic for upscale events.
+                            </p>
                             <div className="rating-block">
                                 <span className="stars">★★★★★</span>
                                 <span className="rating-count">478</span>
@@ -533,8 +606,12 @@ function DhotiCropTop() {
                             <div className="swatches">
                                 <div className="swatch" style={{ backgroundColor: '#2F2A26' }}></div>
                             </div>
-                            <h3 className="brand-name">Western Elegance</h3>
-                            <p className="product-title">Classic Black Contemporary Wrap Saree</p>
+                            <h3 className="brand-name">
+                                Red Embroidered Crop Top with Dhoti Pants – Bold Festive Ethnic Wear
+                            </h3>
+                            <p className="product-title">
+                                Vibrant red embroidered crop top with dramatic dhoti pants. A striking festive pick for weddings and celebrations.
+                            </p>
                             <div className="rating-block">
                                 <span className="stars">★★★★☆</span>
                                 <span className="rating-count">334</span>
@@ -557,8 +634,12 @@ function DhotiCropTop() {
                             <div className="swatches">
                                 <div className="swatch" style={{ backgroundColor: '#0b2b4e' }}></div>
                             </div>
-                            <h3 className="brand-name">Heritage Silks</h3>
-                            <p className="product-title">Rich Indigo Occasion Wear Layout Saree</p>
+                            <h3 className="brand-name">
+                                Ivory Sheer Embroidered Cape Crop Top with Dhoti Pants – Elegant Festive Set
+                            </h3>
+                            <p className="product-title">
+                                Soft ivory sheer embroidered cape crop top with matching dhoti pants. Graceful and refined for receptions.
+                            </p>
                             <div className="rating-block">
                                 <span className="stars">★★★★★</span>
                                 <span className="rating-count">650</span>
@@ -582,8 +663,12 @@ function DhotiCropTop() {
                                 <div className="swatch" style={{ backgroundColor: '#d1bfae' }}></div>
                                 <div className="swatch" style={{ backgroundColor: '#bb9b9f' }}></div>
                             </div>
-                            <h3 className="brand-name">Queen's Bespoke</h3>
-                            <p className="product-title">Taupe High-Society Event Saree</p>
+                            <h3 className="brand-name">
+                                Red Crop Top with Wide Dhoti Pants – Vibrant Indo-Western Festive Wear
+                            </h3>
+                            <p className="product-title">
+                                Bold red crop top paired with wide-leg dhoti pants. A chic and vibrant festive pick for sangeet and cocktail celebrations.
+                            </p>
                             <div className="rating-block">
                                 <span className="stars">★★★★★</span>
                                 <span className="rating-count">93</span>
@@ -599,7 +684,7 @@ function DhotiCropTop() {
 
                 </div>
             </div>
-            
+
             {/* Hamburger Sidebar Menu */}
             <div className={`sidebar-overlay ${isSidebarOpen ? 'active' : ''}`} id="sidebar-overlay" onClick={closeSidebar}></div>
             <div className={`sidebar-panel ${isSidebarOpen ? 'active' : ''}`} id="sidebar">
