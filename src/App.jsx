@@ -12,7 +12,8 @@ import GownSaree from './pages/GownSaree';
 import Sarees from './pages/Sarees';
 import Lehengas from './pages/Lehengas';
 import BridalLehenga from './pages/BridalLehenga';
-import Croptops from './pages/Croptops';
+import TraditionalCroptops from './pages/TraditionalCroptops';
+import WesternCroptops from './pages/WesternCroptops';
 import KurthiSets from './pages/KurthiSets';
 import Anarkalis from './pages/Anarkalis';
 import SalwarKamis from './pages/SalwarKamis';
@@ -80,7 +81,8 @@ function App() {
             <Route path="/sarees" element={<Sarees />} />
             <Route path="/lehengas" element={<Lehengas />} />
             <Route path="/bridal-lehenga" element={<BridalLehenga />} />
-            <Route path="/croptops" element={<Croptops />} />
+            <Route path="/traditional-croptops" element={<TraditionalCroptops />} />
+            <Route path="/western-croptops" element={<WesternCroptops />} />
             <Route path="/kurthisets" element={<KurthiSets />} />
             <Route path="/anarkalis" element={<Anarkalis />} />
             <Route path="/salwarkamis" element={<SalwarKamis />} />
