@@ -25,7 +25,6 @@ const SearchBar = () => {
         onChange={(e) => setSearchQuery(e.target.value)}
         onKeyDown={handleKeyDown}
       />
-      <FiSearch className="search-icon-mobile" onClick={() => navigate('/search')} style={{cursor: 'pointer'}} />
     </div>
   );
 };

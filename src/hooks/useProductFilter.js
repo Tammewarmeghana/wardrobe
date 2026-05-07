@@ -10,29 +10,36 @@ export const useProductFilter = (initialProducts) => {
   });
 
   const filteredProducts = useMemo(() => {
+    if (!initialProducts || !Array.isArray(initialProducts)) return [];
+    
     return initialProducts.filter(product => {
       // Price Filter
       if (activeFilters.price) {
-        if (product.price < activeFilters.price.min || product.price > activeFilters.price.max) return false;
+        const price = Number(product.price);
+        const min = Number(activeFilters.price.min);
+        const max = Number(activeFilters.price.max);
+        if (price < min || price > max) return false;
       }
 
       // Rating Filter
       if (activeFilters.rating) {
-        if (product.rating < activeFilters.rating) return false;
+        const rating = Number(product.rating);
+        const targetRating = Number(activeFilters.rating);
+        if (rating < targetRating) return false;
       }
 
       // Brand Filter
-      if (activeFilters.brands.length > 0) {
+      if (activeFilters.brands && activeFilters.brands.length > 0) {
         if (!activeFilters.brands.includes(product.brand)) return false;
       }
 
       // Color Filter
-      if (activeFilters.colors.length > 0) {
-        if (!product.colors.some(c => activeFilters.colors.includes(c))) return false;
+      if (activeFilters.colors && activeFilters.colors.length > 0) {
+        if (!product.colors || !Array.isArray(product.colors) || !product.colors.some(c => activeFilters.colors.includes(c))) return false;
       }
 
       // Fabric Filter
-      if (activeFilters.fabrics.length > 0) {
+      if (activeFilters.fabrics && activeFilters.fabrics.length > 0) {
         if (!activeFilters.fabrics.includes(product.fabric)) return false;
       }
 
@@ -43,6 +50,8 @@ export const useProductFilter = (initialProducts) => {
   const toggleFilter = (type, value) => {
     setActiveFilters(prev => {
       const current = prev[type];
+      
+      // Handle Arrays (Brands, Colors, Fabrics)
       if (Array.isArray(current)) {
         const index = current.indexOf(value);
         if (index > -1) {
@@ -50,10 +59,18 @@ export const useProductFilter = (initialProducts) => {
         } else {
           return { ...prev, [type]: [...current, value] };
         }
-      } else {
-        // Toggle single value filters (null if same value, else set value)
-        return { ...prev, [type]: prev[type] === value ? null : value };
+      } 
+      
+      // Handle Objects (Price range)
+      if (typeof value === 'object' && value !== null && current !== null) {
+        // Compare by label if it's a price range object
+        if (value.label && current.label === value.label) {
+          return { ...prev, [type]: null };
+        }
       }
+
+      // Handle primitives or setting new object
+      return { ...prev, [type]: prev[type] === value ? null : value };
     });
   };
 

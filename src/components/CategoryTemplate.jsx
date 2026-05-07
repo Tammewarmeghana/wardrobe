@@ -53,12 +53,6 @@ const CategoryTemplate = ({ category, sidebarType }) => {
                             </button>
                         </div>
                     </div>
-                    <div className="top-tabs">
-                        <div className="tab active">For you</div>
-                        <div className="tab">Deals</div>
-                        <div className="tab">Bestsellers</div>
-                        <div className="tab">Bought together</div>
-                    </div>
                 </div>
 
                 <FilterPanel 

@@ -1,31 +1,42 @@
 import React, { useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import './opening.css';
 
 function Opening() {
+    const navigate = useNavigate();
+
     useEffect(() => {
         const wrapper = document.querySelector('.opening-page-wrapper');
         const ANIMATION_DURATION = 2000;
+        const REDIRECT_DELAY = 4000; // Time to see the final frock state before redirect
 
         const timer = setTimeout(() => {
             wrapper?.classList.add('state-transformed');
         }, ANIMATION_DURATION);
 
+        const redirectTimer = setTimeout(() => {
+            wrapper?.classList.add('animate-out');
+            setTimeout(() => {
+                navigate('/fullpage');
+            }, 1000);
+        }, REDIRECT_DELAY);
+
         return () => {
             clearTimeout(timer);
+            clearTimeout(redirectTimer);
             wrapper?.classList.remove('state-transformed');
         };
-    }, []);
+    }, [navigate]);
 
     return (
         <div className="opening-page-wrapper">
             
             {/* Top Right Navigation */}
-            <div className="opening-nav" style={{ justifyContent: 'flex-end', gap: '30px' }}>
-                <Link to="/home" className="nav-link">My Wardrobe</Link>
+            {/* <div className="opening-nav" style={{ justifyContent: 'flex-end', gap: '30px' }}>
+                <Link to="/fullpage" className="nav-link">My Wardrobe</Link>
                 <Link to="/login" className="nav-link nav-btn">Login</Link>
                 <Link to="/signup" className="nav-link nav-btn">Sign Up</Link>
-            </div>
+            </div> */}
 
             {/* Background glow elements for premium look */}
             <div className="bg-glow glow-1"></div>

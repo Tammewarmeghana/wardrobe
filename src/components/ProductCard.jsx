@@ -4,14 +4,26 @@ import WishlistHeart from './WishlistHeart';
 const ProductCard = ({ product, onAddToCart }) => {
   return (
     <div className="product-card" style={{ position: "relative" }}>
-      <WishlistHeart item={{ 
-        id: `${product.category}_${product.title}`, 
-        title: product.title, 
-        image: product.image, 
-        brand: product.brand, 
-        price: <><span>₹</span>{product.price.toLocaleString()}</> 
+      <WishlistHeart item={{
+        id: `${product.category}_${product.title}`,
+        title: product.title,
+        image: product.image,
+        brand: product.brand,
+        price: <><span>₹</span>{product.price.toLocaleString()}</>
       }} />
-      <img src={product.image} alt={product.title} className="card-image" />
+      {/* <img src={product.image} alt={product.title} className="card-image" /> */}
+      <img
+        src={product.image}
+        alt={product.title}
+        style={{
+          width: "100%",
+          height: "280px",
+          objectFit: "contain",
+          objectPosition: "top",
+          padding: "10px",
+          ...product.imageStyle
+        }}
+      />
       <div className="card-content">
         {product.colors && (
           <div className="swatches">

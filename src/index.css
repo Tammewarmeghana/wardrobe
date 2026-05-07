@@ -1,5 +1,4 @@
 
-
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap');
 
 
@@ -35,7 +34,7 @@
 body {
     background-color: var(--marsh-mud-bg);
     margin: 0;
-    padding: 2rem 5%;
+    padding: 0;
     font-family: 'Outfit', sans-serif;
     color: var(--text-dark);
 }
@@ -482,7 +481,3 @@ body {
         /* slightly shorter on mobile for better viewing */
     }
 }
-
-
-
-

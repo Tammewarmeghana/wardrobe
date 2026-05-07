@@ -64,7 +64,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Opening />} />
             <Route path="/login" element={<Login />} />
-            <Route path="/home" element={<Home />} />
+            <Route path="/home" element={<FullPage />} />
             <Route path="/collection" element={<Collection />} />
             <Route path="/indowestern" element={<IndoWestern />} />
             <Route path="/western" element={<Western />} />
@@ -83,6 +83,7 @@ function App() {
             <Route path="/bridal-lehenga" element={<BridalLehenga />} />
             <Route path="/traditional-croptops" element={<TraditionalCroptops />} />
             <Route path="/western-croptops" element={<WesternCroptops />} />
+            <Route path="/croptops" element={<WesternCroptops />} />
             <Route path="/kurthisets" element={<KurthiSets />} />
             <Route path="/anarkalis" element={<Anarkalis />} />
             <Route path="/salwarkamis" element={<SalwarKamis />} />

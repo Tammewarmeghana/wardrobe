@@ -281,7 +281,11 @@ export const products = [
       "Gold"
     ],
     "fabric": "Crepe",
-    "image": "https://res.cloudinary.com/dugksxwkr/image/upload/v1776148755/9b326d857f3cfb0dcb5a1f83eec621c5-removebg-preview_lzpa3z.png"
+    "image": "https://res.cloudinary.com/dugksxwkr/image/upload/v1776148755/9b326d857f3cfb0dcb5a1f83eec621c5-removebg-preview_lzpa3z.png",
+    imageStyle: {
+      objectFit: "contain",
+      objectPosition: "center"
+    }
   },
   {
     "id": "Classic Black Contemporary Wrap Saree",
@@ -396,7 +400,11 @@ export const products = [
       "Blue"
     ],
     "fabric": "Chiffon",
-    "image": "https://res.cloudinary.com/dugksxwkr/image/upload/v1776186696/5d3bc19ef09ffbbfc13271ec3039e706-removebg-preview_aiuzcv.png"
+    "image": "https://res.cloudinary.com/dugksxwkr/image/upload/v1777876621/c11057209e680aa5810bf82945d398a9-removebg-preview_kifgvi.png",
+    imageStyle: {
+      objectFit: "contain",
+      objectPosition: "center"
+    }
   },
   {
     "id": "Custom-Fit Sequined Saree Dress",
@@ -10698,8 +10706,13 @@ export const products = [
       "Grey"
     ],
     "fabric": "Cotton",
-    "image": "https://res.cloudinary.com/dodmxncwc/image/upload/v1777462456/06db3ff563ef4a668a632f1fd2280ce7-removebg-preview_eoeesn.png"
-  },
+    "image": "https://res.cloudinary.com/dodmxncwc/image/upload/v1777462456/06db3ff563ef4a668a632f1fd2280ce7-removebg-preview_eoeesn.png",
+    imageStyle: {
+      objectFit: "contain",
+      objectPosition: "center"
+    }
+  }
+  ,
   {
     "id": "west_crop_Taupe High-Society Event Saree",
     "category": "western-croptops",
@@ -10714,6 +10727,9 @@ export const products = [
       "Red"
     ],
     "fabric": "Satin",
-    "image": "https://res.cloudinary.com/dugksxwkr/image/upload/v1776184663/73b8815d68a0ec6d6e9616aeb91b0aa5-removebg-preview_a7ofwv.png"
+    "image": "https://res.cloudinary.com/dugksxwkr/image/upload/v1776184663/73b8815d68a0ec6d6e9616aeb91b0aa5-removebg-preview_a7ofwv.png",
+    imageStyle: {
+      objectPosition: "top"
+    }
   }
 ];

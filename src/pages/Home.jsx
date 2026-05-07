@@ -170,18 +170,6 @@ function Home() {
                 </div>
             </section>
 
-            {/* 6. Unlimited Video Shopping Element */}
-            <section className="video-shopping-element">
-                <div className="video-content">
-                    <h2>Unlimited 24/7 Video Shopping</h2>
-                    <p>Connect live with our floor experts and shop your favorite styles directly via high-definition video call from the comfort of your home.</p>
-                    <Link to="#" className="btn-highlight">Start Call Now</Link>
-                </div>
-                <div className="video-graphic">
-                    <div className="pulse-ring"></div>
-                    <img src="cat_indowestern.png" alt="Video Call Preview" />
-                </div>
-            </section>
 
 
             {/* 8. Bridal Sessions */}

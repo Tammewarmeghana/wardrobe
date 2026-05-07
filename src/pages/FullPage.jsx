@@ -5,10 +5,12 @@ import './fullpage.css';
 const FullPage = () => {
     const navigate = useNavigate();
     const [currentSlide, setCurrentSlide] = useState(0);
+    const [isVisible, setIsVisible] = useState(false);
     const slidesCount = 5;
     const bestsTrackRef = useRef(null);
 
     useEffect(() => {
+        setIsVisible(true);
         const interval = setInterval(() => {
             setCurrentSlide(prev => (prev + 1) % slidesCount);
         }, 3000);
@@ -39,7 +41,7 @@ const FullPage = () => {
     };
 
     return (
-        <div className="fullpage-wrapper">
+        <div className={`fullpage-wrapper ${isVisible ? 'fade-in' : ''}`}>
 
             {/* 2. Main Hero Carousel (3 pages) */}
             <section className="hero-carousel-container">
@@ -149,18 +151,6 @@ const FullPage = () => {
                 </div>
             </section>
 
-            {/* 6. Unlimited Video Shopping Element */}
-            <section className="video-shopping-element">
-                <div className="video-content">
-                    <h2>Unlimited 24/7 Video Shopping</h2>
-                    <p>Connect live with our floor experts and shop your favorite styles directly via high-definition video call from the comfort of your home.</p>
-                    <a href="#" className="btn-highlight">Start Call Now</a>
-                </div>
-                <div className="video-graphic">
-                    <div className="pulse-ring"></div>
-                    <img src="https://res.cloudinary.com/dodmxncwc/image/upload/v1776917091/ChatGPT_Image_Apr_23_2026_09_34_11_AM_qr0zwp.png" alt="Video Call Preview" />
-                </div>
-            </section>
 
             {/* 8. Bridal Sessions */}
             <section className="bridal-sessions">

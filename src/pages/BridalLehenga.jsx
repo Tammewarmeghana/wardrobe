@@ -41,12 +41,6 @@ function BridalLehenga() {
                         </div>
 
                     </div>
-                    <div className="top-tabs">
-                        <div className="tab active">For you</div>
-                        <div className="tab">Deals</div>
-                        <div className="tab">Bestsellers</div>
-                        <div className="tab">Bought together</div>
-                    </div>
                 </div>
 
                 {/* Filters */}
@@ -56,14 +50,6 @@ function BridalLehenga() {
                         <path d="M6 9l6 6 6-6" />
                     </svg></div>
                     <div className="filter-pill">4 stars & up <svg width="12" height="12" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" strokeWidth="2">
-                        <path d="M6 9l6 6 6-6" />
-                    </svg></div>
-                    <div className="filter-pill">Brand <svg width="12" height="12" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" strokeWidth="2">
-                        <path d="M6 9l6 6 6-6" />
-                    </svg></div>
-                    <div className="filter-pill">Color <svg width="12" height="12" viewBox="0 0 24 24" fill="none"
                         stroke="currentColor" strokeWidth="2">
                         <path d="M6 9l6 6 6-6" />
                     </svg></div>

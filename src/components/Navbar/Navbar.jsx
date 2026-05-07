@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { FiMenu, FiX, FiCamera, FiPhone } from 'react-icons/fi';
 import SearchBar from './SearchBar';
@@ -10,7 +10,18 @@ const Navbar = () => {
   const location = useLocation();
   const navigate = useNavigate();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+  const [mounted, setMounted] = useState(false);
   const fileInputRef = useRef(null);
+
+  useEffect(() => {
+    setMounted(true);
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 50);
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   const handleCameraClick = () => {
     if (fileInputRef.current) {
@@ -26,60 +37,51 @@ const Navbar = () => {
     }
   };
 
-  // Helper to determine active link
-  const isActive = (path) => location.pathname === path;
-
-  // The original App.jsx had hiddenRoutes, we can either handle it here or in App component.
-  // We'll mimic the original hiddenRoutes array from App.jsx so it only shows where intended.
-  const hiddenRoutes = ['/', '/login'];
+  // The original App.jsx had hiddenRoutes
+  const hiddenRoutes = ['/', '/login', '/wishlist', '/cart', '/contact'];
   if (hiddenRoutes.includes(location.pathname)) return null;
 
   return (
-    <nav className="elegant-navbar">
+    <nav className={`elegant-navbar ${scrolled ? 'scrolled' : ''} ${mounted ? 'navbar-visible' : ''}`}>
       <div className="hamburger-menu" onClick={() => setIsMenuOpen(!isMenuOpen)}>
         {isMenuOpen ? <FiX /> : <FiMenu />}
       </div>
 
       <div className={`nav-left ${isMenuOpen ? 'mobile-open' : ''}`}>
         <Link 
-          to="/home" 
-          className="nav-link-elegant"
+          to="/fullpage" 
+          className="nav-link-elegant anim-staggered"
+          style={{ '--delay': '0.1s' }}
           onClick={() => setIsMenuOpen(false)}
         >
           HOME
         </Link>
         <Link 
           to="/collection" 
-          className="nav-link-elegant"
+          className="nav-link-elegant anim-staggered"
+          style={{ '--delay': '0.2s' }}
           onClick={() => setIsMenuOpen(false)}
         >
           COLLECTIONS
         </Link>
-        {/* <Link 
-          to="/categories" 
-          className={`nav-link-elegant ${isActive('/categories') ? 'active' : ''}`}
-          onClick={() => setIsMenuOpen(false)}
-        >
-          CATEGORIES
-        </Link> */}
-        {/* <Link 
-          to="/contact" 
-          className={`nav-link-elegant ${isActive('/contact') ? 'active' : ''}`}
-          onClick={() => setIsMenuOpen(false)}
-        >
-          CONTACT
-        </Link> */}
       </div>
 
       <div className="nav-center">
-        <Link to="/home" className="brand-logo">
+        <Link to="/fullpage" className="brand-logo anim-logo">
           Queen's Wardrobe
         </Link>
       </div>
 
       <div className="nav-right">
-        <SearchBar />
-        <div className="icon-wrapper" title="Picture Search" style={{ opacity: 0.6, cursor: 'pointer', display: 'flex', alignItems: 'center' }} onClick={handleCameraClick}>
+        <div className="search-wrapper anim-staggered" style={{ '--delay': '0.3s' }}>
+          <SearchBar />
+        </div>
+        <div 
+          className="icon-wrapper anim-staggered" 
+          style={{ '--delay': '0.4s' }}
+          title="Picture Search" 
+          onClick={handleCameraClick}
+        >
           <FiCamera />
         </div>
         <input 
@@ -90,11 +92,20 @@ const Navbar = () => {
           style={{ display: 'none' }} 
           onChange={handleFileChange}
         />
-        <Link to="/contact" className="icon-wrapper" title="Call Us" style={{ opacity: 0.6 }}>
+        <Link 
+          to="/contact" 
+          className="icon-wrapper anim-staggered" 
+          style={{ '--delay': '0.5s' }}
+          title="Call Us"
+        >
           <FiPhone />
         </Link>
-        <WishlistIcon />
-        <CartIcon />
+        <div className="anim-staggered" style={{ '--delay': '0.6s' }}>
+           <WishlistIcon />
+        </div>
+        <div className="anim-staggered" style={{ '--delay': '0.7s' }}>
+           <CartIcon />
+        </div>
       </div>
     </nav>
   );

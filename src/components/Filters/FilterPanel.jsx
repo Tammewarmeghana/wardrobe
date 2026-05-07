@@ -62,47 +62,6 @@ const FilterPanel = ({ products, activeFilters, toggleFilter, clearFilters }) =>
           )}
         </div>
 
-        {/* Brand Filter */}
-        <div className="filter-group">
-          <div className={`filter-pill ${activeFilters.brands.length > 0 ? 'active' : ''}`} onClick={() => toggleDropdown('brand')}>
-            Brand <ChevronDown />
-          </div>
-          {openDropdown === 'brand' && (
-            <div className="filter-dropdown">
-              {brands.map(brand => (
-                <label key={brand} className="filter-option">
-                  <input 
-                    type="checkbox" 
-                    checked={activeFilters.brands.includes(brand)}
-                    onChange={() => toggleFilter('brands', brand)}
-                  />
-                  {brand}
-                </label>
-              ))}
-            </div>
-          )}
-        </div>
-
-        {/* Color Filter */}
-        <div className="filter-group">
-          <div className={`filter-pill ${activeFilters.colors.length > 0 ? 'active' : ''}`} onClick={() => toggleDropdown('color')}>
-            Color <ChevronDown />
-          </div>
-          {openDropdown === 'color' && (
-            <div className="filter-dropdown">
-              {colors.map(color => (
-                <label key={color} className="filter-option">
-                  <input 
-                    type="checkbox" 
-                    checked={activeFilters.colors.includes(color)}
-                    onChange={() => toggleFilter('colors', color)}
-                  />
-                  {color}
-                </label>
-              ))}
-            </div>
-          )}
-        </div>
 
         {/* Fabric Filter */}
         <div className="filter-group">
