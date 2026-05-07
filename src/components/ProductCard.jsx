@@ -12,18 +12,14 @@ const ProductCard = ({ product, onAddToCart }) => {
         price: <><span>₹</span>{product.price.toLocaleString()}</>
       }} />
       {/* <img src={product.image} alt={product.title} className="card-image" /> */}
-      <img
-        src={product.image}
-        alt={product.title}
-        style={{
-          width: "100%",
-          height: "280px",
-          objectFit: "contain",
-          objectPosition: "top",
-          padding: "10px",
-          ...product.imageStyle
-        }}
-      />
+      <div className="product-image-wrapper">
+        <img
+          src={product.image}
+          alt={product.title}
+          className="product-card-img"
+          style={product.imageStyle}
+        />
+      </div>
       <div className="card-content">
         {product.colors && (
           <div className="swatches">

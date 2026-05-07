@@ -61,6 +61,19 @@ button {
 
 .fullpage-wrapper {
     padding-top: 110px; /* Offset for fixed navbar */
+    overflow-x: hidden;
+}
+
+/* Reveal on Scroll */
+.reveal-on-scroll {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 1s cubic-bezier(0.25, 1, 0.5, 1), transform 1s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.reveal-on-scroll.revealed {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 /* =======================================
@@ -91,6 +104,10 @@ button {
     background-size: cover;
     background-position: center;
     position: relative;
+}
+
+.hero-content {
+    display: none !important;
 }
 
 .blur-box {
@@ -355,24 +372,32 @@ button {
 
 .card-title {
     position: absolute;
-    bottom: -50px;
+    bottom: 30px;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translate(-50%, 40px); /* Start lower */
     width: max-content;
     background: white;
-    color: #5C4A4A;
-    padding: 12px 30px;
-    border-radius: 30px;
+    color: #2c2c2c;
+    padding: 10px 25px;
+    border-radius: 40px;
     text-align: center;
     font-family: var(--font-heading);
-    font-size: 1.2rem;
-    font-weight: 500;
-    transition: bottom var(--transition-smooth);
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    font-size: 1rem;
+    font-weight: 600;
+    opacity: 0;
+    visibility: hidden;
+    transition: 
+        transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275),
+        opacity 0.4s ease,
+        visibility 0.4s;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+    z-index: 5;
 }
 
 .best-card:hover .card-title {
-    bottom: 0;
+    opacity: 1;
+    visibility: visible;
+    transform: translate(-50%, 0);
 }
 
 .bests-btn {
@@ -473,174 +498,207 @@ button {
 /* =======================================
    9. HOVER REVEAL CARD
 ======================================= */
+/* =======================================
+   9. MAGIC SELECTION (REFINED)
+======================================= */
 .hover-unveil-section {
     padding: 100px 5%;
     background: #F3EEE8;
-    /* Pinkish White */
+    overflow: hidden;
 }
 
 .magic-hover-card {
     position: relative;
-    max-width: 900px;
-    height: 500px;
+    max-width: 1100px;
+    height: 600px;
     margin: 0 auto;
-    background: transparent;
-    border: 1px solid var(--clr-pastel-pink);
-    border-radius: 12px;
+    background: #fff;
+    border-radius: 20px;
     overflow: hidden;
-    cursor: crosshair;
-}
-
-.front-cover {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: transparent;
-    /* Whitish pink */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    z-index: 2;
-    transition: opacity 0.5s ease, transform 0.5s ease;
-}
-
-.front-cover h3 {
-    font-family: var(--font-heading);
-    font-size: 3rem;
-    margin-bottom: 15px;
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.1);
 }
 
 .hidden-layer {
     display: flex;
+    width: 100%;
+    height: 100%;
+    transition: all 0.5s ease;
+}
+
+.hidden-dress {
+    position: relative;
+    flex: 1;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+    filter: grayscale(40%) brightness(0.9);
+}
+
+.hidden-dress::after {
+    content: '';
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: 1;
-}
-
-.hidden-dress {
-    flex: 1 1 33.33%;
-    border-right: 1px solid var(--clr-pastel-pink);
-    overflow: hidden;
-    cursor: pointer;
-    position: relative; /* Support absolute overlay */
-    /* Smooth transitions for scaling and hiding */
-    transition: flex 0.5s ease-in-out, opacity 0.4s ease-in-out;
-}
-
-.hidden-dress:last-child {
-    border-right: none;
+    background: linear-gradient(to bottom, transparent 60%, rgba(0,0,0,0.6));
+    opacity: 0.8;
+    transition: opacity 0.5s ease;
 }
 
 .hidden-dress img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: transform 0.5s ease-in-out;
+    transform: scale(1);
+    transition: transform 1.2s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-/* When user hovers over the parent, hide all non-hovered children */
+/* Panoramic Expansion on Hover */
 .hidden-layer:hover .hidden-dress {
-    flex: 0 0 0%;
-    opacity: 0;
-    border-right: none;
+    flex: 0.7;
+    filter: grayscale(100%) brightness(0.6);
+    opacity: 0.5;
 }
 
-/* Smoothly expand the hovered child to take 100% of the container width */
 .hidden-layer:hover .hidden-dress:hover {
-    flex: 1 1 100%;
+    flex: 2;
+    filter: grayscale(0%) brightness(1);
     opacity: 1;
 }
 
-/* Optional enhancement: slight zoom-in effect on hovered image */
 .hidden-layer:hover .hidden-dress:hover img {
-    transform: scale(1.05);
+    transform: scale(1.1);
 }
 
-/* --- Product Overlay CSS --- */
+.hidden-layer:hover .hidden-dress:hover::after {
+    opacity: 0;
+}
+
+/* Glass Content Reveal */
 .product-overlay {
     position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(253, 236, 239, 0.85); /* Semi-transparent blush / soft pink */
+    background: rgba(0, 0, 0, 0.4); /* Darker for better visibility */
+    backdrop-filter: blur(0px);
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: center;
-    text-align: center;
-    padding: 30px;
+    padding: 50px 30px;
     opacity: 0;
     visibility: hidden;
-    transition: opacity 0.4s ease-in-out, visibility 0.4s ease-in-out;
+    transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+    z-index: 5;
 }
 
-.hidden-layer:hover .hidden-dress:hover .product-overlay {
+.hidden-dress:hover .product-overlay {
     opacity: 1;
     visibility: visible;
+    backdrop-filter: blur(8px);
 }
 
 .product-content {
     transform: translateY(30px);
-    transition: transform 0.4s ease-in-out;
+    opacity: 0;
+    transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    text-align: center;
+    max-width: 400px;
+    color: #ffffff !important; /* Force white for visibility */
+    text-shadow: 0 2px 15px rgba(0,0,0,0.8); /* Stronger shadow */
 }
 
-.hidden-layer:hover .hidden-dress:hover .product-content {
+.hidden-dress:hover .product-content {
     transform: translateY(0);
+    opacity: 1;
 }
 
 .product-title {
     font-family: var(--font-heading);
-    color: #5C4A4A; /* Dark brown / muted rose */
-    font-size: 2.2rem;
-    margin-bottom: 12px;
+    font-size: 2.8rem;
+    margin-bottom: 15px;
+    color: #ffffff !important; /* Force white */
+    text-shadow: 0 2px 20px rgba(0,0,0,0.9);
 }
 
 .product-desc {
-    color: #7B6868; /* Soft muted */
     font-size: 1.1rem;
-    line-height: 1.5;
-    margin-bottom: 25px;
-    font-family: var(--font-body);
+    line-height: 1.6;
+    margin-bottom: 30px;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.95) !important; /* Bright white-pinkish tint */
 }
 
 .product-btn {
-    background: #F8D1D1; /* Soft pink background */
+    background: #fff;
     color: var(--clr-charcoal);
-    padding: 12px 30px;
-    border-radius: 30px;
-    font-weight: 500;
+    padding: 15px 40px;
+    border-radius: 50px;
+    font-weight: 600;
+    letter-spacing: 2px;
     text-transform: uppercase;
-    font-size: 0.9rem;
-    cursor: pointer;
-    transition: background 0.3s ease-in-out;
+    font-size: 0.8rem;
+    border: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
 }
 
 .product-btn:hover {
-    background: #E8B9B9; /* Hover slightly darker shade */
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+    background: var(--clr-charcoal);
+    color: #fff;
 }
 
-/* Make it responsive: stack vertically on smaller screens */
+/* Mobile Adaptation */
 @media (max-width: 768px) {
+    .magic-hover-card {
+        height: auto;
+        background: transparent;
+        box-shadow: none;
+    }
+
     .hidden-layer {
         flex-direction: column;
+        gap: 20px;
     }
+
     .hidden-dress {
-        border-right: none;
-        border-bottom: 1px solid var(--clr-pastel-pink);
+        flex: none;
+        height: 400px;
+        border-radius: 15px;
+        filter: grayscale(0%) brightness(0.9);
+        opacity: 1;
     }
-    .hidden-dress:last-child {
-        border-bottom: none;
+
+    .hidden-layer:hover .hidden-dress {
+        flex: none;
+        filter: grayscale(0%) brightness(0.9);
+        opacity: 1;
     }
-   
-    /* Keep overlay hidden initially so tap triggers animation */
+
     .product-overlay {
-        background: rgba(253, 236, 239, 0.85); /* Slightly darker on mobile for readability */
+        opacity: 1;
+        visibility: visible;
+        background: linear-gradient(to bottom, transparent, rgba(0,0,0,0.8));
+        backdrop-filter: none;
+        padding: 30px 20px;
+    }
+
+    .product-content {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .product-title {
+        font-size: 1.8rem;
+    }
+
+    .product-desc {
+        font-size: 0.95rem;
+        margin-bottom: 20px;
     }
 }
 
@@ -842,12 +900,32 @@ button {
     }
     
     .best-card {
-        min-width: 240px;
+        min-width: 260px; /* Increased slightly */
         scroll-snap-align: start;
+        margin-right: 20px;
+    }
+    
+    .best-card:last-child {
+        margin-right: 5%; /* Padding at end of carousel */
     }
     
     .best-card img {
-        height: 320px;
+        height: 380px; /* More elegant height */
+    }
+
+    .card-title {
+        bottom: 20px;
+        opacity: 1;
+        visibility: visible;
+        transform: translate(-50%, 0);
+        letter-spacing: 0.5px;
+        font-size: 0.9rem;
+        padding: 8px 20px;
+    }
+
+    /* Show peek of next card */
+    .bests-carousel-wrapper {
+        padding: 0 0 0 5%;
     }
 
     /* Hide desktop arrows on mobile to prefer swiping */

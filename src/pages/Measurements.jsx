@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { FiArrowLeft } from 'react-icons/fi';
 import './measurements.css';
 
 function Measurements() {
@@ -113,6 +114,9 @@ function Measurements() {
         <div className="measurement-wrapper">
             <div className="measurement-card">
                 <div className="measurement-header">
+                    <button className="back-arrow-btn" onClick={() => navigate(-1)} title="Go Back">
+                        <FiArrowLeft />
+                    </button>
                     <h1>Custom Measurements</h1>
                     <p>Provide your exact dimensions for a perfect tailor-made fit.</p>
                 </div>

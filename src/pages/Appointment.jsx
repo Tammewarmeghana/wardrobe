@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './appointment.css';
 import { useNavigate } from 'react-router-dom';
+import { FiArrowLeft } from 'react-icons/fi';
 import SuccessCard from '../components/SuccessCard/SuccessCard';
 
 const Appointment = () => {
@@ -66,6 +67,9 @@ const Appointment = () => {
                 <div className="particle"></div>
             </div>
             <div className="appointment-card">
+                <button className="back-arrow-btn" onClick={() => navigate(-1)} title="Go Back">
+                    <FiArrowLeft />
+                </button>
                 <div className="appointment-left">
                     <img 
                         src="/red_bridal_lehenga.png" 

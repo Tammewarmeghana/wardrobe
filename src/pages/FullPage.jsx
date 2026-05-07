@@ -13,8 +13,30 @@ const FullPage = () => {
         setIsVisible(true);
         const interval = setInterval(() => {
             setCurrentSlide(prev => (prev + 1) % slidesCount);
-        }, 3000);
-        return () => clearInterval(interval);
+        }, 5000); // Slower interval for premium feel
+
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const revealCallback = (entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('revealed');
+                    observer.unobserve(entry.target);
+                }
+            });
+        };
+
+        const observer = new IntersectionObserver(revealCallback, observerOptions);
+        const revealElements = document.querySelectorAll('.reveal-on-scroll');
+        revealElements.forEach(el => observer.observe(el));
+
+        return () => {
+            clearInterval(interval);
+            observer.disconnect();
+        };
     }, [slidesCount]);
 
     const moveHero = (direction) => {
@@ -32,7 +54,7 @@ const FullPage = () => {
 
     const scrollBests = (direction) => {
         if (bestsTrackRef.current) {
-            const scrollAmount = 350;
+            const scrollAmount = window.innerWidth <= 768 ? 260 : 350;
             bestsTrackRef.current.scrollBy({
                 left: direction * scrollAmount,
                 behavior: 'smooth'
@@ -49,7 +71,7 @@ const FullPage = () => {
                     {/* Slide 1: Latest Designs */}
                     <div className="hero-slide" style={{ backgroundImage: "url('https://res.cloudinary.com/dodmxncwc/image/upload/v1775975945/indo_west_2nd_wkhjzk.jpg')" }}>
                         <div className="hero-content blur-box box-right">
-                            <h2>Indo-Western Couture</h2>
+                            <h2 className="reveal-text">Indo-Western Couture</h2>
                             <p>Modern silhouettes fused with elegant tradition.</p>
                             <a href="#" className="btn-wipe">Explore Now</a>
                         </div>
@@ -58,7 +80,7 @@ const FullPage = () => {
                     {/* Slide 2: Bridal Collects */}
                     <div className="hero-slide" style={{ backgroundImage: "url('https://res.cloudinary.com/dodmxncwc/image/upload/v1775976003/indo_western_1st_ldm9c5.jpg')", backgroundPosition: "top center" }}>
                         <div className="hero-content blur-box box-center">
-                            <h2>Regal Fusion</h2>
+                            <h2 className="reveal-text">Regal Fusion</h2>
                             <p>The royal blend of Eastern art and Western chic.</p>
                             <a href="#" className="btn-wipe">View Collection</a>
                         </div>
@@ -67,7 +89,7 @@ const FullPage = () => {
                     {/* Slide 3: 24 Hrs Dispatch */}
                     <div className="hero-slide" style={{ backgroundImage: "url('https://res.cloudinary.com/dodmxncwc/image/upload/v1775976065/indo_western_1st_a0lqc5.jpg')", backgroundPosition: "top center" }}>
                         <div className="hero-content blur-box box-center">
-                            <h2>Contemporary Heritage</h2>
+                            <h2 className="reveal-text">Contemporary Heritage</h2>
                             <a href="#" className="btn-wipe">Discover Styles</a>
                         </div>
                     </div>
@@ -92,7 +114,7 @@ const FullPage = () => {
             </section>
 
             {/* 3. Central Body: 24 Hrs Dispatch Element */}
-            <section className="dispatch-banner">
+            <section className="dispatch-banner reveal-on-scroll">
                 <div className="dispatch-content">
                     <div className="icon-fast"><svg viewBox="0 0 24 24"><path d="M12 2L4.5 20.29l.71.71L12 18l6.79 3 .71-.71z" /></svg></div>
                     <h2>24 HRS DISPATCH</h2>
@@ -101,7 +123,7 @@ const FullPage = () => {
             </section>
 
             {/* 4. Our Bests Carousel */}
-            <section className="our-bests" id="our-bests">
+            <section className="our-bests reveal-on-scroll" id="our-bests">
                 <h2 className="section-title">Our Bests</h2>
                 <div className="bests-carousel-wrapper">
                     <button className="bests-btn left" onClick={() => scrollBests(-1)}>&#10094;</button>
@@ -132,7 +154,7 @@ const FullPage = () => {
             </section>
 
             {/* 5. Small Logos Features Strip */}
-            <section className="features-strip">
+            <section className="features-strip reveal-on-scroll">
                 <div className="feature-item">
                     <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm5 11h-4v4h-2v-4H7v-2h4V7h2v4h4v2z" /></svg>
                     <span>Easy Return</span>
@@ -153,7 +175,7 @@ const FullPage = () => {
 
 
             {/* 8. Bridal Sessions */}
-            <section className="bridal-sessions">
+            <section className="bridal-sessions reveal-on-scroll">
                 <div className="bridal-graphic">
                     <img src="https://res.cloudinary.com/dodmxncwc/image/upload/v1775980865/fc5d48e17964a07b964b9d40e41047c5_a1ffmf.jpg" alt="Bridal" />
                 </div>
@@ -165,11 +187,11 @@ const FullPage = () => {
             </section>
 
             {/* 9. Hover Card with 3 Dress Designs */}
-            <section className="hover-unveil-section">
+            <section className="hover-unveil-section reveal-on-scroll">
                 <h2 className="section-title">The Magic Selection</h2>
                 <div className="magic-hover-card">
                     <div className="hidden-layer">
-                        <div className="hidden-dress">
+                        <div className="hidden-dress" onClick={(e) => e.currentTarget.classList.toggle('active')}>
                             <img src="https://res.cloudinary.com/dodmxncwc/image/upload/v1775983267/indo_west_2nd_uedcam.jpg" alt="Dress 1" />
                             <div className="product-overlay">
                                 <div className="product-content">
@@ -179,7 +201,7 @@ const FullPage = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="hidden-dress">
+                        <div className="hidden-dress" onClick={(e) => e.currentTarget.classList.toggle('active')}>
                             <img src="https://res.cloudinary.com/dodmxncwc/image/upload/v1775983219/indo_western_1st_n7tfl8.jpg" alt="Dress 2" />
                             <div className="product-overlay">
                                 <div className="product-content">
@@ -189,7 +211,7 @@ const FullPage = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="hidden-dress">
+                        <div className="hidden-dress" onClick={(e) => e.currentTarget.classList.toggle('active')}>
                             <img src="https://res.cloudinary.com/dodmxncwc/image/upload/v1775983262/indo_western_1st_gllva8.jpg" alt="Dress 3" />
                             <div className="product-overlay">
                                 <div className="product-content">
@@ -204,7 +226,7 @@ const FullPage = () => {
             </section>
 
             {/* 10. Customer Stories & Ratings */}
-            <section className="customer-stories">
+            <section className="customer-stories reveal-on-scroll">
                 <h2 className="section-title">Customer Stories</h2>
                 <div className="stories-grid">
                     <div className="story-card">
@@ -226,7 +248,7 @@ const FullPage = () => {
             </section>
 
             {/* 11. Footer with Multiple Elements */}
-            <footer className="mega-footer">
+            <footer className="mega-footer reveal-on-scroll">
                 <div className="footer-columns">
                     <div className="ft-col">
                         <h3>Queen's Wardrobe</h3>

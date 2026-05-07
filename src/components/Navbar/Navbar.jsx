@@ -64,12 +64,16 @@ const Navbar = () => {
   if (!isVisible) return null;
 
   return (
-    <nav className={`elegant-navbar ${scrolled ? 'scrolled' : ''} ${mounted ? 'navbar-visible' : ''}`}>
+    <nav className={`elegant-navbar ${scrolled ? 'scrolled' : ''} ${mounted ? 'navbar-visible' : ''} ${isHidden ? 'nav-hidden-mobile' : ''} ${isMenuOpen ? 'menu-active' : ''}`}>
       <div className="hamburger-menu" onClick={() => setIsMenuOpen(!isMenuOpen)}>
         {isMenuOpen ? <FiX /> : <FiMenu />}
       </div>
 
       <div className={`nav-left ${isMenuOpen ? 'mobile-open' : ''}`}>
+        <div className="mobile-menu-header">
+           <span className="brand-logo small">Queen's Wardrobe</span>
+           <FiX className="close-menu" onClick={() => setIsMenuOpen(false)} />
+        </div>
         <Link 
           to="/fullpage" 
           className="nav-link-elegant anim-staggered"
@@ -86,6 +90,10 @@ const Navbar = () => {
         >
           COLLECTIONS
         </Link>
+        <div className="mobile-socials">
+           <FiCamera onClick={handleCameraClick} />
+           <FiPhone onClick={() => navigate('/contact')} />
+        </div>
       </div>
 
       <div className="nav-center">
@@ -99,7 +107,7 @@ const Navbar = () => {
           <SearchBar />
         </div>
         <div 
-          className="icon-wrapper anim-staggered" 
+          className="icon-wrapper anim-staggered desktop-only" 
           style={{ '--delay': '0.4s' }}
           title="Picture Search" 
           onClick={handleCameraClick}
@@ -116,7 +124,7 @@ const Navbar = () => {
         />
         <Link 
           to="/contact" 
-          className="icon-wrapper anim-staggered" 
+          className="icon-wrapper anim-staggered desktop-only" 
           style={{ '--delay': '0.5s' }}
           title="Call Us"
         >
