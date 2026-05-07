@@ -37,9 +37,11 @@ const Navbar = () => {
     }
   };
 
-  // The original App.jsx had hiddenRoutes
-  const hiddenRoutes = ['/', '/login', '/wishlist', '/cart', '/contact'];
-  if (hiddenRoutes.includes(location.pathname)) return null;
+  // Show navbar ONLY on these specific premium pages
+  const visibleRoutes = ['/fullpage', '/collection'];
+  const isVisible = visibleRoutes.includes(location.pathname);
+  
+  if (!isVisible) return null;
 
   return (
     <nav className={`elegant-navbar ${scrolled ? 'scrolled' : ''} ${mounted ? 'navbar-visible' : ''}`}>

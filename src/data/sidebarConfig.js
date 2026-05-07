@@ -7,7 +7,10 @@ export const sidebarConfig = {
     { label: "Anarkalis", path: "/anarkalis" },
     { label: "Gagra Choli", path: "/gagracholi" },
     { label: "Salwar Kamiz", path: "/salwarkamis" },
-    { label: "Indian Gowns", path: "/indiangowns" }
+    { label: "Indian Gowns", path: "/indiangowns" },
+    { label: "---", path: "#" },
+    { label: "My Cart", path: "/cart" },
+    { label: "My Wishlist", path: "/wishlist" }
   ],
   western: [
     { label: "Bodycons", path: "/bodycon" },
@@ -17,7 +20,10 @@ export const sidebarConfig = {
     { label: "Blazers", path: "/blazers" },
     { label: "Maxi Skirts", path: "/maxiskirts" },
     { label: "Formals", path: "/formals" },
-    { label: "Korean Dresses", path: "/koreanwear" }
+    { label: "Korean Dresses", path: "/koreanwear" },
+    { label: "---", path: "#" },
+    { label: "My Cart", path: "/cart" },
+    { label: "My Wishlist", path: "/wishlist" }
   ],
   indowestern: [
     { label: "Gown Saree", path: "/gownsaree" },
@@ -27,7 +33,10 @@ export const sidebarConfig = {
     { label: "Sharara Peplum", path: "/sharara-peplum" },
     { label: "Peplum Pantsuit", path: "/peplum-pantsuit" },
     { label: "Indo-Western Frocks", path: "/indowestern-frocks" },
-    { label: "Asymmetric Kurtas", path: "/asymmetric-kurtas" }
+    { label: "Asymmetric Kurtas", path: "/asymmetric-kurtas" },
+    { label: "---", path: "#" },
+    { label: "My Cart", path: "/cart" },
+    { label: "My Wishlist", path: "/wishlist" }
   ],
   readymade: [
     { label: "Short Frocks", path: "/readymade-item-1" },
@@ -37,6 +46,9 @@ export const sidebarConfig = {
     { label: "Skirts", path: "/readymade-item-5" },
     { label: "Jumpsuits", path: "/readymade-item-6" },
     { label: "Cotton Kaftan", path: "/readymade-item-7" },
-    { label: "Wrap Dresses", path: "/readymade-item-8" }
+    { label: "Wrap Dresses", path: "/readymade-item-8" },
+    { label: "---", path: "#" },
+    { label: "My Cart", path: "/cart" },
+    { label: "My Wishlist", path: "/wishlist" }
   ]
 };

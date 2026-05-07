@@ -9,17 +9,24 @@ import FilterPanel from './Filters/FilterPanel';
 import ProductCard from './ProductCard';
 import { sidebarConfig } from '../data/sidebarConfig';
 
+import CartIcon from './Navbar/CartIcon';
+import WishlistIcon from './Navbar/WishlistIcon';
+
 const CategoryTemplate = ({ category, sidebarType }) => {
     const { addToCart } = useShop();
+    const [addedToast, setAddedToast] = useState(null);
+
     const handleAddToCart = (product) => { 
         addToCart({
-            id: product.id,
+            id: `${product.category}_${product.id}`, // Unique ID across categories
             name: product.title,
             price: product.price,
             image: product.image,
-            color: product.colors[0],
+            color: product.colors?.[0] || 'Default',
             size: "Free Size"
         }); 
+        setAddedToast(product.title);
+        setTimeout(() => setAddedToast(null), 3000);
     };
 
     const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -38,6 +45,11 @@ const CategoryTemplate = ({ category, sidebarType }) => {
 
     return (
         <div className="gownsaree-wrapper gown-saree-page-container">
+            {addedToast && (
+                <div className="cart-toast">
+                    Added <strong>{addedToast}</strong> to cart!
+                </div>
+            )}
             <div className="page-container" style={{ overflowX: 'hidden' }}>
                 <div className="page-header">
                     <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: '24px', paddingBottom: '20px' }}>
@@ -51,6 +63,10 @@ const CategoryTemplate = ({ category, sidebarType }) => {
                             <button className="hamburger-btn" onClick={toggleSidebar}>
                                 <span></span><span></span><span></span>
                             </button>
+                        </div>
+                        <div className="header-actions" style={{ display: 'flex', gap: '15px' }}>
+                            <WishlistIcon />
+                            <CartIcon />
                         </div>
                     </div>
                 </div>
