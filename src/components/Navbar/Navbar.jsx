@@ -22,7 +22,7 @@ const Navbar = () => {
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
       setScrolled(currentScrollY > 50);
-      
+
       if (window.innerWidth <= 900) {
         if (currentScrollY > lastScrollY.current && currentScrollY > 100) {
           setIsHidden(true); // Scrolling down
@@ -32,10 +32,14 @@ const Navbar = () => {
       } else {
         setIsHidden(false); // Always visible on desktop
       }
-      
+
       lastScrollY.current = currentScrollY;
     };
+
     window.addEventListener('scroll', handleScroll, { passive: true });
+    setScrolled(window.scrollY > 50);
+    setIsMenuOpen(false); // Close mobile menu when user starts scrolling
+
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
@@ -60,7 +64,7 @@ const Navbar = () => {
   if (!isVisible) return null;
 
   return (
-    <nav className={`elegant-navbar ${scrolled ? 'scrolled' : ''} ${mounted ? 'navbar-visible' : ''} ${isHidden ? 'nav-hidden-mobile' : ''}`}>
+    <nav className={`elegant-navbar ${scrolled ? 'scrolled' : ''} ${mounted ? 'navbar-visible' : ''}`}>
       <div className="hamburger-menu" onClick={() => setIsMenuOpen(!isMenuOpen)}>
         {isMenuOpen ? <FiX /> : <FiMenu />}
       </div>
@@ -85,7 +89,7 @@ const Navbar = () => {
       </div>
 
       <div className="nav-center">
-        <Link to="/fullpage" className="brand-logo anim-logo">
+        <Link to="/fullpage" className="brand-logo anim-logo" onClick={() => setIsMenuOpen(false)}>
           Queen's Wardrobe
         </Link>
       </div>
