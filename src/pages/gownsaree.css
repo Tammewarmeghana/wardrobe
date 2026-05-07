@@ -370,4 +370,12 @@
         padding: 8px 0;
         font-size: 0.85rem;
     }
+
+    .product-title {
+        display: block;
+        color: #2c2c2c !important; /* Solid dark color for perfect visibility */
+        font-size: 0.85rem;
+        font-weight: 500;
+        margin-top: 5px;
+    }
 }
