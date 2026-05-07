@@ -638,14 +638,9 @@ button {
         border-bottom: none;
     }
    
-    /* Show overlay content always visible or softly visible on mobile */
+    /* Keep overlay hidden initially so tap triggers animation */
     .product-overlay {
-        opacity: 1;
-        visibility: visible;
-        background: rgba(253, 236, 239, 0.7);
-    }
-    .product-content {
-        transform: translateY(0);
+        background: rgba(253, 236, 239, 0.85); /* Slightly darker on mobile for readability */
     }
 }
 
@@ -795,4 +790,277 @@ button {
 .fullpage-wrapper.fade-in {
     opacity: 1;
     transform: translateY(0);
+}
+
+/* =======================================
+   MOBILE RESPONSIVENESS FIXES
+   (Strictly contained to <= 768px)
+======================================= */
+
+@media (max-width: 768px) {
+    /* 1. Main Hero Carousel */
+    .hero-carousel-container {
+        height: 60vh;
+    }
+    
+    .blur-box {
+        padding: 30px;
+        max-width: 90%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+    
+    .box-right {
+        right: auto;
+    }
+    
+    .blur-box h2 {
+        font-size: 2.2rem;
+    }
+    
+    .blur-box p {
+        font-size: 1rem;
+        margin-bottom: 20px;
+    }
+
+    /* 2. Our Bests */
+    .our-bests {
+        padding: 40px 0;
+    }
+    
+    .bests-track {
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        padding-bottom: 30px; /* space for scrollbar */
+        /* Hide scrollbar for cleaner look */
+        scrollbar-width: none; 
+    }
+    .bests-track::-webkit-scrollbar {
+        display: none;
+    }
+    
+    .best-card {
+        min-width: 240px;
+        scroll-snap-align: start;
+    }
+    
+    .best-card img {
+        height: 320px;
+    }
+
+    /* Hide desktop arrows on mobile to prefer swiping */
+    .bests-btn {
+        display: none;
+    }
+
+    /* 3. Magical Section */
+    .hover-unveil-section {
+        padding: 40px 5%;
+    }
+    
+    .product-overlay {
+        padding: 20px;
+    }
+    
+    .product-title {
+        font-size: 1.8rem;
+    }
+
+    .product-desc {
+        font-size: 1rem;
+        margin-bottom: 15px;
+    }
+
+    /* 4. Customer Stories */
+    .customer-stories {
+        padding: 40px 5%;
+    }
+    
+    .story-card {
+        padding: 25px;
+    }
+
+    /* 5. Footer */
+    .mega-footer {
+        padding: 50px 5% 0;
+    }
+    
+    .footer-columns {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        text-align: center;
+    }
+
+    .social-image-grid {
+        justify-content: center;
+    }
+    
+    /* General Spacing */
+    .section-title {
+        font-size: 2rem;
+        margin-bottom: 25px;
+    }
+}
+
+@media (max-width: 425px) {
+    /* Hero */
+    .hero-carousel-container {
+        height: 50vh;
+    }
+    
+    .blur-box {
+        padding: 20px;
+    }
+    
+    .blur-box h2 {
+        font-size: 1.8rem;
+    }
+
+    /* Dispatch */
+    .dispatch-banner {
+        padding: 20px 5%;
+    }
+    
+    .dispatch-content h2 {
+        font-size: 1.2rem;
+    }
+    
+    .icon-fast {
+        width: 30px;
+        height: 30px;
+    }
+
+    /* Our Bests */
+    .best-card {
+        min-width: 200px;
+    }
+    
+    .best-card img {
+        height: 280px;
+    }
+
+    .card-title {
+        font-size: 1rem;
+        padding: 8px 20px;
+        /* Restored hover animation for mobile */
+    }
+
+    /* Features Strip */
+    .features-strip {
+        padding: 30px 5%;
+        gap: 20px;
+    }
+
+    .feature-item svg {
+        width: 30px;
+        height: 30px;
+    }
+    
+    .feature-item span {
+        font-size: 0.75rem;
+    }
+
+    /* Bridal */
+    .bridal-graphic img {
+        min-height: 300px;
+    }
+
+    .bridal-text {
+        padding: 30px 15px;
+    }
+    
+    .bridal-text h2 {
+        font-size: 2rem;
+    }
+    
+    .bridal-text p {
+        font-size: 1rem;
+    }
+
+    /* Magical Section */
+    .front-cover h3 {
+        font-size: 2rem;
+    }
+
+    .product-title {
+        font-size: 1.5rem;
+    }
+    
+    .product-desc {
+        font-size: 0.9rem;
+    }
+    
+    .product-btn {
+        padding: 10px 20px;
+        font-size: 0.8rem;
+    }
+
+    /* Customer Stories */
+    .story-card p {
+        font-size: 1rem;
+    }
+
+    /* Footer */
+    .mega-footer {
+        padding: 40px 5% 0;
+    }
+    
+    .ft-col h3 {
+        font-size: 1.3rem;
+    }
+    
+    .social-image-grid img {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@media (max-width: 375px) {
+    /* Hero */
+    .hero-carousel-container {
+        height: 45vh;
+    }
+
+    .blur-box h2 {
+        font-size: 1.5rem;
+    }
+
+    .btn-wipe {
+        padding: 10px 20px;
+        font-size: 0.85rem;
+    }
+    
+    .section-title {
+        font-size: 1.8rem;
+    }
+
+    .best-card {
+        min-width: 180px;
+    }
+    
+    .best-card img {
+        height: 250px;
+    }
+}
+
+@media (max-width: 320px) {
+    /* Extreme small devices */
+    .hero-carousel-container {
+        height: 40vh;
+    }
+    
+    .blur-box h2 {
+        font-size: 1.3rem;
+    }
+    
+    .product-title {
+        font-size: 1.3rem;
+    }
+    
+    .card-title {
+        font-size: 0.9rem;
+        padding: 6px 15px;
+    }
 }

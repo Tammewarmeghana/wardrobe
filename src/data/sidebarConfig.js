@@ -28,7 +28,7 @@ export const sidebarConfig = {
   indowestern: [
     { label: "Gown Saree", path: "/gownsaree" },
     { label: "Jacket Lehenga", path: "/jacket-lehenga" },
-    { label: "Dhoti Crop Top", path: "/dhoticroptop" },
+    { label: "Dhoti Crop Top", path: "/dhoti-croptop" },
     { label: "Corset Lehenga", path: "/corset-lehenga" },
     { label: "Sharara Peplum", path: "/sharara-peplum" },
     { label: "Peplum Pantsuit", path: "/peplum-pantsuit" },

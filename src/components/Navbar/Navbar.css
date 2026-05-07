@@ -267,8 +267,64 @@
   }
 }
 
+@media (max-width: 900px) {
+  .nav-hidden-mobile {
+    transform: translateY(-100%);
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .elegant-navbar {
+    padding: 15px 20px;
+  }
+  .elegant-navbar.scrolled {
+    padding: 10px 20px;
+  }
+  .nav-right {
+    gap: 12px;
+  }
+  .brand-logo {
+    font-size: 26px;
+  }
+}
+
 @media (max-width: 600px) {
   .brand-logo { font-size: 24px; }
   .icon-wrapper { font-size: 18px; }
   .search-wrapper { display: none; }
+}
+
+@media (max-width: 425px) {
+  .elegant-navbar {
+    padding: 12px 15px;
+  }
+  .elegant-navbar.scrolled {
+    padding: 8px 15px;
+  }
+  .brand-logo {
+    font-size: 20px;
+  }
+  .nav-right {
+    gap: 10px;
+  }
+  .icon-wrapper {
+    font-size: 16px;
+  }
+  .hamburger-menu {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 320px) {
+  .elegant-navbar {
+    padding: 10px 10px;
+  }
+  .brand-logo {
+    font-size: 18px;
+  }
+  .nav-right {
+    gap: 8px;
+  }
 }

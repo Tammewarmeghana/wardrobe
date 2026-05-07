@@ -14,12 +14,28 @@ const Navbar = () => {
   const [mounted, setMounted] = useState(false);
   const fileInputRef = useRef(null);
 
+  const [isHidden, setIsHidden] = useState(false);
+  const lastScrollY = useRef(0);
+
   useEffect(() => {
     setMounted(true);
     const handleScroll = () => {
-      setScrolled(window.scrollY > 50);
+      const currentScrollY = window.scrollY;
+      setScrolled(currentScrollY > 50);
+      
+      if (window.innerWidth <= 900) {
+        if (currentScrollY > lastScrollY.current && currentScrollY > 100) {
+          setIsHidden(true); // Scrolling down
+        } else {
+          setIsHidden(false); // Scrolling up
+        }
+      } else {
+        setIsHidden(false); // Always visible on desktop
+      }
+      
+      lastScrollY.current = currentScrollY;
     };
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener('scroll', handleScroll, { passive: true });
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
@@ -44,7 +60,7 @@ const Navbar = () => {
   if (!isVisible) return null;
 
   return (
-    <nav className={`elegant-navbar ${scrolled ? 'scrolled' : ''} ${mounted ? 'navbar-visible' : ''}`}>
+    <nav className={`elegant-navbar ${scrolled ? 'scrolled' : ''} ${mounted ? 'navbar-visible' : ''} ${isHidden ? 'nav-hidden-mobile' : ''}`}>
       <div className="hamburger-menu" onClick={() => setIsMenuOpen(!isMenuOpen)}>
         {isMenuOpen ? <FiX /> : <FiMenu />}
       </div>
