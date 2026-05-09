@@ -57,21 +57,25 @@ const Navbar = () => {
     }
   };
 
-  // Show navbar ONLY on these specific premium pages
-  const visibleRoutes = ['/fullpage', '/collection'];
-  const isVisible = visibleRoutes.includes(location.pathname);
+  // Logic for navbar visibility
+  const alwaysVisibleRoutes = ['/fullpage', '/collection'];
+  const mobileOnlyRoutes = ['/wishlist', '/search', '/order-success'];
   
-  if (!isVisible) return null;
+  const isAlwaysVisible = alwaysVisibleRoutes.includes(location.pathname);
+  const isMobileOnly = mobileOnlyRoutes.includes(location.pathname);
+  
+  // Never show on cart or unknown pages
+  if (!isAlwaysVisible && !isMobileOnly) return null;
 
   return (
-    <nav className={`elegant-navbar ${scrolled ? 'scrolled' : ''} ${mounted ? 'navbar-visible' : ''} ${isHidden ? 'nav-hidden-mobile' : ''} ${isMenuOpen ? 'menu-active' : ''}`}>
+    <nav className={`elegant-navbar ${scrolled ? 'scrolled' : ''} ${mounted ? 'navbar-visible' : ''} ${isHidden ? 'nav-hidden-mobile' : ''} ${isMenuOpen ? 'menu-active' : ''} ${isMobileOnly ? 'desktop-hidden' : ''}`}>
       <div className="hamburger-menu" onClick={() => setIsMenuOpen(!isMenuOpen)}>
         {isMenuOpen ? <FiX /> : <FiMenu />}
       </div>
 
       <div className={`nav-left ${isMenuOpen ? 'mobile-open' : ''}`}>
         <div className="mobile-menu-header">
-           <span className="brand-logo small">Queen's Wardrobe</span>
+           <Link to="/fullpage" className="brand-logo small" onClick={() => setIsMenuOpen(false)}>Queen's Wardrobe</Link>
            <FiX className="close-menu" onClick={() => setIsMenuOpen(false)} />
         </div>
         <Link 

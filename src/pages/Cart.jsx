@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { FiArrowLeft, FiLock, FiTrash2, FiLoader, FiCheck } from 'react-icons/fi';
 import { FaCcMastercard } from 'react-icons/fa';
@@ -12,19 +12,29 @@ const Cart = () => {
   const [activeStep, setActiveStep] = useState(shippingDetails ? 3 : 2);
   
   // Form State
+  const [loginDetails, setLoginDetails] = useState({
+    name: 'Rajesh Kumar',
+    phone: '+91 98765 43210'
+  });
+  const [isEditingLogin, setIsEditingLogin] = useState(false);
+
   const [formData, setFormData] = useState(shippingDetails || {
-    firstName: 'Michael',
-    lastName: 'Smith',
-    address: '234 HK , Avenue Lake city, Utah',
-    apt: '23H - UN3',
-    city: 'Lake city, Utah',
-    country: 'United States',
-    postalCode: '230104',
-    deliveryType: 'Office'
+    firstName: 'Rajesh',
+    lastName: 'Kumar',
+    address: '123, MG Road, Indiranagar',
+    apt: 'Apt 402, Block B',
+    city: 'Bangalore, Karnataka',
+    country: 'India',
+    postalCode: '560038',
+    deliveryType: 'Home'
   });
   
   // Payment Validation Error
   const [paymentError, setPaymentError] = useState('');
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   const subtotal = cartItems.reduce((sum, item) => sum + (item.price * (item.quantity || 1)), 0);
   const delivery = subtotal > 0 ? 15.00 : 0;
@@ -91,28 +101,64 @@ const Cart = () => {
       <div className="confetti-particle p5"></div>
       <div className="confetti-particle p6"></div>
 
-      <div className="cart-breadcrumbs">
-        <span onClick={() => navigate('/')}>Homepage</span> / <span onClick={() => navigate('/collection')}>Clothing Categories</span> / <span className="current-page">My Shopping Cart</span>
+      <div className="cart-header-container">
+        <button className="back-arrow-btn" onClick={() => navigate(-1)} aria-label="Go back">
+          <FiArrowLeft size={22} />
+        </button>
+        <div className="cart-breadcrumbs">
+          <Link to="/fullpage" className="breadcrumb-link">Homepage</Link> / <span onClick={() => navigate('/collection')}>Clothing Categories</span> / <span className="current-page">My Shopping Cart</span>
+        </div>
       </div>
 
       <div className="cart-layout">
         {/* Left Column */}
         <div className="cart-left-column">
           {/* Step 1: Login */}
-          <div className="checkout-step completed">
-            <div className="step-header">
+          <div className={`checkout-step ${isEditingLogin ? 'active' : 'completed'}`}>
+            <div className="step-header" onClick={() => setIsEditingLogin(true)} style={{ cursor: 'pointer' }}>
               <div className="step-title">
                 <span className="step-number">1</span>
-                <h3>LOGIN <FiCheck className="check-icon" size={18} /></h3>
+                <h3>LOGIN {!isEditingLogin && <FiCheck className="check-icon" size={18} />}</h3>
               </div>
-              <div className="step-summary">
-                <div className="user-details">
-                  <span className="user-name">Michael Smith</span>
-                  <span className="user-phone">+806 - 445 - 4453</span>
+              {!isEditingLogin && (
+                <div className="step-summary">
+                  <div className="user-details">
+                    <span className="user-name">{loginDetails.name}</span>
+                    <span className="user-phone">{loginDetails.phone}</span>
+                  </div>
+                  <button className="change-btn" onClick={(e) => { e.stopPropagation(); setIsEditingLogin(true); }}>CHANGE</button>
                 </div>
-                <button className="change-btn" onClick={() => navigate('/login')}>CHANGE</button>
-              </div>
+              )}
             </div>
+            
+            {isEditingLogin && (
+              <div className="step-content">
+                <div className="address-form">
+                  <div className="form-row">
+                    <div className="input-group">
+                      <label>Full Name *</label>
+                      <input 
+                        type="text" 
+                        value={loginDetails.name} 
+                        onChange={(e) => setLoginDetails({...loginDetails, name: e.target.value})} 
+                      />
+                    </div>
+                    <div className="input-group">
+                      <label>Phone Number *</label>
+                      <input 
+                        type="text" 
+                        value={loginDetails.phone} 
+                        onChange={(e) => setLoginDetails({...loginDetails, phone: e.target.value})} 
+                      />
+                    </div>
+                  </div>
+                  <div className="form-actions">
+                    <button className="save-deliver-btn" onClick={() => setIsEditingLogin(false)}>Save Details</button>
+                    <button className="cancel-btn" onClick={() => setIsEditingLogin(false)}>Cancel</button>
+                  </div>
+                </div>
+              </div>
+            )}
           </div>
 
           {/* Step 2: Shipping Address */}
@@ -165,6 +211,7 @@ const Cart = () => {
                   <div className="input-group">
                     <label>Country *</label>
                     <select name="country" value={formData.country} onChange={handleInputChange}>
+                      <option value="India">India</option>
                       <option value="United States">United States</option>
                       <option value="Canada">Canada</option>
                       <option value="United Kingdom">United Kingdom</option>
@@ -242,11 +289,11 @@ const Cart = () => {
                 </div>
                 <div className="summary-row" style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '10px' }}>
                     <span style={{ fontSize: '14px', color: '#3b2824' }}>Discount</span>
-                    <span style={{ color: '#b05c75', fontWeight: '500' }}>-${discount.toFixed(2)}</span>
+                    <span style={{ color: '#b05c75', fontWeight: '500' }}>-₹{discount.toFixed(2)}</span>
                 </div>
                 <div className="summary-row total-row" style={{ display: 'flex', justifyContent: 'space-between', marginTop: '15px', paddingTop: '15px', borderTop: '1px solid #f6e6ec', fontWeight: '700', fontSize: '18px', color: '#3b2824', marginBottom: '25px' }}>
                     <span>Total (incl. VAT)</span>
-                    <span>${total.toFixed(2)}</span>
+                    <span>₹{total.toFixed(2)}</span>
                 </div>
                 
                 <button 
@@ -290,7 +337,7 @@ const Cart = () => {
                         <h4 className="item-name">{item.name}</h4>
                         <p className="item-variant">Size {item.size || 'Free'} <span className="variant-spacer"></span></p>
                         <p className="item-price-qty">
-                          <strong>${(item.price || 0).toFixed(2)}</strong> <span className="item-qty">x {String(item.quantity || 1).padStart(2, '0')}</span>
+                          <strong>₹{(item.price || 0).toFixed(2)}</strong> <span className="item-qty">x {String(item.quantity || 1).padStart(2, '0')}</span>
                         </p>
                       </div>
                     </div>
@@ -300,17 +347,17 @@ const Cart = () => {
                 <div className="order-totals">
                   <div className="total-row">
                     <span className="total-label">Delivery</span>
-                    <span className="total-value">${delivery.toFixed(2)} (Express)</span>
+                    <span className="total-value">₹{delivery.toFixed(2)} (Express)</span>
                   </div>
                   <div className="total-row discount-row">
                     <span className="total-label">Discount</span>
-                    <span className="total-value">- ${discount.toFixed(2)}</span>
+                    <span className="total-value">- ₹{discount.toFixed(2)}</span>
                   </div>
                 </div>
 
                 <div className="order-final-total">
                   <span className="final-label">Total</span>
-                  <span className="final-amount">${total.toFixed(2)}</span>
+                  <span className="final-amount">₹{total.toFixed(2)}</span>
                 </div>
                 </>
             )}

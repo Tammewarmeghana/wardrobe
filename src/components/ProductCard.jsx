@@ -1,9 +1,18 @@
 import React from 'react';
 import WishlistHeart from './WishlistHeart';
 
+import { motion } from 'framer-motion';
+
 const ProductCard = ({ product, onAddToCart }) => {
   return (
-    <div className="product-card" style={{ position: "relative" }}>
+    <motion.div 
+      className="product-card" 
+      style={{ position: "relative" }}
+      initial={{ opacity: 0, y: 30, filter: 'blur(10px)' }}
+      whileInView={{ opacity: 1, y: 0, filter: 'blur(0px)' }}
+      viewport={{ once: false, amount: 0.2 }}
+      transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
+    >
       <WishlistHeart item={{
         id: `${product.category}_${product.title}`,
         title: product.title,
@@ -44,7 +53,7 @@ const ProductCard = ({ product, onAddToCart }) => {
         </div>
         <button className="buying-options-btn" onClick={() => onAddToCart(product)}>Add to Cart</button>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

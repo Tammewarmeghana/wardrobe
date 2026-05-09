@@ -1,26 +1,18 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
+import { motion } from 'framer-motion';
 import './collection.css';
 
 function Collection() {
-    useEffect(() => {
-        const elements = document.querySelectorAll('.slide-up');
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
-                    observer.unobserve(entry.target);
-                }
-            });
-        }, { threshold: 0.2 });
-
-        elements.forEach(el => observer.observe(el));
-
-        return () => observer.disconnect();
-    }, []);
-
-
+    const itemVariants = {
+        hidden: { opacity: 0, y: 50, filter: 'blur(10px)' },
+        visible: { 
+            opacity: 1, 
+            y: 0,
+            filter: 'blur(0px)',
+            transition: { duration: 1.2, ease: [0.22, 1, 0.36, 1] }
+        }
+    };
 
     return (
         <div className="collection-page-container">
@@ -29,23 +21,30 @@ function Collection() {
             <div className="floral-corner top-right"></div>
             <div className="floral-corner bottom-left"></div>
             <div className="floral-corner bottom-right"></div>
-            {/* Minimal Navigation Removed */}
-
 
             {/* Hero Header */}
-            <header className="hero-header fade-in">
+            <motion.header 
+                className="hero-header"
+                initial={{ opacity: 0, y: -20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: false }}
+                transition={{ duration: 1 }}
+            >
                <h1>Shop by Style</h1>
                 <div className="divider"></div>
                 <p>Fusion of modern and traditional styles.</p>
-            </header>
-
+            </motion.header>
 
             {/* Main Collections Showcase */}
             <main className="collections-container">
-
-
                 {/* Indo Western */}
-                <section className="collection-item animated-col slide-up">
+                <motion.section 
+                    className="collection-item animated-col"
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: true, amount: 0.2 }}
+                    variants={itemVariants}
+                >
                     <div className="image-wrapper animated-wrapper">
                         <div className="continuous-pan">
                             <img src="https://res.cloudinary.com/dodmxncwc/image/upload/v1775885562/INDO_WESTERN_collection_1_q1xrzt.jpg"
@@ -60,11 +59,16 @@ function Collection() {
                             embroidery meets contemporary draping, perfect for the modern muse seeking fusion elegance.</p>
                         <Link to="/indowestern" className="explore-btn">Shop Now</Link>
                     </div>
-                </section>
-
+                </motion.section>
 
                 {/* Western */}
-                <section className="collection-item reverse slide-up animated-col">
+                <motion.section 
+                    className="collection-item reverse animated-col"
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: false, amount: 0.2 }}
+                    variants={itemVariants}
+                >
                     <div className="image-wrapper animated-wrapper">
                         <div className="continuous-pan">
                             <img src="https://res.cloudinary.com/dodmxncwc/image/upload/v1775884629/western_iqmuat.jpg"
@@ -79,11 +83,16 @@ function Collection() {
                             appeal, reflecting power, grace, and timeless high-fashion sensibilities.</p>
                         <Link to="/western" className="explore-btn">Shop Now</Link>
                     </div>
-                </section>
-
+                </motion.section>
 
                 {/* Traditional */}
-                <section className="collection-item slide-up animated-col">
+                <motion.section 
+                    className="collection-item animated-col"
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: false, amount: 0.2 }}
+                    variants={itemVariants}
+                >
                     <div className="image-wrapper animated-wrapper">
                         <div className="continuous-pan">
                             <img src="https://res.cloudinary.com/dodmxncwc/image/upload/v1775827984/a58a309b-2a19-49a4-82fa-3ad68b470ebb_ey4nlr.png"
@@ -98,11 +107,16 @@ function Collection() {
                             luxurious silks, and centuries-old weaving techniques preserved for the modern era.</p>
                         <Link to="/traditional" className="explore-btn">Shop Now</Link>
                     </div>
-                </section>
-
+                </motion.section>
 
                 {/* Readymade */}
-                <section className="collection-item reverse slide-up animated-col">
+                <motion.section 
+                    className="collection-item reverse animated-col"
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: false, amount: 0.2 }}
+                    variants={itemVariants}
+                >
                     <div className="image-wrapper animated-wrapper">
                         <div className="continuous-pan">
                             <img src="https://res.cloudinary.com/dh31ipiad/image/upload/v1775828138/0f2edc65-1f94-4cff-ba1c-f45827f32236_ioidgl.png"
@@ -117,11 +131,16 @@ function Collection() {
                             versatility without ever compromising on our rigorous high-end fashion standards.</p>
                         <Link to="/readymade" className="explore-btn">Shop Now</Link>
                     </div>
-                </section>
-
+                </motion.section>
 
                 {/* Customised Dresses */}
-                <section className="collection-item slide-up animated-col">
+                <motion.section 
+                    className="collection-item animated-col"
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: false, amount: 0.2 }}
+                    variants={itemVariants}
+                >
                     <div className="image-wrapper animated-wrapper">
                         <div className="continuous-pan">
                             <img src="https://res.cloudinary.com/dodmxncwc/image/upload/v1775886477/resized_image_svojak.png"
@@ -136,9 +155,7 @@ function Collection() {
                             offering unparalleled exclusivity, personalized details, and precise, made-to-measure tailoring.</p>
                         <Link to="/measurements" className="explore-btn">Discover More</Link>
                     </div>
-                </section>
-
-
+                </motion.section>
             </main>
 
 

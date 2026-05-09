@@ -3,6 +3,7 @@ import './appointment.css';
 import { useNavigate } from 'react-router-dom';
 import { FiArrowLeft } from 'react-icons/fi';
 import SuccessCard from '../components/SuccessCard/SuccessCard';
+import { motion } from 'framer-motion';
 
 const Appointment = () => {
     const navigate = useNavigate();
@@ -66,7 +67,13 @@ const Appointment = () => {
                 <div className="particle"></div>
                 <div className="particle"></div>
             </div>
-            <div className="appointment-card">
+            <motion.div 
+                className="appointment-card"
+                initial={{ opacity: 0, scale: 0.98, y: 40, filter: 'blur(15px)' }}
+                whileInView={{ opacity: 1, scale: 1, y: 0, filter: 'blur(0px)' }}
+                viewport={{ once: false, amount: 0.2 }}
+                transition={{ duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
+            >
                 <button className="back-arrow-btn" onClick={() => navigate(-1)} title="Go Back">
                     <FiArrowLeft />
                 </button>
@@ -183,7 +190,7 @@ const Appointment = () => {
                         </div>
                     )}
                 </div>
-            </div>
+            </motion.div>
             
             {isBooked && (
                 <SuccessCard 

@@ -91,7 +91,7 @@ const OrderSuccess = () => {
                     {purchasedItems.map((item, idx) => (
                       <div className="detail-item-row" key={idx}>
                          <span>{item.name} x {item.quantity || 1}</span>
-                         <span>${((item.price || 0) * (item.quantity || 1)).toFixed(2)}</span>
+                         <span>₹{((item.price || 0) * (item.quantity || 1)).toFixed(2)}</span>
                       </div>
                     ))}
                  </div>
@@ -99,19 +99,19 @@ const OrderSuccess = () => {
                  <div className="details-cost-summary">
                     <div className="cost-row">
                       <span>Subtotal</span>
-                      <span>${subtotal.toFixed(2)}</span>
+                      <span>₹{subtotal.toFixed(2)}</span>
                     </div>
                     <div className="cost-row">
                       <span>Delivery</span>
-                      <span>${delivery.toFixed(2)}</span>
+                      <span>₹{delivery.toFixed(2)}</span>
                     </div>
                     <div className="cost-row discount">
                       <span>Discount</span>
-                      <span>-${discount.toFixed(2)}</span>
+                      <span>-₹{discount.toFixed(2)}</span>
                     </div>
                     <div className="cost-row total">
                       <span>Total Cost</span>
-                      <span>${total.toFixed(2)}</span>
+                      <span>₹{total.toFixed(2)}</span>
                     </div>
                  </div>
 
@@ -122,7 +122,7 @@ const OrderSuccess = () => {
                        <strong>{shippingDetails.firstName} {shippingDetails.lastName}</strong><br/>
                        {shippingDetails.address} {shippingDetails.apt && `, ${shippingDetails.apt}`}<br/>
                        {shippingDetails.city}, {shippingDetails.country} {shippingDetails.postalCode}<br/>
-                       <strong>Phone:</strong> +806 - 445 - 4453 <span style={{fontSize:'11px', color:'#999'}}>(Profile Default)</span><br/>
+                       <strong>Phone:</strong> +91 98765 43210 <span style={{fontSize:'11px', color:'#999'}}>(Profile Default)</span><br/>
                        <strong>Type:</strong> {shippingDetails.deliveryType} Delivery
                      </p>
                    ) : (
@@ -145,12 +145,9 @@ const OrderSuccess = () => {
 
         {/* Footer/Promotional Section */}
         <div className="order-success-footer">
-          <p className="support-text">Anything amiss? Email us or call us at (610) 888-1111</p>
+          <p className="support-text">Anything amiss? Email us or call us at +91 98765 43210</p>
           
           <div className="promo-banner">
-             <div className="promo-image">
-                <img src="https://images.unsplash.com/photo-1513689454157-797746187515?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80" alt="Gift Card" />
-             </div>
              <div className="promo-text">
                 <p><strong>Gift a Wardrobe upgrade!</strong></p>
                 <p>Get 10% off your next purchase with code <strong>QUEEN10</strong> or send a digital gift card.</p>

@@ -1,5 +1,6 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
+import { useEffect } from 'react';
 import Home from './pages/Home';
 import IndoWestern from './pages/IndoWestern';
 import Western from './pages/Western';
@@ -54,10 +55,19 @@ import ReadyMadeItem6 from './pages/ReadyMadeItem6';
 import ReadyMadeItem7 from './pages/ReadyMadeItem7';
 import ReadyMadeItem8 from './pages/ReadyMadeItem8';
 
+const ScrollToTop = () => {
+  const { pathname } = useLocation();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+  return null;
+};
+
 function App() {
   return (
     <ShopProvider>
       <Router>
+        <ScrollToTop />
         <div>
           <Navbar />
           

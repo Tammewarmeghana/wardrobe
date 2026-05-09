@@ -1,5 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import { motion } from 'framer-motion';
 
 const FashionCard = ({ index, title, image, backgroundColor, layoutType, link }) => {
   const navigate = useNavigate();
@@ -11,6 +12,16 @@ const FashionCard = ({ index, title, image, backgroundColor, layoutType, link })
       } else {
         window.location.href = link;
       }
+    }
+  };
+
+  const itemVariants = {
+    hidden: { opacity: 0, y: 30, filter: 'blur(10px)' },
+    visible: { 
+      opacity: 1, 
+      y: 0, 
+      filter: 'blur(0px)',
+      transition: { duration: 1.2, ease: [0.22, 1, 0.36, 1] }
     }
   };
 
@@ -96,28 +107,37 @@ const FashionCard = ({ index, title, image, backgroundColor, layoutType, link })
     }
   };
 
-  // Determine base panel class from layoutType
   const getPanelClass = () => {
     const typeStr = String(layoutType);
     let extraClasses = '';
-    
-    // add flex helpers matching what the layout switch expects
     if (typeStr === '2') extraClasses += ' flex-col';
     if (typeStr === '4' || typeStr === '6') extraClasses += ' flex-row';
     if (typeStr === '8') extraClasses += ' flex-col-center';
-
     return `panel panel-0${typeStr}${extraClasses}`;
   };
 
   return (
-    <div 
+    <motion.div 
       className={getPanelClass()}
       onClick={handleClick}
-      style={{ backgroundColor: backgroundColor || 'var(--cream)', cursor: link ? 'pointer' : 'default' }}
+      variants={itemVariants}
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: false, amount: 0.2 }}
+      whileHover={{ 
+        y: -15, 
+        scale: 1.02,
+        transition: { duration: 0.4, ease: "easeOut" }
+      }}
+      style={{ 
+        backgroundColor: backgroundColor || 'var(--cream)', 
+        cursor: link ? 'pointer' : 'default',
+        transformOrigin: 'center bottom'
+      }}
     >
       <div className="panel-number">{index}</div>
       {renderContent()}
-    </div>
+    </motion.div>
   );
 };
 

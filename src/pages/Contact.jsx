@@ -1,10 +1,21 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { FiArrowLeft } from 'react-icons/fi';
+import { motion } from 'framer-motion';
 import './contact.css';
 
 const Contact = () => {
     const navigate = useNavigate();
+
+    const revealVariants = {
+        hidden: { opacity: 0, y: 40, filter: 'blur(15px)' },
+        visible: { 
+            opacity: 1, 
+            y: 0,
+            filter: 'blur(0px)',
+            transition: { duration: 1.2, ease: [0.22, 1, 0.36, 1] }
+        }
+    };
 
     return (
         <div>
@@ -36,7 +47,13 @@ const Contact = () => {
             </div>
 
             <div className="contact-container">
-                <div className="contact-info fade-in">
+                <motion.div 
+                    className="contact-info"
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: false, amount: 0.2 }}
+                    variants={revealVariants}
+                >
                     <h1>Get in Touch</h1>
                     <p>We would love to hear from you. For inquiries about our collections, bespoke tailoring, or appointments, please reach out using the form or the details below.</p>
                     <div className="info-blocks">
@@ -49,8 +66,14 @@ const Contact = () => {
                             <p>info@queenswardrobe.com<br />+91 98765 43210</p>
                         </div>
                     </div>
-                </div>
-                <div className="contact-form fade-in delay">
+                </motion.div>
+                <motion.div 
+                    className="contact-form"
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: false, amount: 0.2 }}
+                    variants={revealVariants}
+                >
                     <form action="#" method="POST">
                         <div className="form-group">
                             <label htmlFor="name">Full Name</label>
@@ -70,7 +93,7 @@ const Contact = () => {
                         </div>
                         <button type="submit" className="submit-btn" onClick={(event) => { event.preventDefault(); alert('Message sent successfully!'); }}>Send Message</button>
                     </form>
-                </div>
+                </motion.div>
             </div>
         </div>
     );

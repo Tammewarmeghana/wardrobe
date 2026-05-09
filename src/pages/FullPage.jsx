@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
+import { motion } from 'framer-motion';
 import HeroCarousel from '../components/HeroCarousel';
 import './fullpage.css';
 
@@ -9,18 +10,20 @@ const FullPage = () => {
     const bestsTrackRef = useRef(null);
 
     useEffect(() => {
-        setIsVisible(true);
+        // Small delay to ensure the page is ready before showing the hero
+        const timer = setTimeout(() => setIsVisible(true), 100);
 
         const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
+            threshold: 0.15, // Trigger when 15% is visible
+            rootMargin: '0px 0px -100px 0px' // Offset to trigger slightly before/as it enters
         };
 
-        const revealCallback = (entries, observer) => {
+        const revealCallback = (entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
                     entry.target.classList.add('revealed');
-                    observer.unobserve(entry.target);
+                } else {
+                    entry.target.classList.remove('revealed');
                 }
             });
         };
@@ -30,6 +33,7 @@ const FullPage = () => {
         revealElements.forEach(el => observer.observe(el));
 
         return () => {
+            clearTimeout(timer);
             observer.disconnect();
         };
     }, []);
@@ -46,10 +50,15 @@ const FullPage = () => {
     };
 
     return (
-        <div className={`fullpage-wrapper ${isVisible ? 'fade-in' : ''}`}>
-
+        <div className="fullpage-wrapper">
             {/* 2. Main Hero Carousel */}
-            <HeroCarousel />
+            <motion.div
+                initial={{ opacity: 0 }}
+                animate={isVisible ? { opacity: 1 } : { opacity: 0 }}
+                transition={{ duration: 1 }}
+            >
+                <HeroCarousel />
+            </motion.div>
 
 
             {/* 3. Central Body: 24 Hrs Dispatch Element */}
@@ -66,28 +75,42 @@ const FullPage = () => {
                 <h2 className="section-title">Our Bests</h2>
                 <div className="bests-carousel-wrapper">
                     <button className="bests-btn left" onClick={() => scrollBests(-1)}>&#10094;</button>
-                    <div className="bests-track" id="bestsTrack" ref={bestsTrackRef}>
-                        <div className="best-card">
-                            <img src="https://res.cloudinary.com/dugksxwkr/image/upload/v1775980365/saree_l0txc4.jpg" alt="Best 1" />
-                            <div className="card-title">Traditional Elegance</div>
-                        </div>
-                        <div className="best-card">
-                            <img src="https://res.cloudinary.com/dugksxwkr/image/upload/v1775980444/saree_ziecsm.jpg" alt="Best 2" />
-                            <div className="card-title">Modern Suit</div>
-                        </div>
-                        <div className="best-card">
-                            <img src="https://res.cloudinary.com/dugksxwkr/image/upload/v1775980507/saree_fmzqwc.jpg" alt="Best 3" />
-                            <div className="card-title">Indo-Western Cape</div>
-                        </div>
-                        <div className="best-card">
-                            <img src="https://res.cloudinary.com/dugksxwkr/image/upload/v1775980699/saree_i8kbz2.jpg" alt="Best 4" />
-                            <div className="card-title">Classic Pastel</div>
-                        </div>
-                        <div className="best-card">
-                            <img src="https://res.cloudinary.com/dodmxncwc/image/upload/v1775981099/231af316c114125cc52cfbf9d18e1adf_revbea.jpg" alt="Best 5" />
-                            <div className="card-title">Summer Collection</div>
-                        </div>
-                    </div>
+                    <motion.div 
+                        className="bests-track" 
+                        id="bestsTrack" 
+                        ref={bestsTrackRef}
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{ once: false, amount: 0.2 }}
+                        variants={{
+                            visible: { transition: { staggerChildren: 0.1 } }
+                        }}
+                    >
+                        {[
+                            { img: "https://res.cloudinary.com/dugksxwkr/image/upload/v1775980365/saree_l0txc4.jpg", title: "Traditional Elegance" },
+                            { img: "https://res.cloudinary.com/dugksxwkr/image/upload/v1775980444/saree_ziecsm.jpg", title: "Modern Suit" },
+                            { img: "https://res.cloudinary.com/dugksxwkr/image/upload/v1775980507/saree_fmzqwc.jpg", title: "Indo-Western Cape" },
+                            { img: "https://res.cloudinary.com/dugksxwkr/image/upload/v1775980699/saree_i8kbz2.jpg", title: "Classic Pastel" },
+                            { img: "https://res.cloudinary.com/dodmxncwc/image/upload/v1775981099/231af316c114125cc52cfbf9d18e1adf_revbea.jpg", title: "Summer Collection" }
+                        ].map((item, i) => (
+                            <motion.div 
+                                key={i} 
+                                className="best-card"
+                                variants={{
+                                    hidden: { opacity: 0, y: 30, filter: 'blur(10px)' },
+                                    visible: { 
+                                        opacity: 1, 
+                                        y: 0, 
+                                        filter: 'blur(0px)',
+                                        transition: { duration: 1.2, ease: [0.22, 1, 0.36, 1] } 
+                                    }
+                                }}
+                            >
+                                <img src={item.img} alt={item.title} />
+                                <div className="card-title">{item.title}</div>
+                            </motion.div>
+                        ))}
+                    </motion.div>
                     <button className="bests-btn right" onClick={() => scrollBests(1)}>&#10095;</button>
                 </div>
             </section>
@@ -217,6 +240,7 @@ const FullPage = () => {
                             <img src="https://res.cloudinary.com/dugksxwkr/image/upload/v1775986417/saree_rqrv97.jpg" alt="Insta 2" />
                             <img src="https://res.cloudinary.com/dugksxwkr/image/upload/v1775986486/sar_oyb3ww.jpg" alt="Insta 3" />
                             <img src="https://res.cloudinary.com/dugksxwkr/image/upload/v1775986552/saree_p5xuch.jpg" alt="Insta 4" />
+
                         </div>
                     </div>
                 </div>

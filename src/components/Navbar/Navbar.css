@@ -24,8 +24,14 @@
     opacity 0.8s ease;
 
   /* Entrance Animation Initial State */
-  transform: translateY(-20px);
-  opacity: 0;
+  transform: translateY(0);
+  opacity: 1;
+}
+
+@media (min-width: 901px) {
+  .elegant-navbar.desktop-hidden {
+    display: none !important;
+  }
 }
 
 /* Entrance Animation Final State */
