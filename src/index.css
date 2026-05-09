@@ -576,3 +576,50 @@ img {
         /* slightly shorter on mobile for better viewing */
     }
 }
+
+/* Mobile Refinements for Category Pages */
+@media (max-width: 768px) {
+    .luxury-collection-section {
+        padding: 40px 20px !important;
+    }
+
+    .header {
+        position: relative !important;
+        padding: 20px 0 !important;
+        margin-bottom: 25px !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+    }
+
+    .luxury-back-btn {
+        position: absolute !important;
+        left: 0 !important;
+        top: 10px !important;
+        transform: none !important;
+        font-size: 1.4rem !important;
+        padding: 5px !important;
+        opacity: 0.8 !important;
+    }
+
+    .main-title {
+        font-size: clamp(1.6rem, 7vw, 2.2rem) !important;
+        letter-spacing: 4px !important;
+        line-height: 1.3 !important;
+        margin-top: 25px !important; /* Space for back arrow above if it wraps */
+        width: 90% !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+
+    .main-title::after {
+        width: 30px !important;
+        bottom: -8px !important;
+    }
+
+    .subtitle {
+        font-size: 0.8rem !important;
+        letter-spacing: 3px !important;
+        margin-top: 10px !important;
+    }
+}

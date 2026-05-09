@@ -37,6 +37,7 @@ const IndoWesternSection = ({ title, items }) => {
       <div className="container">
         <div className="header" style={{ position: 'relative', marginBottom: '30px' }}>
           <button 
+            className="luxury-back-btn"
             onClick={() => navigate(-1)} 
             style={{ 
               position: 'absolute', 
