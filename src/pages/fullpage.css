@@ -406,7 +406,7 @@ button {
 }
 
 /* Glass Content Reveal */
-.product-overlay {
+.magic-hover-card .product-overlay {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -430,7 +430,7 @@ button {
     backdrop-filter: blur(8px);
 }
 
-.product-content {
+.magic-hover-card .product-content {
     transform: translateY(30px);
     opacity: 0;
     transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -445,7 +445,7 @@ button {
     opacity: 1;
 }
 
-.product-title {
+.magic-hover-card .product-title {
     font-family: var(--font-heading);
     font-size: 2.8rem;
     margin-bottom: 15px;
@@ -453,7 +453,7 @@ button {
     text-shadow: 0 2px 20px rgba(0,0,0,0.9);
 }
 
-.product-desc {
+.magic-hover-card .product-desc {
     font-size: 1.1rem;
     line-height: 1.6;
     margin-bottom: 30px;
@@ -461,7 +461,7 @@ button {
     color: rgba(255, 255, 255, 0.95) !important; /* Bright white-pinkish tint */
 }
 
-.product-btn {
+.magic-hover-card .product-btn {
     background: #fff;
     color: var(--clr-charcoal);
     padding: 15px 40px;
@@ -509,7 +509,7 @@ button {
         opacity: 1;
     }
 
-    .product-overlay {
+    .magic-hover-card .product-overlay {
         opacity: 1;
         visibility: visible;
         background: linear-gradient(to bottom, transparent, rgba(0,0,0,0.8));
@@ -517,16 +517,16 @@ button {
         padding: 30px 20px;
     }
 
-    .product-content {
+    .magic-hover-card .product-content {
         opacity: 1;
         transform: translateY(0);
     }
 
-    .product-title {
+    .magic-hover-card .product-title {
         font-size: 1.8rem;
     }
 
-    .product-desc {
+    .magic-hover-card .product-desc {
         font-size: 0.95rem;
         margin-bottom: 20px;
     }
@@ -743,15 +743,15 @@ button {
         padding: 40px 5%;
     }
     
-    .product-overlay {
+    .magic-hover-card .product-overlay {
         padding: 20px;
     }
     
-    .product-title {
+    .magic-hover-card .product-title {
         font-size: 1.8rem;
     }
 
-    .product-desc {
+    .magic-hover-card .product-desc {
         font-size: 1rem;
         margin-bottom: 15px;
     }

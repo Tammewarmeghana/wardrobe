@@ -91,12 +91,11 @@
 
 /* Product Card */
 .product-card {
-    background-color: var(--card-bg);
+    background-color: transparent;
     border-radius: 8px;
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
     transition: transform 0.2s, box-shadow 0.2s;
     height: 100%;
 }
@@ -109,7 +108,7 @@
 .product-image-wrapper {
     width: 100%;
     height: 280px;
-    background-color: #f7f7f7;
+    background-color: transparent;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -134,6 +133,7 @@
     display: flex;
     flex-direction: column;
     flex-grow: 1;
+    background: transparent;
 }
 
 /* Swatches */
@@ -156,12 +156,12 @@
     font-size: 1.1rem;
     font-weight: 600;
     margin: 0 0 4px 0;
-    color: var(--brand-dark);
+    color: #111 !important;
 }
 
 .product-title {
     font-size: 0.9rem;
-    color: var(--text-muted);
+    color: #111 !important;
     margin: 0 0 8px 0;
     display: -webkit-box;
     -webkit-line-clamp: 2;
@@ -184,7 +184,7 @@
 }
 
 .rating-count {
-    color: var(--accent-teal);
+    color: #111 !important;
 }
 
 /* Pricing */
@@ -196,7 +196,7 @@
 }
 
 .discount {
-    color: var(--discount-red);
+    color: #111 !important;
     font-size: 1.2rem;
     font-weight: 300;
 }
@@ -204,18 +204,21 @@
 .price {
     font-size: 1.4rem;
     font-weight: 600;
+    color: #111 !important;
 }
 
 .price span {
     font-size: 0.85rem;
     position: relative;
     top: -0.4em;
+    color: #111 !important;
 }
 
 .original-price {
-    color: #565959;
+    color: #111 !important;
     text-decoration: line-through;
     font-size: 0.85rem;
+    opacity: 0.7;
 }
 
 /* Info Badges & Delivery */
@@ -373,7 +376,7 @@
 
     .product-title {
         display: block;
-        color: #2c2c2c !important; /* Solid dark color for perfect visibility */
+        color: #111 !important; /* Solid dark color for perfect visibility */
         font-size: 0.85rem;
         font-weight: 500;
         margin-top: 5px;
