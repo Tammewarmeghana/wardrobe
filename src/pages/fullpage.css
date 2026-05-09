@@ -1,19 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap');
 
 :root {
-    --clr-cream: #FDDDE6;
-    /* Piggy Pink */
-    --clr-light-pink: #FFB6C1;
-    /* Light Pink */
-    --clr-pastel-pink: #FFC0CB;
-    /* Simple Pink */
+    --clr-cream: #F8F5F2; /* Premium neutral off-white */
+    --clr-light-pink: #fdf6f7; /* Very subtle tint */
+    --clr-pastel-pink: #FAF7F5;
     --clr-charcoal: #2D2424;
-    /* Deep, warm espresso */
     --clr-white: #ffffff;
     --clr-muted: #8E7A7A;
-    /* Muted rose-brown */
-    --clr-accent: #E2858E;
-    /* A deepened Tea Rose for contrast */
+    --clr-accent: #C5A059; /* Gold accent for luxury feel */
 
     --font-heading: 'Playfair Display', serif;
     --font-body: 'Outfit', sans-serif;
@@ -30,13 +24,8 @@
 
 body {
     font-family: var(--font-body);
-    background-color: #FDDDE6;
-    /* Fallback to piggy pink */
-    background-image:
-        linear-gradient(135deg, rgba(253, 221, 230, 0.85) 0%, rgba(255, 182, 193, 0.82) 35%, rgba(255, 192, 203, 0.85) 70%, rgba(244, 194, 194, 0.9) 100%);
-    background-size: cover;
-    background-position: center top;
-    background-attachment: fixed;
+    background-color: var(--clr-cream);
+    background-image: none; /* Removed pink gradient */
     color: var(--clr-charcoal);
     overflow-x: hidden;
 }
@@ -64,6 +53,12 @@ button {
     overflow-x: hidden;
 }
 
+@media (max-width: 768px) {
+    .fullpage-wrapper {
+        padding-top: 70px; /* Reduced offset for mobile navbar */
+    }
+}
+
 /* Reveal on Scroll */
 .reveal-on-scroll {
     opacity: 0;
@@ -76,75 +71,15 @@ button {
     transform: translateY(0);
 }
 
-/* =======================================
-   2. MAIN HERO CAROUSEL
-======================================= */
-
-/* =======================================
-   2. MAIN HERO CAROUSEL
-======================================= */
-.hero-carousel-container {
-    position: relative;
-    width: 100%;
-    height: 85vh;
-    overflow: hidden;
+.fade-in {
+    animation: fadeInPage 1.5s ease-out forwards;
 }
 
-.carousel-track {
-    display: flex;
-    width: 500%;
-    /* 5 slides */
-    height: 100%;
-    transition: transform 0.8s cubic-bezier(0.25, 1, 0.5, 1);
+@keyframes fadeInPage {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
 }
 
-.hero-slide {
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-position: center;
-    position: relative;
-}
-
-.hero-content {
-    display: none !important;
-}
-
-.blur-box {
-    position: absolute;
-    top: 50%;
-    left: 10%;
-    transform: translateY(-50%);
-    /* background: rgba(253, 251, 247, 0.85); */
-    padding: 50px;
-    border-radius: 4px;
-    max-width: 450px;
-    /* backdrop-filter: blur(8px); */
-}
-
-.box-right {
-    left: auto;
-    right: 3%;
-    text-align: right;
-}
-
-.box-center {
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-}
-
-.blur-box h2 {
-    font-family: var(--font-heading);
-    font-size: 3rem;
-    margin-bottom: 10px;
-}
-
-.blur-box p {
-    font-size: 1.1rem;
-    color: var(--clr-muted);
-    margin-bottom: 30px;
-}
 
 /* Wipe Button */
 .btn-wipe {
@@ -179,111 +114,6 @@ button {
 
 .btn-wipe:hover::before {
     left: 0;
-}
-
-/* Dress Hover Pulse */
-.dress-hover-point {
-    position: absolute;
-    top: 40%;
-    right: 30%;
-    cursor: pointer;
-}
-
-.pulse {
-    display: block;
-    width: 20px;
-    height: 20px;
-    background: var(--clr-white);
-    border-radius: 50%;
-    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7);
-    animation: pulser 2s infinite;
-}
-
-@keyframes pulser {
-    70% {
-        box-shadow: 0 0 0 20px rgba(255, 255, 255, 0);
-    }
-
-    100% {
-        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
-    }
-}
-
-.dress-info {
-    position: absolute;
-    top: -60px;
-    left: 40px;
-    background: var(--clr-white);
-    padding: 10px;
-    border-radius: 4px;
-    opacity: 0;
-    transform: translateX(20px);
-    pointer-events: none;
-    transition: all var(--transition-smooth);
-    width: 200px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-}
-
-.dress-hover-point:hover .dress-info {
-    opacity: 1;
-    transform: translateX(0);
-}
-
-.dress-info img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    margin-bottom: 10px;
-}
-
-/* Carousel Buttons */
-.carousel-btn {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background: rgba(253, 251, 247, 0.5);
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    font-size: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: background var(--transition-fast);
-}
-
-.carousel-btn:hover {
-    background: var(--clr-white);
-}
-
-.left-btn {
-    left: 20px;
-}
-
-.right-btn {
-    right: 20px;
-}
-
-.carousel-dots {
-    position: absolute;
-    bottom: 30px;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    gap: 10px;
-}
-
-.dot {
-    width: 12px;
-    height: 12px;
-    background: rgba(253, 251, 247, 0.5);
-    border-radius: 50%;
-    cursor: pointer;
-    transition: background var(--transition-fast);
-}
-
-.dot.active {
-    background: var(--clr-white);
 }
 
 /* =======================================
@@ -856,31 +686,6 @@ button {
 ======================================= */
 
 @media (max-width: 768px) {
-    /* 1. Main Hero Carousel */
-    .hero-carousel-container {
-        height: 60vh;
-    }
-    
-    .blur-box {
-        padding: 30px;
-        max-width: 90%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        text-align: center;
-    }
-    
-    .box-right {
-        right: auto;
-    }
-    
-    .blur-box h2 {
-        font-size: 2.2rem;
-    }
-    
-    .blur-box p {
-        font-size: 1rem;
-        margin-bottom: 20px;
-    }
 
     /* 2. Our Bests */
     .our-bests {
@@ -984,17 +789,6 @@ button {
 
 @media (max-width: 425px) {
     /* Hero */
-    .hero-carousel-container {
-        height: 50vh;
-    }
-    
-    .blur-box {
-        padding: 20px;
-    }
-    
-    .blur-box h2 {
-        font-size: 1.8rem;
-    }
 
     /* Dispatch */
     .dispatch-banner {
@@ -1097,18 +891,6 @@ button {
 
 @media (max-width: 375px) {
     /* Hero */
-    .hero-carousel-container {
-        height: 45vh;
-    }
-
-    .blur-box h2 {
-        font-size: 1.5rem;
-    }
-
-    .btn-wipe {
-        padding: 10px 20px;
-        font-size: 0.85rem;
-    }
     
     .section-title {
         font-size: 1.8rem;
@@ -1125,13 +907,6 @@ button {
 
 @media (max-width: 320px) {
     /* Extreme small devices */
-    .hero-carousel-container {
-        height: 40vh;
-    }
-    
-    .blur-box h2 {
-        font-size: 1.3rem;
-    }
     
     .product-title {
         font-size: 1.3rem;

@@ -1,33 +1,15 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
+import HeroCarousel from '../components/HeroCarousel';
 import './fullpage.css';
 
 function Home() {
     const navigate = useNavigate();
-    const slidesCount = 5;
-    const [currentSlide, setCurrentSlide] = useState(0);
     const bestsTrackRef = useRef(null);
 
-    // Autoplay Hero Carousel
     useEffect(() => {
-        const timer = setInterval(() => {
-            setCurrentSlide(prev => (prev + 1) % slidesCount);
-        }, 3000);
-        return () => clearInterval(timer);
+        // Observer or other side effects if needed
     }, []);
-
-    const moveHero = (direction) => {
-        setCurrentSlide(prev => {
-            let next = prev + direction;
-            if (next < 0) return slidesCount - 1;
-            if (next >= slidesCount) return 0;
-            return next;
-        });
-    };
-
-    const jumpHero = (index) => {
-        setCurrentSlide(index);
-    };
 
     const scrollBests = (direction) => {
         if (bestsTrackRef.current) {
@@ -42,61 +24,10 @@ function Home() {
     return (
         <div className="fullpage-wrapper">
 
-
             {/* 2. Main Hero Carousel */}
-            <section className="hero-carousel-container">
-                <div className="carousel-track" id="heroTrack" style={{ transform: `translateX(-${currentSlide * (100 / slidesCount)}%)` }}>
-                    {/* Slide 1: Latest Designs */}
-                    <div className="hero-slide"
-                        style={{ backgroundImage: "url('https://res.cloudinary.com/dodmxncwc/image/upload/v1775975945/indo_west_2nd_wkhjzk.jpg')" }}>
-                        <div className="hero-content blur-box box-right">
-                            <h2>Indo-Western Couture</h2>
-                            <p>Modern silhouettes fused with elegant tradition.</p>
-                            <Link to="#" className="btn-wipe">Explore Now</Link>
-                        </div>
-                    </div>
+            <HeroCarousel />
 
-                    {/* Slide 2: Bridal Collects */}
-                    <div className="hero-slide"
-                        style={{ backgroundImage: "url('https://res.cloudinary.com/dodmxncwc/image/upload/v1775976003/indo_western_1st_ldm9c5.jpg')", backgroundPosition: "top center" }}>
-                        <div className="hero-content blur-box box-center">
-                            <h2>Regal Fusion</h2>
-                            <p>The royal blend of Eastern art and Western chic.</p>
-                            <Link to="#" className="btn-wipe">View Collection</Link>
-                        </div>
-                    </div>
 
-                    {/* Slide 3: 24 Hrs Dispatch */}
-                    <div className="hero-slide"
-                        style={{ backgroundImage: "url('https://res.cloudinary.com/dodmxncwc/image/upload/v1775976065/indo_western_1st_a0lqc5.jpg')", backgroundPosition: "top center" }}>
-                        <div className="hero-content blur-box box-center">
-                            <h2>Contemporary Heritage</h2>
-                            <Link to="#" className="btn-wipe">Discover Styles</Link>
-                        </div>
-                    </div>
-
-                    {/* Slide 4: Summer Breeze */}
-                    <div className="hero-slide"
-                        style={{ backgroundImage: "url('https://res.cloudinary.com/dodmxncwc/image/upload/v1775979870/a06e5a9a9bb873082641d88b85220194_oxtgov.jpg')" }}>
-                    </div>
-
-                    {/* Slide 5: The Classics */}
-                    <div className="hero-slide"
-                        style={{ backgroundImage: "url('https://res.cloudinary.com/dodmxncwc/image/upload/v1775979149/db498296c56147b351c60fed68383ac7_xg1snj.jpg')" }}>
-                    </div>
-                </div>
-
-                {/* Carousel Nav */}
-                <button className="carousel-btn left-btn" onClick={() => moveHero(-1)}>&#10094;</button>
-                <button className="carousel-btn right-btn" onClick={() => moveHero(1)}>&#10095;</button>
-                <div className="carousel-dots">
-                    <span className={`dot ${currentSlide === 0 ? 'active' : ''}`} onClick={() => jumpHero(0)}></span>
-                    <span className={`dot ${currentSlide === 1 ? 'active' : ''}`} onClick={() => jumpHero(1)}></span>
-                    <span className={`dot ${currentSlide === 2 ? 'active' : ''}`} onClick={() => jumpHero(2)}></span>
-                    <span className={`dot ${currentSlide === 3 ? 'active' : ''}`} onClick={() => jumpHero(3)}></span>
-                    <span className={`dot ${currentSlide === 4 ? 'active' : ''}`} onClick={() => jumpHero(4)}></span>
-                </div>
-            </section>
 
             {/* 3. Central Body: 24 Hrs Dispatch Element */}
             <section className="dispatch-banner">

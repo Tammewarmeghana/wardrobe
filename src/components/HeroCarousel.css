@@ -1,0 +1,254 @@
+/* HeroCarousel.css */
+
+.hero-carousel-section {
+    width: 100%;
+    height: 80vh;
+    min-height: 600px;
+    background-color: #FDFBF9; /* Soft cream background */
+    overflow: hidden;
+    position: relative;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.hero-slide-container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+/* Left Side: Image (63%) */
+.hero-image-side {
+    flex: 0 0 63%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.hero-image-side img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+    display: block;
+    transition: transform 10s ease-out; /* Subtle pan effect */
+}
+
+.swiper-slide-active .hero-image-side img {
+    transform: scale(1.05); /* Slight zoom on active slide */
+}
+
+/* Right Side: Content (37%) */
+.hero-content-side {
+    flex: 0 0 37%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 5%;
+    background-color: #FDFBF9; /* Match background */
+}
+
+.hero-text-wrapper {
+    max-width: 400px;
+    width: 100%;
+    text-align: left;
+}
+
+.hero-heading {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(2.5rem, 4vw, 3.5rem);
+    font-weight: 300;
+    color: #1A1A1A;
+    line-height: 1.1;
+    margin-bottom: 20px;
+    letter-spacing: -0.5px;
+}
+
+.hero-subheading {
+    font-family: 'Outfit', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #666;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 40px;
+    display: block;
+}
+
+.hero-cta-btn {
+    display: inline-block;
+    padding: 14px 35px;
+    background-color: #000;
+    color: #FFF;
+    text-decoration: none;
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    transition: all 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+    border: 1px solid #000;
+}
+
+.hero-cta-btn:hover {
+    background-color: #FFF;
+    color: #000;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Pagination Dots */
+.swiper-pagination-bullet {
+    width: 8px !important;
+    height: 8px !important;
+    background: #000 !important;
+    opacity: 0.2 !important;
+    transition: all 0.3s ease !important;
+}
+
+.swiper-pagination-bullet-active {
+    opacity: 1 !important;
+    transform: scale(1.2);
+}
+
+/* Responsive Constraints for Desktop/Tablet */
+@media (max-width: 1024px) {
+    .hero-image-side {
+        flex: 0 0 55%;
+    }
+    .hero-content-side {
+        flex: 0 0 45%;
+    }
+}
+
+/* Premium Mobile Redesign (<= 768px) */
+@media (max-width: 768px) {
+    .hero-carousel-section {
+        height: 90vh;
+        min-height: 650px;
+    }
+
+    .hero-slide-container {
+        position: relative;
+        flex-direction: column;
+    }
+
+    /* Full-bleed image background */
+    .hero-image-side {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        flex: none;
+    }
+
+    /* Bottom gradient overlay for readability */
+    .hero-image-side::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 60%;
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.85) 0%, transparent 100%);
+        z-index: 1;
+    }
+
+    .hero-image-side img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center 10%; /* Optimized to show faces and outfits */
+    }
+
+    /* Bottom Centered Content Overlay */
+    .hero-content-side {
+        position: absolute;
+        bottom: 90px;
+        left: 0;
+        width: 100%;
+        height: auto;
+        padding: 0 8%;
+        background: transparent !important;
+        z-index: 2;
+        display: block;
+    }
+
+    .hero-text-wrapper {
+        text-align: center;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    .hero-heading {
+        color: #FFFFFF;
+        font-size: 2.1rem;
+        margin-bottom: 8px;
+        text-shadow: 0 2px 15px rgba(0, 0, 0, 0.4);
+        font-weight: 300;
+    }
+
+    .hero-subheading {
+        color: rgba(255, 255, 255, 0.9);
+        font-size: 0.8rem;
+        letter-spacing: 2px;
+        margin-bottom: 35px;
+    }
+
+    /* White Luxury Button */
+    .hero-cta-btn {
+        background-color: #FFFFFF;
+        color: #000000;
+        border: none;
+        padding: 14px 35px;
+        font-size: 0.75rem;
+        letter-spacing: 2px;
+        display: inline-block;
+        border-radius: 0;
+    }
+
+    .hero-cta-btn:hover {
+        background-color: #000000;
+        color: #FFFFFF;
+    }
+
+    /* Mobile Pagination Dots */
+    .swiper-pagination {
+        bottom: 35px !important;
+        z-index: 3;
+    }
+
+    .swiper-pagination-bullet {
+        width: 6px !important;
+        height: 6px !important;
+        background: #FFFFFF !important;
+        opacity: 0.4 !important;
+        margin: 0 5px !important;
+    }
+
+    .swiper-pagination-bullet-active {
+        opacity: 1 !important;
+        transform: scale(1.3);
+    }
+}
+
+/* Small Devices (<= 480px) */
+@media (max-width: 480px) {
+    .hero-heading {
+        font-size: 1.7rem;
+    }
+    
+    .hero-content-side {
+        bottom: 75px;
+    }
+    
+    .hero-subheading {
+        font-size: 0.75rem;
+        margin-bottom: 25px;
+    }
+}

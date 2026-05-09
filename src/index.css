@@ -477,7 +477,7 @@ img {
 
 @media (max-width: 600px) {
     body {
-        padding: 1.5rem;
+        padding: 0; /* Removed 1.5rem padding that caused gaps */
     }
 
 

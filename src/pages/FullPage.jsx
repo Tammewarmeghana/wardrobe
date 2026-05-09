@@ -1,19 +1,15 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
+import HeroCarousel from '../components/HeroCarousel';
 import './fullpage.css';
 
 const FullPage = () => {
     const navigate = useNavigate();
-    const [currentSlide, setCurrentSlide] = useState(0);
     const [isVisible, setIsVisible] = useState(false);
-    const slidesCount = 5;
     const bestsTrackRef = useRef(null);
 
     useEffect(() => {
         setIsVisible(true);
-        const interval = setInterval(() => {
-            setCurrentSlide(prev => (prev + 1) % slidesCount);
-        }, 5000); // Slower interval for premium feel
 
         const observerOptions = {
             threshold: 0.1,
@@ -34,23 +30,10 @@ const FullPage = () => {
         revealElements.forEach(el => observer.observe(el));
 
         return () => {
-            clearInterval(interval);
             observer.disconnect();
         };
-    }, [slidesCount]);
+    }, []);
 
-    const moveHero = (direction) => {
-        setCurrentSlide(prev => {
-            let next = prev + direction;
-            if (next < 0) return slidesCount - 1;
-            if (next >= slidesCount) return 0;
-            return next;
-        });
-    };
-
-    const jumpHero = (index) => {
-        setCurrentSlide(index);
-    };
 
     const scrollBests = (direction) => {
         if (bestsTrackRef.current) {
@@ -65,53 +48,9 @@ const FullPage = () => {
     return (
         <div className={`fullpage-wrapper ${isVisible ? 'fade-in' : ''}`}>
 
-            {/* 2. Main Hero Carousel (3 pages) */}
-            <section className="hero-carousel-container">
-                <div className="carousel-track" id="heroTrack" style={{ transform: `translateX(-${currentSlide * (100 / slidesCount)}%)` }}>
-                    {/* Slide 1: Latest Designs */}
-                    <div className="hero-slide" style={{ backgroundImage: "url('https://res.cloudinary.com/dodmxncwc/image/upload/v1775975945/indo_west_2nd_wkhjzk.jpg')" }}>
-                        <div className="hero-content blur-box box-right">
-                            <h2 className="reveal-text">Indo-Western Couture</h2>
-                            <p>Modern silhouettes fused with elegant tradition.</p>
-                            <a href="#" className="btn-wipe">Explore Now</a>
-                        </div>
-                    </div>
+            {/* 2. Main Hero Carousel */}
+            <HeroCarousel />
 
-                    {/* Slide 2: Bridal Collects */}
-                    <div className="hero-slide" style={{ backgroundImage: "url('https://res.cloudinary.com/dodmxncwc/image/upload/v1775976003/indo_western_1st_ldm9c5.jpg')", backgroundPosition: "top center" }}>
-                        <div className="hero-content blur-box box-center">
-                            <h2 className="reveal-text">Regal Fusion</h2>
-                            <p>The royal blend of Eastern art and Western chic.</p>
-                            <a href="#" className="btn-wipe">View Collection</a>
-                        </div>
-                    </div>
-
-                    {/* Slide 3: 24 Hrs Dispatch */}
-                    <div className="hero-slide" style={{ backgroundImage: "url('https://res.cloudinary.com/dodmxncwc/image/upload/v1775976065/indo_western_1st_a0lqc5.jpg')", backgroundPosition: "top center" }}>
-                        <div className="hero-content blur-box box-center">
-                            <h2 className="reveal-text">Contemporary Heritage</h2>
-                            <a href="#" className="btn-wipe">Discover Styles</a>
-                        </div>
-                    </div>
-
-                    {/* Slide 4: Summer Breeze */}
-                    <div className="hero-slide" style={{ backgroundImage: "url('https://res.cloudinary.com/dodmxncwc/image/upload/v1775979870/a06e5a9a9bb873082641d88b85220194_oxtgov.jpg')" }}>
-                    </div>
-
-                    {/* Slide 5: The Classics */}
-                    <div className="hero-slide" style={{ backgroundImage: "url('https://res.cloudinary.com/dodmxncwc/image/upload/v1775979149/db498296c56147b351c60fed68383ac7_xg1snj.jpg')" }}>
-                    </div>
-                </div>
-
-                {/* Carousel Nav */}
-                <button className="carousel-btn left-btn" onClick={() => moveHero(-1)}>&#10094;</button>
-                <button className="carousel-btn right-btn" onClick={() => moveHero(1)}>&#10095;</button>
-                <div className="carousel-dots">
-                    {[0, 1, 2, 3, 4].map(idx => (
-                        <span key={idx} className={`dot ${currentSlide === idx ? 'active' : ''}`} onClick={() => jumpHero(idx)}></span>
-                    ))}
-                </div>
-            </section>
 
             {/* 3. Central Body: 24 Hrs Dispatch Element */}
             <section className="dispatch-banner reveal-on-scroll">
