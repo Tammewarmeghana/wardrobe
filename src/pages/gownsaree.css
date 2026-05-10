@@ -15,16 +15,22 @@
 
 .gownsaree-wrapper {
     margin: 0;
-    padding: 0;
+    padding: 110px 20px 40px; /* Desktop: Top, Sides, Bottom */
     font-family: 'Outfit', sans-serif;
     background-color: var(--bg-color);
     color: var(--text-main);
 }
 
+@media (max-width: 768px) {
+    .gownsaree-wrapper {
+        padding: 80px 15px 30px; /* Mobile: Top, Sides, Bottom */
+    }
+}
+
 /* Header & Tabs */
 .page-header {
     background-color: transparent;
-    padding: 20px 40px 0;
+    padding: 20px 0 0; /* Removed side padding here as it's in the wrapper */
 }
 
 .top-tabs {
@@ -60,7 +66,7 @@
 .filter-row {
     display: flex;
     gap: 12px;
-    padding: 0 40px 20px;
+    padding: 0 0 20px; /* Removed side padding here */
     flex-wrap: wrap;
 }
 
@@ -86,7 +92,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
     gap: 20px;
-    padding: 0 40px 50px;
+    padding: 0 0 50px; /* Removed side padding here */
 }
 
 /* Product Card */
@@ -254,7 +260,7 @@
 
 /* Top Carousel Section */
 .top-carousel {
-    padding: 20px 40px;
+    padding: 20px 0; /* Removed side padding */
     background-color: white;
     margin-bottom: 20px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.02);
@@ -331,15 +337,15 @@
 @media (max-width: 768px) {
     .product-grid {
         grid-template-columns: repeat(2, 1fr);
-        padding: 0 15px 40px;
+        padding: 0 0 40px; /* Removed side padding */
         gap: 15px;
     }
 
     .page-header,
     .filter-row,
     .top-carousel {
-        padding-left: 15px;
-        padding-right: 15px;
+        padding-left: 0;
+        padding-right: 0;
     }
 
     .product-image-wrapper {
@@ -353,7 +359,6 @@
 
 @media (max-width: 425px) {
     .product-grid {
-        grid-template-columns: 1fr; /* Single column for very small screens or keep 2? User said "match desktop experience" so 2 columns usually looks better for products */
         grid-template-columns: repeat(2, 1fr);
     }
     
@@ -376,7 +381,7 @@
 
     .product-title {
         display: block;
-        color: #111 !important; /* Solid dark color for perfect visibility */
+        color: #111 !important;
         font-size: 0.85rem;
         font-weight: 500;
         margin-top: 5px;

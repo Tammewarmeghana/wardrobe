@@ -36,7 +36,7 @@ const CategoryTemplate = ({ category, sidebarType }) => {
         products.filter(p => p.category === category), 
     [category]);
 
-    const { filteredProducts, activeFilters, toggleFilter, clearFilters } = useProductFilter(categoryProducts);
+    const { filteredProducts, activeFilters, toggleFilter, clearFilters, sortBy, setSortBy } = useProductFilter(categoryProducts);
 
     const toggleSidebar = () => setIsSidebarOpen(!isSidebarOpen);
     const closeSidebar = () => setIsSidebarOpen(false);
@@ -64,10 +64,6 @@ const CategoryTemplate = ({ category, sidebarType }) => {
                                 <span></span><span></span><span></span>
                             </button>
                         </div>
-                        <div className="header-actions" style={{ display: 'flex', gap: '15px' }}>
-                            <WishlistIcon />
-                            <CartIcon />
-                        </div>
                     </div>
                 </div>
 
@@ -76,6 +72,8 @@ const CategoryTemplate = ({ category, sidebarType }) => {
                     activeFilters={activeFilters} 
                     toggleFilter={toggleFilter} 
                     clearFilters={clearFilters} 
+                    sortBy={sortBy}
+                    setSortBy={setSortBy}
                 />
 
                 <div className="product-grid">

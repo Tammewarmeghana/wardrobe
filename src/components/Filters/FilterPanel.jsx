@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './filters.css';
 
-const FilterPanel = ({ products, activeFilters, toggleFilter, clearFilters }) => {
+const FilterPanel = ({ products, activeFilters, toggleFilter, clearFilters, sortBy, setSortBy }) => {
   const [openDropdown, setOpenDropdown] = useState(null);
 
   const brands = [...new Set(products.map(p => p.brand))];
@@ -84,7 +84,34 @@ const FilterPanel = ({ products, activeFilters, toggleFilter, clearFilters }) =>
           )}
         </div>
 
-        {(activeFilters.price || activeFilters.rating || activeFilters.brands.length > 0 || activeFilters.colors.length > 0 || activeFilters.fabrics.length > 0) && (
+        {/* Sort Filter */}
+        <div className="filter-group">
+          <div className={`filter-pill ${sortBy ? 'active' : ''}`} onClick={() => toggleDropdown('sort')}>
+            Sort <ChevronDown />
+          </div>
+          {openDropdown === 'sort' && (
+            <div className="filter-dropdown">
+              <label className="filter-option">
+                <input 
+                  type="checkbox" 
+                  checked={sortBy === 'price-low'}
+                  onChange={() => setSortBy(sortBy === 'price-low' ? null : 'price-low')}
+                />
+                Price: Low to High
+              </label>
+              <label className="filter-option">
+                <input 
+                  type="checkbox" 
+                  checked={sortBy === 'price-high'}
+                  onChange={() => setSortBy(sortBy === 'price-high' ? null : 'price-high')}
+                />
+                Price: High to Low
+              </label>
+            </div>
+          )}
+        </div>
+
+        {(activeFilters.price || activeFilters.rating || activeFilters.brands.length > 0 || activeFilters.colors.length > 0 || activeFilters.fabrics.length > 0 || sortBy) && (
           <button className="clear-filters-btn" onClick={clearFilters}>Clear All</button>
         )}
       </div>

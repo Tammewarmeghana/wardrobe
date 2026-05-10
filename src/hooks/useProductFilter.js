@@ -8,11 +8,12 @@ export const useProductFilter = (initialProducts) => {
     colors: [],
     fabrics: []
   });
+  const [sortBy, setSortBy] = useState(null); // 'price-low', 'price-high'
 
   const filteredProducts = useMemo(() => {
     if (!initialProducts || !Array.isArray(initialProducts)) return [];
     
-    return initialProducts.filter(product => {
+    const filtered = initialProducts.filter(product => {
       // Price Filter
       if (activeFilters.price) {
         const price = Number(product.price);
@@ -45,7 +46,16 @@ export const useProductFilter = (initialProducts) => {
 
       return true;
     });
-  }, [initialProducts, activeFilters]);
+
+    if (sortBy === 'price-low') {
+      return [...filtered].sort((a, b) => Number(a.price) - Number(b.price));
+    }
+    if (sortBy === 'price-high') {
+      return [...filtered].sort((a, b) => Number(b.price) - Number(a.price));
+    }
+
+    return filtered;
+  }, [initialProducts, activeFilters, sortBy]);
 
   const toggleFilter = (type, value) => {
     setActiveFilters(prev => {
@@ -82,12 +92,17 @@ export const useProductFilter = (initialProducts) => {
       colors: [],
       fabrics: []
     });
+    setSortBy(null);
   };
 
   return {
     filteredProducts,
     activeFilters,
     toggleFilter,
-    clearFilters
+    clearFilters,
+    sortBy,
+    setSortBy
   };
 };
+
+export default useProductFilter;

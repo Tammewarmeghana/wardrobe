@@ -58,17 +58,20 @@ const Navbar = () => {
   };
 
   // Logic for navbar visibility
-  const alwaysVisibleRoutes = ['/fullpage', '/collection'];
-  const mobileOnlyRoutes = ['/wishlist', '/search', '/order-success'];
+  // Routes where navbar should be hidden
+  const hiddenRoutes = ['/', '/login'];
+  const isHiddenRoute = hiddenRoutes.includes(location.pathname);
   
-  const isAlwaysVisible = alwaysVisibleRoutes.includes(location.pathname);
+  // Routes where navbar has special desktop behavior
+  const mobileOnlyRoutes = ['/search', '/order-success'];
   const isMobileOnly = mobileOnlyRoutes.includes(location.pathname);
   
-  // Never show on cart or unknown pages
-  if (!isAlwaysVisible && !isMobileOnly) return null;
+  const isHomePage = ['/home', '/fullpage'].includes(location.pathname);
+  
+  if (isHiddenRoute) return null;
 
   return (
-    <nav className={`elegant-navbar ${scrolled ? 'scrolled' : ''} ${mounted ? 'navbar-visible' : ''} ${isHidden ? 'nav-hidden-mobile' : ''} ${isMenuOpen ? 'menu-active' : ''} ${isMobileOnly ? 'desktop-hidden' : ''}`}>
+    <nav className={`elegant-navbar ${scrolled || !isHomePage ? 'scrolled' : ''} ${mounted ? 'navbar-visible' : ''} ${isHidden ? 'nav-hidden-mobile' : ''} ${isMenuOpen ? 'menu-active' : ''} ${isMobileOnly ? 'desktop-hidden' : ''}`}>
       <div className="hamburger-menu" onClick={() => setIsMenuOpen(!isMenuOpen)}>
         {isMenuOpen ? <FiX /> : <FiMenu />}
       </div>

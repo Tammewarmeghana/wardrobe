@@ -115,7 +115,7 @@ const Cart = () => {
         <div className="cart-left-column">
           {/* Step 1: Login */}
           <div className={`checkout-step ${isEditingLogin ? 'active' : 'completed'}`}>
-            <div className="step-header" onClick={() => setIsEditingLogin(true)} style={{ cursor: 'pointer' }}>
+            <div className="step-header">
               <div className="step-title">
                 <span className="step-number">1</span>
                 <h3>LOGIN {!isEditingLogin && <FiCheck className="check-icon" size={18} />}</h3>
@@ -163,7 +163,7 @@ const Cart = () => {
 
           {/* Step 2: Shipping Address */}
           <div className={`checkout-step ${activeStep === 2 ? 'active' : activeStep > 2 ? 'completed' : 'pending'}`}>
-            <div className="step-header" style={{ cursor: 'pointer' }} onClick={() => setActiveStep(2)}>
+            <div className="step-header">
               <div className="step-title">
                 <span className="step-number">2</span>
                 <h3>SHIPPING ADDRESS {activeStep > 2 && <FiCheck className="check-icon" size={18} />}</h3>
