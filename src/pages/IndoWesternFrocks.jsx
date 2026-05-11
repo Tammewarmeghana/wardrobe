@@ -6,6 +6,7 @@ import WishlistHeart from '../components/WishlistHeart';
 import { useShop } from '../context/ShopContext';
 import FilterPanel from '../components/Filters/FilterPanel';
 import { useProductFilter } from '../hooks/useProductFilter';
+import ProductCard from '../components/ProductCard';
 
 const products = [
     {
@@ -312,7 +313,21 @@ const products = [
 
 function IndoWesternFrocks() {
     const { addToCart } = useShop();
-    const handleAddToCart = (item) => { addToCart(item); };
+    const [addedToast, setAddedToast] = useState(null);
+
+    const handleAddToCart = (product) => { 
+        addToCart({
+            id: product.id,
+            name: product.title,
+            price: product.price,
+            image: product.image,
+            color: product.color,
+            size: "Free Size",
+            quantity: product.quantity || 1
+        }); 
+        setAddedToast(product.title);
+        setTimeout(() => setAddedToast(null), 3000);
+    };
 
     const [isSidebarOpen, setIsSidebarOpen] = useState(false);
     const navigate = useNavigate();
@@ -329,6 +344,11 @@ function IndoWesternFrocks() {
 
     return (
         <div className="gownsaree-wrapper gown-saree-page-container">
+            {addedToast && (
+                <div className="cart-toast">
+                    Added <strong>{addedToast}</strong> to cart!
+                </div>
+            )}
             <div className="page-container" style={{ overflowX: 'hidden' }}>
                 {/* Header & Tabs */}
                 <div className="page-header">
@@ -363,43 +383,11 @@ function IndoWesternFrocks() {
                 <div className="product-grid">
                     {filteredProducts.length > 0 ? (
                         filteredProducts.map((product) => (
-                            <div className="product-card" key={product.id} style={{ position: "relative" }}>
-                                <WishlistHeart item={{ id: product.id, title: product.title, image: product.image, brand: product.brand, price: product.price }} />
-                                <img
-                                    src={product.image}
-                                    alt={product.title}
-                                    style={{
-                                        width: "100%",
-                                        height: "280px",
-                                        objectFit: "contain",
-                                        objectPosition: "top",
-                                        padding: "10px",
-                                        ...product.imageStyle
-                                    }}
-                                />
-                                <div className="card-content">
-                                    <div className="swatches">
-                                        <div className="swatch" style={{ backgroundColor: product.color }}></div>
-                                    </div>
-                                    <h3 className="brand-name">{product.brand}</h3>
-                                    <p className="product-title">{product.title}</p>
-                                    <div className="rating-block">
-                                        <span className="stars">
-                                            {'★'.repeat(Math.floor(product.rating))}
-                                            {product.rating % 1 !== 0 ? '½' : ''}
-                                            {'☆'.repeat(5 - Math.ceil(product.rating))}
-                                        </span>
-                                        <span className="rating-count">{product.ratingCount}</span>
-                                    </div>
-                                    <div className="pricing-block">
-                                        <span className="discount">{product.discount}</span>
-                                        <span className="price"><span>₹</span>{product.price.toLocaleString()}</span>
-                                        <span className="original-price">₹{product.originalPrice.toLocaleString()}</span>
-                                    </div>
-                                    <p className="delivery-info">Get it by <span>{product.delivery}</span><br />FREE Delivery</p>
-                                    <button className="buying-options-btn" onClick={() => handleAddToCart({ id: product.id, name: product.title, price: product.price, image: product.image, color: product.color, size: "Free Size" })}>Add to Cart</button>
-                                </div>
-                            </div>
+                            <ProductCard 
+                                key={product.id} 
+                                product={product} 
+                                onAddToCart={handleAddToCart} 
+                            />
                         ))
                     ) : (
                         <div style={{

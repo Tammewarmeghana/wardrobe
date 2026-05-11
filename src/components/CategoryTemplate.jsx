@@ -23,7 +23,8 @@ const CategoryTemplate = ({ category, sidebarType }) => {
             price: product.price,
             image: product.image,
             color: product.colors?.[0] || 'Default',
-            size: "Free Size"
+            size: "Free Size",
+            quantity: product.quantity || 1
         }); 
         setAddedToast(product.title);
         setTimeout(() => setAddedToast(null), 3000);

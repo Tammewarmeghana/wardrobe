@@ -86,13 +86,17 @@ export const ShopProvider = ({ children }) => {
     });
   };
 
+  const removeFromCart = (id) => {
+    setCartItems(prev => prev.filter(i => i.id !== id));
+  };
+
   const cartCount = cartItems.reduce((acc, item) => acc + (item.quantity || 1), 0);
 
   return (
     <ShopContext.Provider value={{
       searchQuery, setSearchQuery,
       wishlistItems, toggleWishlist, wishlistCount: wishlistItems.length,
-      cartItems, addToCart, updateCartQuantity, cartCount, setCartItems,
+      cartItems, addToCart, updateCartQuantity, removeFromCart, cartCount, setCartItems,
       shippingDetails, setShippingDetails,
       paymentMethod, setPaymentMethod
     }}>

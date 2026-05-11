@@ -20,7 +20,6 @@ const ProductCard = ({ product, onAddToCart }) => {
         brand: product.brand,
         price: <><span>₹</span>{product.price.toLocaleString()}</>
       }} />
-      {/* <img src={product.image} alt={product.title} className="card-image" /> */}
       <div className="product-image-wrapper">
         <img
           src={product.image}
@@ -51,6 +50,7 @@ const ProductCard = ({ product, onAddToCart }) => {
             <span className="original-price">₹{product.originalPrice.toLocaleString()}</span>
           )}
         </div>
+        
         <button className="buying-options-btn" onClick={() => onAddToCart(product)}>Add to Cart</button>
       </div>
     </motion.div>

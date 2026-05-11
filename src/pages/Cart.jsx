@@ -6,7 +6,7 @@ import { useShop } from '../context/ShopContext';
 import './cart.css';
 
 const Cart = () => {
-  const { cartItems, setCartItems, shippingDetails, setShippingDetails, paymentMethod, setPaymentMethod } = useShop(); 
+  const { cartItems, setCartItems, updateCartQuantity, removeFromCart, shippingDetails, setShippingDetails, paymentMethod, setPaymentMethod } = useShop(); 
   const navigate = useNavigate();
   const [isCheckingOut, setIsCheckingOut] = useState(false);
   const [activeStep, setActiveStep] = useState(shippingDetails ? 3 : 2);
@@ -327,18 +327,49 @@ const Cart = () => {
                   {cartItems.map((item, index) => (
                     <div key={item.id || index} className="order-item">
                       <div className="item-image-wrapper">
-                        {item.image ? (
-                          <img src={item.image} alt={item.name} />
+                        {(item.image || item.img || item.thumbnail) ? (
+                          <img 
+                            src={item.image || item.img || item.thumbnail} 
+                            alt={item.name} 
+                            onError={(e) => {
+                              e.target.src = 'https://placehold.co/64x80/f8f8f8/9c8a8e?text=No+Image';
+                            }}
+                          />
                         ) : (
                           <div className="placeholder-image"></div>
                         )}
                       </div>
                       <div className="item-details">
-                        <h4 className="item-name">{item.name}</h4>
+                        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
+                          <h4 className="item-name">{item.name}</h4>
+                          <button 
+                            className="delete-item-btn" 
+                            onClick={() => removeFromCart(item.id)}
+                            aria-label="Remove item"
+                          >
+                            <FiTrash2 size={16} />
+                          </button>
+                        </div>
                         <p className="item-variant">Size {item.size || 'Free'} <span className="variant-spacer"></span></p>
-                        <p className="item-price-qty">
-                          <strong>₹{(item.price || 0).toFixed(2)}</strong> <span className="item-qty">x {String(item.quantity || 1).padStart(2, '0')}</span>
-                        </p>
+                        <div className="item-price-qty-row">
+                          <div className="quantity-controls">
+                            <button 
+                              className="qty-btn" 
+                              onClick={() => updateCartQuantity(item.id, (item.quantity || 1) - 1)}
+                              disabled={(item.quantity || 1) <= 1}
+                            >
+                              -
+                            </button>
+                            <span className="qty-val">{item.quantity || 1}</span>
+                            <button 
+                              className="qty-btn" 
+                              onClick={() => updateCartQuantity(item.id, (item.quantity || 1) + 1)}
+                            >
+                              +
+                            </button>
+                          </div>
+                          <span className="item-price">₹{(item.price * (item.quantity || 1)).toLocaleString()}</span>
+                        </div>
                       </div>
                     </div>
                   ))}

@@ -258,6 +258,44 @@
     color: white;
 }
 
+/* Quantity Selector in Card */
+.card-quantity-selector {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 15px;
+    background: rgba(0, 0, 0, 0.03);
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+
+.q-btn {
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    color: var(--brand-dark);
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s;
+}
+
+.q-btn:hover {
+    color: var(--accent-teal);
+    transform: scale(1.2);
+}
+
+.q-val {
+    font-size: 1rem;
+    font-weight: 600;
+    min-width: 20px;
+    text-align: center;
+}
+
 /* Top Carousel Section */
 .top-carousel {
     padding: 20px 0; /* Removed side padding */
